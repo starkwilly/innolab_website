@@ -1,0 +1,227 @@
+@import "./colors.scss";
+
+// ------------------------
+// Bootstrap
+//
+
+// Variables
+//
+
+$white:    #fff;
+$gray-100: #f9fafb;
+$gray-300: #dfe3e8;
+$gray-400: #c4cdd5;
+$gray-500: #919eab;
+$gray-600: #637381;
+$gray-800: #24374d;
+$gray-900: #212B36;
+
+$blue:    $groove-blue;
+$red:     $groove-red;
+$orange:  $groove-orange;
+$green:   $groove-green;
+$purple:  $groove-purple;
+$pink:    $groove-pink;
+$yellow:  $groove-yellow;
+
+$primary:       $groove-blue;
+$secondary:     $gray-600;
+$success:       $green;
+$info:          $groove-blue;
+$warning:       $yellow;
+$danger:        $red;
+$light:         $gray-100;
+$dark:          $gray-800;
+
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark,
+  "caribbean":  $groove-caribbean,
+  "teal":       $groove-teal,
+  "green":      $groove-green,
+  "orange":     $groove-orange,
+  "red":        $groove-red,
+  "pumpkin":    $groove-pumpkin,
+  "purple":     $groove-purple,
+  "lavender":   $groove-lavender,
+  "pink":       $groove-pink,
+  "coral":      $groove-coral,
+  "yellow":     $groove-yellow,
+  "blue":       $groove-blue,
+);
+
+
+// Options
+//
+// $enable-shadows: true;
+
+// Spacing
+//
+
+$spacer: 1.5rem;
+
+// Body
+//
+
+$body-bg: $gray-100;
+$body-color: $gray-900;
+
+// Components
+//
+
+$line-height-lg: 1.5;
+$line-height-sm: 1.5;
+
+$border-color: $gray-300;
+
+$border-radius:               .5rem;
+$border-radius-lg:            1rem;
+$border-radius-sm:            .25rem;
+
+// $box-shadow: 0px 2px 16px 0px rgba(33, 43, 54, 0.1), 0px 1px 0px 0px rgb(244, 246, 248);
+$box-shadow: 0px 2px 8px 0px rgba(33, 43, 54, 0.1);
+
+// Typography
+//
+
+$font-family-base: 'Graphik Web', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+$font-size-base: .75rem;
+$font-size-lg: $font-size-base * 1.25;
+$font-size-sm: $font-size-base * .875;
+$line-height-base: 1.5;
+
+$headings-font-family: 'Graphik Web', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+$font-weight-bolder: 600;
+$font-weight-bold: 500;
+
+// $h1-font-size: $font-size-base * 2.5;
+// $h2-font-size: $font-size-base * 2;
+// $h3-font-size: $font-size-base * 1.75;
+$h4-font-size: $font-size-base * 1.33; // ≈16px
+$h5-font-size: $font-size-base * 1.17; // ≈14px
+// $h6-font-size: $font-size-base;
+
+// Buttons + forms
+//
+
+$input-btn-padding-y: .375rem;
+$input-btn-padding-y-sm: .25rem;
+$input-btn-padding-y-lg: .5rem;
+
+$input-btn-line-height: $line-height-base;
+$input-btn-line-height-sm: $line-height-sm;
+$input-btn-line-height-lg: $line-height-lg;
+
+// Buttons
+//
+
+$btn-border-radius:           50rem;
+$btn-border-radius-lg:        50rem;
+$btn-border-radius-sm:        50rem;
+
+$btn-transition:              color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out !default;
+
+// Forms
+//
+
+// $input-font-weight: $font-weight-bold;
+$btn-font-weight: $font-weight-bold;
+
+// Navs
+//
+
+$nav-link-padding-y: .4375rem;
+$nav-link-padding-x: 1rem;
+
+$navbar-nav-link-padding-x: $nav-link-padding-x;
+
+$nav-link-disabled-color: $gray-300;
+
+$nav-pills-link-active-color: $primary;
+$nav-pills-link-active-bg: rgba($primary, .08);
+
+// Navbar
+//
+
+$navbar-brand-font-size: $font-size-lg;
+$nav-link-height: $font-size-base * $line-height-base + $nav-link-padding-y * 2;
+$navbar-brand-height: $navbar-brand-font-size * $line-height-base;
+$navbar-brand-padding-y: ($nav-link-height - $navbar-brand-height) / 2;
+// $navbar-padding-y: $spacer / 2;
+$navbar-padding-y: 0;
+$navbar-padding-x: $spacer;
+$navbar-light-color: $gray-500;
+$navbar-light-hover-color: $gray-900;
+$navbar-light-active-color: $primary;
+$navbar-light-brand-color: $body-color;
+$navbar-light-brand-hover-color: $body-color;
+
+// Dropdowns
+//
+
+$dropdown-border-width: 0;
+$dropdown-link-hover-color: $white;
+$dropdown-link-hover-bg: $primary;
+$dropdown-link-active-color: $primary;
+$dropdown-link-active-bg: transparent;
+$dropdown-item-padding-x: 0.5rem;
+
+// Cards
+//
+$card-border-color: transparent;
+$card-spacer-x: 1rem;
+$card-cap-bg: $light;
+
+// Tooltips
+//
+$tooltip-border-radius: 2px;
+$tooltip-padding-y: .5rem;
+$tooltip-padding-x: .5rem;
+$tooltip-arrow-width: 1.5rem;
+$tooltip-arrow-height: .5rem;
+$tooltip-margin: .5rem;
+
+// Modal
+//
+$modal-backdrop-bg: rgba($white, .7);
+$modal-backdrop-opacity: 1;
+$modal-header-border-color: $border-color;
+$modal-content-border-color: $border-color;
+$modal-content-box-shadow-sm-up: 0px 2px 64px 0px rgba(0, 0, 0, 0.15);
+$modal-inner-padding: 1.5rem;
+$modal-header-padding-y: 1.5rem;
+$modal-header-padding-x: 1.5rem;
+
+// Table
+//
+$table-bg-level: -11;
+$table-border-level: -9;
+$table-hover-bg: rgba($primary, .075);
+$table-active-bg: $table-hover-bg;
+
+
+// Breakpoints
+//
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 600px,
+  md: 800px,
+  lg: 1280px,
+  xl: 1360px
+);
+
+$container-max-widths: (
+  sm: 100%,
+  md: 100%,
+  lg: 1280px,
+  xl: 1360px
+);

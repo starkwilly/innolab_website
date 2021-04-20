@@ -1,0 +1,514 @@
+@import "./variables.scss";
+
+html, body, #root {
+  height: 100%;
+}
+
+h1.title {
+  font-size: 28px;
+}
+
+p.description {
+  font-size: 18px;
+  color: $silver;
+}
+
+// Makes main content containers keep screen height taking in count the header's height
+#root {
+  display: flex;
+  flex-direction: column;
+
+  > header + div {
+    flex-grow: 1;
+  }
+}
+
+// Transitions
+//
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .3s;
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0;
+}
+
+.slide-fade-enter-active {
+  transition: all .3s ease;
+}
+.slide-fade-leave-active {
+  transition: all .3s ease;
+}
+.slide-fade-enter, .slide-fade-leave-to {
+  transform: translateX(10px);
+  opacity: 0;
+}
+
+// Fonts
+//
+
+@font-face {
+  font-family: 'Graphik Web';
+  src: url('../_assets/fonts/Graphik-MediumItalic-Web.eot');
+  src: url('../_assets/fonts/Graphik-MediumItalic-Web.eot?#iefix') format('embedded-opentype'),
+       url('../_assets/fonts/Graphik-MediumItalic-Web.woff2') format('woff2'),
+       url('../_assets/fonts/Graphik-MediumItalic-Web.woff') format('woff');
+  font-weight:  500;
+  font-style:   italic;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'Graphik Web';
+  src: url('../_assets/fonts/Graphik-Medium-Web.eot');
+  src: url('../_assets/fonts/Graphik-Medium-Web.eot?#iefix') format('embedded-opentype'),
+       url('../_assets/fonts/Graphik-Medium-Web.woff2') format('woff2'),
+       url('../_assets/fonts/Graphik-Medium-Web.woff') format('woff');
+  font-weight:  500;
+  font-style:   normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'Graphik Web';
+  src: url('../_assets/fonts/Graphik-Semibold-Web.eot');
+  src: url('../_assets/fonts/Graphik-Semibold-Web.eot?#iefix') format('embedded-opentype'),
+       url('../_assets/fonts/Graphik-Semibold-Web.woff2') format('woff2'),
+       url('../_assets/fonts/Graphik-Semibold-Web.woff') format('woff');
+  font-weight:  600;
+  font-style:   normal;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'Graphik Web';
+  src: url('../_assets/fonts/Graphik-RegularItalic-Web.eot');
+  src: url('../_assets/fonts/Graphik-RegularItalic-Web.eot?#iefix') format('embedded-opentype'),
+      url('../_assets/fonts/Graphik-RegularItalic-Web.woff2') format('woff2'),
+      url('../_assets/fonts/Graphik-RegularItalic-Web.woff') format('woff');
+  font-weight:  400;
+  font-style:   italic;
+  font-stretch: normal;
+}
+
+@font-face {
+  font-family: 'Graphik Web';
+  src: url('../_assets/fonts/Graphik-Regular-Web.eot');
+  src: url('../_assets/fonts/Graphik-Regular-Web.eot?#iefix') format('embedded-opentype'),
+       url('../_assets/fonts/Graphik-Regular-Web.woff2') format('woff2'),
+       url('../_assets/fonts/Graphik-Regular-Web.woff') format('woff');
+  font-weight:  400;
+  font-style:   normal;
+  font-stretch: normal;
+}
+
+// Bootstrap
+//
+@import '~bootstrap/scss/bootstrap.scss';
+
+// Colors
+//
+.bg-white-translucid {
+  backdrop-filter: blur(10px);
+  background-color: rgba($white,.7) !important;
+}
+
+// Buttons
+//
+.btn-light {
+  @include button-variant($light, $border-color);
+}
+
+.btn-outline-secondary {
+  border-color: $gray-300;
+
+  @include hover() {
+    color: $body-color;
+    background-color: rgba($primary, .04);
+    border-color: $primary;
+  }
+
+  &.disabled,
+  &:disabled {
+    border-color: $gray-300;
+  }
+
+  &:not(:disabled):not(.disabled):active,
+  &:not(:disabled):not(.disabled).active,
+  .show > &.dropdown-toggle {
+    color: $body-color;
+    background-color: rgba($primary, .04);
+    border-color: $primary;
+  }
+}
+
+.btn.rounded-circle {
+  width: #{$input-btn-line-height * (16.0 * $font-size-base / 1rem)}px;
+  height: #{$input-btn-line-height * (16.0 * $font-size-base / 1rem)}px;
+  padding: $input-btn-padding-y;
+  box-sizing: content-box;
+  position: relative;
+
+  & > * {
+    line-height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+}
+
+.btn-sm.rounded-circle {
+  width: #{$input-btn-line-height-sm * (16.0 * $font-size-sm / 1rem)}px;
+  height: #{$input-btn-line-height-sm * (16.0 * $font-size-sm / 1rem)}px;
+  padding: $input-btn-padding-y-sm;
+  box-sizing: content-box;
+}
+
+.btn-lg.rounded-circle {
+  width: #{$input-btn-line-height-lg * (16.0 * $font-size-lg / 1rem)}px;
+  height: #{$input-btn-line-height-lg * (16.0 * $font-size-lg / 1rem)}px;
+  padding: $input-btn-padding-y-lg;
+  box-sizing: content-box;
+}
+
+// Dropdowns
+//
+
+.show > .btn-light.dropdown-toggle {
+  background-color: rgba($primary, .05);
+}
+
+.dropdown-menu {
+  box-shadow: $box-shadow;
+  padding: $dropdown-padding-y;
+}
+
+.dropdown-item {
+  border-radius: $border-radius-sm;
+  position: relative;
+
+  .icon {
+    position: absolute;
+    left: $spacer * 0.25;
+    top: 50%;
+    margin-top: -$spacer * 0.25;
+  }
+
+  &.clear {
+    opacity: .5;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  &.active:hover {
+    color: $white;
+    background-color: $primary;
+  }
+
+  &:hover {
+    color: $white !important;
+  }
+}
+
+// Bootstrap Tweaks
+//
+
+strong,
+.font-weight-bold {
+  font-family: $headings-font-family;
+}
+
+.nav-underlined {
+  margin-left: -$nav-link-padding-x;
+
+  .nav-item {
+    &.active .nav-link {
+      color: $gray-900;
+    }
+  }
+}
+
+.navbar-main,
+.nav-underlined {
+  .nav-item {
+    position: relative;
+    padding-top: $spacer / 2;
+    padding-bottom: $spacer / 2;
+
+    &::after {
+      content: '';
+      width: 0;
+      height: 4px;
+      background-color: transparent;
+      border-radius: 4px 4px 0 0;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transition-property: width, left;
+      transition-duration: .25s;
+    }
+
+    &.active::after {
+      background-color: $primary;
+      width: calc(100% - (#{$spacer} * 4/3) + 8px);
+      left: calc((#{$spacer} * 2/3) - 4px);
+    }
+  }
+}
+
+.nav-link {
+  color: $primary;
+  font-weight: 800;
+  @include hover-focus {
+    color: $primary;
+    font-weight: 800;
+  }
+}
+
+// Cards
+//
+
+@mixin custom-btn-color($color, $bg-color) {
+  background-color: $bg-color;
+  color: $color;
+  border-color: $color;
+}
+
+.card {
+  box-shadow: 0px 2px 8px 0px rgba(33, 43, 54, 0.1);
+  min-height: 220px;
+  &.card-clickable {
+    cursor: pointer;
+  }
+
+  &.card-hoverable {
+    box-shadow: 0px 0px 0px 0px rgba(33, 43, 54, 0.1);
+    transition-property: box-shadow;
+    transition-duration: .25s;
+
+    // including focusand outile in case cards are button elements
+    &:hover, &:focus {
+      outline: none;
+      box-shadow: 0px 2px 8px 0px rgba(33, 43, 54, 0.1);
+    }
+  }
+}
+
+@each $color, $value in (
+  "orange":    $orange,
+  "green":     $green,
+  "red":       $red,
+  "blue":      $blue
+) {
+  .card-accent-#{$color} {
+    &::after {
+      content: '';
+      width: 8px;
+      height: calc(100% - #{$card-spacer-x * 2} + 8px);
+      background-color: $value;
+      border-radius: 4px;
+      top: calc(#{$card-spacer-x} - 4px);
+      left: calc(#{$card-spacer-x / 2} + 4px);
+      position: absolute;
+    }
+
+  }
+  .card-body {
+    // padding-left: $card-spacer-x * 2;
+    .btn {
+      margin-right: 10px;
+    }
+    .btn-red.disabled, .btn-red:disabled {
+        @include custom-btn-color($red, rgba(213, 0, 47, 0.25));
+    }
+    .btn-blue.disabled, .btn-blue:disabled {
+        @include custom-btn-color($blue, rgba(1, 142, 255, 0.25));
+    }
+    .btn-green.disabled, .btn-green:disabled {
+        @include custom-btn-color($green, rgba(126, 195, 68, 0.25));
+    }
+    .card-title {
+      color: $primary;
+      font-size: 24px;
+    }
+    .card-text {
+      font-size: 14px;
+    }
+    .card-icon {
+      color: $primary;
+    }
+  }
+}
+
+// Modal
+//
+
+.modal-content {
+  box-shadow: 0px 2px 64px 0px rgba(0, 0, 0, 0.15);
+}
+
+.modal-backdrop {
+  backdrop-filter: blur(4px);
+}
+
+.modal-header {
+  justify-content: center;
+
+  .close {
+    position: absolute;
+    top: $modal-header-padding-y;
+    left: 0;
+    line-height: 1.5;
+    outline: none;
+    @include font-size($h3-font-size)
+  }
+}
+
+.modal-footer {
+  background-color: $gray-100;
+}
+
+// Table
+//
+.table-sticky {
+  thead tr:nth-child(1) th{
+    background: white;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0 1px 0px 0px $gray-300, 0 -1px 0 0 $gray-300;
+  }
+}
+
+tr .show-row-hover-active {
+  opacity: 0;
+}
+
+tr.table-active,
+tr:hover {
+  .show-row-hover-active {
+    opacity: 1;
+  }
+}
+
+
+// Link Button
+// https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/anchor-is-valid.md
+.link-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  text-decoration: underline;
+  display: inline;
+  margin: 0;
+  padding: 0;
+  color: inherit;
+}
+
+.link-button:hover,
+.link-button:focus {
+  text-decoration: none;
+  outline: none;
+}
+
+// Doutones
+//
+.fad-primary-300 {
+  --fa-primary-color: #{$primary};
+  --fa-secondary-color: #{$gray-300};
+  --fa-secondary-opacity: 1.0;
+}
+
+.fad-secondary-300 {
+  --fa-secondary-color: #{$gray-300};
+  --fa-secondary-opacity: 1.0;
+}
+.main-wrapper{
+  position: relative;
+  height: 100vh;
+}
+.headline {
+  position: fixed;
+  top: 130px;
+  right: 0;
+  left: 0;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #B5C0CA transparent;
+}
+.main-content {
+  position: fixed;
+  top: 290px;
+  bottom: 64px;
+  left: 0;
+  right: 0;
+  overflow: auto;
+
+  &::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  &::-webkit-scrollbar-track {
+      background-color: transparent;
+  }
+  &::-webkit-scrollbar-thumb {
+      border-radius: 7px;
+      background-color: #B5C0CA;
+  }
+}
+
+.main-title {
+  font-size: $font-size-base + 1;
+  font-weight: $font-weight-bolder;
+}
+
+.footer {
+    background-color: $white;
+    box-shadow: 0px -2px 16px 0px rgba(33, 43, 54, 0.1);
+    min-height: 64px;
+}
+  
+.footer-links {
+    .nav-link {
+        font-weight: $font-weight-normal;
+        &.active {
+          color: $silver !important;
+        }
+    }
+}
+  
+.footer-brand {
+    min-height: 20px;
+    max-width: 200px;
+    .nav-item {
+        &:first-child {
+            font-weight: $font-weight-bold;
+            border-right: solid 2px $primary;
+        }
+    }
+}
+
+.gdpr-modal {
+  h2 {
+    font-weight: $font-weight-bolder;
+    letter-spacing: -0.35px;
+  }
+
+  p {
+    color: #919eab;
+    font-size: $font-size-base * 1.17;
+
+    a { 
+      font-weight: $font-weight-bold;
+    }
+  }
+}
+
+.mt-50 {
+  margin-top: 50px;
+}

@@ -1,0 +1,21 @@
+// @import "../../_theme/variables.scss";
+
+.navbar-main {
+    height: 50px;
+    .container {
+        position: relative;
+    }
+    &.navbar-expand {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .navbar-text {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .nav-link {
+        padding: 0;
+    }
+}
