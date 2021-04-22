@@ -11,7 +11,6 @@ const Footer = () => {
     return (
         <Navbar
             className="footer pt-2 pt-sm-2 pt-md-0"
-            fixed="bottom"
             expand="md"
         >
             <Container>

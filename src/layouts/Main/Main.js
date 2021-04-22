@@ -18,7 +18,7 @@ const Main = ({ children }) => {
     return (
         <>
             <Header user={{ name: info.firstname, lastname: info.lastname }}></Header>
-            <Container className="px-0 mt-50">
+            <Container className=" mainContainer">
                 {children}
             </Container>
             <Footer />
