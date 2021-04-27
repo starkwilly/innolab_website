@@ -1,6 +1,7 @@
 import React, { lazy, Suspense } from "react";
 import  {Card ,Container} from 'react-bootstrap'
 import Hero from '../Hero/Hero'
+import "./Dashboard.css"
 
 const Dashboard = () => {
     // TODO: get the gdpr value from the correct source
@@ -11,9 +12,9 @@ const Dashboard = () => {
             : null;
 
     const cardInfo = [
-        { header:"BlaBLa1", title: "titulo1", text: "text1"},
-        { header:"BlaBLa2",title: "titulo2", text: "text2"},
-        { header:"BlaBLa3" ,title: "titulo3", text: "text3"}    
+        { header:"BlaBLa1", title: "titulo1", text: "text1", cardType: "cardTypeLink"},
+        { header:"BlaBLa2",title: "titulo2", text: "text2", cardType: "cardTypeImage"},
+        { header:"BlaBLa3" ,title: "titulo3", text: "text3", cardType: "cardTypeVideo"}    
     ]    
     
     const renderCard = ( card , index ) =>{
@@ -23,6 +24,8 @@ const Dashboard = () => {
                 <Card.Body>
                     <Card.Title>{card.title}</Card.Title>
                     <Card.Text>{card.text}</Card.Text> 
+                    <Card.Text>{card.cardType}</Card.Text>
+                    
                 </Card.Body>
             </Card>
         )

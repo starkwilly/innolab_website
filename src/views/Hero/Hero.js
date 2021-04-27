@@ -1,7 +1,7 @@
 
 import React from 'react'
 import {Jumbotron , Container} from 'react-bootstrap'
-
+import "./Hero.css"
 
 const Hero = () => { 
     return (
