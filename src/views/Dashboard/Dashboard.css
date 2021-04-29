@@ -1,0 +1,35 @@
+.section {
+  padding-top: 5rem;
+}
+
+
+/* .card{
+ 
+    margin: 4% 2% 4% 2%;
+    padding: 1px 1px 1px 1px;
+  
+  } */
+  .news{
+    background-color: aqua;
+  }
+  
+  .aboutus{
+    background-color: black;
+  }
+  
+  .products{
+    background-color:red;
+  }
+  
+  .services{
+    background-color: green;
+  }
+  
+  .innovate{
+    background-color: hotpink;
+  }
+  
+  .contaUs{
+    background-color: ivory;
+  }
+  

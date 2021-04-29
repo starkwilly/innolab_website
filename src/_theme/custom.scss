@@ -260,10 +260,10 @@ strong,
 }
 
 .nav-link {
-  color: $primary;
+  color: $white;
   font-weight: 800;
   @include hover-focus {
-    color: $primary;
+    color: $gray-300;
     font-weight: 800;
   }
 }
@@ -512,3 +512,15 @@ tr:hover {
 .mt-50 {
   margin-top: 50px;
 }
+// custom css starts here
+.mainContainer{
+  max-width: 100% !important;
+  background-color: #201146;
+  background-image: url("../_assets/media/images/scroll_bg.png");
+}
+
+.mainContainer{
+  max-width: 100%;
+  padding: 0;
+}
+
