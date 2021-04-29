@@ -3,16 +3,12 @@ import PropTypes from "prop-types";
 import Scrollchor from 'react-scrollchor'; // *** MODIFIED: node_modules/react-scrollchor/lib/scrollchor.js || "createClass(Scrollchor,..." componentWillReceiveProps and getDerivedStateFromProps removed
 import Navbar from "react-bootstrap/Navbar";
 import NavItem from "react-bootstrap/NavItem";
-// import Container from "react-bootstrap/Container";
-
-
-
 import "./Header.scss";
 
 const Header = () => {
     return (
-        <Navbar className="navbar fixed-top" variant="dark">
-            <Navbar.Brand><h2 className="font-weight-bolder pt-2">INNOLAB</h2></Navbar.Brand>
+        <Navbar className="navbarTop navbar fixed-top" variant="dark">
+            <Navbar.Brand><Scrollchor to="#" className="nav-link text-reset"><h2 className="font-weight-bolder pt-2">INNOLAB</h2></Scrollchor></Navbar.Brand>
             
             <NavItem className="ml-auto"><Scrollchor to="#" className="nav-link">Home</Scrollchor></NavItem>
             <NavItem><Scrollchor to="#News" className="nav-link">News</Scrollchor></NavItem>

@@ -263,7 +263,7 @@ strong,
   color: $white;
   font-weight: 800;
   @include hover-focus {
-    color: $gray-300;
+    color: $green;
     font-weight: 800;
   }
 }
@@ -517,10 +517,5 @@ tr:hover {
   max-width: 100% !important;
   background-color: #201146;
   background-image: url("../_assets/media/images/scroll_bg.png");
-}
-
-.mainContainer{
-  max-width: 100%;
-  padding: 0;
 }
 

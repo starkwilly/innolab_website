@@ -6,7 +6,7 @@ import "./Hero.css"
 const Hero = () => { 
     return (
         <Jumbotron className="jumbotron text-white p-4" fluid>
-            <div className="p-4">
+            <div className="pt-5">
                 <h1 className="display-4 text-uppercase font-weight-bolder">
                     <p>
                         Unleash
