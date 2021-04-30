@@ -1,4 +1,10 @@
 .jumbotron{
-    min-height: 64em;
-    background-image: url("../../_assets/fonts/Post\ 2.JPG");
-  }
+  min-height: 64em;
+  background-image: url("../../_assets/media/images/unleash_bg2.png");
+  background-position: center;
+  text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
+}
+
+.outstandingFont {
+  text-shadow: #676767 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px
+}

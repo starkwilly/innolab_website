@@ -1,7 +1,8 @@
 import React, { lazy, Suspense } from "react";
-import  {Card ,Container} from 'react-bootstrap'
+import { Container } from 'react-bootstrap'
 import Hero from '../Hero/Hero'
 import "./Dashboard.css"
+import InnolabCard from '../../components/InnolabCard/InnolabCard';
 
 const Dashboard = () => {
     // TODO: get the gdpr value from the correct source
@@ -11,60 +12,25 @@ const Dashboard = () => {
             ? lazy(() => import("../../common/GdprDialog"))
             : null;
 
+    // To be JSON loaded
+    const sections = ['News', 'About us', 'Products', 'Services', 'Innovate', 'Contact us'];
+    // To be JSON loaded
     const cardInfo = [
-        { header:"BlaBLa1", title: "titulo1", text: "text1", cardType: "cardTypeLink"},
-        { header:"BlaBLa2",title: "titulo2", text: "text2", cardType: "cardTypeImage"},
-        { header:"BlaBLa3" ,title: "titulo3", text: "text3", cardType: "cardTypeVideo"}    
-    ]    
-    
-    const renderCard = ( card , index ) =>{
-        return(
-            <Card className='card' key={index}>
-                <Card.Header as="h5">{card.header}</Card.Header>
-                <Card.Body>
-                    <Card.Title>{card.title}</Card.Title>
-                    <Card.Text>{card.text}</Card.Text> 
-                    <Card.Text>{card.cardType}</Card.Text>
-                    
-                </Card.Body>
-            </Card>
-        )
-    }
+        { id: "a", header:"BlaBLa1", title: "titulo1", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", cardType: "cardTypeLink"},
+        { id: "b", header:"BlaBLa2",title: "titulo2", text: "text2", cardType: "cardTypeImage"},
+        { id: "c", header:"BlaBLa3" ,title: "titulo3", text: "text3", cardType: "cardTypeVideo"}    
+    ];
 
     return (
         <>         
           <Hero  />
-          <Container>
-            <h2>News</h2>
-            <Container id="news" className="news" fluid>
-            {cardInfo.map(renderCard)}
-            </Container>
-
-            <h2>aboutus</h2>
-            <Container className="aboutus" fluid  >
-            {cardInfo.map(renderCard)}
-            </Container>
-
-            <h2>products</h2>
-            <Container className="products" fluid  >
-            {cardInfo.map(renderCard)}
-            </Container>
-
-            <h2>services</h2>
-            <Container className="services" fluid  >
-            {cardInfo.map(renderCard)}
-            </Container>
-
-            <h2>innovate</h2>
-            <Container className="innovate" fluid  >
-            {cardInfo.map(renderCard)}
-            </Container>
-
-            <h2>contaUs</h2>
-            <Container className="contaUs" fluid  >
-            {cardInfo.map(renderCard)}
-            </Container>
-            
+          <Container className="dashboard text-white">
+              {sections.map((sectionName, sectionId) => (
+                <Container id={sectionName} key={sectionName} className="section" fluid>
+                    <h2 className="text-uppercase pb-3">{sectionName}</h2>
+                    {cardInfo.map((itm, cardIdx) => <InnolabCard cardId={sectionId+itm.id} cardInfo={itm} key={cardIdx}/>)}
+                </Container>  
+              ))}
           </Container>
         <Suspense fallback={<></>}>{GdprDialog && <GdprDialog />}</Suspense>
         </>

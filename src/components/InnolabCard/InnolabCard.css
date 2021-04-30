@@ -1,0 +1,10 @@
+.cardBase {
+    margin-bottom: 6rem;
+    height: 30rem;
+    box-shadow: 0 1rem 3rem rgb(0 0 0 / 50%);
+}
+.cardBg {
+    border-width: 2px;
+    background: rgb(2,0,36);
+    background: linear-gradient(340deg, rgba(2,0,36,0.4) 0%, rgba(9,54,124,0.4) 40%, rgba(121,199,255,0.4) 81%);
+}

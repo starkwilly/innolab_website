@@ -1,6 +1,6 @@
 // @import "../../_theme/variables.scss";
 
-.navbar-main {
+/* .navbar-main {
     height: 50px;
     .container {
         position: relative;
@@ -18,4 +18,8 @@
     .nav-link {
         padding: 0;
     }
+} */
+
+.navbarTop {
+    background-color: rgba(16, 25, 35, 0.7) !important;
 }
