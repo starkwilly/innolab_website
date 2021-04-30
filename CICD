@@ -1,4 +1,4 @@
 @Library(value="innolab-share-library", changelog=false) _
 import accn.innolab.pipeline.model.utils.PipelineConstants
-#devOps Team provides <THIS_APP_NAME> value
-CICD(PipelineConstants.Project.<THIS_APP_NAME>
+
+CICD(PipelineConstants.Project.CRDC_INNOLAB_FE) 
