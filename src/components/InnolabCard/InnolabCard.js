@@ -12,7 +12,7 @@ const InnolabCard = (props) => {
             <div id={cardId} className="cardBase cardBg card">
                 <div className="row no-gutters h-100">
                     <ScrollAnimation className="col-6 h-100 text-center" animateIn='pulse' delay={500} initiallyVisible={true}>
-                        <img src="/static/images/experience_one.svg" className="h-100 img-fluid"/>
+                        <img src={`${process.env.PUBLIC_URL}/static/images/experience_one.svg`} className="h-100 img-fluid"/>
                     </ScrollAnimation>
                     <ScrollAnimation className="col-6" animateIn='fadeIn' delay={800}>
                         <div className="card-body">
