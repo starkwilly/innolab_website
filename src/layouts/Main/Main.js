@@ -14,10 +14,11 @@ const Main = ({ children }) => {
         history.push('/');
         return null;
     } */
+    const fakeUser = { name: 'info.firstname', lastname: 'info.lastname' };
 
     return (
         <>
-            <Header user={{ name: info.firstname, lastname: info.lastname }}></Header>
+            <Header user={fakeUser}></Header>
             <Container className="mainContainer p-0">
                 {children}
             </Container>
