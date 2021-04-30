@@ -1,28 +1,28 @@
 
 import React from 'react'
-import {Jumbotron , Container} from 'react-bootstrap'
+import {Jumbotron} from 'react-bootstrap'
 import "./Hero.css"
 
 const Hero = () => { 
     return (
-        <>
-            <Jumbotron className="jumbotron" fluid>
-                <Container>
-                    <h1>Fluid jumbotron</h1>
+        <Jumbotron className="jumbotron text-white p-4" fluid>
+            <div className="pt-5">
+                <h1 className="display-4 text-uppercase font-weight-bolder">
                     <p>
-                    This is a modified jumbotron that occupies the entire horizontal space of
-                    its parent.
+                        Unleash
+                        <br/>your best
+                        <br/>through
+                        <br/><span className="outstandingFont">innovation.</span>
                     </p>
-                </Container>
-                <Container className="jumbotronFooterText">
-                    <h1>Fluid jumbotron</h1>
+                </h1>
+                <div>
                     <p>
-                    This is a modified jumbotron that occupies the entire horizontal space of
-                    its parent.
+                        That&apos;s our motto.
+                        <br/>We don&apos;t see innovation as our end, but the means.
                     </p>
-                </Container>
-            </Jumbotron>
-        </>
+                </div>
+            </div>
+        </Jumbotron>
     );
   }  
 
