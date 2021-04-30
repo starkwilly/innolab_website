@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { getTokenAndTryAuthenticate } from "../../_store/actions/authenticateActions";
+import { /* useDispatch,  */useSelector } from "react-redux";
+// import { getTokenAndTryAuthenticate } from "../../_store/actions/authenticateActions";
 import { history } from "_helpers/history";
 import Spinner from "react-bootstrap/Spinner";
 
 function Startup() {
-    const dispatch = useDispatch();
+    // const dispatch = useDispatch();
     const isFetching = useSelector((state) => state.auth.isFetching);
 
     useEffect(() => {
@@ -15,9 +15,10 @@ function Startup() {
         console.log("Startup: mounted...");
 
         // run on component mount
-        dispatch(getTokenAndTryAuthenticate()).then(() =>
-            history.push(goto_url)
-        );
+        // dispatch(getTokenAndTryAuthenticate()).then(() =>
+        //     history.push(goto_url)
+        // );
+        history.push(goto_url);
     }, []);
 
     return (
