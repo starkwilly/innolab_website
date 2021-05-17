@@ -4,8 +4,6 @@ import { history } from "_helpers/history";
 import RouteWithLayout from "../common/RouteWithLayout/RouteWithLayout";
 import { Main as MainLayout, Minimal as MinimalLayout } from "../layouts";
 import Dashboard from "../views/Dashboard/Dashboard";
-import Articles from "../views/Articles/Articles";
-import ArticleDetail from "../views/Articles/ArticleDetail";
 import NotFound from "../views/NotFound/NotFound";
 import Forbidden from "../views/Forbidden/Forbidden";
 import Spinner from "react-bootstrap/Spinner";
@@ -39,19 +37,6 @@ const Routes = () => {
                         layout={MainLayout}
                         exact={true}
                         path="/dashboard"
-                    />
-
-                    <RouteWithLayout
-                        component={Articles}
-                        layout={MainLayout}
-                        exact={true}
-                        path="/articles"
-                    />
-                    <RouteWithLayout
-                        component={ArticleDetail}
-                        layout={MainLayout}
-                        exact={true}
-                        path="/article/:id"
                     />
 
                     <RouteWithLayout

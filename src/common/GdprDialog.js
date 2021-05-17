@@ -1,20 +1,20 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 import PropTypes from 'prop-types';
 
 import { acceptGdpr } from '../_services/gdprService';
 
-const GdprDialog = () => {
-    const [active, setActive] = useState(true);
+const GdprDialog = (props) => {
+    const {open, setOpen} = props;
 
     const confirmHandler = () => {
         acceptGdpr();
-        setActive(false);
+        setOpen(false);
     };
 
     return (
-        <Modal className="gdpr-modal" show={active} backdrop="static" keyboard={false} centered size="lg">
+        <Modal className="gdpr-modal" show={open} backdrop="static" keyboard={false} centered size="lg">
             <Modal.Body>
                 <h2>INFORMATION CONFIDENTIALITY DISCLAIMER</h2>
                 <p>
@@ -46,7 +46,9 @@ const GdprDialog = () => {
 }
 
 GdprDialog.propTypes = {
-    confirmHandler: PropTypes.func
+    confirmHandler: PropTypes.func,
+    open: PropTypes.bool,
+    setOpen: PropTypes.func,
 };
 
 export default GdprDialog;

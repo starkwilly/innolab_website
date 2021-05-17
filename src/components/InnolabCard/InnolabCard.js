@@ -8,7 +8,7 @@ const InnolabCard = (props) => {
     // console.log(cardInfo);
 
     return (
-        <ScrollAnimation animateIn="zoomIn" animateOut="zoomOut">
+        <ScrollAnimation animateIn="zoomIn" animateOut="zoomOut" className="ml-3 mr-3">
             <div id={cardId} className="cardBase cardBg card">
                 <div className="row no-gutters h-100">
                     <ScrollAnimation className="col-6 h-100 text-center" animateIn='pulse' delay={500} initiallyVisible={true}>
