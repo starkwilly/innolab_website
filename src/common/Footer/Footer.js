@@ -35,7 +35,7 @@ const Footer = () => {
                         </Navbar.Text>
                         <Nav className="ml-3 mr-auto footer-links">
                             <Nav.Item>
-                                <Nav.Link onClick={()=>{console.log("onselect");setGdprOpen(true)}}>Terms of Use</Nav.Link>
+                                <Nav.Link onClick={()=>{setGdprOpen(true)}}>Terms of Use</Nav.Link>
                             </Nav.Item>
                         </Nav>
                         <Nav className="footer-brand">

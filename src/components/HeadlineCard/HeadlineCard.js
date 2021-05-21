@@ -5,14 +5,14 @@ import ScrollAnimation from 'react-animate-on-scroll';
 
 const HeadlineCard = (props) => {
     const {cardInfo, cardId} = props;
-    // console.log(cardInfo);
+    window.log("HeadlineCard", cardInfo, cardId);
 
     return (
         <ScrollAnimation animateIn="zoomIn" animateOut="zoomOut">
             <div id={cardId} className="cardHeadlineBase cardHeadlineBg card p-4" style={{backgroundImage:`url(${process.env.PUBLIC_URL}/static/images/logo.svg)`}}>
                 <div className="row no-gutters h-100">
                     <div className="col-6 h-100 card-body text-left cardHeadlineHeader">
-                        {cardInfo.header.split('|').map((headerLine, hidx) => (
+                        {cardInfo.sectionTitle.split('|').map((headerLine, hidx) => (
                            <h1 className="display-4 text-uppercase font-weight-bolder" key={hidx}>{headerLine}</h1> 
                         ))}
                     </div>
@@ -20,13 +20,13 @@ const HeadlineCard = (props) => {
                     <div className="col-5">
                         <div className="card-body ">
                             <div className="row">
-                                <q className="col font-italic font-weight-lighter text-left cardHeadlineQuote">{cardInfo.text}</q>
+                                <q className="col font-italic font-weight-lighter text-left cardHeadlineQuote">{cardInfo.sectionDescription}</q>
                             </div>
                             <div className="row pt-1">
-                                <span className="col text-right cardHeadlineSource">—{cardInfo.source}</span>
+                                <span className="col text-right cardHeadlineSource">— {cardInfo.sectionDescription2}</span>
                             </div>
                             <div className="row pt-3">
-                                <span className="col card-text">{cardInfo.notes}</span>
+                                <span className="col card-text">{cardInfo.sectionDescription3}</span>
                             </div>
                         </div>
                     </div>

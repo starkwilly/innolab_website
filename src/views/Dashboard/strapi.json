@@ -1,0 +1,210 @@
+[
+    {
+       "id":1,
+       "sectionTitle":"About us",
+       "sectionDescription":"We are Accenture Costa Rica’s team for Research and Development. Since 2017, all we do gravitates around creating innovative experiences that enhance value creation to the next level. That's our purpose and motto. We don’t see innovation as our end, but the means. We’re never done, nor satisfied. There’s always a new opportunity to discover, a bar to raise, or new ways to engage. Check our yearly report for FY20 to get a glimpse of how we live our purpose. Our strategy covers three domains: ● Human+Machine tools: With the development of Synops for Marketing and Employee Experience Tools, our dream of blending the best of both worlds between human and machine is not in the future, it’s happening now. ● Services: Automation, Project management solutions, reporting and platform integrations. ● Innovation: We practice and preach the innovation gospel. And we foster, nurture, and help you persuade the innovation agenda in many ways. ",
+       "sectionDescription2":"And we foster, nurture, and help you persuade the innovation agenda in many ways. ",
+       "SectionCategorie":"about-us",
+       "published_at":"2021-05-19T22:42:21.229Z",
+       "created_at":"2021-05-19T22:41:43.717Z",
+       "updated_at":"2021-05-19T23:48:54.910Z",
+       "sectionIcon":null,
+       "innolab_website_cards":[
+          
+       ]
+    },
+    {
+       "id":2,
+       "sectionTitle":"Human+|Machine",
+       "sectionDescription":"Humans and machines aren’t adversaries, fighting for each other’s jobs. Instead, they are symbiotic partners, each pushing the other to higher levels of performance",
+       "sectionDescription2":"Paul R. Daugherty",
+       "sectionDescription3":"This vision is at the core to all of our developments. We conceive our products as the cocoon that helps our organization evolve to the next level.",
+       "SectionCategorie":"human-machine",
+       "published_at":"2021-05-19T22:42:15.290Z",
+       "created_at":"2021-05-19T22:42:13.912Z",
+       "updated_at":"2021-05-19T23:49:36.735Z",
+       "sectionIcon":null,
+       "innolab_website_cards":[
+          {
+             "id":1,
+             "cardTitle":"Synops",
+             "cardDescription":"Imagine a place and platform that allows users to do the best they can with what they know, powered with the best tools out there, without painful or complicated learning curves. Synops is the blend of the best of human talent and machine speed and accuracy to empower our marketing operations. And we are proudly part of the team developing Synops for Marketing. ## The Delivery Toolkit We have conceived a set of automated tools, that can help you do things faster, with improved accuracy, and extend human abilities with edgy technology. ",
+             "innolab_website_section":2,
+             "published_at":"2021-05-19T22:40:47.435Z",
+             "created_at":"2021-05-19T22:40:38.081Z",
+             "updated_at":"2021-05-20T00:00:21.255Z",
+             "SubCardSection":[
+                {
+                   "id":4,
+                   "subCardSectionTitle":"Test and validate ",
+                   "SubCardSectionText":"Daikiri is our Swiss Army knife used by many in several countries, that merges testing tools in an unique way, obtaining a very affordable solution that allows you, among other things: - Audit and ensure contents quality with pixel perfect accuracy - Provide an automated task creator that simplifies the debugging process - In a centralized platform that provides an affordable solution that otherwise would require several licences at a higher cost. ",
+                   "SubCardSectionIcon":null
+                }
+             ],
+             "cardIcon":"synops_illu.svg"
+          },
+          {
+             "id":2,
+             "cardTitle":"Test and validate ",
+             "cardDescription":"Daikiri is our Swiss Army knife used by many in several countries, that merges testing tools in an unique way, obtaining a very affordable solution that allows you, among other things: - Audit and ensure contents quality with pixel perfect accuracy - Provide an automated task creator that simplifies the debugging process - In a centralized platform that provides an affordable solution that otherwise would require several licences at a higher cost. ",
+             "innolab_website_section":2,
+             "published_at":"2021-05-19T22:41:15.612Z",
+             "created_at":"2021-05-19T22:41:10.232Z",
+             "updated_at":"2021-05-20T00:00:08.356Z",
+             "SubCardSection":[
+                
+             ],
+             "cardIcon":null
+          },
+          {
+             "id":3,
+             "cardTitle":"One App Project",
+             "cardDescription":"Through the years, we have focused on creating solutions that go beyond just being a solution. We have created digital platforms that can be used in several ways to ease up and ensure a great user experience. That is how, eventually we ended up integrating tools that are currently interconnected, and we are ensuring an even tighter collaborative environment that provides even more value. ",
+             "innolab_website_section":2,
+             "published_at":"2021-05-20T15:33:27.955Z",
+             "created_at":"2021-05-19T23:56:49.039Z",
+             "updated_at":"2021-05-20T15:33:28.035Z",
+             "SubCardSection":[
+                {
+                   "id":5,
+                   "subCardSectionTitle":"Time Off Management ",
+                   "SubCardSectionText":"Also known as TOMS, this app is responsible for processing vacations quick and painlessly. The truly human way. We have made sure to come up with a practical approach that would allow you to request, approve, plan, and manage all your time off in a simplified tool. It seamlessly intertwines with myte to update the vacation balance. ",
+                   "SubCardSectionIcon":null
+                },
+                {
+                   "id":6,
+                   "subCardSectionTitle":"Employee Management",
+                   "SubCardSectionText":"People’s allocation might go beyond what is implied on a contract or an organizational unit. Who can staff? How do you define the roster of who you work with? How do you delegate time-off approval, telework arrangements, and alike? With a simple and intuitive interface, our Employee Management System cracks it and makes it look easy while keeping in compliance with Accenture's security policies. ",
+                   "SubCardSectionIcon":null
+                },
+                {
+                   "id":7,
+                   "subCardSectionTitle":"Parking",
+                   "SubCardSectionText":"What does it take to find a parking spot if you need to reach the office? The challenge bar raises when you add telework variables, sick leaves, multiple delivery centers, or impromptu releasing of parking lots in the mix. Several years of research and coordination with the workplace built up in the creation of this solution. Let us show you. ",
+                   "SubCardSectionIcon":null
+                }
+             ],
+             "cardIcon":null
+          }
+       ]
+    },
+    {
+       "id":3,
+       "sectionTitle":"Solutions",
+       "sectionDescription":"The secret of success is to do the common things uncommonly well",
+       "sectionDescription2":"John D. Rockefeller",
+       "sectionDescription3":"We take very close to the chest the role we can play at improving things and visibility at your very operation. Take a look at the solution implementations we offer, and the add-ons we offer for those, that allow you to take your work to the next level. ",
+       "SectionCategorie":"solutions",
+       "published_at":"2021-05-20T15:33:57.686Z",
+       "created_at":"2021-05-19T23:50:25.553Z",
+       "updated_at":"2021-05-20T15:33:57.753Z",
+       "sectionIcon":null,
+       "innolab_website_cards":[
+          {
+             "id":4,
+             "cardTitle":"Jira ",
+             "cardDescription":" There is no need to say much about the effectiveness of Jira as a project management / follow up tool. You can reach out to us to help you implement the tool in your own processes, tailor made for your needs. ",
+             "innolab_website_section":3,
+             "published_at":"2021-05-21T01:17:16.094Z",
+             "created_at":"2021-05-21T01:15:55.957Z",
+             "updated_at":"2021-05-21T01:17:16.116Z",
+             "SubCardSection":[
+                
+             ],
+             "cardIcon":null
+          },
+          {
+             "id":5,
+             "cardTitle":"Tempo",
+             "cardDescription":" We understand the importance of having accurate, real-time, and easy-to-understand data in business decision making and improvement. That is why, for projects implemented in JIRA, we offer tailor-made dashboards and reporting services. For many clients, for several years, Tempo’s visual aids have helped to innovate operations beyond their wildest dreams. Have more questions? Let us know. ○ Watch this video teaser here. ",
+             "innolab_website_section":3,
+             "published_at":"2021-05-21T01:17:20.127Z",
+             "created_at":"2021-05-21T01:16:40.963Z",
+             "updated_at":"2021-05-21T01:17:20.147Z",
+             "SubCardSection":[
+                
+             ],
+             "cardIcon":null
+          },
+          {
+             "id":6,
+             "cardTitle":"Workfront",
+             "cardDescription":" Workfront has proven to be a very effective tool to respond to the challenges of modern and global work demands. But for it to flow as naturally as we want, accurate end-to-end requirements, process intake, and documentation have to be in place. Our experienced team is going beyond implementing a process or operation. We are here to improve it and integrate it with the already existing tools and platforms you currently own! Request your implementation of Workfront here ",
+             "innolab_website_section":3,
+             "published_at":"2021-05-21T01:17:09.243Z",
+             "created_at":"2021-05-21T01:17:06.239Z",
+             "updated_at":"2021-05-21T01:20:34.448Z",
+             "SubCardSection":[
+                
+             ],
+             "cardIcon":null
+          },
+          {
+             "id":7,
+             "cardTitle":"Techmasters",
+             "cardDescription":" Our Journey to Intelligent Operations relies heavily on having a keen eye on improvement opportunities, and improved experiences through Robotic Process Automation. Our experience with this kind of tasks allows us to provide resourceful support, focused research, and accurate estimation and quantification of how our recommended strategies could save time and expenses. You don’t need to be an expert, just bring your idea, and we can help you take it to the next level. Let’s discuss what we can do to take what your team does to the next level! **bold text**Training & Awareness: We’ve established a series of training sessions, success stories, and grounders in order to build a community of people who are interested in developing their automation knack. ",
+             "innolab_website_section":3,
+             "published_at":"2021-05-21T01:18:18.772Z",
+             "created_at":"2021-05-21T01:18:17.726Z",
+             "updated_at":"2021-05-21T01:20:24.210Z",
+             "SubCardSection":[
+                
+             ],
+             "cardIcon":null
+          }
+       ]
+    },
+    {
+       "id":4,
+       "sectionTitle":"Innovation",
+       "sectionDescription":"To us, innovation is an open-source mission: and our job is not to own it, but to channel it. Since our very inception, we aim to be the circulatory system to make ideas move and transform our operations.",
+       "sectionDescription2":"Paul R. Daugherty & H. James Wilson",
+       "sectionDescription3":"To us, innovation is an open-source mission: and our job is not to own it, but to channel it. Since our very inception, we aim to be the circulatory system to make ideas move and transform our operations.",
+       "SectionCategorie":"innovation",
+       "published_at":"2021-05-19T23:51:40.387Z",
+       "created_at":"2021-05-19T23:51:13.083Z",
+       "updated_at":"2021-05-19T23:51:40.406Z",
+       "sectionIcon":null,
+       "innolab_website_cards":[
+          {
+             "id":8,
+             "cardTitle":"Ideas",
+             "cardDescription":"Our idea repository is our open inbox to receive ideas (any idea!) from anywhere in the world. With a simple form, you’ll be able to submit any idea and put it on the map. Once your idea is submitted, we got your back: we will get in touch with you to understand it even better and share with you all the viable options to make your objective come true or to the next level. With this, you can sow the seeds for the innovation we seek whether it is RPA or an idea for potential for Synergy. Let us help you with your idea, we want to hear it! ",
+             "innolab_website_section":4,
+             "published_at":"2021-05-21T01:18:41.633Z",
+             "created_at":"2021-05-21T01:18:40.493Z",
+             "updated_at":"2021-05-21T01:20:45.616Z",
+             "SubCardSection":[
+                
+             ],
+             "cardIcon":null
+          },
+          {
+             "id":9,
+             "cardTitle":"Synergy",
+             "cardDescription":" An old proverb says: “if you wanna go far, go together”. Great ideas get you out of the box. But what makes you go beyond? Joining forces. Synergy is one of our most ambitious projects because we focus not only on the development of your idea, but also on providing tools to the idea owner, so that you can transcend and become a corporate entrepreneur. We hold workshops with the participants, provide coaching and documentation structure and events for exposure of the ideas to obtain the complicity of others to make this project come true under the performance achievement program. ",
+             "innolab_website_section":4,
+             "published_at":"2021-05-21T01:18:59.821Z",
+             "created_at":"2021-05-21T01:18:58.812Z",
+             "updated_at":"2021-05-21T01:30:02.695Z",
+             "SubCardSection":[
+                
+             ],
+             "cardIcon":null
+          },
+          {
+             "id":10,
+             "cardTitle":"Learning",
+             "cardDescription":"To make the Human+Machine vision happen, we need to upskill and reskill. That is why, we evangelize and create awareness of the information that could be key for our workforce to be conversant in the new. We offer insights on: - Employee experience - Self development - Corporate culture - Innovation agenda - And technological vision ",
+             "innolab_website_section":4,
+             "published_at":"2021-05-21T01:19:49.040Z",
+             "created_at":"2021-05-21T01:19:27.146Z",
+             "updated_at":"2021-05-21T01:19:49.062Z",
+             "SubCardSection":[
+                
+             ],
+             "cardIcon":null
+          }
+       ]
+    }
+ ]

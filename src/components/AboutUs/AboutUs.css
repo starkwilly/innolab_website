@@ -10,7 +10,7 @@
     box-shadow: 0 1rem 3rem rgb(0 0 0 / 50%);
 }
 .cardAboutBg {
-    border-width: 2px;
+    border-width: 1px;
     border-color: white;
     background-color: rgba(160, 160, 160, 0.4);
     background-position: center;

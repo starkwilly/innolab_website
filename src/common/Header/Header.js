@@ -13,10 +13,10 @@ const Header = () => {
             
             {/* <NavItem className="ml-auto"><Scrollchor to="#" className="nav-link">Home</Scrollchor></NavItem> */}
             <NavItem className="ml-auto"><NewsList/></NavItem>
-            <NavItem><Scrollchor to="#About us" className="nav-link">About us</Scrollchor></NavItem>
-            <NavItem><Scrollchor to="#Products" className="nav-link">Products</Scrollchor></NavItem>
-            <NavItem><Scrollchor to="#Services" className="nav-link">Services</Scrollchor></NavItem>
-            <NavItem><Scrollchor to="#Innovate" className="nav-link">Innovate</Scrollchor></NavItem>
+            <NavItem><Scrollchor to="#about-us" className="nav-link">About us</Scrollchor></NavItem>
+            <NavItem><Scrollchor to="#human-machine" className="nav-link">Human+Machine</Scrollchor></NavItem>
+            <NavItem><Scrollchor to="#solutions" className="nav-link">Solutions</Scrollchor></NavItem>
+            <NavItem><Scrollchor to="#innovation" className="nav-link">Innovation</Scrollchor></NavItem>
             <NavItem><Scrollchor to="#contact-us" className="nav-link">Contact us</Scrollchor></NavItem>
         </Navbar>
     )

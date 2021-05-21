@@ -1,0 +1,14 @@
+.AccordionCardItem {
+    min-height: unset;
+    border: 2px solid white !important;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.AccordionCardItem .card-header {
+    background-color: unset;
+}
+
+.AccordionTggler {
+    font-size: 1rem;
+    color: violet;
+}
