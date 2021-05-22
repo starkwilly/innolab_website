@@ -6,9 +6,28 @@ import AboutUs from '../../components/AboutUs/AboutUs';
 import HeadlineCard from '../../components/HeadlineCard/HeadlineCard';
 import InnolabCard from '../../components/InnolabCard/InnolabCard';
 
+import { getSections } from "../../_services/strapiService";
+
 import dataObj from './strapi.json';
 
 const Dashboard = () => {
+
+    const [data, setData] = React.useState(null);
+
+    React.useEffect(() => {
+        const getInitialData = async () => {
+            const sectionsRes = await getSections();
+            if (sectionsRes.data) {
+                setData(sectionsRes.data);
+                window.log("Dashboard load data:", sectionsRes);
+            }else{
+                window.log("Dashboard load data FAILED");
+            }
+        }
+        getInitialData();
+    }, []);
+
+    window.log("Dashboard data:", data);
 
     // To be JSON loaded
     /* const aboutContent = {
