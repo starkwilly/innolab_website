@@ -16,7 +16,7 @@ const StartupLocal = () => {
 
     useEffect(() => {
         // Clear localStorage to init session with other usr
-        const user = localStorage.getItem("selectedUser");
+        /* const user = localStorage.getItem("selectedUser");
         if (user !== null) {
             setUserExist(true);
             console.log("Init User: ", user);
@@ -27,7 +27,9 @@ const StartupLocal = () => {
                     console.log(error);
                     history.push("/error");
                 });
-        }
+        } */
+        setUserExist(true);
+        history.push(goto_url);
     }, []);
 
     const handleUserChange = (event) => {

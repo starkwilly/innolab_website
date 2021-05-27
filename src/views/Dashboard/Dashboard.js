@@ -6,84 +6,55 @@ import AboutUs from '../../components/AboutUs/AboutUs';
 import HeadlineCard from '../../components/HeadlineCard/HeadlineCard';
 import InnolabCard from '../../components/InnolabCard/InnolabCard';
 
-import { getSections } from "../../_services/strapiService";
+import { getSectionSingle, getSectionParents } from "../../_services/strapiService";
 
-import dataObj from './strapi.json';
+// import dataObj from './strapi.json';
 
 const Dashboard = () => {
 
-    const [data, setData] = React.useState(null);
+    const [dataObj, setDataObj] = React.useState(null);
+    // PENDING USE STORE
+    // const isDataLoading = useSelector((state) => state);
 
     React.useEffect(() => {
         const getInitialData = async () => {
-            const sectionsRes = await getSections();
-            if (sectionsRes.data) {
-                setData(sectionsRes.data);
-                window.log("Dashboard load data:", sectionsRes);
+            let dataTmp = {sections:[]};
+            // setDataObj({sections:[]});
+            const ret = await getSectionSingle(1);
+            if (ret.data) {
+                dataTmp = {...dataTmp, sections:[...dataTmp.sections, ret.data]};
+                // setDataObj({...dataObj, sections:[...dataObj.sections, ret.data]});
             }else{
-                window.log("Dashboard load data FAILED");
+                // window.log("load data FAILED");
             }
+            const ret1 = await getSectionParents();
+            if (ret1.data) {
+                dataTmp = {...dataTmp, sections:[...dataTmp.sections, ...ret1.data]};
+                // setDataObj({...dataObj, sections:[...dataObj.sections, ret1.data]});
+            }else{
+                // window.log("load data FAILED");
+            }
+            setDataObj(dataTmp);
+            window.log("Dashboard DATA:", dataTmp);
         }
         getInitialData();
     }, []);
 
-    window.log("Dashboard data:", data);
-
-    // To be JSON loaded
-    /* const aboutContent = {
-        id: "About us",
-        header: "About us",
-        content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-        tile: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    };
-    // const sections = ['News', 'About us', 'Products', 'Services', 'Innovate', 'Contact us'];
-    const sectionCards = [
-        { id: "Products", header:"Products|& more|& more", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.", source: "Someone said", notes: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."},
-        { id: "Services", header:"Services", text: "text2", source: "someone"},
-        { id: "Innovate", header:"Innovate", text: "text3", source: "someone"},
-    ];
-    
-    const subSectionCard = [
-        { id: "a", header:"BlaBLa1", title: "titulo1", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", cardType: "cardTypeLink"},
-        { id: "b", header:"BlaBLa2",title: "titulo2", text: "text2", cardType: "cardTypeImage"},
-        { id: "c", header:"BlaBLa3" ,title: "titulo3", text: "text3", cardType: "cardTypeVideo"}, 
-    ];
-
-    const subSectionTileCard = [
-        { id: "a", title: "titulo1", image:"experience_one.svg", text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.", cardType: "cardTypeLink"},
-        { id: "b", title: "titulo2", image:"experience_one.svg", text: "text2", cardType: "cardTypeImage"},
-        { id: "c", title: "titulo3", image:"experience_one.svg", text: "text3", cardType: "cardTypeVideo"}, 
-    ];
-
-    const jsonObj = JSON.stringify(
-        sectionCards.map(sectionItm => 
-            ({...sectionItm,
-                subSectionCards: subSectionCard.map(subSectionItm => 
-                    ({...subSectionItm,
-                        subSectionTileCards: subSectionTileCard,
-                    }))
-            }))
-    );
-    window.log(jsonObj);
-
-    const dataObj = JSON.parse(jsonObj); */
-    // window.log(dataObj);
-    // const aboutContent = dataObj[0];
-
     return (
+        (dataObj) &&
         <>         
         <Hero  />
         <Container className="dashboard text-white">
-        {dataObj.map((section, sectionId) => (
-            (section.innolab_website_cards.length > 0)
+        {dataObj.sections.map((section, sectionId) => (
+            (section.innolab_section_children && section.innolab_section_children.length > 0)
             ? (
-            <Container id={`${section.SectionCategorie}`} key={`${section.id}`} className="section" fluid>
+            <Container id={`${section.key}`} key={`${section.key}`} className="section" fluid>
                 <HeadlineCard cardInfo={section} cardId={`${sectionId}`}/>
-                {section.innolab_website_cards.map((itm, cardIdx) => <InnolabCard cardInfo={itm}  cardId={`${sectionId}-${cardIdx}`} key={cardIdx}/>)}
+                {section.innolab_section_children.map((itm, cardIdx) => <InnolabCard cardInfo={itm}  cardId={`${sectionId}-${cardIdx}`} key={cardIdx}/>)}
             </Container>
             )
             : (
-            <AboutUs cardInfo={section} cardId={`${section.SectionCategorie}`} key={`${section.id}`}/>
+            <AboutUs cardInfo={section} cardId={`${section.key}`} key={`${section.id}`}/>
             )
         ))}
         </Container>

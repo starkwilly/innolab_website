@@ -6,7 +6,7 @@
 }
 .cardAboutBase {
     margin-bottom: 4rem;
-    height: 30rem;
+    min-height: 30rem;
     box-shadow: 0 1rem 3rem rgb(0 0 0 / 50%);
 }
 .cardAboutBg {
