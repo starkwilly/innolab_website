@@ -10,7 +10,7 @@ const RenderMarkdown = (props) => {
         <ReactMarkdown
             {...props}
             linkTarget={href => (RegExp(/^\/+/).test(href)) ? null : "_blank"}
-            transformImageUri={src => process.env.REACT_APP_API+src}
+            // transformImageUri={src => process.env.REACT_APP_API+src}
         >{children}</ReactMarkdown>
     )
 }

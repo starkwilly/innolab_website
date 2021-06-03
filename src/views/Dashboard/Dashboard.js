@@ -19,23 +19,20 @@ const Dashboard = () => {
     React.useEffect(() => {
         const getInitialData = async () => {
             let dataTmp = {sections:[]};
-            // setDataObj({sections:[]});
             const ret = await getSectionSingle(1);
             if (ret.data) {
                 dataTmp = {...dataTmp, sections:[...dataTmp.sections, ret.data]};
-                // setDataObj({...dataObj, sections:[...dataObj.sections, ret.data]});
             }else{
                 // window.log("load data FAILED");
             }
             const ret1 = await getSectionParents();
             if (ret1.data) {
                 dataTmp = {...dataTmp, sections:[...dataTmp.sections, ...ret1.data]};
-                // setDataObj({...dataObj, sections:[...dataObj.sections, ret1.data]});
             }else{
                 // window.log("load data FAILED");
             }
             setDataObj(dataTmp);
-            window.log("Dashboard DATA:", dataTmp);
+            // window.log("Dashboard DATA:", dataTmp);
         }
         getInitialData();
     }, []);

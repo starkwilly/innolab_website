@@ -37,7 +37,7 @@ const AccordionCard = (props) => {
                                 <div className="col-6 card-text">
                                     <RenderMarkdown >{accordionItm.BodyContent}</RenderMarkdown>
                                     {(accordionItm.Media.length > 0) && (
-                                        <CardMediaContainer mediaInfo={''}/>
+                                        <CardMediaContainer mediaInfo={accordionItm.Media}/>
                                     )}
                                 </div>
                             </div>

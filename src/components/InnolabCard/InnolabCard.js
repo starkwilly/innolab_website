@@ -25,7 +25,7 @@ const InnolabCard = (props) => {
                             <RenderMarkdown className="card-text">{cardInfo.BodyContent}</RenderMarkdown>
                         </div>
                         {(cardInfo.Media.length > 0) && (
-                            <CardMediaContainer mediaInfo={''}/>
+                            <CardMediaContainer mediaInfo={cardInfo.Media}/>
                         )}
                     </ScrollAnimation>
                 </div>
