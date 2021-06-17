@@ -1,5 +1,7 @@
 import baseApi from '../_helpers/baseApi';
 
+
+
 export function getGlobals() {
     return baseApi.get('/innolab-globals');
 }

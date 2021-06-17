@@ -10,6 +10,8 @@
   ],
   "author": "Innolab Team<innolab.cr@accenture.com>",
   "dependencies": {
+    "@azure/msal-browser": "^2.14.2",
+    "@azure/msal-react": "^1.0.0",
     "@fortawesome/fontawesome-svg-core": "^1.2.32",
     "@fortawesome/free-regular-svg-icons": "^5.15.1",
     "@fortawesome/free-solid-svg-icons": "^5.15.1",
@@ -44,6 +46,8 @@
     "prestart:dev": "npm install",
     "start:dev": "run-p start start:auth",
     "start:auth": "node _server/index.js",
+    "https:win": "set HTTPS=true&npm run start:dev",
+    "https:mac": "export HTTPS=true&& npm run start:dev",
     "build": "react-scripts build",
     "build:dev": "env-cmd -f .env.dev npm run build",
     "build:qa": "env-cmd -f .env.qa npm run build",

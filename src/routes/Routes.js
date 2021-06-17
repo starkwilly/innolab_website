@@ -1,4 +1,4 @@
-import React, { lazy, Suspense } from "react";
+import React, {  Suspense } from "react";
 import { Router, Switch, Redirect } from "react-router-dom";
 import { history } from "_helpers/history";
 import RouteWithLayout from "../common/RouteWithLayout/RouteWithLayout";
@@ -6,10 +6,11 @@ import { Main as MainLayout, Minimal as MinimalLayout } from "../layouts";
 import Dashboard from "../views/Dashboard/Dashboard";
 import NotFound from "../views/NotFound/NotFound";
 import Forbidden from "../views/Forbidden/Forbidden";
+import Startup from "../views/Startup/Startup";
 import Spinner from "react-bootstrap/Spinner";
 
-const env = process.env.REACT_APP_ENV;
-const Startup = (env === 'local') ? lazy(() => import('../views/Startup/StartupLocal')) : lazy(() => import('../views/Startup/Startup'));
+
+
 
 const Routes = () => {
     return (
