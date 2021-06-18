@@ -32,11 +32,12 @@ function Startup() {
 
 
     useEffect(() => {
-        console.log("Startup: mounted...");
+        //console.log("Startup: mounted...");
 
         // handle auth redired/do all initial setup for msal
         instance
             .handleRedirectPromise()
+            // eslint-disable-next-line no-unused-vars
             .then((authResult) => {
                 // Check if user signed in
                 const account = instance.getActiveAccount();
@@ -46,8 +47,8 @@ function Startup() {
                     ? localStorage.getItem(process.env.REACT_APP_LAST_URL)
                     : "/dashboard";
 
-                console.log('Startup-> auth result: ', authResult);
-                console.log('Startup-> current account: ', account);
+                //console.log('Startup-> auth result: ', authResult);
+                //console.log('Startup-> current account: ', account);
 
                 if (!account) {
                     // Redirect to the login flow
