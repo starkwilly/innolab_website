@@ -19,7 +19,7 @@ const Dashboard = () => {
     React.useEffect(() => {
         const getInitialData = async () => {
             let dataTmp = {sections:[]};
-            const ret = await getSectionSingle(1);
+            const ret = await getSectionSingle(2);
             if (ret.data) {
                 dataTmp = {...dataTmp, sections:[...dataTmp.sections, ret.data]};
             }else{
