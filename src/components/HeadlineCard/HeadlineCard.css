@@ -13,6 +13,7 @@ impo
     background-position: center;
     background-position-x: 30%;
     background-repeat: no-repeat;
+    margin-bottom: 10em;
 }
 .cardHeadlineHeader h1:nth-child(odd) {
     color: white;
