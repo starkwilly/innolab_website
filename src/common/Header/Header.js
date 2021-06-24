@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import Scrollchor from 'react-scrollchor'; // *** MODIFIED: node_modules/react-scrollchor/lib/scrollchor.js || "createClass(Scrollchor,..." componentWillReceiveProps and getDerivedStateFromProps removed
 import Navbar from "react-bootstrap/Navbar";
 import NavItem from "react-bootstrap/NavItem";
-import NewsList from "../NewsList/NewsList";
+//import NewsList from "../NewsList/NewsList";
 import "./Header.scss";
 
 import { getGlobals, getSectionParents } from "../../_services/strapiService";
@@ -38,8 +38,8 @@ const Header = () => {
         <Navbar className="navbarTop navbar fixed-top" variant="dark">
             <Navbar.Brand><Scrollchor to="#" className="nav-link text-reset"><h2 className="font-weight-bolder pt-2">{globalData.NavbarTitle}</h2></Scrollchor></Navbar.Brand>
             
-            <NavItem className="ml-auto"><NewsList/></NavItem>
-            <NavItem><Scrollchor to="#about-us" className="nav-link">About us</Scrollchor></NavItem>
+            <NavItem className="ml-auto"></NavItem>
+            <NavItem><Scrollchor to="#what-we-do" className="nav-link">What we do</Scrollchor></NavItem>
             { sectionsData.map(item => (
                 <NavItem key={`#${item.key}`}><Scrollchor to={`#${item.key}`} className="nav-link">{item.Title}</Scrollchor></NavItem>
             ))}
