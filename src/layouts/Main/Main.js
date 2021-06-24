@@ -1,22 +1,24 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React from "react";
+import PropTypes from "prop-types";
 // import { useSelector } from 'react-redux';
-import Header from '../../common/Header/Header';
-import Footer from '../../common/Footer/Footer';
-// import { history } from '_helpers/history';
+import Header from "../../common/Header/Header";
+import Footer from "../../common/Footer/Footer";
+
 
 import { getGlobals } from "../../_services/strapiService";
-
-import Container from 'react-bootstrap/Container';
+import Container from "react-bootstrap/Container";
+import { useMsal } from "@azure/msal-react";
+import { history } from "_helpers/history";
 
 const Main = ({ children }) => {
-    /* const info = useSelector(state => state.auth.info);
+    const { instance } = useMsal();
+    const account = instance.getActiveAccount();
 
-    if (info === null) {
-        history.push('/');
+    if (!account) {
+        history.push("/");
         return null;
-    } */
-    const fakeUser = { name: 'info.firstname', lastname: 'info.lastname' };
+    }
+    const fakeUser = { name: "info.firstname", lastname: "info.lastname" };
 
     const [globalData, setGlobalData] = React.useState(null);
     // PENDING USE STORE
@@ -27,27 +29,37 @@ const Main = ({ children }) => {
             const ret = await getGlobals();
             if (ret.data) {
                 setGlobalData(ret.data);
-            }else{
+            } else {
                 // window.log("load data FAILED");
             }
-        }
+        };
         getInitialData();
     }, []);
 
     return (
-        globalData &&
-        <>
-            <Header user={fakeUser}></Header>
-            <Container className="mainContainer p-0" style={(globalData.ImageBg) ? {backgroundImage:`url(${process.env.REACT_APP_API}${globalData.ImageBg.url}`} : {}}>
-                {children}
-            </Container>
-            <Footer />
-        </>
+        globalData && (
+            <>
+                <Header user={fakeUser}></Header>
+                <Container
+                    className="mainContainer p-0"
+                    style={
+                        globalData.ImageBg
+                            ? {
+                                backgroundImage: `url(${process.env.REACT_APP_API}${globalData.ImageBg.url}`,
+                            }
+                            : {}
+                    }
+                >
+                    {children}
+                </Container>
+                <Footer />
+            </>
+        )
     );
 };
 
 Main.propTypes = {
-    children: PropTypes.node
+    children: PropTypes.node,
 };
 
 export default Main;

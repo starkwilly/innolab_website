@@ -1,5 +1,8 @@
+impo
+
 .cardHeadlineBase {
     margin-bottom: 4rem;
+   padding: 2%;
     min-height: 30rem;
     box-shadow: 0 1rem 3rem rgb(0 0 0 / 50%);
 }
@@ -31,3 +34,4 @@
 .card-body span.cardHeadlineSource {
     font-size: 1.3rem;
 }
+

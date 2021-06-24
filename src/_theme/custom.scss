@@ -332,7 +332,7 @@ strong,
     }
     .card-title {
       color: $primary;
-      font-size: 24px;
+      font-size: 28px;
     }
     .card-text {
       font-size: 14px;
@@ -468,7 +468,7 @@ tr:hover {
 }
 
 .footer {
-    background-color: $white;
+    background-color: #15181B;
     box-shadow: 0px -2px 16px 0px rgba(33, 43, 54, 0.1);
     min-height: 64px;
 }
@@ -479,16 +479,22 @@ tr:hover {
         &.active {
           color: $silver !important;
         }
+      
     }
 }
+
+
   
 .footer-brand {
+  font-weight: $font-weight-bold;
+  color: white;
     min-height: 20px;
     max-width: 200px;
     .nav-item {
         &:first-child {
             font-weight: $font-weight-bold;
             border-right: solid 2px $primary;
+            
         }
     }
 }
@@ -520,3 +526,11 @@ tr:hover {
   background-position: top center;
 }
 
+
+.contactFooter{
+  font-weight: $font-weight-bold;
+  margin: 0% 1% 0% 0%;
+  padding: 0% 1% 0% 0%;
+  font-size: 2em;
+  color: white;
+}

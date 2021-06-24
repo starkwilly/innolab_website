@@ -4,12 +4,12 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import GdprDialog from "../../common/GdprDialog";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCoffee } from "@fortawesome/free-solid-svg-icons";
+import { faYammer } from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
     const gdprDate = localStorage.getItem("gdprDate");
     const [gdprOpen, setGdprOpen] = useState(gdprDate === null);
-    const currentYear = new Date().getFullYear();
+    
 
     return (
         <>
@@ -20,18 +20,22 @@ const Footer = () => {
                 id="contact-us"
             >
                 <Container>
-                    <img
-                        className="mr-1 mr-md-2 mr-lg-5"
-                        src={`${process.env.PUBLIC_URL}/static/images/accenture-black.png`}
-                        alt="Accenture"
-                    />
+                            <span className="contactFooter">
+                                Contact Us
+                            </span>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
 
                     <Navbar.Collapse>
                         <Navbar.Text className="mb-1 mb-sm-1 mb-md-0">
+                            
                             <span>
-                                &copy; {currentYear} Accenture. All Rights Reserved.
+                                <a>https://go.accenture.com/innolabsupport</a>
                             </span>
+                            <br></br>
+                            <span>
+                                  <a>innolabapps@accenture.com</a>
+                            </span>
+                           
                         </Navbar.Text>
                         <Nav className="ml-3 mr-auto footer-links">
                             <Nav.Item>
@@ -39,11 +43,17 @@ const Footer = () => {
                             </Nav.Item>
                         </Nav>
                         <Nav className="footer-brand">
-                            <Nav.Item className="px-1">
-                                <FontAwesomeIcon icon={faCoffee} size="lg" />
-                                <span className="ml-1">Innolab</span>
+
+                        <span className="ml-1">Innolab</span>
+                           <Nav.Item className="px-1">
+                             <p>Follow us :</p>
                             </Nav.Item>
-                            <Nav.Item className="px-1">React code base</Nav.Item>
+                            <Nav.Item className="px-1">
+                                <FontAwesomeIcon icon={faYammer} size="lg" />
+                            </Nav.Item>
+                            <Nav.Item className="px-1">
+                             <FontAwesomeIcon icon={faYammer} size="lg" />
+                            </Nav.Item>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
