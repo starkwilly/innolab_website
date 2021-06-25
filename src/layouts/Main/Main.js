@@ -7,17 +7,17 @@ import Footer from "../../common/Footer/Footer";
 
 import { getGlobals } from "../../_services/strapiService";
 import Container from "react-bootstrap/Container";
-//import { useMsal } from "@azure/msal-react";
-//import { history } from "_helpers/history";
+import { useMsal } from "@azure/msal-react";
+import { history } from "_helpers/history";
 
 const Main = ({ children }) => {
-    //const { instance } = useMsal();
-    //const account = instance.getActiveAccount();
+    const { instance } = useMsal();
+    const account = instance.getActiveAccount();
 
-   // if (!account) {
-   //     history.push("/");
-    //    return null;
-    //}
+   if (!account) {
+       history.push("/");
+       return null;
+    }
     const fakeUser = { name: "info.firstname", lastname: "info.lastname" };
 
     const [globalData, setGlobalData] = React.useState(null);
@@ -38,10 +38,13 @@ const Main = ({ children }) => {
 
     return (
         globalData && (
-            <>
+            <>   
+                
                 <Header user={fakeUser}></Header>
                 <Container
-                    className="mainContainer p-0"
+
+                 
+                    className="mainContainer  p-0"
                     style={
                         globalData.ImageBg
                             ? {
