@@ -2,6 +2,9 @@
     margin-bottom: 3rem;
     min-height: 30rem;
     box-shadow: 0 1rem 3rem rgb(0 0 0 / 50%);
+    max-width: 87%;
+    margin: 0 auto;
+  
 }
 .cardBg {
     border-width: 2px;
