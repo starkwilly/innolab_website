@@ -2,7 +2,7 @@
 
 .cardHeadlineBase {
     margin-bottom: 4rem;
-   padding: 2%;
+     padding: 2%;
     min-height: 30rem;
     box-shadow: 0 1rem 3rem rgb(0 0 0 / 50%);
 }
@@ -13,7 +13,6 @@
     background-position: center;
     background-position-x: 30%;
     background-repeat: no-repeat;
-    
     padding: 2%;
     max-width: 91%;
     margin: 0 auto;
