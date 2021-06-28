@@ -10,8 +10,9 @@ const isEdge = msedge > 0;
 const isFirefox = firefox > 0; // Only needed if you need to support the redirect flow in Firefox incognito
 
 export const msalConfig = {
+
     auth: {
-        clientId: "d0dde372-bc44-490b-be0d-ea8dbd53bfbd",
+        clientId: (process.env.REACT_APP_ENV === 'prod') ? "91efcc12-0f6e-45da-855d-bb4975a573ff" : "d0dde372-bc44-490b-be0d-ea8dbd53bfbd",
         authority: `${process.env.REACT_APP_AUTH_API}`,
         redirectUri: `${process.env.REACT_APP_REDIRECT_URI}`,
     },
