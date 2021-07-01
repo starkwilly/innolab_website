@@ -5,6 +5,7 @@ import "./Dashboard.css";
 import AboutUs from '../../components/AboutUs/AboutUs';
 import HeadlineCard from '../../components/HeadlineCard/HeadlineCard';
 import InnolabCard from '../../components/InnolabCard/InnolabCard';
+import { Link } from 'react-router-dom';
 
 import { getSectionSingle, getSectionParents } from "../../_services/strapiService";
 
@@ -41,7 +42,9 @@ const Dashboard = () => {
         (dataObj) &&
         <>         
         <Hero  />
+        <Link to="../public/downloadables/test.zip" target="_blank" download>Download</Link>
         <Container className="dashboard text-white">
+       
         {dataObj.sections.map((section, sectionId) => (
             (section.innolab_section_children && section.innolab_section_children.length > 0)
             ? (
