@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './CardMediaContainer.css';
+import { Link } from 'react-router-dom';
+
 
 const CardMediaContainer = (props) => {
     const {mediaInfo} = props;
@@ -16,9 +18,10 @@ const CardMediaContainer = (props) => {
                     <div className="row">
                         <div className="col">
                             { RegExp(/^https?:\/\/[^$\s]+/i).test(mediaItm.caption)
-                                ?   <a href={mediaItm.caption} target="_blank" rel="noopener noreferrer">
+                                ?   <Link to={mediaItm.caption} target="_blank" download rel="noopener noreferrer">
                                         <img src={`${process.env.REACT_APP_API}${mediaItm.url}`} alt={mediaItm.alternativeText} width="256px" height="144px"/>
-                                    </a>
+                                    </Link>
+                                     
                                 :       <img src={`${process.env.REACT_APP_API}${mediaItm.url}`} alt={mediaItm.alternativeText} width="256px" height="144px"/>
                             }
                         </div>
