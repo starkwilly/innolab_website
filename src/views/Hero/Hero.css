@@ -11,3 +11,27 @@
 .outstandingFont {
   text-shadow: #676767 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px
 }
+
+
+.ideasCta{
+  margin: 2% 2% 0% 91%;
+  padding:2em 2em 2em 2em;
+  
+  
+}
+
+.ideasCta button{
+  margin: 2em 2em 2em 2em;
+  padding: 1em 1em 1em 1em;
+  text-shadow: #676767 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px;
+  background-color: #F700FF;
+
+}
+
+.ideasCta button:hover{
+  text-shadow: #676767 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px;
+  background-color: #F700FF;
+
+
+}
+

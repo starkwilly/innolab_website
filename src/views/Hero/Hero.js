@@ -2,9 +2,11 @@
 import React from 'react'
 import {Jumbotron} from 'react-bootstrap'
 import "./Hero.css"
+import Button from 'react-bootstrap/Button'
 
 const Hero = () => { 
     return (
+        <>
         <Jumbotron className="jumbotron text-white p-4" fluid>
             <div className="pt-5">
                 <h1 className="display-4 text-uppercase font-weight-bolder">
@@ -23,6 +25,10 @@ const Hero = () => {
                 </div>
             </div>
         </Jumbotron>
+        <div className="fixed-bottom ideasCta">  
+           <Button>idea</Button>
+        </div>
+        </>
     );
   }  
 
