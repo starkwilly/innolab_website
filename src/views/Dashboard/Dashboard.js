@@ -44,8 +44,11 @@ const Dashboard = () => {
         
         <Hero  />
         <div className="stars"></div>
-        <Container className="dashboard text-white">
         <div className="stars2"></div>
+        
+        <Container className="dashboard text-white">
+       
+
         {dataObj.sections.map((section, sectionId) => (
             (section.innolab_section_children && section.innolab_section_children.length > 0)
             ? (
