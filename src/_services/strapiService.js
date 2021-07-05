@@ -16,9 +16,7 @@ export function getSectionParents() {
 
 
 export function getGlobalsJson() {
-    fetch('https://innolab-stage.accenture.com/innolab-dev-api/strapiResponses/globals.json')
-  .then(response => response.json())
-  .then(data => console.log("fetch response" + data));
+    
 
     return baseApi.get('strapiResponses/globals.json');
     
