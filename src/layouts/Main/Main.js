@@ -5,7 +5,7 @@ import Header from "../../common/Header/Header";
 import Footer from "../../common/Footer/Footer";
 
 
-import { getGlobals } from "../../_services/strapiService";
+import { getGlobals , getGlobalsJson } from "../../_services/strapiService";
 import Container from "react-bootstrap/Container";
 import { useMsal } from "@azure/msal-react";
 import { history } from "_helpers/history";
@@ -32,6 +32,7 @@ const Main = ({ children }) => {
             } else {
                 // window.log("load data FAILED");
             }
+            getGlobalsJson();
         };
         getInitialData();
     }, []);
@@ -66,3 +67,5 @@ Main.propTypes = {
 };
 
 export default Main;
+
+
