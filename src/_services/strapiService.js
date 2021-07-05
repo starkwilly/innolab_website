@@ -17,7 +17,7 @@ export function getSectionParents() {
 
 export function getGlobalsJson() {
 
-    return baseApi.get('strapiResponses/innolab-globals.json');
+    return baseApi.get('strapiResponses/globals.json');
     
 }
 
