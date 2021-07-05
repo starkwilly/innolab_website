@@ -15,26 +15,9 @@ export function getSectionParents() {
 }
 
 
-
 export function getGlobalsJson() {
-    return getData.get('https://innolab-stage.accenture.com/innolab-dev/strapiResponses/innolab-globals/');
+
+    return baseApi.get('strapiResponses/innolab-globals.json');
+    
 }
 
-const getData=()=>{
-    fetch('data.json'
-    ,{
-      headers : { 
-        'Content-Type': 'application/json',
-        'Accept': 'application/json'
-       }
-    }
-    )
-      .then(function(response){
-        console.log(response)
-        return response.json();
-      })
-      .then(function(myJson) {
-        console.log(myJson);
-        
-      });
-  }
