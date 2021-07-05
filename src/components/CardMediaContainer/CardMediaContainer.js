@@ -19,10 +19,10 @@ const CardMediaContainer = (props) => {
                         <div className="col">
                             { RegExp(/^https?:\/\/[^$\s]+/i).test(mediaItm.caption)
                                 ?   <Link to={mediaItm.caption} target="_blank" download rel="noopener noreferrer">
-                                        <img src={`${process.env.REACT_APP_API}${mediaItm.url}`} alt={mediaItm.alternativeText} width="256px" height="144px"/>
+                                        <img src={mediaItm.url} alt={mediaItm.alternativeText} width="256px" height="144px"/>
                                     </Link>
                                      
-                                :       <img src={`${process.env.REACT_APP_API}${mediaItm.url}`} alt={mediaItm.alternativeText} width="256px" height="144px"/>
+                                :       <img src={mediaItm.url} alt={mediaItm.alternativeText} width="256px" height="144px"/>
                             }
                         </div>
                     </div>
