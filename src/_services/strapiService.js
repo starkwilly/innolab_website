@@ -13,3 +13,9 @@ export function getSectionSingle(id) {
 export function getSectionParents() {
     return baseApi.get('/innolab-section-parents');
 }
+
+
+let jsonData = 0;
+export function getGlobalsJson() {
+    return jsonData.get('/innolab-globals');
+}
