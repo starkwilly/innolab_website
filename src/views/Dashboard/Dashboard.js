@@ -36,11 +36,11 @@ const Dashboard = () => {
             // window.log("Dashboard DATA:", dataTmp);
         }
         getInitialData();
-        fetch('https://innolab-stage.accenture.com/innolab-dev-api/strapiResponses/globals.json')
+        fetch('https://innolab-stage.accenture.com/innolab-dev/strapiResponses/globals.json')
         .then(response => response.json())
         .then(data => console.log("fetch response" + data));
 
-        fetch('https://innolab-stage.accenture.com/innolab-dev-api/strapiResponses/globals.json', {
+        fetch('https://innolab-stage.accenture.com/innolab-dev/strapiResponses/globals.json', {
             method: 'GET',
             headers: {
               'Content-Type': 'application/json',
