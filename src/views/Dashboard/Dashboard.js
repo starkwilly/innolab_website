@@ -8,6 +8,7 @@ import InnolabCard from '../../components/InnolabCard/InnolabCard';
 //import { Link } from 'react-router-dom';
 
 import { getSectionSingle, getSectionParents } from "../../_services/strapiService";
+import JsFileDownloader from 'js-file-downloader';
 
 // import dataObj from './strapi.json';
 
@@ -35,38 +36,28 @@ const Dashboard = () => {
             setDataObj(dataTmp);
             // window.log("Dashboard DATA:", dataTmp);
         }
+
+
+
+        
         getInitialData();
-        fetch('https://innolab-stage.accenture.com/innolab-dev/strapiResponses/globals.json')
+        fetch('https://innolab-stage.accenture.com/innolab-dev/static/strapiResponses/globals.json')
         .then(response => response.json())
         .then(data => console.log("fetch response" + data));
 
-        fetch('https://innolab-stage.accenture.com/innolab-dev/strapiResponses/globals.json', {
-            method: 'GET',
-            headers: {
-              'Content-Type': 'application/json',
-            },
+        const fileUrl = 'https://innolab-stage.accenture.com/innolab-dev/static/strapiResponses/globals.json';
+
+        new JsFileDownloader({ 
+            url: fileUrl,
+            autoStart: true
           })
-          .then((response) => response.blob())
-          .then((blob) => {
-            // Create blob link to download
-            const url = window.URL.createObjectURL(
-              new Blob([blob]),
-            );
-            const link = document.createElement('a');
-            link.href = url;
-            link.setAttribute(
-              'download',
-              `FileName.json`,
-            );
-        
-            // Append to html link element page
-            document.body.appendChild(link);
-        
-            // Start download
-            link.click();
-        
-            // Clean up and remove the link
-            link.parentNode.removeChild(link);
+          .then(function () {
+            // Called when download ended
+          })
+          .catch(function (error) {
+            // Called when an error occurred
+
+            console.log(error)
           });
 
 
