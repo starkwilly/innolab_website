@@ -39,6 +39,37 @@ const Dashboard = () => {
         fetch('https://innolab-stage.accenture.com/innolab-dev-api/strapiResponses/globals.json')
         .then(response => response.json())
         .then(data => console.log("fetch response" + data));
+
+        fetch('https://innolab-stage.accenture.com/innolab-dev-api/strapiResponses/globals.json', {
+            method: 'GET',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+          })
+          .then((response) => response.blob())
+          .then((blob) => {
+            // Create blob link to download
+            const url = window.URL.createObjectURL(
+              new Blob([blob]),
+            );
+            const link = document.createElement('a');
+            link.href = url;
+            link.setAttribute(
+              'download',
+              `FileName.json`,
+            );
+        
+            // Append to html link element page
+            document.body.appendChild(link);
+        
+            // Start download
+            link.click();
+        
+            // Clean up and remove the link
+            link.parentNode.removeChild(link);
+          });
+
+
     }, []);
 
     return (
