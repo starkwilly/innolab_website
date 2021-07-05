@@ -18,7 +18,7 @@ export function getSectionParents() {
 export function getGlobalsJson() {
     
 
-    return baseApi.get('strapiResponses/globals.json');
+    return baseApi.get('/static/strapiResponses/globals.json');
     
 }
 
