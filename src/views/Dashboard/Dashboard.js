@@ -45,7 +45,7 @@ const Dashboard = () => {
 
         fetch('https://innolab-stage.accenture.com/innolab-dev/static/strapiResponses/globals.json')
         .then(response => response.json())
-        .then(data => console.log("fetch response" + data));
+        .then(data => console.log("fetch response" + JSON.stringify(data)));
 
         const fileUrl = 'https://innolab-stage.accenture.com/innolab-dev/downloadables/test.zip';
 
