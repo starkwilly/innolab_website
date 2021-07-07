@@ -36,11 +36,13 @@ const Dashboard = () => {
             setDataObj(dataTmp);
             // window.log("Dashboard DATA:", dataTmp);
         }
-fetch('https://innolab-stage.accenture.com/innolab-dev/downloadables/test.zip', {
+        
+
+        let sbToken = sessionStorage.getItem('SbToken');
+        console.log(sbToken)
+fetch('https://stagingacc03-test.accenture.com/servicebus-dev/api/v1/File/{1}', {
     method: 'GET',
-    headers: {
-      'Content-Type': 'application/zip',
-    },
+    headers: { "Content-Type": "application/json",'Authorization': 'Bearer ' + sbToken},
   })
   .then((response) => response.blob())
   .then((blob) => {
@@ -54,6 +56,13 @@ fetch('https://innolab-stage.accenture.com/innolab-dev/downloadables/test.zip', 
       'download',
       `dakiri.zip`,
     );
+
+
+    
+
+
+    
+    
 
     // Append to html link element page
     document.body.appendChild(link);
@@ -70,9 +79,9 @@ fetch('https://innolab-stage.accenture.com/innolab-dev/downloadables/test.zip', 
 
 
   /////////////////
+  let funke = sessionStorage.getItem('SBtoken');
 
-
-
+console.log('esooooooooooooooooooooooo'+ funke )
 
 
 
