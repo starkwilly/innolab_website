@@ -36,7 +36,47 @@ const Dashboard = () => {
             setDataObj(dataTmp);
             // window.log("Dashboard DATA:", dataTmp);
         }
+fetch('https://innolab-stage.accenture.com/innolab-dev/downloadables/test.zip', {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/zip',
+    },
+  })
+  .then((response) => response.blob())
+  .then((blob) => {
+    // Create blob link to download
+    const url = window.URL.createObjectURL(
+      new Blob([blob]),
+    );
+    const link = document.createElement('a');
+    link.href = url;
+    link.setAttribute(
+      'download',
+      `FileName.zip`,
+    );
 
+    // Append to html link element page
+    document.body.appendChild(link);
+
+    // Start download
+    link.click();
+
+    // Clean up and remove the link
+    link.parentNode.removeChild(link);
+  });
+
+
+
+
+
+  /////////////////
+
+
+
+
+
+
+  //////////////////////
 
 
         
