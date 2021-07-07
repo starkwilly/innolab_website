@@ -3,6 +3,8 @@ import React from 'react'
 import {Jumbotron} from 'react-bootstrap'
 import "./Hero.css"
 import Button from 'react-bootstrap/Button'
+           
+import descargarDikiri from '../Dashboard/Dashboard'
 
 const Hero = () => { 
     return (
@@ -26,7 +28,10 @@ const Hero = () => {
             </div>
         </Jumbotron>
         <div className="fixed-bottom ideasCta">  
-           <Button onclick="descargarDikiri()">idea</Button>
+           <Button onclick={descargarDikiri()}>idea</Button>
+
+           
+
         </div>
         </>
     );
