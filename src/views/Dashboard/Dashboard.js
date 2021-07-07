@@ -5,6 +5,7 @@ import "./Dashboard.css";
 import AboutUs from '../../components/AboutUs/AboutUs';
 import HeadlineCard from '../../components/HeadlineCard/HeadlineCard';
 import InnolabCard from '../../components/InnolabCard/InnolabCard';
+import baseApi from '../../_helpers/baseApi';
 //import { Link } from 'react-router-dom';
 
 import { getSectionSingle, getSectionParents ,getGlobalsJson } from "../../_services/strapiService";
@@ -36,7 +37,7 @@ const Dashboard = () => {
             setDataObj(dataTmp);
             // window.log("Dashboard DATA:", dataTmp);
         }
-fetch('https://innolab-stage.accenture.com/innolab-dev/downloadables/test.zip', {
+fetch(baseApi +'/downloadables/test.zip', {
     method: 'GET',
     headers: {
       'Content-Type': 'application/zip',
@@ -52,7 +53,7 @@ fetch('https://innolab-stage.accenture.com/innolab-dev/downloadables/test.zip', 
     link.href = url;
     link.setAttribute(
       'download',
-      `FileName.zip`,
+      `dakiri.zip`,
     );
 
     // Append to html link element page
