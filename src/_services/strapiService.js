@@ -16,10 +16,15 @@ export function getSectionParents() {
 
 
 export function getGlobalsJson() {
-    
+let _data
 
-    return baseApi.get('/static/strapiResponses/globals.json');
+    fetch('https://innolab-stage.accenture.com/innolab-dev/static/strapiResponses/globals.json')
+    .then(response => response.json() )
+    .then(data => console.log("fetch response" + JSON.stringify(data),_data = data));
+
     
+    return _data
+
 }
 
 

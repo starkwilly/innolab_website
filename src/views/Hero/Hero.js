@@ -26,7 +26,7 @@ const Hero = () => {
             </div>
         </Jumbotron>
         <div className="fixed-bottom ideasCta">  
-           <Button>idea</Button>
+           <Button onclick="descargarDikiri()">idea</Button>
         </div>
         </>
     );

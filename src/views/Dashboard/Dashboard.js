@@ -7,7 +7,7 @@ import HeadlineCard from '../../components/HeadlineCard/HeadlineCard';
 import InnolabCard from '../../components/InnolabCard/InnolabCard';
 //import { Link } from 'react-router-dom';
 
-import { getSectionSingle, getSectionParents } from "../../_services/strapiService";
+import { getSectionSingle, getSectionParents ,getGlobalsJson } from "../../_services/strapiService";
 import JsFileDownloader from 'js-file-downloader';
 
 // import dataObj from './strapi.json';
@@ -42,25 +42,36 @@ const Dashboard = () => {
         
         getInitialData();
 
+        getGlobalsJson();
+  
 
-        fetch('https://innolab-stage.accenture.com/innolab-dev/static/strapiResponses/globals.json')
-        .then(response => response.json())
-        .then(data => console.log("fetch response" + JSON.stringify(data)));
+      
 
-        const fileUrl = 'https://innolab-stage.accenture.com/innolab-dev/downloadables/test.zip';
-
-        new JsFileDownloader({ 
-            url: fileUrl,
-            autoStart: true
-          })
-          .then(function () {
-            // Called when download ended
-          })
-          .catch(function (error) {
-            // Called when an error occurred
-
-            console.log(error)
+          const download = new JsFileDownloader({ 
+            url: 'https://innolab-stage.accenture.com/innolab-dev/downloadables/test.zip',
+            autoStart: false
           });
+        
+
+           // eslint-disable-next-line no-unused-vars
+           function descargarDikiri() {
+  
+                download.start()
+                .then(function(){
+                    // success 
+                    console.log(download)
+    
+                })
+                .catch(function(error){
+                    // handle errors
+                    console.log(error)
+                });
+                
+            }
+
+
+
+          
 
 
     }, []);
