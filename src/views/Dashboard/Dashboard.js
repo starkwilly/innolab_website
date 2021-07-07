@@ -8,7 +8,7 @@ import InnolabCard from '../../components/InnolabCard/InnolabCard';
 //import { Link } from 'react-router-dom';
 
 import { getSectionSingle, getSectionParents ,getGlobalsJson } from "../../_services/strapiService";
-import JsFileDownloader from 'js-file-downloader';
+//import JsFileDownloader from 'js-file-downloader';
 
 // import dataObj from './strapi.json';
 
@@ -46,30 +46,6 @@ const Dashboard = () => {
   
 
       
-
-          const download = new JsFileDownloader({ 
-            url: 'https://innolab-stage.accenture.com/innolab-dev/downloadables/test.zip',
-            autoStart: false
-          });
-        
-
-           // eslint-disable-next-line no-unused-vars
-           function descargarDikiri() {
-  
-                download.start()
-                .then(function(){
-                    // success 
-                    console.log(download)
-    
-                })
-                .catch(function(error){
-                    // handle errors
-                    console.log(error)
-                });
-                
-            }
-
-
 
           
 

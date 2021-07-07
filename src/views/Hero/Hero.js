@@ -4,7 +4,36 @@ import {Jumbotron} from 'react-bootstrap'
 import "./Hero.css"
 
            
-import descargarDikiri from '../Dashboard/Dashboard'
+
+import JsFileDownloader from 'js-file-downloader';
+
+
+
+
+
+const download = new JsFileDownloader({ 
+    url: 'https://innolab-stage.accenture.com/innolab-dev/downloadables/test.zip',
+    autoStart: false
+  });
+
+
+   // eslint-disable-next-line no-unused-vars
+   function descargarDikiri() {
+
+        download.start()
+        .then(function(){
+            // success 
+            console.log(download)
+
+        })
+        .catch(function(error){
+            // handle errors
+            console.log(error)
+        });
+        
+    }
+
+
 
 const Hero = () => { 
     return (
