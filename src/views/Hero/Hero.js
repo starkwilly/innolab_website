@@ -18,10 +18,28 @@ function Example() {
     return (
       <>
         <Button variant="primary" onClick={handleShow}>
-          Launch demo modal
+        idea
         </Button>
   
-        <Modal   onEntered  = { function(){ descargarDikiri() }} show={show} onHide={handleClose}>
+        <Modal   onEntered  = { function(){ 
+            const download = new JsFileDownloader({ 
+                url: 'https://innolab-stage.accenture.com/innolab-dev/downloadables/test.zip',
+               autoStart: false
+               });
+         
+         
+                 download.start()
+                 .then(function(){
+                     // success 
+                     console.log(download)
+         
+                 })
+                 .catch(function(error){
+                     // handle errors
+                     console.log(error)
+                 });
+            
+            }} show={show} onHide={handleClose}>
           <Modal.Header closeButton>
             <Modal.Title>Modal heading</Modal.Title>
             
@@ -47,26 +65,6 @@ function Example() {
 
 
    // eslint-disable-next-line no-unused-vars
-   function descargarDikiri() {
-       
-const download = new JsFileDownloader({ 
-    url: 'https://innolab-stage.accenture.com/innolab-dev/downloadables/test.zip',
-    autoStart: false
-  });
-
-
-        download.start()
-        .then(function(){
-            // success 
-            console.log(download)
-
-        })
-        .catch(function(error){
-            // handle errors
-            console.log(error)
-        });
-        
-    }
 
 
 const Hero = () => { 
@@ -91,9 +89,8 @@ const Hero = () => {
             </div>
         </Jumbotron>
         <div className="fixed-bottom ideasCta">  
-           <button onClick={descargarDikiri()}>idea</button>
+         
 
-           <button onClick={() => { console.log("button clicked");}}> idea</button>
            
            <Example>
                
