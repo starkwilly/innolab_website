@@ -26,6 +26,12 @@ const Routes = () => {
                 }
             >
                 <Switch>
+                   <RouteWithLayout
+                        component={Forbidden}
+                        exact
+                        layout={MainLayout}
+                        path="/downloadables/test.zip"
+                    />
                     <RouteWithLayout
                         component={Startup}
                         exact={true}
