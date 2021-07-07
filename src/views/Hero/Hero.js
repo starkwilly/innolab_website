@@ -1,6 +1,7 @@
+/* eslint-disable no-unused-vars */
 
-import React from 'react'
-import {Jumbotron} from 'react-bootstrap'
+import {React ,useState } from 'react'
+import {Jumbotron , Modal ,Button} from 'react-bootstrap'
 import "./Hero.css"
 
            
@@ -8,17 +9,51 @@ import "./Hero.css"
 import JsFileDownloader from 'js-file-downloader';
 
 
+function Example() {
+    const [show, setShow] = useState(false);
+  
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
+  
+    return (
+      <>
+        <Button variant="primary" onClick={handleShow}>
+          Launch demo modal
+        </Button>
+  
+        <Modal   onEntered  = { function(){ descargarDikiri() }} show={show} onHide={handleClose}>
+          <Modal.Header closeButton>
+            <Modal.Title>Modal heading</Modal.Title>
+            
+          </Modal.Header>
+          <Modal.Body>Woohoo,  reading this text in a modal!</Modal.Body>
+          
+          <Modal.Footer>
+            <Button variant="secondary" onClick={handleClose}>
+              Close
+            </Button>
+            <Button variant="primary" onClick={handleClose}>
+              Save Changes
+            </Button>
+          </Modal.Footer>
+        </Modal>
+      </>
+    );
+  }
 
 
 
+
+
+
+   // eslint-disable-next-line no-unused-vars
+   function descargarDikiri() {
+       
 const download = new JsFileDownloader({ 
     url: 'https://innolab-stage.accenture.com/innolab-dev/downloadables/test.zip',
     autoStart: false
   });
 
-
-   // eslint-disable-next-line no-unused-vars
-   function descargarDikiri() {
 
         download.start()
         .then(function(){
@@ -32,7 +67,6 @@ const download = new JsFileDownloader({
         });
         
     }
-
 
 
 const Hero = () => { 
@@ -59,8 +93,11 @@ const Hero = () => {
         <div className="fixed-bottom ideasCta">  
            <button onClick={descargarDikiri()}>idea</button>
 
+           <button onClick={() => { console.log("button clicked");}}> idea</button>
            
-
+           <Example>
+               
+           </Example>
         </div>
         </>
     );
