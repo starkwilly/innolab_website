@@ -11,6 +11,15 @@ import {
     AUTHENTICATE_FAILURE
 } from './actionTypes';
 
+
+
+export function tokensuccesss(token) {
+    
+    return (dispatch) => {
+dispatch({ type: GET_TOKEN_SUCCESS, token, isFetchingToken: false })
+    }
+}
+
 export function getTokenAndTryAuthenticate() {
     return (dispatch) => {
         dispatch({ type: AUTH_FLOW_REQUEST, isFetching: true });

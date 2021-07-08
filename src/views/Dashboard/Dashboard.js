@@ -5,6 +5,8 @@ import "./Dashboard.css";
 import AboutUs from '../../components/AboutUs/AboutUs';
 import HeadlineCard from '../../components/HeadlineCard/HeadlineCard';
 import InnolabCard from '../../components/InnolabCard/InnolabCard';
+import ProfileContent from './Profilecontent'
+//import { useSelector } from "react-redux";
 //import { Link } from 'react-router-dom';
 
 import { getSectionSingle, getSectionParents ,getGlobalsJson } from "../../_services/strapiService";
@@ -16,7 +18,7 @@ const Dashboard = () => {
 
     const [dataObj, setDataObj] = React.useState(null);
     // PENDING USE STORE
-    // const isDataLoading = useSelector((state) => state);
+    // const {token} = useSelector((state) => ({token:state.auth.token}));
 
     React.useEffect(() => {
         const getInitialData = async () => {
@@ -37,64 +39,10 @@ const Dashboard = () => {
             // window.log("Dashboard DATA:", dataTmp);
         }
         
-
-        let sbToken = sessionStorage.getItem('SbToken');
-        console.log(sbToken)
-fetch('https://stagingacc03-test.accenture.com/servicebus-dev/api/v1/File/{1}', {
-    method: 'GET',
-    headers: { "Content-Type": "application/json",'Authorization': 'Bearer ' + sbToken},
-  })
-  .then((response) => response.blob())
-  .then((blob) => {
-    // Create blob link to download
-    const url = window.URL.createObjectURL(
-      new Blob([blob]),
-    );
-    const link = document.createElement('a');
-    link.href = url;
-    link.setAttribute(
-      'download',
-      `dakiri.zip`,
-    );
-
-
-    
-
-
-    
-    
-
-    // Append to html link element page
-    document.body.appendChild(link);
-
-    // Start download
-    link.click();
-
-    // Clean up and remove the link
-    link.parentNode.removeChild(link);
-  });
-
-
-
-
-
-  /////////////////
-  let funke = sessionStorage.getItem('SBtoken');
-
-console.log('esooooooooooooooooooooooo'+ funke )
-
-
-
-  //////////////////////
-
-
-        
         getInitialData();
 
         getGlobalsJson();
   
-
-
     }, []);
 
     return (
@@ -122,6 +70,7 @@ console.log('esooooooooooooooooooooooo'+ funke )
         ))}
        
         </Container>
+        <ProfileContent></ProfileContent>
        
         </>
     );
