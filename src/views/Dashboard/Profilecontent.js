@@ -19,8 +19,7 @@ window.debug = process.env.REACT_APP_DEBUG_MODE === 'true' ? true : false;
     const name = accounts[0] && accounts[0].name;
     const {token} = useSelector((state) => ({token:state.auth.token}));
 
-    var SBtoken = sessionStorage.getItem('SBtoken');
- console.log("es esto un token AAAAAAAAAAAAAAAAAAAAAAAAA",token);
+
 
   function RequestAccessToken() {
       const request = {
@@ -33,12 +32,14 @@ window.debug = process.env.REACT_APP_DEBUG_MODE === 'true' ? true : false;
            sessionStorage.setItem('SBtoken', JSON.stringify(response.accessToken));
             console.log(response.accessToken)
            // let sbToken = sessionStorage.getItem('SbToken');
+           var SBtoken = sessionStorage.getItem('SBtoken');
+         console.log("es esto un token AAAAAAAAAAAAAAAAAAAAAAAAA",token)
   
        console.log( "logeando token antes del fecht" + response.accessToken);
                          
         fetch('https://stagingacc03-test.accenture.com/servicebus-dev/api/v1/file/108', {
             method: 'GET',
-            headers: { "Content-Type": "application/json",'Authorization': 'Bearer ' + SBtoken},
+            headers: { "Content-Type": "application/json",'Authorization': 'Bearer ' + JSON.parse(SBtoken)},
           })
           .then((response) => response.blob())
           .then((blob) => {
