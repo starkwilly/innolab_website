@@ -6,7 +6,7 @@ import "./Hero.css"
 
            
 
-import JsFileDownloader from 'js-file-downloader';
+//import JsFileDownloader from 'js-file-downloader';
 
 
 function Example() {
@@ -22,22 +22,7 @@ function Example() {
         </Button>
   
         <Modal   onEntered  = { function(){ 
-            const download = new JsFileDownloader({ 
-                url: 'https://innolab-stage.accenture.com/innolab-dev/downloadables/test.zip',
-               autoStart: false
-               });
-         
-         
-                 download.start()
-                 .then(function(){
-                     // success 
-                     console.log(download)
-         
-                 })
-                 .catch(function(error){
-                     // handle errors
-                     console.log(error)
-                 });
+           console.log('sup')
             
             }} show={show} onHide={handleClose}>
           <Modal.Header closeButton>
