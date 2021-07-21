@@ -537,6 +537,21 @@ tr:hover {
 }
 
 
+.ideasForm{
+  margin: 4% 20%;
+  padding: 2%;
+  border-width: 2px;
+background: #020024;
+background: linear-gradient(340deg,rgba(2,0,36,.4),rgba(9,54,124,.4) 40%,rgba(121,199,255,.4) 81%);
+border-radius: 5px;
+box-shadow: slategray;
+font-size: $font-size-base * 1.17;
+font-weight: $font-weight-bold;
+color: white;
+}
+
+
+
 
 .stars {
 	content:"e";

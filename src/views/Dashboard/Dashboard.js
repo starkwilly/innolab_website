@@ -9,7 +9,7 @@ import ProfileContent from './Profilecontent'
 //import { useSelector } from "react-redux";
 //import { Link } from 'react-router-dom';
 
-import { getSectionSingle, getSectionParents ,getGlobalsJson } from "../../_services/strapiService";
+import { getSectionSingle, getSectionParents  } from "../../_services/strapiService";
 //import JsFileDownloader from 'js-file-downloader';
 
 // import dataObj from './strapi.json';
@@ -41,7 +41,7 @@ const Dashboard = () => {
         
         getInitialData();
 
-        getGlobalsJson();
+        //getGlobalsJson();
   
     }, []);
 

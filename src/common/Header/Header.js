@@ -6,7 +6,7 @@ import NavItem from "react-bootstrap/NavItem";
 //import NewsList from "../NewsList/NewsList";
 import "./Header.scss";
 
-import { getGlobals, getSectionParents } from "../../_services/strapiService";
+import { getGlobals, getSectionParents , getGlobalsJson } from "../../_services/strapiService";
 
 const Header = () => {
 
@@ -17,7 +17,8 @@ const Header = () => {
 
     React.useEffect(() => {
         const getInitialData = async () => {
-            const ret = await getGlobals();
+            const ret = await (process.env.REACT_APP_ENV === 'prod' || 'stage') ? getGlobals() : getGlobalsJson();
+         
                       //const ret = await ((process.env.REACT_APP_ENV === 'prod' || 'stage') ? getGlobals() : getGlobalsJson());
             if (ret.data) {
                 setGlobalData(ret.data);
@@ -42,7 +43,7 @@ const Header = () => {
             <NavItem className="ml-auto"></NavItem>
             <NavItem><Scrollchor to="#what-we-do" className="nav-link">What we do</Scrollchor></NavItem>
             { sectionsData.map(item => (
-                <NavItem key={`#${item.key}`}><Scrollchor to={`#${item.key}`} className="nav-link">{item.Title}</Scrollchor></NavItem>
+                <NavItem key={`#${item}`}><Scrollchor to={`#${item.key}`} className="nav-link">{item.Title}</Scrollchor></NavItem>
             ))}
             <NavItem><Scrollchor to="#contact-us" className="nav-link">Contact us</Scrollchor></NavItem>
         </Navbar>

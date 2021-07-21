@@ -1,56 +1,30 @@
 /* eslint-disable no-unused-vars */
 
 import {React ,useState } from 'react'
-import {Jumbotron , Modal ,Button} from 'react-bootstrap'
+import {Jumbotron , Modal ,Button , Form } from 'react-bootstrap'
 import "./Hero.css"
+import { Link } from 'react-router-dom';
 
            
 
 //import JsFileDownloader from 'js-file-downloader';
 
 
-function Example() {
-    const [show, setShow] = useState(false);
-  
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
+function IdeasCTA() {
+
   
     return (
       <>
-        <Button variant="primary" onClick={handleShow}>
-        idea
-        </Button>
-  
-        <Modal   onEntered  = { function(){ 
-           console.log('sup')
-            
-            }} show={show} onHide={handleClose}>
-          <Modal.Header closeButton>
-            <Modal.Title>Modal heading</Modal.Title>
-            
-          </Modal.Header>
-          <Modal.Body>Woohoo,  reading this text in a modal!</Modal.Body>
-          
-          <Modal.Footer>
-            <Button variant="secondary" onClick={handleClose}>
-              Close
-            </Button>
-            <Button variant="primary" onClick={handleClose}>
-              Save Changes
-            </Button>
-          </Modal.Footer>
-        </Modal>
+       
+          <Link to="/add-idea"   >
+          <Button variant="primary" >
+          idea  
+          </Button>                 
+          </Link>
+       
       </>
     );
   }
-
-
-
-
-
-
-   // eslint-disable-next-line no-unused-vars
-
 
 const Hero = () => { 
     return (
@@ -77,9 +51,9 @@ const Hero = () => {
          
 
            
-           <Example>
+           <IdeasCTA>
                
-           </Example>
+           </IdeasCTA>
         </div>
         </>
     );

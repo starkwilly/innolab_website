@@ -8,6 +8,7 @@ import NotFound from "../views/NotFound/NotFound";
 import Forbidden from "../views/Forbidden/Forbidden";
 import Startup from "../views/Startup/Startup";
 import Spinner from "react-bootstrap/Spinner";
+import IdeasForm from "../views/IdeasForm/IdeasForm"
 
 
 
@@ -59,6 +60,14 @@ const Routes = () => {
                         layout={MinimalLayout}
                         path="/not-found"
                     />
+
+                   <RouteWithLayout
+                        component={IdeasForm}
+                        exact
+                        layout={MinimalLayout}
+                        path="/add-idea"
+                    />
+
                     <Redirect to="/not-found" />
                 </Switch>
             </Suspense>

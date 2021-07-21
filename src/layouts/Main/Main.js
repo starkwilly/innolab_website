@@ -4,8 +4,7 @@ import PropTypes from "prop-types";
 import Header from "../../common/Header/Header";
 import Footer from "../../common/Footer/Footer";
 
-
-import { getGlobals , getGlobalsJson } from "../../_services/strapiService";
+import { getGlobals  } from "../../_services/strapiService";
 import Container from "react-bootstrap/Container";
 import { useMsal } from "@azure/msal-react";
 import { history } from "_helpers/history";
@@ -19,7 +18,6 @@ const Main = ({ children }) => {
       return null;
    }
     const fakeUser = { name: "info.firstname", lastname: "info.lastname" };
-
     const [globalData, setGlobalData] = React.useState(null);
     // PENDING USE STORE
     // const isDataLoading = useSelector((state) => state);
@@ -32,19 +30,16 @@ const Main = ({ children }) => {
             } else {
                 // window.log("load data FAILED");
             }
-            getGlobalsJson();
+           // getGlobalsJson();
         };
         getInitialData();
     }, []);
 
     return (
         globalData && (
-            <>   
-                
+            <>                 
                 <Header user={fakeUser}></Header>
                 <Container
-
-                 
                     className="mainContainer  p-0"
                     style={
                         globalData.ImageBg
