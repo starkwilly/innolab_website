@@ -17,8 +17,8 @@ const Header = () => {
 
     React.useEffect(() => {
         const getInitialData = async () => {
-            const ret = await (process.env.REACT_APP_ENV === 'prod' || 'stage') ? getGlobals() : getGlobalsJson();
-         
+            const ret = await (process.env.REACT_APP_ENV === 'qa') ? getGlobalsJson() : getGlobals();
+
                       //const ret = await ((process.env.REACT_APP_ENV === 'prod' || 'stage') ? getGlobals() : getGlobalsJson());
             if (ret.data) {
                 setGlobalData(ret.data);
