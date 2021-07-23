@@ -4,7 +4,7 @@ import React, { useEffect } from "react";
 //import { useMsal } from "@azure/msal-react";
 //import { EventType } from "@azure/msal-browser";
 //import { loginRequest } from "../../_helpers/authConfig";
-//import { history } from "_helpers/history";
+import { history } from "_helpers/history";
 import Spinner from "react-bootstrap/Spinner";
 
 function Startup() {
@@ -23,6 +23,10 @@ function Startup() {
         //console.log("Startup: mounted...");
 
         // handle auth redired/do all initial setup for msal
+
+        const goto_url = (localStorage.getItem('back_to_url') ? localStorage.getItem('back_to_url') : '/dashboard');
+
+        history.push(goto_url);
        
     }, []);
 

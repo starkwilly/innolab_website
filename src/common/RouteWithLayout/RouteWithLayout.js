@@ -20,8 +20,7 @@ const RouteWithLayout = props => {
    window.log('RouteWithLayout > accounts > ', accounts);
   const isAuthenticated = useIsAuthenticated();
   const [authReady, setAuthReady] = useState(null);
-// eslint-disable-next-line no-debugger
-debugger;
+  
   useEffect(() => {
       window.log('RouteWithLayout > useEffect error > ', error);
       if (error) {
@@ -70,7 +69,7 @@ debugger;
         lastname: userName[0],
         username: account.username
     }));
-    // Call Role API to get permissions
+    setAuthReady(true);
     
 }
 
@@ -92,7 +91,6 @@ debugger;
              {...rest}
            render={matchProps => (
             <Layout>
-             <Component {...matchProps} />
              {renderRouteComponent(matchProps)}
            </Layout>
             )}
