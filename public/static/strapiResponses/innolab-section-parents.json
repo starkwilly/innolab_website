@@ -1,0 +1,1305 @@
+[
+    {
+        "id": 1,
+        "Title": "Human+Machine",
+        "key": "human-machine",
+        "QuoteText": "Humans and machines aren’t adversaries, fighting for each other’s jobs. Instead, they are symbiotic partners, each pushing the other to higher levels of performance.\n",
+        "QuoteSource": "Paul R. Daugherty ¨Human + Machine¨",
+        "CommentsContent": "This vision is at the core of all of our developments. We conceive our products as the cocoon that helps our organization evolve to the next level.",
+        "published_at": "2021-05-24T19:50:50.074Z",
+        "created_at": "2021-05-24T19:25:32.346Z",
+        "updated_at": "2021-06-25T16:08:26.406Z",
+        "Image": {
+            "id": 50,
+            "name": "hplusm_illu.png",
+            "alternativeText": "human plus machine illustration",
+            "caption": "human plus machine illustration",
+            "width": 400,
+            "height": 452,
+            "formats": {
+                "thumbnail": {
+                    "name": "thumbnail_hplusm_illu.png",
+                    "hash": "thumbnail_hplusm_illu_43a993d216",
+                    "ext": ".png",
+                    "mime": "image/png",
+                    "width": 138,
+                    "height": 156,
+                    "size": 50.35,
+                    "path": null,
+                    "url": "/uploads/thumbnail_hplusm_illu_43a993d216.png"
+                }
+            },
+            "hash": "hplusm_illu_43a993d216",
+            "ext": ".png",
+            "mime": "image/png",
+            "size": 254.58,
+            "url": "/uploads/hplusm_illu_43a993d216.png",
+            "previewUrl": null,
+            "provider": "local",
+            "provider_metadata": null,
+            "created_at": "2021-06-24T22:44:07.128Z",
+            "updated_at": "2021-06-25T22:47:08.613Z"
+        },
+        "innolab_section_children": [
+            {
+                "id": 1,
+                "Title": "Synops",
+                "BodyContent": "Imagine a place that allows users to do the best they can with what they know, powered with the best tools, and without painful or complicated learning curves. Synops is the blend between the best of human talent and machine effectiveness to empower our marketing operations. We are proudly part of the team that is developing [Synops for Marketing.](https://in.accenture.com/technologyforoperations/?p=25983)\n\n\n### The Delivery Toolkit\nAre you aware of your own power tools? We have conceived a set of automated tools that can help you do things faster, with improved accuracy, extend human abilities and also fueled by edgy technology.  ",
+                "innolab_section_parent": 1,
+                "key": "synops",
+                "published_at": "2021-05-24T19:44:39.215Z",
+                "created_at": "2021-05-24T19:30:28.000Z",
+                "updated_at": "2021-07-05T16:28:03.528Z",
+                "AccordionItems": [
+                    {
+                        "id": 1,
+                        "Title": "Test and validate",
+                        "BodyContent": "**Daikiri** is our Swiss Army knife used by many in several countries, that merges testing tools in an unique way, obtaining a very affordable solution that allows you, among other things:\n\n- Audit and ensure contents quality with pixel perfect accuracy.\n\n- Provide an automated task creator that simplifies the debugging process.\n\n- It is affordable. Provides a centralized platform and lowers the cost of expensive licenses. \n\nCheck the next video lecture where we explain in full detail the features we have that make you unleash the testing experience, and also check out the Daikirí docs to know more about the platform.\n\n\n[![Group 339.png](https://innolab-stage.accenture.com/innolab-dev-api/uploads/Group_339_955c8b0d43.png)](https://mediaexchange.accenture.com/media/t/0_z33ltn57)\n[![Group 338.png](https://innolab-stage.accenture.com/innolab-dev-api/uploads/Group_338_af3f229dd0.png)](https://collections.accenture.com/FileViewer.aspx?f=05eef573-78c2-42a5-a321-e41bc82998e4&pId=7f56f911-2ed9-eb11-b12b-0a0b3d281f9d&vw=thumbnail)\n\nWould you like to try Daikiri? Click here to download it.\n",
+                        "Image": {
+                            "id": 41,
+                            "name": "daik_illu.png",
+                            "alternativeText": "daikiri icon",
+                            "caption": "",
+                            "width": 422,
+                            "height": 360,
+                            "formats": {
+                                "thumbnail": {
+                                    "name": "thumbnail_daik_illu.png",
+                                    "hash": "thumbnail_daik_illu_133224a767",
+                                    "ext": ".png",
+                                    "mime": "image/png",
+                                    "width": 183,
+                                    "height": 156,
+                                    "size": 29.54,
+                                    "path": null,
+                                    "url": "/uploads/thumbnail_daik_illu_133224a767.png"
+                                }
+                            },
+                            "hash": "daik_illu_133224a767",
+                            "ext": ".png",
+                            "mime": "image/png",
+                            "size": 94.33,
+                            "url": "/uploads/daik_illu_133224a767.png",
+                            "previewUrl": null,
+                            "provider": "local",
+                            "provider_metadata": null,
+                            "created_at": "2021-06-24T22:44:05.673Z",
+                            "updated_at": "2021-06-25T22:48:02.391Z"
+                        },
+                        "Media": [
+                            {
+                                "id": 91,
+                                "name": "Group 343.png",
+                                "alternativeText": "",
+                                "caption": "https://innolab.accenture.com/lab/download/zip_daikiri",
+                                "width": 243,
+                                "height": 124,
+                                "formats": null,
+                                "hash": "Group_343_4d23510f49",
+                                "ext": ".png",
+                                "mime": "image/png",
+                                "size": 1.91,
+                                "url": "/uploads/Group_343_4d23510f49.png",
+                                "previewUrl": null,
+                                "provider": "local",
+                                "provider_metadata": null,
+                                "created_at": "2021-07-01T22:23:48.169Z",
+                                "updated_at": "2021-07-05T15:05:59.542Z"
+                            },
+                            {
+                                "id": 92,
+                                "name": "Group 342.png",
+                                "alternativeText": "",
+                                "caption": "https://innolab.accenture.com/lab/download/msi_daikiri",
+                                "width": 243,
+                                "height": 124,
+                                "formats": null,
+                                "hash": "Group_342_a910587d43",
+                                "ext": ".png",
+                                "mime": "image/png",
+                                "size": 1.91,
+                                "url": "/uploads/Group_342_a910587d43.png",
+                                "previewUrl": null,
+                                "provider": "local",
+                                "provider_metadata": null,
+                                "created_at": "2021-07-01T22:24:09.614Z",
+                                "updated_at": "2021-07-01T22:24:09.620Z"
+                            }
+                        ]
+                    }
+                ],
+                "Image": {
+                    "id": 31,
+                    "name": "synopsAsset 14.svg",
+                    "alternativeText": "synops human plus machine image",
+                    "caption": "Synops human plus machine",
+                    "width": 1032,
+                    "height": 731,
+                    "formats": null,
+                    "hash": "synops_Asset_14_4fe5de564c",
+                    "ext": ".svg",
+                    "mime": "image/svg+xml",
+                    "size": 882.89,
+                    "url": "/uploads/synops_Asset_14_4fe5de564c.svg",
+                    "previewUrl": null,
+                    "provider": "local",
+                    "provider_metadata": null,
+                    "created_at": "2021-06-24T17:30:35.599Z",
+                    "updated_at": "2021-06-24T19:49:36.319Z"
+                },
+                "Media": []
+            },
+            {
+                "id": 2,
+                "Title": "One App Project",
+                "BodyContent": "Through the years, we have focused on creating information and software technologies that go beyond just being a solution. We have created digital platforms that can be used in several ways to ease up and ensure you get a great user experience. That is how we ended up joining our tools, and we are growing a collaborative environment that provides even more value to your job. \n\nCheck out the next videos to see how integrating our tools helps our delivery center to have data driven insights and discover in this featurette, the vision that triggered the One app project, and how FORM did guide us in the journey. ",
+                "innolab_section_parent": 1,
+                "key": "one-app",
+                "published_at": "2021-06-24T15:57:47.797Z",
+                "created_at": "2021-05-25T20:11:12.318Z",
+                "updated_at": "2021-06-25T22:35:26.999Z",
+                "AccordionItems": [
+                    {
+                        "id": 2,
+                        "Title": "Time Off Management",
+                        "BodyContent": "Time is key for your projects and your life decisions. When you request time off you want to have it handled as soon as possible. TOMS is the app responsible for processing your vacations in a quick and painless way. We created its technology with a practical approach that would allow you to request, approve, plan, and manage all your time off requests in a truly human way. And the coolest part is that it seamlessly intertwines with MyTe to update your vacation balance. Now you can focus on planning your vacations while the app handles the approvals. \n\nSee how easy requesting a vacation is under the experience in our app. ",
+                        "Image": {
+                            "id": 25,
+                            "name": "toms_illuAsset 9.svg",
+                            "alternativeText": "",
+                            "caption": "",
+                            "width": 992,
+                            "height": 831,
+                            "formats": null,
+                            "hash": "toms_illu_Asset_9_b156757058",
+                            "ext": ".svg",
+                            "mime": "image/svg+xml",
+                            "size": 742.12,
+                            "url": "/uploads/toms_illu_Asset_9_b156757058.svg",
+                            "previewUrl": null,
+                            "provider": "local",
+                            "provider_metadata": null,
+                            "created_at": "2021-06-24T17:30:31.993Z",
+                            "updated_at": "2021-06-24T17:30:31.998Z"
+                        },
+                        "Media": [
+                            {
+                                "id": 59,
+                                "name": "Screen Shot 2021-06-25 at 11.15.12.png",
+                                "alternativeText": "",
+                                "caption": "https://mediaexchange.accenture.com/media/t/1_njej5cox",
+                                "width": 1852,
+                                "height": 1040,
+                                "formats": {
+                                    "thumbnail": {
+                                        "name": "thumbnail_Screen Shot 2021-06-25 at 11.15.12.png",
+                                        "hash": "thumbnail_Screen_Shot_2021_06_25_at_11_15_12_0e23ac95d7",
+                                        "ext": ".png",
+                                        "mime": "image/png",
+                                        "width": 245,
+                                        "height": 138,
+                                        "size": 12.91,
+                                        "path": null,
+                                        "url": "/uploads/thumbnail_Screen_Shot_2021_06_25_at_11_15_12_0e23ac95d7.png"
+                                    },
+                                    "large": {
+                                        "name": "large_Screen Shot 2021-06-25 at 11.15.12.png",
+                                        "hash": "large_Screen_Shot_2021_06_25_at_11_15_12_0e23ac95d7",
+                                        "ext": ".png",
+                                        "mime": "image/png",
+                                        "width": 1000,
+                                        "height": 562,
+                                        "size": 114.82,
+                                        "path": null,
+                                        "url": "/uploads/large_Screen_Shot_2021_06_25_at_11_15_12_0e23ac95d7.png"
+                                    },
+                                    "medium": {
+                                        "name": "medium_Screen Shot 2021-06-25 at 11.15.12.png",
+                                        "hash": "medium_Screen_Shot_2021_06_25_at_11_15_12_0e23ac95d7",
+                                        "ext": ".png",
+                                        "mime": "image/png",
+                                        "width": 750,
+                                        "height": 421,
+                                        "size": 70.97,
+                                        "path": null,
+                                        "url": "/uploads/medium_Screen_Shot_2021_06_25_at_11_15_12_0e23ac95d7.png"
+                                    },
+                                    "small": {
+                                        "name": "small_Screen Shot 2021-06-25 at 11.15.12.png",
+                                        "hash": "small_Screen_Shot_2021_06_25_at_11_15_12_0e23ac95d7",
+                                        "ext": ".png",
+                                        "mime": "image/png",
+                                        "width": 500,
+                                        "height": 281,
+                                        "size": 36.43,
+                                        "path": null,
+                                        "url": "/uploads/small_Screen_Shot_2021_06_25_at_11_15_12_0e23ac95d7.png"
+                                    }
+                                },
+                                "hash": "Screen_Shot_2021_06_25_at_11_15_12_0e23ac95d7",
+                                "ext": ".png",
+                                "mime": "image/png",
+                                "size": 277.3,
+                                "url": "/uploads/Screen_Shot_2021_06_25_at_11_15_12_0e23ac95d7.png",
+                                "previewUrl": null,
+                                "provider": "local",
+                                "provider_metadata": null,
+                                "created_at": "2021-06-25T17:15:31.296Z",
+                                "updated_at": "2021-06-25T22:34:38.528Z"
+                            }
+                        ]
+                    },
+                    {
+                        "id": 3,
+                        "Title": "Employee Management",
+                        "BodyContent": "People’s allocation might get challenging. It may go beyond what is implied on a contract or even the organizational unit. Who can staff? How can we access the roster of our teams? Can we delegate time-off approval, telework arrangements, and other requests? With a simple and intuitive interface, our Employee Management System cracks it and makes it look easy to define roles inside our organization. And the best is that we are following Accenture's security policies. \n\nCheck how teams are created and edited with Agility.",
+                        "Image": {
+                            "id": 39,
+                            "name": "ems_illu.png",
+                            "alternativeText": "employee management square",
+                            "caption": "employee management square",
+                            "width": 360,
+                            "height": 357,
+                            "formats": {
+                                "thumbnail": {
+                                    "name": "thumbnail_ems_illu.png",
+                                    "hash": "thumbnail_ems_illu_c19d58d0e3",
+                                    "ext": ".png",
+                                    "mime": "image/png",
+                                    "width": 157,
+                                    "height": 156,
+                                    "size": 34.19,
+                                    "path": null,
+                                    "url": "/uploads/thumbnail_ems_illu_c19d58d0e3.png"
+                                }
+                            },
+                            "hash": "ems_illu_c19d58d0e3",
+                            "ext": ".png",
+                            "mime": "image/png",
+                            "size": 76.99,
+                            "url": "/uploads/ems_illu_c19d58d0e3.png",
+                            "previewUrl": null,
+                            "provider": "local",
+                            "provider_metadata": null,
+                            "created_at": "2021-06-24T22:44:05.608Z",
+                            "updated_at": "2021-06-25T22:47:20.419Z"
+                        },
+                        "Media": [
+                            {
+                                "id": 60,
+                                "name": "Screen Shot 2021-06-25 at 11.16.48.png",
+                                "alternativeText": "",
+                                "caption": "https://mediaexchange.accenture.com/media/t/1_7qm7yoc1",
+                                "width": 1854,
+                                "height": 1041,
+                                "formats": {
+                                    "thumbnail": {
+                                        "name": "thumbnail_Screen Shot 2021-06-25 at 11.16.48.png",
+                                        "hash": "thumbnail_Screen_Shot_2021_06_25_at_11_16_48_0ad4f390dc",
+                                        "ext": ".png",
+                                        "mime": "image/png",
+                                        "width": 245,
+                                        "height": 138,
+                                        "size": 12.82,
+                                        "path": null,
+                                        "url": "/uploads/thumbnail_Screen_Shot_2021_06_25_at_11_16_48_0ad4f390dc.png"
+                                    },
+                                    "large": {
+                                        "name": "large_Screen Shot 2021-06-25 at 11.16.48.png",
+                                        "hash": "large_Screen_Shot_2021_06_25_at_11_16_48_0ad4f390dc",
+                                        "ext": ".png",
+                                        "mime": "image/png",
+                                        "width": 1000,
+                                        "height": 561,
+                                        "size": 111.78,
+                                        "path": null,
+                                        "url": "/uploads/large_Screen_Shot_2021_06_25_at_11_16_48_0ad4f390dc.png"
+                                    },
+                                    "medium": {
+                                        "name": "medium_Screen Shot 2021-06-25 at 11.16.48.png",
+                                        "hash": "medium_Screen_Shot_2021_06_25_at_11_16_48_0ad4f390dc",
+                                        "ext": ".png",
+                                        "mime": "image/png",
+                                        "width": 750,
+                                        "height": 421,
+                                        "size": 69.52,
+                                        "path": null,
+                                        "url": "/uploads/medium_Screen_Shot_2021_06_25_at_11_16_48_0ad4f390dc.png"
+                                    },
+                                    "small": {
+                                        "name": "small_Screen Shot 2021-06-25 at 11.16.48.png",
+                                        "hash": "small_Screen_Shot_2021_06_25_at_11_16_48_0ad4f390dc",
+                                        "ext": ".png",
+                                        "mime": "image/png",
+                                        "width": 500,
+                                        "height": 281,
+                                        "size": 35.58,
+                                        "path": null,
+                                        "url": "/uploads/small_Screen_Shot_2021_06_25_at_11_16_48_0ad4f390dc.png"
+                                    }
+                                },
+                                "hash": "Screen_Shot_2021_06_25_at_11_16_48_0ad4f390dc",
+                                "ext": ".png",
+                                "mime": "image/png",
+                                "size": 273.05,
+                                "url": "/uploads/Screen_Shot_2021_06_25_at_11_16_48_0ad4f390dc.png",
+                                "previewUrl": null,
+                                "provider": "local",
+                                "provider_metadata": null,
+                                "created_at": "2021-06-25T17:17:05.033Z",
+                                "updated_at": "2021-06-25T22:35:03.851Z"
+                            }
+                        ]
+                    },
+                    {
+                        "id": 4,
+                        "Title": "Parking",
+                        "BodyContent": "Did you know that you can request a parking spot before you reach the office? \n\nWith telework variables, sick leaves, our growing delivery centers and the unexpected release of parking lots we had to improve the parking experience for our employees. It took us several years of research and coordination with the workplace to build up a solution. Let us show you how it works.\n\nSee how easy you can request a parking reservation with our tool.",
+                        "Image": {
+                            "id": 47,
+                            "name": "park_illu.png",
+                            "alternativeText": "parking illustration",
+                            "caption": "parking illustration",
+                            "width": 400,
+                            "height": 261,
+                            "formats": {
+                                "thumbnail": {
+                                    "name": "thumbnail_park_illu.png",
+                                    "hash": "thumbnail_park_illu_938064ae3c",
+                                    "ext": ".png",
+                                    "mime": "image/png",
+                                    "width": 239,
+                                    "height": 156,
+                                    "size": 40.18,
+                                    "path": null,
+                                    "url": "/uploads/thumbnail_park_illu_938064ae3c.png"
+                                }
+                            },
+                            "hash": "park_illu_938064ae3c",
+                            "ext": ".png",
+                            "mime": "image/png",
+                            "size": 61.64,
+                            "url": "/uploads/park_illu_938064ae3c.png",
+                            "previewUrl": null,
+                            "provider": "local",
+                            "provider_metadata": null,
+                            "created_at": "2021-06-24T22:44:07.044Z",
+                            "updated_at": "2021-06-25T22:49:03.465Z"
+                        },
+                        "Media": [
+                            {
+                                "id": 61,
+                                "name": "Screen Shot 2021-06-25 at 11.18.14.png",
+                                "alternativeText": "",
+                                "caption": "https://mediaexchange.accenture.com/media/t/1_urc92nqe",
+                                "width": 1856,
+                                "height": 1042,
+                                "formats": {
+                                    "thumbnail": {
+                                        "name": "thumbnail_Screen Shot 2021-06-25 at 11.18.14.png",
+                                        "hash": "thumbnail_Screen_Shot_2021_06_25_at_11_18_14_d127661add",
+                                        "ext": ".png",
+                                        "mime": "image/png",
+                                        "width": 245,
+                                        "height": 137,
+                                        "size": 12.46,
+                                        "path": null,
+                                        "url": "/uploads/thumbnail_Screen_Shot_2021_06_25_at_11_18_14_d127661add.png"
+                                    },
+                                    "large": {
+                                        "name": "large_Screen Shot 2021-06-25 at 11.18.14.png",
+                                        "hash": "large_Screen_Shot_2021_06_25_at_11_18_14_d127661add",
+                                        "ext": ".png",
+                                        "mime": "image/png",
+                                        "width": 1000,
+                                        "height": 561,
+                                        "size": 109.46,
+                                        "path": null,
+                                        "url": "/uploads/large_Screen_Shot_2021_06_25_at_11_18_14_d127661add.png"
+                                    },
+                                    "medium": {
+                                        "name": "medium_Screen Shot 2021-06-25 at 11.18.14.png",
+                                        "hash": "medium_Screen_Shot_2021_06_25_at_11_18_14_d127661add",
+                                        "ext": ".png",
+                                        "mime": "image/png",
+                                        "width": 750,
+                                        "height": 421,
+                                        "size": 68.01,
+                                        "path": null,
+                                        "url": "/uploads/medium_Screen_Shot_2021_06_25_at_11_18_14_d127661add.png"
+                                    },
+                                    "small": {
+                                        "name": "small_Screen Shot 2021-06-25 at 11.18.14.png",
+                                        "hash": "small_Screen_Shot_2021_06_25_at_11_18_14_d127661add",
+                                        "ext": ".png",
+                                        "mime": "image/png",
+                                        "width": 500,
+                                        "height": 281,
+                                        "size": 34.81,
+                                        "path": null,
+                                        "url": "/uploads/small_Screen_Shot_2021_06_25_at_11_18_14_d127661add.png"
+                                    }
+                                },
+                                "hash": "Screen_Shot_2021_06_25_at_11_18_14_d127661add",
+                                "ext": ".png",
+                                "mime": "image/png",
+                                "size": 266.15,
+                                "url": "/uploads/Screen_Shot_2021_06_25_at_11_18_14_d127661add.png",
+                                "previewUrl": null,
+                                "provider": "local",
+                                "provider_metadata": null,
+                                "created_at": "2021-06-25T17:18:30.099Z",
+                                "updated_at": "2021-06-25T22:35:17.817Z"
+                            }
+                        ]
+                    },
+                    {
+                        "id": 5,
+                        "Title": "Automated Indicator Manager",
+                        "BodyContent": "C-Suite roles need real time information in order to make data driven decisions. It is a challenge to keep the fingers in the pulse of all things implied on financial, value creation, operational status and other areas involved in the daily business. AIM allows us to have surveys created to assess and oversee the status of all different areas of our operation, and display them in ways that allow us to oversee, track, and ultimately decide based on the gathered information. Reports and analytics look fresh and ready to support the decisions we make everyday. ",
+                        "Image": {
+                            "id": 52,
+                            "name": "aim_illu.png",
+                            "alternativeText": "aim icon",
+                            "caption": "",
+                            "width": 385,
+                            "height": 385,
+                            "formats": {
+                                "thumbnail": {
+                                    "name": "thumbnail_aim_illu.png",
+                                    "hash": "thumbnail_aim_illu_c1a650cb5d",
+                                    "ext": ".png",
+                                    "mime": "image/png",
+                                    "width": 156,
+                                    "height": 156,
+                                    "size": 60.53,
+                                    "path": null,
+                                    "url": "/uploads/thumbnail_aim_illu_c1a650cb5d.png"
+                                }
+                            },
+                            "hash": "aim_illu_c1a650cb5d",
+                            "ext": ".png",
+                            "mime": "image/png",
+                            "size": 202.44,
+                            "url": "/uploads/aim_illu_c1a650cb5d.png",
+                            "previewUrl": null,
+                            "provider": "local",
+                            "provider_metadata": null,
+                            "created_at": "2021-06-24T22:44:07.279Z",
+                            "updated_at": "2021-06-25T22:47:32.921Z"
+                        },
+                        "Media": []
+                    }
+                ],
+                "Image": {
+                    "id": 42,
+                    "name": "one_illu.png",
+                    "alternativeText": "one ecosystem",
+                    "caption": "one ecosystem",
+                    "width": 442,
+                    "height": 437,
+                    "formats": {
+                        "thumbnail": {
+                            "name": "thumbnail_one_illu.png",
+                            "hash": "thumbnail_one_illu_ad800c0894",
+                            "ext": ".png",
+                            "mime": "image/png",
+                            "width": 158,
+                            "height": 156,
+                            "size": 61.76,
+                            "path": null,
+                            "url": "/uploads/thumbnail_one_illu_ad800c0894.png"
+                        }
+                    },
+                    "hash": "one_illu_ad800c0894",
+                    "ext": ".png",
+                    "mime": "image/png",
+                    "size": 231.16,
+                    "url": "/uploads/one_illu_ad800c0894.png",
+                    "previewUrl": null,
+                    "provider": "local",
+                    "provider_metadata": null,
+                    "created_at": "2021-06-24T22:44:05.993Z",
+                    "updated_at": "2021-06-25T22:47:17.611Z"
+                },
+                "Media": [
+                    {
+                        "id": 57,
+                        "name": "Screen Shot 2021-06-25 at 11.00.45.png",
+                        "alternativeText": "",
+                        "caption": "https://mediaexchange.accenture.com/media/t/1_vfrh042l",
+                        "width": 1856,
+                        "height": 1042,
+                        "formats": {
+                            "thumbnail": {
+                                "name": "thumbnail_Screen Shot 2021-06-25 at 11.00.45.png",
+                                "hash": "thumbnail_Screen_Shot_2021_06_25_at_11_00_45_deca8aae28",
+                                "ext": ".png",
+                                "mime": "image/png",
+                                "width": 245,
+                                "height": 137,
+                                "size": 17.59,
+                                "path": null,
+                                "url": "/uploads/thumbnail_Screen_Shot_2021_06_25_at_11_00_45_deca8aae28.png"
+                            },
+                            "large": {
+                                "name": "large_Screen Shot 2021-06-25 at 11.00.45.png",
+                                "hash": "large_Screen_Shot_2021_06_25_at_11_00_45_deca8aae28",
+                                "ext": ".png",
+                                "mime": "image/png",
+                                "width": 1000,
+                                "height": 561,
+                                "size": 171.19,
+                                "path": null,
+                                "url": "/uploads/large_Screen_Shot_2021_06_25_at_11_00_45_deca8aae28.png"
+                            },
+                            "medium": {
+                                "name": "medium_Screen Shot 2021-06-25 at 11.00.45.png",
+                                "hash": "medium_Screen_Shot_2021_06_25_at_11_00_45_deca8aae28",
+                                "ext": ".png",
+                                "mime": "image/png",
+                                "width": 750,
+                                "height": 421,
+                                "size": 104.8,
+                                "path": null,
+                                "url": "/uploads/medium_Screen_Shot_2021_06_25_at_11_00_45_deca8aae28.png"
+                            },
+                            "small": {
+                                "name": "small_Screen Shot 2021-06-25 at 11.00.45.png",
+                                "hash": "small_Screen_Shot_2021_06_25_at_11_00_45_deca8aae28",
+                                "ext": ".png",
+                                "mime": "image/png",
+                                "width": 500,
+                                "height": 281,
+                                "size": 52.68,
+                                "path": null,
+                                "url": "/uploads/small_Screen_Shot_2021_06_25_at_11_00_45_deca8aae28.png"
+                            }
+                        },
+                        "hash": "Screen_Shot_2021_06_25_at_11_00_45_deca8aae28",
+                        "ext": ".png",
+                        "mime": "image/png",
+                        "size": 421.48,
+                        "url": "/uploads/Screen_Shot_2021_06_25_at_11_00_45_deca8aae28.png",
+                        "previewUrl": null,
+                        "provider": "local",
+                        "provider_metadata": null,
+                        "created_at": "2021-06-25T17:01:10.474Z",
+                        "updated_at": "2021-06-25T21:45:52.349Z"
+                    },
+                    {
+                        "id": 58,
+                        "name": "Screen Shot 2021-06-25 at 11.01.58.png",
+                        "alternativeText": "",
+                        "caption": "https://mediaexchange.accenture.com/media/t/1_33uiljdy",
+                        "width": 1850,
+                        "height": 1036,
+                        "formats": {
+                            "thumbnail": {
+                                "name": "thumbnail_Screen Shot 2021-06-25 at 11.01.58.png",
+                                "hash": "thumbnail_Screen_Shot_2021_06_25_at_11_01_58_cd97220bac",
+                                "ext": ".png",
+                                "mime": "image/png",
+                                "width": 245,
+                                "height": 137,
+                                "size": 42.59,
+                                "path": null,
+                                "url": "/uploads/thumbnail_Screen_Shot_2021_06_25_at_11_01_58_cd97220bac.png"
+                            },
+                            "large": {
+                                "name": "large_Screen Shot 2021-06-25 at 11.01.58.png",
+                                "hash": "large_Screen_Shot_2021_06_25_at_11_01_58_cd97220bac",
+                                "ext": ".png",
+                                "mime": "image/png",
+                                "width": 1000,
+                                "height": 560,
+                                "size": 331.03,
+                                "path": null,
+                                "url": "/uploads/large_Screen_Shot_2021_06_25_at_11_01_58_cd97220bac.png"
+                            },
+                            "medium": {
+                                "name": "medium_Screen Shot 2021-06-25 at 11.01.58.png",
+                                "hash": "medium_Screen_Shot_2021_06_25_at_11_01_58_cd97220bac",
+                                "ext": ".png",
+                                "mime": "image/png",
+                                "width": 750,
+                                "height": 420,
+                                "size": 218.85,
+                                "path": null,
+                                "url": "/uploads/medium_Screen_Shot_2021_06_25_at_11_01_58_cd97220bac.png"
+                            },
+                            "small": {
+                                "name": "small_Screen Shot 2021-06-25 at 11.01.58.png",
+                                "hash": "small_Screen_Shot_2021_06_25_at_11_01_58_cd97220bac",
+                                "ext": ".png",
+                                "mime": "image/png",
+                                "width": 500,
+                                "height": 280,
+                                "size": 121.05,
+                                "path": null,
+                                "url": "/uploads/small_Screen_Shot_2021_06_25_at_11_01_58_cd97220bac.png"
+                            }
+                        },
+                        "hash": "Screen_Shot_2021_06_25_at_11_01_58_cd97220bac",
+                        "ext": ".png",
+                        "mime": "image/png",
+                        "size": 510.38,
+                        "url": "/uploads/Screen_Shot_2021_06_25_at_11_01_58_cd97220bac.png",
+                        "previewUrl": null,
+                        "provider": "local",
+                        "provider_metadata": null,
+                        "created_at": "2021-06-25T17:02:22.464Z",
+                        "updated_at": "2021-06-25T22:33:22.652Z"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 2,
+        "Title": "Solutions",
+        "key": "solutions",
+        "QuoteText": "The secret of success is to do the common things uncommonly well",
+        "QuoteSource": "John D. Rockefeller",
+        "CommentsContent": "We are obsessed about improving processes and visibility inside our operation. Take a look at the solution implementations we offer, and the add-ons we can create to take your work to the next level. ",
+        "published_at": "2021-05-25T20:23:35.138Z",
+        "created_at": "2021-05-25T20:23:33.393Z",
+        "updated_at": "2021-06-25T21:41:42.394Z",
+        "Image": {
+            "id": 55,
+            "name": "solution_illu.png",
+            "alternativeText": "rubik station",
+            "caption": "rubik station",
+            "width": 400,
+            "height": 290,
+            "formats": {
+                "thumbnail": {
+                    "name": "thumbnail_solution_illu.png",
+                    "hash": "thumbnail_solution_illu_93646ae7e0",
+                    "ext": ".png",
+                    "mime": "image/png",
+                    "width": 215,
+                    "height": 156,
+                    "size": 87.61,
+                    "path": null,
+                    "url": "/uploads/thumbnail_solution_illu_93646ae7e0.png"
+                }
+            },
+            "hash": "solution_illu_93646ae7e0",
+            "ext": ".png",
+            "mime": "image/png",
+            "size": 194.24,
+            "url": "/uploads/solution_illu_93646ae7e0.png",
+            "previewUrl": null,
+            "provider": "local",
+            "provider_metadata": null,
+            "created_at": "2021-06-24T22:44:09.669Z",
+            "updated_at": "2021-06-25T22:47:14.367Z"
+        },
+        "innolab_section_children": [
+            {
+                "id": 3,
+                "Title": "Jira",
+                "BodyContent": "Have you tried Jira? This software has proven to be an effective tool for project management. You can [reach out](https://go.accenture.com/innolabsupport) to us to help you implement the tool in your own processes. We can customize it for your specific needs. \n\n\n\n",
+                "innolab_section_parent": 2,
+                "key": "jira",
+                "published_at": "2021-05-25T20:26:10.363Z",
+                "created_at": "2021-05-25T20:26:04.672Z",
+                "updated_at": "2021-06-25T22:42:11.777Z",
+                "AccordionItems": [],
+                "Image": {
+                    "id": 67,
+                    "name": "jira_illu.png",
+                    "alternativeText": "project follow illustration",
+                    "caption": "project follow illustration",
+                    "width": 400,
+                    "height": 540,
+                    "formats": {
+                        "thumbnail": {
+                            "name": "thumbnail_jira_illu.png",
+                            "hash": "thumbnail_jira_illu_93ad8dc25b",
+                            "ext": ".png",
+                            "mime": "image/png",
+                            "width": 116,
+                            "height": 156,
+                            "size": 37.06,
+                            "path": null,
+                            "url": "/uploads/thumbnail_jira_illu_93ad8dc25b.png"
+                        },
+                        "small": {
+                            "name": "small_jira_illu.png",
+                            "hash": "small_jira_illu_93ad8dc25b",
+                            "ext": ".png",
+                            "mime": "image/png",
+                            "width": 370,
+                            "height": 500,
+                            "size": 292.07,
+                            "path": null,
+                            "url": "/uploads/small_jira_illu_93ad8dc25b.png"
+                        }
+                    },
+                    "hash": "jira_illu_93ad8dc25b",
+                    "ext": ".png",
+                    "mime": "image/png",
+                    "size": 233.01,
+                    "url": "/uploads/jira_illu_93ad8dc25b.png",
+                    "previewUrl": null,
+                    "provider": "local",
+                    "provider_metadata": null,
+                    "created_at": "2021-06-25T22:40:40.068Z",
+                    "updated_at": "2021-06-25T22:41:19.431Z"
+                },
+                "Media": []
+            },
+            {
+                "id": 5,
+                "Title": "Workfront",
+                "BodyContent": "[Workfront](https://www.youtube.com/watch?v=tUBmgCky6aE) has proven to be a very effective tool for the challenges of modern and global work demands. But for it to flow as easily as we want, accurate end-to-end requirements, process intake, and documentation need to be in place. Our team of experts is going beyond implementing a process or operation. We are here to improve your experience and integrate it with the already existing tools and platforms you currently own! Request your implementation of Workfront [here.](mailto:gerald.waddington@accenture.com) ",
+                "innolab_section_parent": 2,
+                "key": "workfront",
+                "published_at": "2021-05-25T20:55:13.999Z",
+                "created_at": "2021-05-25T20:54:49.554Z",
+                "updated_at": "2021-06-25T21:41:42.388Z",
+                "AccordionItems": [],
+                "Image": {
+                    "id": 45,
+                    "name": "workfront_2.png",
+                    "alternativeText": "workfront icon",
+                    "caption": "",
+                    "width": 400,
+                    "height": 471,
+                    "formats": {
+                        "thumbnail": {
+                            "name": "thumbnail_workfront_2.png",
+                            "hash": "thumbnail_workfront_2_2615075548",
+                            "ext": ".png",
+                            "mime": "image/png",
+                            "width": 132,
+                            "height": 156,
+                            "size": 30.88,
+                            "path": null,
+                            "url": "/uploads/thumbnail_workfront_2_2615075548.png"
+                        }
+                    },
+                    "hash": "workfront_2_2615075548",
+                    "ext": ".png",
+                    "mime": "image/png",
+                    "size": 108.45,
+                    "url": "/uploads/workfront_2_2615075548.png",
+                    "previewUrl": null,
+                    "provider": "local",
+                    "provider_metadata": null,
+                    "created_at": "2021-06-24T22:44:06.706Z",
+                    "updated_at": "2021-06-25T22:47:49.451Z"
+                },
+                "Media": []
+            },
+            {
+                "id": 6,
+                "Title": "Techmasters",
+                "BodyContent": "Our [Journey to Intelligent Operations](https://in.accenture.com/accentureoperationslearning/account-lead-academy-self-study/journey-to-intelligent-operations/) relies heavily on having a keen eye on improvement opportunities and experiences through [Robotic Process Automation](https://mylearning.accenture.com/mylearningui/learner/coursedetail/1580962). It provides us with resourceful support, focused research, and accurate estimation that can help you save time and money. Your [idea](/add-idea) is all we need to give it a start. [Let’s discuss](mailto:esteban.sancho@accenture.com) what we can do to take what your team does to the next level! \n\n#### Training & Awareness:\nWe’ve established [a series of training sessions](https://mediaexchange.accenture.com/playlist/dedicated/1_g2852y8n/1_d7ui4syi), success stories, and grounders in order to build a [community](https://teams.microsoft.com/l/team/19%3aaa7d3dfe766d41d9bab2bca711c64dc0%40thread.skype/conversations?groupId=db1171f6-b50a-4482-91ac-acf39a923f9a&tenantId=e0793d39-0939-496d-b129-198edd916feb) of people who are interested in developing their automation expertise.",
+                "innolab_section_parent": 2,
+                "key": "techmasters",
+                "published_at": "2021-05-25T21:00:33.948Z",
+                "created_at": "2021-05-25T21:00:32.342Z",
+                "updated_at": "2021-06-25T21:41:42.388Z",
+                "AccordionItems": [],
+                "Image": {
+                    "id": 51,
+                    "name": "techm_illu.png",
+                    "alternativeText": "tech master icon",
+                    "caption": "",
+                    "width": 400,
+                    "height": 400,
+                    "formats": {
+                        "thumbnail": {
+                            "name": "thumbnail_techm_illu.png",
+                            "hash": "thumbnail_techm_illu_c276ea9000",
+                            "ext": ".png",
+                            "mime": "image/png",
+                            "width": 156,
+                            "height": 156,
+                            "size": 41.53,
+                            "path": null,
+                            "url": "/uploads/thumbnail_techm_illu_c276ea9000.png"
+                        }
+                    },
+                    "hash": "techm_illu_c276ea9000",
+                    "ext": ".png",
+                    "mime": "image/png",
+                    "size": 118.31,
+                    "url": "/uploads/techm_illu_c276ea9000.png",
+                    "previewUrl": null,
+                    "provider": "local",
+                    "provider_metadata": null,
+                    "created_at": "2021-06-24T22:44:07.150Z",
+                    "updated_at": "2021-06-25T22:47:41.768Z"
+                },
+                "Media": []
+            },
+            {
+                "id": 17,
+                "Title": "Tempo",
+                "BodyContent": "Analytics and reporting can be a complex process to overview. We understand the importance of having accurate, real-time, and easy-to-understand data in business decision making and improvement. That is why we offer customized dashboards and reporting services for your projects in Jira. With the experience of serving many clients over the years, Tempo’s visual aids helped us to innovate processes beyond our wildest dreams. Do you have more questions about how to implement Tempo for your projects? [We can help.](https://jira.accenture.com/secure/WelcomeToJIRA.jspa)\n\nHere you can watch the teaser video.",
+                "innolab_section_parent": 2,
+                "key": "tempo",
+                "published_at": "2021-06-25T17:28:01.290Z",
+                "created_at": "2021-06-25T17:27:55.882Z",
+                "updated_at": "2021-06-25T22:38:52.817Z",
+                "AccordionItems": [],
+                "Image": {
+                    "id": 38,
+                    "name": "tempo_illu.png",
+                    "alternativeText": "tempo icon",
+                    "caption": "",
+                    "width": 400,
+                    "height": 464,
+                    "formats": {
+                        "thumbnail": {
+                            "name": "thumbnail_tempo_illu.png",
+                            "hash": "thumbnail_tempo_illu_698b939600",
+                            "ext": ".png",
+                            "mime": "image/png",
+                            "width": 134,
+                            "height": 156,
+                            "size": 26.62,
+                            "path": null,
+                            "url": "/uploads/thumbnail_tempo_illu_698b939600.png"
+                        }
+                    },
+                    "hash": "tempo_illu_698b939600",
+                    "ext": ".png",
+                    "mime": "image/png",
+                    "size": 83.7,
+                    "url": "/uploads/tempo_illu_698b939600.png",
+                    "previewUrl": null,
+                    "provider": "local",
+                    "provider_metadata": null,
+                    "created_at": "2021-06-24T22:44:05.471Z",
+                    "updated_at": "2021-06-25T22:48:19.796Z"
+                },
+                "Media": [
+                    {
+                        "id": 62,
+                        "name": "Screen Shot 2021-06-25 at 11.26.53.png",
+                        "alternativeText": "",
+                        "caption": "https://mediaexchange.accenture.com/media/t/1_3hqauons",
+                        "width": 1844,
+                        "height": 1040,
+                        "formats": {
+                            "thumbnail": {
+                                "name": "thumbnail_Screen Shot 2021-06-25 at 11.26.53.png",
+                                "hash": "thumbnail_Screen_Shot_2021_06_25_at_11_26_53_ed33f4801a",
+                                "ext": ".png",
+                                "mime": "image/png",
+                                "width": 245,
+                                "height": 138,
+                                "size": 53.19,
+                                "path": null,
+                                "url": "/uploads/thumbnail_Screen_Shot_2021_06_25_at_11_26_53_ed33f4801a.png"
+                            },
+                            "large": {
+                                "name": "large_Screen Shot 2021-06-25 at 11.26.53.png",
+                                "hash": "large_Screen_Shot_2021_06_25_at_11_26_53_ed33f4801a",
+                                "ext": ".png",
+                                "mime": "image/png",
+                                "width": 1000,
+                                "height": 564,
+                                "size": 469.28,
+                                "path": null,
+                                "url": "/uploads/large_Screen_Shot_2021_06_25_at_11_26_53_ed33f4801a.png"
+                            },
+                            "medium": {
+                                "name": "medium_Screen Shot 2021-06-25 at 11.26.53.png",
+                                "hash": "medium_Screen_Shot_2021_06_25_at_11_26_53_ed33f4801a",
+                                "ext": ".png",
+                                "mime": "image/png",
+                                "width": 750,
+                                "height": 423,
+                                "size": 302.87,
+                                "path": null,
+                                "url": "/uploads/medium_Screen_Shot_2021_06_25_at_11_26_53_ed33f4801a.png"
+                            },
+                            "small": {
+                                "name": "small_Screen Shot 2021-06-25 at 11.26.53.png",
+                                "hash": "small_Screen_Shot_2021_06_25_at_11_26_53_ed33f4801a",
+                                "ext": ".png",
+                                "mime": "image/png",
+                                "width": 500,
+                                "height": 282,
+                                "size": 160.6,
+                                "path": null,
+                                "url": "/uploads/small_Screen_Shot_2021_06_25_at_11_26_53_ed33f4801a.png"
+                            }
+                        },
+                        "hash": "Screen_Shot_2021_06_25_at_11_26_53_ed33f4801a",
+                        "ext": ".png",
+                        "mime": "image/png",
+                        "size": 643.3,
+                        "url": "/uploads/Screen_Shot_2021_06_25_at_11_26_53_ed33f4801a.png",
+                        "previewUrl": null,
+                        "provider": "local",
+                        "provider_metadata": null,
+                        "created_at": "2021-06-25T17:27:07.849Z",
+                        "updated_at": "2021-06-25T22:38:49.348Z"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "Title": "Innovation",
+        "key": "innovation",
+        "QuoteText": "We believe our perspective, grounded in people and machines working together, requires a new approach and calls for the reimagination of businesses and our business processes.",
+        "QuoteSource": "Paul R. Daugherty & H. James Wilson",
+        "CommentsContent": "To us, innovation is an open-source mission: and our job is not to own it, but to channel it. Since our very inception, we aim to be the circulatory system that makes ideas move and transform in our operations.",
+        "published_at": "2021-05-25T21:03:18.910Z",
+        "created_at": "2021-05-25T21:03:17.608Z",
+        "updated_at": "2021-06-30T15:08:11.806Z",
+        "Image": {
+            "id": 48,
+            "name": "innovation_illu.png",
+            "alternativeText": "impossible cube vortex",
+            "caption": "impossible cube vortex",
+            "width": 400,
+            "height": 372,
+            "formats": {
+                "thumbnail": {
+                    "name": "thumbnail_innovation_illu.png",
+                    "hash": "thumbnail_innovation_illu_421bacacf9",
+                    "ext": ".png",
+                    "mime": "image/png",
+                    "width": 168,
+                    "height": 156,
+                    "size": 58.13,
+                    "path": null,
+                    "url": "/uploads/thumbnail_innovation_illu_421bacacf9.png"
+                }
+            },
+            "hash": "innovation_illu_421bacacf9",
+            "ext": ".png",
+            "mime": "image/png",
+            "size": 209.13,
+            "url": "/uploads/innovation_illu_421bacacf9.png",
+            "previewUrl": null,
+            "provider": "local",
+            "provider_metadata": null,
+            "created_at": "2021-06-24T22:44:07.079Z",
+            "updated_at": "2021-06-25T22:47:11.570Z"
+        },
+        "innolab_section_children": [
+            {
+                "id": 7,
+                "Title": "Ideas",
+                "BodyContent": "Innolab’s [idea repository](/add-idea) is our open inbox to receive ideas globally. We consider all of them! With a simple form, you’ll be able to submit any idea and put it on the map. Once your idea is submitted, we got your back: our research team will get in touch with you to understand your vision and together we develop a roadmap to make it happen. It's so simple! Your ideas are the seeds that nurture the innovation technology Accenture strives. Together we create impact that shape our future.  Whether it is a Robotic Process Automation or an idea for a new process it has potential for Synergy. Let us help you with your idea, we want [to hear it!](/add-idea)",
+                "innolab_section_parent": 3,
+                "key": "ideas",
+                "published_at": "2021-05-25T21:06:22.188Z",
+                "created_at": "2021-05-25T21:06:19.741Z",
+                "updated_at": "2021-06-30T15:08:11.797Z",
+                "AccordionItems": [],
+                "Image": {
+                    "id": 66,
+                    "name": "ideas_illuAsset 7.png",
+                    "alternativeText": "idea illustration",
+                    "caption": "idea illustration",
+                    "width": 400,
+                    "height": 636,
+                    "formats": {
+                        "thumbnail": {
+                            "name": "thumbnail_ideas_illuAsset 7.png",
+                            "hash": "thumbnail_ideas_illu_Asset_7_53ce51a84b",
+                            "ext": ".png",
+                            "mime": "image/png",
+                            "width": 98,
+                            "height": 156,
+                            "size": 21.59,
+                            "path": null,
+                            "url": "/uploads/thumbnail_ideas_illu_Asset_7_53ce51a84b.png"
+                        },
+                        "small": {
+                            "name": "small_ideas_illuAsset 7.png",
+                            "hash": "small_ideas_illu_Asset_7_53ce51a84b",
+                            "ext": ".png",
+                            "mime": "image/png",
+                            "width": 314,
+                            "height": 500,
+                            "size": 142.3,
+                            "path": null,
+                            "url": "/uploads/small_ideas_illu_Asset_7_53ce51a84b.png"
+                        }
+                    },
+                    "hash": "ideas_illu_Asset_7_53ce51a84b",
+                    "ext": ".png",
+                    "mime": "image/png",
+                    "size": 185.77,
+                    "url": "/uploads/ideas_illu_Asset_7_53ce51a84b.png",
+                    "previewUrl": null,
+                    "provider": "local",
+                    "provider_metadata": null,
+                    "created_at": "2021-06-25T22:40:40.006Z",
+                    "updated_at": "2021-06-25T22:41:34.439Z"
+                },
+                "Media": []
+            },
+            {
+                "id": 8,
+                "Title": "Synergy",
+                "BodyContent": "An old proverb says: “if you wanna go far, go together”. Great ideas move you out of the box. But what makes you go even beyond? Joining forces together. Synergy is one of our most ambitious projects. We focus on the development of your idea, and we also provide you with new tools, so that your actions can transcend. The empowerment created by this guidance enhances your confidence to become a corporate ambassador with an entrepreneurial drive.\n\nWe have a 360 approach. We hold workshops with you or your team, provide the necessary coaching, guide you with the documentation structure, and any other arrangement that leads to the success of your presentation. These events provide you with the exposure and complicity that your project needs to grow. And the best part is that it improves the experience of the performance achievement program. \n\nTake a look at these videos to see how the program works in a deeper level and our 2020’s Ignition Event, and see how the participants present their great idea to get supporters to develop it.",
+                "innolab_section_parent": 3,
+                "key": "synergy",
+                "published_at": "2021-05-25T21:07:37.506Z",
+                "created_at": "2021-05-25T21:07:35.825Z",
+                "updated_at": "2021-06-30T15:08:11.797Z",
+                "AccordionItems": [],
+                "Image": {
+                    "id": 53,
+                    "name": "synergy_illu.png",
+                    "alternativeText": "synerny icon",
+                    "caption": "",
+                    "width": 400,
+                    "height": 563,
+                    "formats": {
+                        "thumbnail": {
+                            "name": "thumbnail_synergy_illu.png",
+                            "hash": "thumbnail_synergy_illu_d05e10c8a7",
+                            "ext": ".png",
+                            "mime": "image/png",
+                            "width": 111,
+                            "height": 156,
+                            "size": 23.29,
+                            "path": null,
+                            "url": "/uploads/thumbnail_synergy_illu_d05e10c8a7.png"
+                        },
+                        "small": {
+                            "name": "small_synergy_illu.png",
+                            "hash": "small_synergy_illu_d05e10c8a7",
+                            "ext": ".png",
+                            "mime": "image/png",
+                            "width": 355,
+                            "height": 500,
+                            "size": 156.53,
+                            "path": null,
+                            "url": "/uploads/small_synergy_illu_d05e10c8a7.png"
+                        }
+                    },
+                    "hash": "synergy_illu_d05e10c8a7",
+                    "ext": ".png",
+                    "mime": "image/png",
+                    "size": 141.2,
+                    "url": "/uploads/synergy_illu_d05e10c8a7.png",
+                    "previewUrl": null,
+                    "provider": "local",
+                    "provider_metadata": null,
+                    "created_at": "2021-06-24T22:44:08.462Z",
+                    "updated_at": "2021-06-25T22:46:53.991Z"
+                },
+                "Media": [
+                    {
+                        "id": 63,
+                        "name": "Screen Shot 2021-06-25 at 11.59.27.png",
+                        "alternativeText": "",
+                        "caption": "https://mediaexchange.accenture.com/media/t/1_77ouy0gy",
+                        "width": 1867,
+                        "height": 1038,
+                        "formats": {
+                            "thumbnail": {
+                                "name": "thumbnail_Screen Shot 2021-06-25 at 11.59.27.png",
+                                "hash": "thumbnail_Screen_Shot_2021_06_25_at_11_59_27_242387eef8",
+                                "ext": ".png",
+                                "mime": "image/png",
+                                "width": 245,
+                                "height": 136,
+                                "size": 32.23,
+                                "path": null,
+                                "url": "/uploads/thumbnail_Screen_Shot_2021_06_25_at_11_59_27_242387eef8.png"
+                            },
+                            "large": {
+                                "name": "large_Screen Shot 2021-06-25 at 11.59.27.png",
+                                "hash": "large_Screen_Shot_2021_06_25_at_11_59_27_242387eef8",
+                                "ext": ".png",
+                                "mime": "image/png",
+                                "width": 1000,
+                                "height": 556,
+                                "size": 375.89,
+                                "path": null,
+                                "url": "/uploads/large_Screen_Shot_2021_06_25_at_11_59_27_242387eef8.png"
+                            },
+                            "medium": {
+                                "name": "medium_Screen Shot 2021-06-25 at 11.59.27.png",
+                                "hash": "medium_Screen_Shot_2021_06_25_at_11_59_27_242387eef8",
+                                "ext": ".png",
+                                "mime": "image/png",
+                                "width": 750,
+                                "height": 417,
+                                "size": 227.34,
+                                "path": null,
+                                "url": "/uploads/medium_Screen_Shot_2021_06_25_at_11_59_27_242387eef8.png"
+                            },
+                            "small": {
+                                "name": "small_Screen Shot 2021-06-25 at 11.59.27.png",
+                                "hash": "small_Screen_Shot_2021_06_25_at_11_59_27_242387eef8",
+                                "ext": ".png",
+                                "mime": "image/png",
+                                "width": 500,
+                                "height": 278,
+                                "size": 110,
+                                "path": null,
+                                "url": "/uploads/small_Screen_Shot_2021_06_25_at_11_59_27_242387eef8.png"
+                            }
+                        },
+                        "hash": "Screen_Shot_2021_06_25_at_11_59_27_242387eef8",
+                        "ext": ".png",
+                        "mime": "image/png",
+                        "size": 918.28,
+                        "url": "/uploads/Screen_Shot_2021_06_25_at_11_59_27_242387eef8.png",
+                        "previewUrl": null,
+                        "provider": "local",
+                        "provider_metadata": null,
+                        "created_at": "2021-06-25T17:59:44.412Z",
+                        "updated_at": "2021-06-25T22:38:07.831Z"
+                    },
+                    {
+                        "id": 64,
+                        "name": "Screen Shot 2021-06-25 at 12.00.08.png",
+                        "alternativeText": "",
+                        "caption": "https://mediaexchange.accenture.com/playlist/dedicated/1_t35hf19b/1_i9vc2qof",
+                        "width": 1731,
+                        "height": 1034,
+                        "formats": {
+                            "thumbnail": {
+                                "name": "thumbnail_Screen Shot 2021-06-25 at 12.00.08.png",
+                                "hash": "thumbnail_Screen_Shot_2021_06_25_at_12_00_08_16f57397ef",
+                                "ext": ".png",
+                                "mime": "image/png",
+                                "width": 245,
+                                "height": 146,
+                                "size": 19.3,
+                                "path": null,
+                                "url": "/uploads/thumbnail_Screen_Shot_2021_06_25_at_12_00_08_16f57397ef.png"
+                            },
+                            "large": {
+                                "name": "large_Screen Shot 2021-06-25 at 12.00.08.png",
+                                "hash": "large_Screen_Shot_2021_06_25_at_12_00_08_16f57397ef",
+                                "ext": ".png",
+                                "mime": "image/png",
+                                "width": 1000,
+                                "height": 597,
+                                "size": 172.7,
+                                "path": null,
+                                "url": "/uploads/large_Screen_Shot_2021_06_25_at_12_00_08_16f57397ef.png"
+                            },
+                            "medium": {
+                                "name": "medium_Screen Shot 2021-06-25 at 12.00.08.png",
+                                "hash": "medium_Screen_Shot_2021_06_25_at_12_00_08_16f57397ef",
+                                "ext": ".png",
+                                "mime": "image/png",
+                                "width": 750,
+                                "height": 448,
+                                "size": 110.02,
+                                "path": null,
+                                "url": "/uploads/medium_Screen_Shot_2021_06_25_at_12_00_08_16f57397ef.png"
+                            },
+                            "small": {
+                                "name": "small_Screen Shot 2021-06-25 at 12.00.08.png",
+                                "hash": "small_Screen_Shot_2021_06_25_at_12_00_08_16f57397ef",
+                                "ext": ".png",
+                                "mime": "image/png",
+                                "width": 500,
+                                "height": 299,
+                                "size": 57.73,
+                                "path": null,
+                                "url": "/uploads/small_Screen_Shot_2021_06_25_at_12_00_08_16f57397ef.png"
+                            }
+                        },
+                        "hash": "Screen_Shot_2021_06_25_at_12_00_08_16f57397ef",
+                        "ext": ".png",
+                        "mime": "image/png",
+                        "size": 272.78,
+                        "url": "/uploads/Screen_Shot_2021_06_25_at_12_00_08_16f57397ef.png",
+                        "previewUrl": null,
+                        "provider": "local",
+                        "provider_metadata": null,
+                        "created_at": "2021-06-25T18:00:25.732Z",
+                        "updated_at": "2021-06-25T22:37:54.982Z"
+                    }
+                ]
+            },
+            {
+                "id": 9,
+                "Title": "Learning",
+                "BodyContent": "To make the Human+Machine vision happen, we need to upskill and reskill. That is why we engage and create awareness of the new information inside Accenture. This is key for our workforce to be updated with the new topics happening in the company. \n\nWe offer insights on:\n\n- [Employee experience](https://connectedlearning.accenture.com/learningboard/910373-one-crdc-herramientas-de-experiencia-de-empleado)\n- [Self development](https://connectedlearning.accenture.com/learningboard/916163-l3ad-los-bloques-culturales-de-newhabits)\n- [Corporate culture](https://connectedlearning.accenture.com/learningboard/916163-l3ad-los-bloques-culturales-de-newhabits)\n- [Innovation agenda](https://mediaexchange.accenture.com/playlist/dedicated/1_cpwtr5w4/1_q0ttn61h)\n- [Technological vision](https://mediaexchange.accenture.com/playlist/dedicated/1_pvv8vjrq/1_v145ydjk)",
+                "innolab_section_parent": 3,
+                "key": "learning",
+                "published_at": "2021-05-25T21:11:38.654Z",
+                "created_at": "2021-05-25T21:11:36.589Z",
+                "updated_at": "2021-06-30T15:08:11.797Z",
+                "AccordionItems": [],
+                "Image": {
+                    "id": 65,
+                    "name": "learn_illu.png",
+                    "alternativeText": "learning key",
+                    "caption": "learning key",
+                    "width": 400,
+                    "height": 500,
+                    "formats": {
+                        "thumbnail": {
+                            "name": "thumbnail_learn_illu.png",
+                            "hash": "thumbnail_learn_illu_0cf9a12ac5",
+                            "ext": ".png",
+                            "mime": "image/png",
+                            "width": 125,
+                            "height": 156,
+                            "size": 27.19,
+                            "path": null,
+                            "url": "/uploads/thumbnail_learn_illu_0cf9a12ac5.png"
+                        }
+                    },
+                    "hash": "learn_illu_0cf9a12ac5",
+                    "ext": ".png",
+                    "mime": "image/png",
+                    "size": 162.93,
+                    "url": "/uploads/learn_illu_0cf9a12ac5.png",
+                    "previewUrl": null,
+                    "provider": "local",
+                    "provider_metadata": null,
+                    "created_at": "2021-06-25T22:40:39.897Z",
+                    "updated_at": "2021-06-25T22:41:49.474Z"
+                },
+                "Media": []
+            },
+            {
+                "id": 10,
+                "Title": "Storytelling",
+                "BodyContent": "History and science prove in many ways: Humanity is wired up to learn and connect through stories. Storytelling celebrates our diversity in the Human+Machine vision. Let us help you with the challenge of mastering this ability that can improve your sales pitches and training.",
+                "innolab_section_parent": 3,
+                "key": "storytelling",
+                "published_at": "2021-05-25T21:12:26.220Z",
+                "created_at": "2021-05-25T21:12:24.743Z",
+                "updated_at": "2021-06-30T15:08:11.797Z",
+                "AccordionItems": [],
+                "Image": {
+                    "id": 30,
+                    "name": "story_illuAsset 10.svg",
+                    "alternativeText": "",
+                    "caption": "",
+                    "width": 803,
+                    "height": 834,
+                    "formats": null,
+                    "hash": "story_illu_Asset_10_ce5280ac4a",
+                    "ext": ".svg",
+                    "mime": "image/svg+xml",
+                    "size": 790.12,
+                    "url": "/uploads/story_illu_Asset_10_ce5280ac4a.svg",
+                    "previewUrl": null,
+                    "provider": "local",
+                    "provider_metadata": null,
+                    "created_at": "2021-06-24T17:30:34.481Z",
+                    "updated_at": "2021-06-24T17:30:34.486Z"
+                },
+                "Media": []
+            }
+        ]
+    }
+]

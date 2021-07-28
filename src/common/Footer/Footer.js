@@ -1,53 +1,65 @@
-import React from "react";
+import React, { useState } from 'react';
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
-import Nav from "react-bootstrap/Nav";
+// import Nav from "react-bootstrap/Nav";
+import {Row, Col} from "react-bootstrap";
+import GdprDialog from "../../common/GdprDialog";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCoffee } from "@fortawesome/free-solid-svg-icons";
+import { faYammer } from "@fortawesome/free-brands-svg-icons";
+import { Link } from 'react-router-dom';
+
+//import { Link } from "react-router-dom";
+
 
 const Footer = () => {
-    const currentYear = new Date().getFullYear();
-
+    const gdprDate = localStorage.getItem("gdprDate");
+    const [gdprOpen, setGdprOpen] = useState(gdprDate === null);
+    
     return (
-        <Navbar
-            className="footer pt-2 pt-sm-2 pt-md-0"
-            expand="md"
-        >
-            <Container>
-                <img
-                    className="mr-1 mr-md-2 mr-lg-5"
-                    src={`${process.env.PUBLIC_URL}/static/images/accenture-black.png`}
-                    alt="Accenture"
-                />
-                <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-
-                <Navbar.Collapse>
-                    <Navbar.Text className="mb-1 mb-sm-1 mb-md-0">
-                        <span>
-                            &copy; {currentYear} Accenture. All Rights Reserved.
-                        </span>
-                    </Navbar.Text>
-                    <Nav className="ml-3 mr-auto footer-links invisible">
-                        <Nav.Item>
-                            <Nav.Link href="#">Terms of Use</Nav.Link>
-                        </Nav.Item>
-                        <Nav.Item>
-                            <Nav.Link href="#">Privacy Statement</Nav.Link>
-                        </Nav.Item>
-                        <Nav.Item>
-                            <Nav.Link href="#">Contact Support</Nav.Link>
-                        </Nav.Item>
-                    </Nav>
-                    <Nav className="footer-brand">
-                        <Nav.Item className="px-1">
-                            <FontAwesomeIcon icon={faCoffee} size="lg" />
-                            <span className="ml-1">Innolab</span>
-                        </Nav.Item>
-                        <Nav.Item className="px-1">React code base</Nav.Item>
-                    </Nav>
-                </Navbar.Collapse>
-            </Container>
-        </Navbar>
+        <>
+            <GdprDialog open={gdprOpen} setOpen={setGdprOpen} />
+           
+            <Navbar
+                className="footer "
+        
+                id="contact-us"
+            >
+                <span className="contactFooter">
+                    <h2>Contact us</h2>
+                    Our team is more than happy to help you!<br/>Please use the following links to send us an email and we would reach out as soon as possible.
+                </span>
+                <Container>
+                <Row>  
+                    <Col>
+                        <Row><a className="footerLink" href="mailto:jose.p.jimenez@accenture.com">General Information</a> </Row>  
+                        <Row><a  className="footerLink" href="mailto:jorge.clare@accenture.com">Projects</a> </Row>
+                        <Row><a className="footerLink" href="mailto:esteban.sancho@accenture.com">Automation</a> </Row>
+                        <Row><a className="footerLink" href="https://go.accenture.com/innolabsupport" target="_blank" rel="noreferrer">Services</a> </Row>
+                        <Row><a className="footerLink" href="mailto:jose.p.jimenez@accenture.com">Synops</a> </Row>
+                    </Col>
+                    <Col>
+                        <Row><a className="footerLink" href="mailto:rodolfo.soto@accenture.com">One App Experience</a> </Row>
+                        <Row><a className="footerLink" href="mailto:g.velez.sanchez@accenture.com">DevOps</a> </Row>
+                        <Row><a className="footerLink" href="mailto:esteban.sancho@accenture.com">Synergy Program</a> </Row>
+                        <Row><a className="footerLink" href="mailto:david.zuniga@accenture.com">L3AD</a> </Row>
+                        <Row><a className="footerLink" href="mailto:david.zuniga@accenture.com">Training / Storytelling</a> </Row>
+                    </Col>    
+                    <Col>
+                        <Row>
+                            <Link to="#" className="footerLink" onClick={()=>{setGdprOpen(true)}}>Terms of Use</Link>    
+                        </Row>         
+                        <Row>
+                            <div className="footerLink text-white">Follow us :
+                                <a href="#" className="px-1 ">
+                                    <FontAwesomeIcon icon={faYammer} size="lg" />
+                                </a>
+                            </div>
+                        </Row>
+                    </Col>
+                </Row>      
+                </Container>
+            </Navbar>
+        </>
     );
 };
 

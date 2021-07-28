@@ -1,17 +1,15 @@
-import React, { lazy, Suspense } from "react";
+import React, {  Suspense } from "react";
 import { Router, Switch, Redirect } from "react-router-dom";
 import { history } from "_helpers/history";
 import RouteWithLayout from "../common/RouteWithLayout/RouteWithLayout";
 import { Main as MainLayout, Minimal as MinimalLayout } from "../layouts";
 import Dashboard from "../views/Dashboard/Dashboard";
-import Articles from "../views/Articles/Articles";
-import ArticleDetail from "../views/Articles/ArticleDetail";
 import NotFound from "../views/NotFound/NotFound";
 import Forbidden from "../views/Forbidden/Forbidden";
+import Startup from "../views/Startup/Startup";
+import Donwload from '../views/Donwload/Donwload';
 import Spinner from "react-bootstrap/Spinner";
-
-const env = process.env.REACT_APP_ENV;
-const Startup = (env === 'local') ? lazy(() => import('../views/Startup/StartupLocal')) : lazy(() => import('../views/Startup/Startup'));
+import IdeasForm from "../views/IdeasForm/IdeasForm"
 
 const Routes = () => {
     return (
@@ -27,6 +25,12 @@ const Routes = () => {
                 }
             >
                 <Switch>
+                   <RouteWithLayout
+                        component={Donwload}
+                        exact={false}
+                        layout={MainLayout}
+                        path="/download/:id"
+                    />
                     <RouteWithLayout
                         component={Startup}
                         exact={true}
@@ -42,19 +46,6 @@ const Routes = () => {
                     />
 
                     <RouteWithLayout
-                        component={Articles}
-                        layout={MainLayout}
-                        exact={true}
-                        path="/articles"
-                    />
-                    <RouteWithLayout
-                        component={ArticleDetail}
-                        layout={MainLayout}
-                        exact={true}
-                        path="/article/:id"
-                    />
-
-                    <RouteWithLayout
                         component={Forbidden}
                         exact
                         layout={MinimalLayout}
@@ -67,6 +58,14 @@ const Routes = () => {
                         layout={MinimalLayout}
                         path="/not-found"
                     />
+
+                   <RouteWithLayout
+                        component={IdeasForm}
+                        exact
+                        layout={MinimalLayout}
+                        path="/add-idea"
+                    />
+
                     <Redirect to="/not-found" />
                 </Switch>
             </Suspense>
