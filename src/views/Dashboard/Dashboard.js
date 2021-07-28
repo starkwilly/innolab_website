@@ -1,24 +1,16 @@
 import React from "react";
 import { Container } from 'react-bootstrap';
-import Hero from '../Hero/Hero';
+import Hero from '../../components/Hero/Hero';
 import "./Dashboard.css";
 import AboutUs from '../../components/AboutUs/AboutUs';
 import HeadlineCard from '../../components/HeadlineCard/HeadlineCard';
 import InnolabCard from '../../components/InnolabCard/InnolabCard';
-import ProfileContent from './Profilecontent'
-//import { useSelector } from "react-redux";
-//import { Link } from 'react-router-dom';
 
 import { getSectionSingle, getSectionParents  } from "../../_services/strapiService";
-//import JsFileDownloader from 'js-file-downloader';
-
-// import dataObj from './strapi.json';
 
 const Dashboard = () => {
 
     const [dataObj, setDataObj] = React.useState(null);
-    // PENDING USE STORE
-    // const {token} = useSelector((state) => ({token:state.auth.token}));
 
     React.useEffect(() => {
         const getInitialData = async () => {
@@ -40,38 +32,27 @@ const Dashboard = () => {
         }
         
         getInitialData();
-
-        //getGlobalsJson();
   
     }, []);
 
     return (
         (dataObj) &&
-        <>  
-        
+        <>
         <Hero  />
-        <div className="stars"></div>
-        <div className="stars2"></div>
-        
         <Container className="dashboard text-white">
-       
-
-        {dataObj.sections.map((section, sectionId) => (
-            (section.innolab_section_children && section.innolab_section_children.length > 0)
-            ? (
-            <Container id={`${section.key}`} key={`${section.key}`} className="section" fluid>
-                <HeadlineCard cardInfo={section} cardId={`${sectionId}`}/>
-                {section.innolab_section_children.map((itm, cardIdx) => <InnolabCard cardInfo={itm}  cardId={`${sectionId}-${cardIdx}`} key={cardIdx}/>)}
-            </Container>
-            )
-            : (
-            <AboutUs cardInfo={section} cardId={`${section.key}`} key={`${section.id}`}/>
-            )
-        ))}
-       
+            {dataObj.sections.map((section, sectionId) => (
+                (section.innolab_section_children && section.innolab_section_children.length > 0)
+                ? (
+                <Container id={`${section.key}`} key={`${section.key}`} className="section" fluid>
+                    <HeadlineCard cardInfo={section} cardId={`${sectionId}`}/>
+                    {section.innolab_section_children.map((itm, cardIdx) => <InnolabCard cardInfo={itm}  cardId={`${sectionId}-${cardIdx}`} key={cardIdx}/>)}
+                </Container>
+                )
+                : (
+                <AboutUs cardInfo={section} cardId={`${section.key}`} key={`${section.id}`}/>
+                )
+            ))}
         </Container>
-        <ProfileContent></ProfileContent>
-       
         </>
     );
 };

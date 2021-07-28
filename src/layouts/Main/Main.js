@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import Header from "../../common/Header/Header";
 import Footer from "../../common/Footer/Footer";
 
-import { getGlobals  } from "../../_services/strapiService";
+import { getGlobals } from "../../_services/strapiService";
 import Container from "react-bootstrap/Container";
 import { useMsal } from "@azure/msal-react";
 import { history } from "_helpers/history";
@@ -17,7 +17,7 @@ const Main = ({ children }) => {
     history.push("/");
       return null;
    }
-    const fakeUser = { name: "info.firstname", lastname: "info.lastname" };
+    // const fakeUser = { name: "info.firstname", lastname: "info.lastname" };
     const [globalData, setGlobalData] = React.useState(null);
     // PENDING USE STORE
     // const isDataLoading = useSelector((state) => state);
@@ -38,7 +38,7 @@ const Main = ({ children }) => {
     return (
         globalData && (
             <>                 
-                <Header user={fakeUser}></Header>
+                <Header/>
                 <Container
                     className="mainContainer  p-0"
                     style={

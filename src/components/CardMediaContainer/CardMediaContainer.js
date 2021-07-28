@@ -1,8 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './CardMediaContainer.css';
-import { Link } from 'react-router-dom';
-
 
 const CardMediaContainer = (props) => {
     const {mediaInfo} = props;
@@ -17,13 +15,7 @@ const CardMediaContainer = (props) => {
                 <li className="list-group-item media rounded bg-dark m-1 p-0 overflow-hidden" key={idx}>
                     <div className="row">
                         <div className="col">
-                            { RegExp(/^https?:\/\/[^$\s]+/i).test(mediaItm.caption)
-                                ?   <Link to={mediaItm.caption} target="_blank" download rel="noopener noreferrer">
-                                        <img src={mediaItm.url} alt={mediaItm.alternativeText} width="256px" height="144px"/>
-                                    </Link>
-                                     
-                                :       <img src={mediaItm.url} alt={mediaItm.alternativeText} width="256px" height="144px"/>
-                            }
+                            <RenderMediaTag mediaItm={mediaItm}/>
                         </div>
                     </div>
                     {/* <div className="row">
@@ -42,3 +34,21 @@ CardMediaContainer.propTypes = {
 }
 
 export default CardMediaContainer;
+
+
+const RenderMediaTag = (props) => {
+    const {mediaItm} = props;
+    const mediaBase = <img src={`${process.env.REACT_APP_API}${mediaItm.url}`} alt={mediaItm.alternativeText} width="256px" height="144px"/>
+    let mediaProps = {};
+    if (RegExp(/^https?:\/\/[^$\s]+/i).test(mediaItm.caption)) {
+        mediaProps = {...mediaProps, href:mediaItm.caption, target:"_blank"}
+        if (RegExp(/^.*\.(zip|msi)$/ig).test(mediaItm.caption)) { // add download to listed file extensions anchor
+            mediaProps = {...mediaProps, download:true, rel:"noopener noreferrer"}
+        }
+    }
+
+    return (mediaProps.href !== undefined) ? <a {...mediaProps}>{mediaBase}</a> : <>{mediaBase}</>
+}
+RenderMediaTag.propTypes = {
+    mediaItm: PropTypes.any.isRequired,
+}

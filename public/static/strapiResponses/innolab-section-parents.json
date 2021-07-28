@@ -54,7 +54,7 @@
                     {
                         "id": 1,
                         "Title": "Test and validate",
-                        "BodyContent": "**Daikiri** is our Swiss Army knife used by many in several countries, that merges testing tools in an unique way, obtaining a very affordable solution that allows you, among other things:\n\n- Audit and ensure contents quality with pixel perfect accuracy.\n\n- Provide an automated task creator that simplifies the debugging process.\n\n- It is affordable. Provides a centralized platform and lowers the cost of expensive licenses. \n\nCheck the next video lecture where we explain in full detail the features we have that make you unleash the testing experience, and also check out the Daikirí docs to know more about the platform.\n\n\n[![Group 339.png](https://innolab-stage.accenture.com/innolab-dev-api/uploads/Group_339_955c8b0d43.png)](https://mediaexchange.accenture.com/media/t/0_z33ltn57)\n[![Group 338.png](https://innolab-stage.accenture.com/innolab-dev-api/uploads/Group_338_af3f229dd0.png)](https://collections.accenture.com/FileViewer.aspx?f=05eef573-78c2-42a5-a321-e41bc82998e4&pId=7f56f911-2ed9-eb11-b12b-0a0b3d281f9d&vw=thumbnail)\n\nWould you like to try [Daikiri](https://innolab-stage.accenture.com/innolab-dev/public/downloadables/test.zip)? Click here to download it.\n",
+                        "BodyContent": "**Daikiri** is our Swiss Army knife used by many in several countries, that merges testing tools in an unique way, obtaining a very affordable solution that allows you, among other things:\n\n- Audit and ensure contents quality with pixel perfect accuracy.\n\n- Provide an automated task creator that simplifies the debugging process.\n\n- It is affordable. Provides a centralized platform and lowers the cost of expensive licenses. \n\nCheck the next video lecture where we explain in full detail the features we have that make you unleash the testing experience, and also check out the Daikirí docs to know more about the platform.\n\n\n[![Group 339.png](https://innolab-stage.accenture.com/innolab-dev-api/uploads/Group_339_955c8b0d43.png)](https://mediaexchange.accenture.com/media/t/0_z33ltn57)\n[![Group 338.png](https://innolab-stage.accenture.com/innolab-dev-api/uploads/Group_338_af3f229dd0.png)](https://collections.accenture.com/FileViewer.aspx?f=05eef573-78c2-42a5-a321-e41bc82998e4&pId=7f56f911-2ed9-eb11-b12b-0a0b3d281f9d&vw=thumbnail)\n\nWould you like to try Daikiri? Click here to download it.\n",
                         "Image": {
                             "id": 41,
                             "name": "daik_illu.png",
@@ -91,7 +91,7 @@
                                 "id": 91,
                                 "name": "Group 343.png",
                                 "alternativeText": "",
-                                "caption": "https://innolab-stage.accenture.com/innolab-dev/public/downloadables/test.zip",
+                                "caption": "https://innolab.accenture.com/lab/download/zip_daikiri",
                                 "width": 243,
                                 "height": 124,
                                 "formats": null,
@@ -110,7 +110,7 @@
                                 "id": 92,
                                 "name": "Group 342.png",
                                 "alternativeText": "",
-                                "caption": "",
+                                "caption": "https://innolab.accenture.com/lab/download/msi_daikiri",
                                 "width": 243,
                                 "height": 124,
                                 "formats": null,
@@ -797,7 +797,7 @@
             {
                 "id": 6,
                 "Title": "Techmasters",
-                "BodyContent": "Our [Journey to Intelligent Operations](https://in.accenture.com/accentureoperationslearning/account-lead-academy-self-study/journey-to-intelligent-operations/) relies heavily on having a keen eye on improvement opportunities and experiences through [Robotic Process Automation](https://mylearning.accenture.com/mylearningui/learner/coursedetail/1580962). It provides us with resourceful support, focused research, and accurate estimation that can help you save time and money. Your [idea](https://innolab.accenture.com/add-idea) is all we need to give it a start. [Let’s discuss](mailto:esteban.sancho@accenture.com) what we can do to take what your team does to the next level! \n\n#### Training & Awareness:\nWe’ve established [a series of training sessions](https://mediaexchange.accenture.com/playlist/dedicated/1_g2852y8n/1_d7ui4syi), success stories, and grounders in order to build a [community](https://teams.microsoft.com/l/team/19%3aaa7d3dfe766d41d9bab2bca711c64dc0%40thread.skype/conversations?groupId=db1171f6-b50a-4482-91ac-acf39a923f9a&tenantId=e0793d39-0939-496d-b129-198edd916feb) of people who are interested in developing their automation expertise.",
+                "BodyContent": "Our [Journey to Intelligent Operations](https://in.accenture.com/accentureoperationslearning/account-lead-academy-self-study/journey-to-intelligent-operations/) relies heavily on having a keen eye on improvement opportunities and experiences through [Robotic Process Automation](https://mylearning.accenture.com/mylearningui/learner/coursedetail/1580962). It provides us with resourceful support, focused research, and accurate estimation that can help you save time and money. Your [idea](/add-idea) is all we need to give it a start. [Let’s discuss](mailto:esteban.sancho@accenture.com) what we can do to take what your team does to the next level! \n\n#### Training & Awareness:\nWe’ve established [a series of training sessions](https://mediaexchange.accenture.com/playlist/dedicated/1_g2852y8n/1_d7ui4syi), success stories, and grounders in order to build a [community](https://teams.microsoft.com/l/team/19%3aaa7d3dfe766d41d9bab2bca711c64dc0%40thread.skype/conversations?groupId=db1171f6-b50a-4482-91ac-acf39a923f9a&tenantId=e0793d39-0939-496d-b129-198edd916feb) of people who are interested in developing their automation expertise.",
                 "innolab_section_parent": 2,
                 "key": "techmasters",
                 "published_at": "2021-05-25T21:00:33.948Z",
@@ -992,7 +992,7 @@
             {
                 "id": 7,
                 "Title": "Ideas",
-                "BodyContent": "Innolab’s [idea repository](https://innolab.accenture.com/add-idea) is our open inbox to receive ideas globally. We consider all of them! With a simple form, you’ll be able to submit any idea and put it on the map. Once your idea is submitted, we got your back: our research team will get in touch with you to understand your vision and together we develop a roadmap to make it happen. It's so simple! Your ideas are the seeds that nurture the innovation technology Accenture strives. Together we create impact that shape our future.  Whether it is a Robotic Process Automation or an idea for a new process it has potential for Synergy. Let us help you with your idea, we want [to hear it!](https://innolab.accenture.com/add-idea)",
+                "BodyContent": "Innolab’s [idea repository](/add-idea) is our open inbox to receive ideas globally. We consider all of them! With a simple form, you’ll be able to submit any idea and put it on the map. Once your idea is submitted, we got your back: our research team will get in touch with you to understand your vision and together we develop a roadmap to make it happen. It's so simple! Your ideas are the seeds that nurture the innovation technology Accenture strives. Together we create impact that shape our future.  Whether it is a Robotic Process Automation or an idea for a new process it has potential for Synergy. Let us help you with your idea, we want [to hear it!](/add-idea)",
                 "innolab_section_parent": 3,
                 "key": "ideas",
                 "published_at": "2021-05-25T21:06:22.188Z",

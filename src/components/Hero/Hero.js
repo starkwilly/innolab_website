@@ -48,12 +48,7 @@ const Hero = () => {
             </div>
         </Jumbotron>
         <div className="fixed-bottom ideasCta">  
-         
-
-           
-           <IdeasCTA>
-               
-           </IdeasCTA>
+           <IdeasCTA/>
         </div>
         </>
     );

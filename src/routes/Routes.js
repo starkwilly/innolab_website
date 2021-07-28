@@ -7,11 +7,9 @@ import Dashboard from "../views/Dashboard/Dashboard";
 import NotFound from "../views/NotFound/NotFound";
 import Forbidden from "../views/Forbidden/Forbidden";
 import Startup from "../views/Startup/Startup";
+import Donwload from '../views/Donwload/Donwload';
 import Spinner from "react-bootstrap/Spinner";
 import IdeasForm from "../views/IdeasForm/IdeasForm"
-
-
-
 
 const Routes = () => {
     return (
@@ -28,10 +26,10 @@ const Routes = () => {
             >
                 <Switch>
                    <RouteWithLayout
-                        component={Forbidden}
-                        exact
+                        component={Donwload}
+                        exact={false}
                         layout={MainLayout}
-                        path="/downloadables/test.zip"
+                        path="/download/:id"
                     />
                     <RouteWithLayout
                         component={Startup}

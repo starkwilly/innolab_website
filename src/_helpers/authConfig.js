@@ -12,7 +12,7 @@ const isFirefox = firefox > 0; // Only needed if you need to support the redirec
 export const msalConfig = {
 
     auth: {
-        clientId: (process.env.REACT_APP_ENV === 'prod') ? "91efcc12-0f6e-45da-855d-bb4975a573ff" : "d0dde372-bc44-490b-be0d-ea8dbd53bfbd",
+        clientId: `${process.env.REACT_APP_AUTH_CLIENT}`,
         authority: `${process.env.REACT_APP_AUTH_API}`,
         redirectUri: `${process.env.REACT_APP_REDIRECT_URI}`,
     },
@@ -49,7 +49,7 @@ export const msalConfig = {
 
 // Add scopes here for ID token to be used at Microsoft identity platform endpoints.
 export const loginRequest = {
-    scopes: ["api://bc2515cd-c14e-4532-8a08-336c3370de48/default_read"]
+    scopes: [`${process.env.REACT_APP_AUTH_SCOPE}`]
 }
 
 

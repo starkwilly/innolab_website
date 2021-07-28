@@ -1,86 +1,61 @@
-/* eslint-disable no-unused-vars */
-
-//import { map } from "jquery";
-import { log } from "async";
-import { json } from "body-parser";
-import { React, useState, Component } from "react";
-import { Button, Form, Card, Alert } from "react-bootstrap";
-import { uploadIdeasForm } from "../../_services/strapiService";
+import { React, Component } from "react";
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux'
+import { postIdea } from '../../_services/commonService';
+import { Button, Form, Alert } from "react-bootstrap";
 import "./IdeasForm.scss";
 import { Link } from 'react-router-dom';
 
-const emails = [];
-const Addedmail = (emails) => {
-    return emails.map;
-};
-
-export default class App extends Component {
+class addIdeaForm extends Component {
     state = {
-        title: "",
-        email: "",
-        description: "",
-        file: null,
+        msg: "",
+        dataObj: {
+            title: "",
+            email: "",
+            description: "",
+        }
     };
 
-    addEmail = () => {
+    /* addEmail = () => {
         console.log(emails);
         emails.push(this.state.email);
-        // eslint-disable-next-line react/no-direct-mutation-state
         console.log(emails);
-    };
+    }; */
 
-    onSubmit = () => {
-        // eslint-disable-next-line no-debugger
-        //debugger;
-        console.log(this.state.title);
-        console.log(this.state.email);
-        console.log(this.state.file);
+    onSubmit = async () => {
+        this.setState({msg: ""});
+        const isEmpty = Object.values(this.state.dataObj).some(x => (x === null || x === ''));
 
-        var formData = new FormData();
-
-        // formData.append('description',this.state.description);
-        // this.uploadIdeasForm(formData).subscribe((data) => {
-        //    console.log(data)
-        //  })
-
-        //event.preventDefault();
-        //const data = new FormData();
-        var SBtoken = sessionStorage.getItem("SBtoken");
-        console.log("sbtoken");
-        console.log(SBtoken);
-
-        formData.append(
-            "FormAnswers",
-            JSON.stringify({
-                Title: this.state.title,
-                Creator: emails,
-                Country: this.state.country,
-                Description: this.state.description,
-            })
-        );
-
-        //formData.append(this.state.file)
-
-        // data.set("email", this.state.email);
-        // data.set("country", this.state.country);
-        // data.set("description", this.state.description);
-        // data.set("file", emails);
-
-        fetch(
-            "https://stagingacc03-test.accenture.com/servicebus-dev/api/v1/form/SaveFormAnswer",
-            {
-                method: "POST",
-                body: formData,
-                headers: { Authorization: "Bearer " + JSON.parse(SBtoken) },
-            }
-        );
+        if (!isEmpty) {
+            var formData = new FormData();
+            formData.append("FormUserId", "1");
+            // formData.append("File", this.state.file);
+            formData.append(
+                "FormAnswers",
+                JSON.stringify({
+                    submitedBy: this.props.profile.username,
+                    title: this.state.dataObj.title,
+                    contact: this.state.dataObj.email,
+                    description: this.state.dataObj.description,
+                })
+            );
+            const ret = await postIdea(formData);
+            console.log("postIdea RETURN", ret);
+            const msgTmp = (Number.isInteger(Number.parseFloat(ret))) ? "Your idea has been submitted" : "There's was an issue, please try again.";
+            this.setState({msg: msgTmp});
+        }else{
+            this.setState({msg: "Please fill all fields"});
+        }
     };
 
     render() {
+
         return (
             <>
-            <Link> </Link>
             <Form className="ideasForm">
+                <h3>back to <Link to="/" className="">Innolab</Link></h3>
+                <br/>
+                <center><h1 className="text-uppercase">Submit your idea</h1></center>
                 <Form.Group controlId="formTitle">
                     <Form.Label>
                         <h3>Idea title</h3>
@@ -89,27 +64,27 @@ export default class App extends Component {
                         as="input"
                         rows="3"
                         placeholder="title"
-                        value={this.state.title}
+                        value={this.state.dataObj.title}
                         onChange={(e) =>
-                            this.setState({ title: e.target.value })
+                            this.setState({ msg: "", dataObj: {...this.state.dataObj, title: e.target.value} })
                         }
                         type="text"
                     />
                 </Form.Group>
                 <Form.Group controlId="formEmail">
                     <Form.Label>
-                        <h3>Creator(s) email(s)</h3>
+                        <h3>Creator email</h3>
                     </Form.Label>
                     <Form.Control
                         as="input"
-                        value={this.state.email}
+                        value={this.state.dataObj.email}
                         onChange={(e) =>
-                            this.setState({ email: e.target.value })
+                            this.setState({ msg: "", dataObj: {...this.state.dataObj, email: e.target.value} })
                         }
                         type="email"
                         placeholder="Enter email"
                     />
-                     <Button onClick={this.addEmail}>add</Button>
+                    {/* <Button onClick={this.addEmail}>add</Button>
                     <Form.Text className="text-muted">
                         {emails.map((item) => (
                             <>
@@ -120,12 +95,12 @@ export default class App extends Component {
                                 <br></br>
                             </>
                         ))}
-                    </Form.Text>
+                    </Form.Text> */}
                     <Form.Group></Form.Group>
                    
                 </Form.Group>
 
-                <Form.Group controlId="formCountry">
+                {/* <Form.Group controlId="formCountry">
                     <Form.Label>
                         <h3>Country/Territory</h3>
                     </Form.Label>
@@ -145,7 +120,7 @@ export default class App extends Component {
                         <option>4</option>
                         <option>5</option>
                     </Form.Control>
-                </Form.Group>
+                </Form.Group> */}
                 <Form.Group controlId="formDescription">
                     <Form.Label>
                         <h3>Idea description</h3>
@@ -154,14 +129,14 @@ export default class App extends Component {
                         as="textarea"
                         rows={3}
                         placeholder="Description"
-                        value={this.state.description}
+                        value={this.state.dataObj.description}
                         onChange={(e) =>
-                            this.setState({ description: e.target.value })
+                            this.setState({ msg: "", dataObj: {...this.state.dataObj, description: e.target.value} })
                         }
                         type="textarea"
                     />
                 </Form.Group>
-                <Form.Group controlId="formFile">
+                {/* <Form.Group controlId="formFile">
                     <Form.Label>
                         <h3>Attachment</h3>
                     </Form.Label>
@@ -175,11 +150,11 @@ export default class App extends Component {
                     />
                     <Form.Label>
                         One file only<br></br>
-                        800 MB limit.<br></br>
+                        5 MB limit.<br></br>
                         Allowed types: txt pdf pptx docx xlsx ppt doc xls zip
                         rar
                     </Form.Label>
-                </Form.Group>
+                </Form.Group> */}
                 <Button
                     className="btnFormSend"
                     variant="light"
@@ -187,8 +162,25 @@ export default class App extends Component {
                 >
                     Submit
                 </Button>
+
+            { (this.state.msg !== "") &&
+                <div className="mt-2">
+                    <Alert variant="danger">{this.state.msg}</Alert>
+                </div>
+            }
             </Form>
             </>
         );
     }
 }
+
+addIdeaForm.propTypes = {
+    profile: PropTypes.any
+}
+
+const mapStateToProps = state => ({
+    profile: state.auth.info
+})
+
+
+export default connect(mapStateToProps)(addIdeaForm)
