@@ -41,7 +41,7 @@ class addIdeaForm extends Component {
             );
             const ret = await postIdea(formData);
             console.log("postIdea RETURN", ret);
-            const msgTmp = (Number.isInteger(Number.parseFloat(ret))) ? "Your idea has been submitted" : "There's was an issue, please try again.";
+            const msgTmp = (Number.isInteger(Number.parseFloat(ret.value))) ? "Your idea has been submitted" : "There's was an issue, please try again.";
             this.setState({msg: msgTmp});
         }else{
             this.setState({msg: "Please fill all fields"});
