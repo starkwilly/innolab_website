@@ -46,14 +46,12 @@ const Footer = () => {
                     </Col>    
                     <Col>
                         <Row>
-                            <Link to="#" className="footerLink" onClick={()=>{setGdprOpen(true)}}>Terms of Use</Link>    
+                            <Link to="#" className="footerLink" onClick={()=>{setGdprOpen(true)}}>Terms of Use</Link>
                         </Row>         
                         <Row>
-                            <div className="footerLink text-white">Follow us :
-                                <a href="#" className="px-1 ">
-                                    <FontAwesomeIcon icon={faYammer} size="lg" />
-                                </a>
-                            </div>
+                            <a className="footerLink" href="https://web.yammer.com/main/groups/eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiI5NzM5NTgxIn0/all" target="_blank" rel="noreferrer">
+                                Follow us: <FontAwesomeIcon icon={faYammer} size="lg" />
+                            </a>
                         </Row>
                     </Col>
                 </Row>      

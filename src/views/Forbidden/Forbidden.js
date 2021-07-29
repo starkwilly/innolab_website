@@ -5,7 +5,7 @@ import { faHandPaper } from "@fortawesome/free-solid-svg-icons";
 const Forbidden = () => {
     useEffect(() => {
         localStorage.removeItem(process.env.REACT_APP_LAST_URL);
-        console.log("FB-->mount it!");
+        window.log("FB-->mount it!");
     }, []);
 
     return (

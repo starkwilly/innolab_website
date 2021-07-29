@@ -4,10 +4,6 @@ export function postIdea(data) {
     return baseApi.post(`${process.env.REACT_APP_API_SB}/form/SaveFormAnswer`, data);
 }
 
-export function getDaikiriZip() {
-    return baseApi.get(`${process.env.REACT_APP_API_SB}/file/200`);
-}
-
-export function getDaikiriMsi() {
-    return baseApi.get(`${process.env.REACT_APP_API_SB}/file/201`);
+export function getFileById(id, onProgress) {
+    return baseApi.get(`${process.env.REACT_APP_API_SB}/file/${id}`, { responseType: 'blob', onDownloadProgress: (onProgress) ? onProgress : null });
 }

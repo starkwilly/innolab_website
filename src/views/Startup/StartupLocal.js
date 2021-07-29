@@ -19,12 +19,12 @@ const StartupLocal = () => {
         /* const user = localStorage.getItem("selectedUser");
         if (user !== null) {
             setUserExist(true);
-            console.log("Init User: ", user);
+            window.log("Init User: ", user);
             dispatch(getTokenAndTryAuthenticate())
                 .then(() => history.push(goto_url))
                 .catch(function (error) {
                     // handle error
-                    console.log(error);
+                    window.log(error);
                     history.push("/error");
                 });
         } */

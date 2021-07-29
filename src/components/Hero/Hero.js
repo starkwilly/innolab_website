@@ -39,12 +39,12 @@ const Hero = () => {
                         <br/><span className="outstandingFont">innovation.</span>
                     </p>
                 </h1>
-                <div>
+                {/* <div>
                     <p>
                         That&apos;s our motto.
                         <br/>We don&apos;t see innovation as our end, but the means.
                     </p>
-                </div>
+                </div> */}
             </div>
         </Jumbotron>
         <div className="fixed-bottom ideasCta">  

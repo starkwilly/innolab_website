@@ -5,7 +5,7 @@ import Spinner from "react-bootstrap/Spinner";
 function Startup() {
 
     useEffect(() => {
-        //console.log("Startup: mounted...");
+        //window.log("Startup: mounted...");
 
         const goto_url = (localStorage.getItem('back_to_url') ? localStorage.getItem('back_to_url') : '/dashboard');
 
