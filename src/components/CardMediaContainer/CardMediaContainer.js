@@ -40,11 +40,8 @@ const RenderMediaTag = (props) => {
     const {mediaItm} = props;
     const mediaBase = <img src={`${process.env.REACT_APP_API}${mediaItm.url}`} alt={mediaItm.alternativeText} width="256px" height="144px"/>
     let mediaProps = {};
-    if (RegExp(/^https?:\/\/[^$\s]+/i).test(mediaItm.caption)) {
+    if (RegExp(/^(https?:\/\/|\/)[^\s$]+/i).test(mediaItm.caption)) { // test for any links starting with / or http:// or https://
         mediaProps = {...mediaProps, href:mediaItm.caption, target:"_blank"}
-        if (RegExp(/^.*\.(zip|msi)$/ig).test(mediaItm.caption)) { // add download to listed file extensions anchor
-            mediaProps = {...mediaProps, download:true, rel:"noopener noreferrer"}
-        }
     }
 
     return (mediaProps.href !== undefined) ? <a {...mediaProps}>{mediaBase}</a> : <>{mediaBase}</>

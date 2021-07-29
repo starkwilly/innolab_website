@@ -28,7 +28,7 @@ const Routes = () => {
                    <RouteWithLayout
                         component={Donwload}
                         exact={false}
-                        layout={MainLayout}
+                        layout={MinimalLayout}
                         path="/download/:id"
                     />
                     <RouteWithLayout
