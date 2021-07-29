@@ -5,11 +5,12 @@ import Navbar from "react-bootstrap/Navbar";
 import NavItem from "react-bootstrap/NavItem";
 //import NewsList from "../NewsList/NewsList";
 import "./Header.scss";
+import { useMsal } from "@azure/msal-react";
 
 import { getSectionParents , getGlobals } from "../../_services/strapiService";
 
 const Header = () => {
-
+    const { instance } = useMsal();
     const [globalData, setGlobalData] = React.useState(null);
     const [sectionsData, setSectionsData] = React.useState(null);
     // PENDING USE STORE
@@ -33,6 +34,16 @@ const Header = () => {
         getInitialData();
     }, []);
 
+    function doMsalLogout(e) {
+        e.preventDefault();
+        const currentAccount = instance.getActiveAccount();
+        // window.log('HEADER MSAL: doMsalLogout > ', currentAccount);
+        instance.logoutRedirect({
+            account: currentAccount,
+            postLogoutRedirectUri: null,
+        });
+    }
+
     return (
         (globalData && sectionsData) &&
         <Navbar className="navbarTop navbar fixed-top" variant="dark">
@@ -44,6 +55,7 @@ const Header = () => {
                 <NavItem key={`${item.key}`}><Scrollchor to={`#${item.key}`} className="nav-link">{item.Title}</Scrollchor></NavItem>
             ))}
             <NavItem><Scrollchor to="#contact-us" className="nav-link">Contact us</Scrollchor></NavItem>
+            <NavItem className="nav-link" style={{textDecoration:"underline"}} as="a" onClick={doMsalLogout} href="#">Logout</NavItem>
         </Navbar>
     )
 };

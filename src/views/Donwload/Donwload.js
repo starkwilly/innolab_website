@@ -1,14 +1,16 @@
-import React, { useEffect} from "react";
-import PropTypes from 'prop-types';
+import React, { useEffect, useState } from "react";
+// import PropTypes from 'prop-types';
 import { history } from "../../_helpers/history";
-import { getDaikiriZip, getDaikiriMsi } from '../../_services/commonService';
+// import { Link } from 'react-router-dom';
+import { getFileById } from '../../_services/commonService';
 
 const Downloads = props => {
-    const { match } = props;
     const locParams = ((props || {}).match || {}).params;
+    const [downloadProgress, setDownloadProgress] = useState(null);
+    const [downloadSize, setDownloadSize] = useState(null);
 
     useEffect(() => {
-        console.log("Downloads View", match, locParams);
+        // window.log("Downloads View", locParams);
         if (locParams.id) {
             switchDownloadable(locParams.id);
         }else{
@@ -17,35 +19,79 @@ const Downloads = props => {
     }, []);
 
     const switchDownloadable = async key => {
-        let resp = null;
+        setDownloadSize(0);
+        setDownloadProgress(0);
+
+        let fileId = null;
         switch (key) {
-            case "timeout":
-                resp = await new Promise(r => setTimeout(r, 1000));
+            case "daikiri.zip":
+                fileId = 200;
                 break;
-            case "zip_daikiri":
-                resp = await getDaikiriZip();
-                break;
-            case "msi_daikiri":
-                resp = await getDaikiriMsi();
+            case "daikiri.msi":
+                fileId = 201;
                 break;
         
             default:
+                // if (key.indexOf('byid') === 0) { fileId = key.substr(4) } // get by id for testing
                 break;
         }
-        console.log("Downloads resp: ", resp);
-        history.push((resp === null) ? '/not-found' : '/');
+
+        if (fileId !== null) {
+            const resp = await getFileById(fileId, onProgressUpdate).catch(err => err);
+
+            window.log("switchDownloadable "+key, resp);
+
+            if (resp.data) {
+                setDownloadSize((resp.data.size/1000000).toFixed(2));
+                setDownloadProgress(100);
+                const blobObj = new Blob([resp.data], {type: resp.headers["content-type"]});
+
+                if (window.navigator.msSaveBlob) {
+                    window.navigator.msSaveBlob(blobObj, key);//ie10
+                } else {
+                    const downloadUrl = window.URL.createObjectURL(blobObj);
+                    const link = document.createElement('a');
+                    link.href = downloadUrl;
+                    link.setAttribute('download', key);
+                    document.body.appendChild(link);
+                    link.click();
+                    link.remove();
+                    window.URL.revokeObjectURL(downloadUrl);
+                }
+
+                return false;
+            }else{
+                fileId = null
+            }
+        }
+
+        // window.log("switchDownloadable Redirect ", fileId);
+        history.push((fileId === null) ? '/not-found' : '/');
+    }
+
+    const onProgressUpdate = (ev) => {
+        (downloadSize === null) && setDownloadSize((ev.total/1000000).toFixed(2));
+        setDownloadProgress(Math.floor(ev.loaded / ev.total * 100));
     }
 
     return (
-        <div
-        className="d-flex justify-content-center align-items-center h-100 text-white"
-        style={{ minHeight: "100vh" }}
-        >Downloading &quot;{locParams.id}&quot;...</div>
+        <>
+        <div className="container text-white w-50 h-100 pt-5">
+            <div className="row">
+                <div className="mx-auto h4">Downloading &quot;{locParams.id}&quot;</div>
+            </div>
+            <div className="row progress w-100">
+                <div className="progress-bar progress-bar-striped bg-info" role="progressbar" style={{width: `${downloadProgress}%`}} aria-valuenow={downloadProgress} aria-valuemin="0" aria-valuemax="100">{`${downloadProgress}%`}</div>
+            </div>
+            <div className="row">
+                <div className="mx-auto">Total {downloadSize} Mb</div>
+            </div>
+            {/* <div className="row">
+                <h3>back to <Link to="/" className="">Innolab</Link></h3>
+            </div> */}
+        </div>
+        </>
     )
-}
-
-Downloads.propTypes = {
-    match: PropTypes.any
 }
 
 export default Downloads;

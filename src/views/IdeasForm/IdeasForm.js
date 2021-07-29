@@ -9,6 +9,8 @@ import { Link } from 'react-router-dom';
 class addIdeaForm extends Component {
     state = {
         msg: "",
+        msgVariant: "",
+        file: null,
         dataObj: {
             title: "",
             email: "",
@@ -17,19 +19,25 @@ class addIdeaForm extends Component {
     };
 
     /* addEmail = () => {
-        console.log(emails);
+        window.log(emails);
         emails.push(this.state.email);
-        console.log(emails);
+        window.log(emails);
     }; */
 
     onSubmit = async () => {
-        this.setState({msg: ""});
-        const isEmpty = Object.values(this.state.dataObj).some(x => (x === null || x === ''));
+        this.setState({msg:"", msgVariant:""});
 
-        if (!isEmpty) {
+        const isEmpty = Object.values(this.state.dataObj).some(x => (x === null || x === ''));
+        const isEmailValid = RegExp(/\b[\w.-]+@[\w.-]+\.\w{2,4}\b/gi).test(this.state.dataObj.email);
+
+        if (isEmpty) {
+            this.setState({msg: "Please fill all fields", msgVariant:"danger"});
+        }else if (!isEmailValid) {
+            this.setState({msg: "Please enter valid email", msgVariant:"danger"});
+        }else{
             var formData = new FormData();
             formData.append("FormUserId", "1");
-            // formData.append("File", this.state.file);
+            // formData.append("File", this.state.file); // *** PENDING: IF FILE UPLOAD, TRACK PROGRESS ***
             formData.append(
                 "FormAnswers",
                 JSON.stringify({
@@ -39,12 +47,12 @@ class addIdeaForm extends Component {
                     description: this.state.dataObj.description,
                 })
             );
+            this.setState({msg:"Sending, please wait", msgVariant:"info"});
             const ret = await postIdea(formData);
-            console.log("postIdea RETURN", ret);
-            const msgTmp = (Number.isInteger(Number.parseFloat(ret.value))) ? "Your idea has been submitted" : "There's was an issue, please try again.";
-            this.setState({msg: msgTmp});
-        }else{
-            this.setState({msg: "Please fill all fields"});
+            // window.log("postIdea RETURN", ret);
+            const retId = Number.parseFloat(ret.data.value.id);
+            const msgTmp = (Number.isInteger(retId)) ? "Your idea has been submitted" : "There's was a server error, please try again.";
+            this.setState({msg: msgTmp, msgVariant:Number.isInteger(retId)?"success":"danger"});
         }
     };
 
@@ -62,7 +70,7 @@ class addIdeaForm extends Component {
                     </Form.Label>
                     <Form.Control
                         as="input"
-                        rows="3"
+                        maxLength="120"
                         placeholder="title"
                         value={this.state.dataObj.title}
                         onChange={(e) =>
@@ -77,6 +85,7 @@ class addIdeaForm extends Component {
                     </Form.Label>
                     <Form.Control
                         as="input"
+                        maxLength="120"
                         value={this.state.dataObj.email}
                         onChange={(e) =>
                             this.setState({ msg: "", dataObj: {...this.state.dataObj, email: e.target.value} })
@@ -128,6 +137,7 @@ class addIdeaForm extends Component {
                     <Form.Control
                         as="textarea"
                         rows={3}
+                        maxLength="3000"
                         placeholder="Description"
                         value={this.state.dataObj.description}
                         onChange={(e) =>
@@ -145,13 +155,14 @@ class addIdeaForm extends Component {
                         rows={3}
                         placeholder="File"
                         onChange={(e) =>
-                            this.setState({ file: e.target.files[0] })
+                            this.setState({ file: e.target.files[0] }) // *** THIS SHOULD VALIDATE SELECTED FILE FORMAT, SIZE AND OTHERS IF APPLY ***
                         }
+                        accept=".txt, .pdf, .zip, rar, pptx, .ppt, .xlsx, .xls, .docx, .doc, .png, .jpg, .jpeg"
                     />
                     <Form.Label>
                         One file only<br></br>
                         5 MB limit.<br></br>
-                        Allowed types: txt pdf pptx docx xlsx ppt doc xls zip
+                        Allowed types: .txt, .pdf, .zip, rar, pptx, .ppt, .xlsx, .xls, .docx, .doc, .png, .jpg, .jpeg
                         rar
                     </Form.Label>
                 </Form.Group> */}
@@ -165,7 +176,7 @@ class addIdeaForm extends Component {
 
             { (this.state.msg !== "") &&
                 <div className="mt-2">
-                    <Alert variant="danger">{this.state.msg}</Alert>
+                    <Alert variant={this.state.msgVariant}>{this.state.msg}</Alert>
                 </div>
             }
             </Form>

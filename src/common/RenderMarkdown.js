@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import ReactMarkdown from 'react-markdown';
+import { Link } from 'react-router-dom';
 
 const RenderMarkdown = (props) => {
     const {children} = props;
@@ -9,8 +10,8 @@ const RenderMarkdown = (props) => {
     return (
         <ReactMarkdown
             {...props}
-            linkTarget={href => (RegExp(/^\/+/).test(href)) ? null : "_blank"}
             // transformImageUri={src => process.env.REACT_APP_API+src}
+            components={{a: RouterLink}}
         >{children}</ReactMarkdown>
     )
 }
@@ -20,3 +21,15 @@ RenderMarkdown.propTypes = {
 }
 
 export default RenderMarkdown;
+
+const RouterLink = (props) => {
+    return (
+        RegExp(/^\/+[^download]/i).test(props.href) // test for any relative links starting with / and not /download
+        ? <Link to={props.href}>{props.children}</Link>
+        : <a href={props.href} target="blank">{props.children}</a>
+    );
+}
+RouterLink.propTypes = {
+    href: PropTypes.string,
+    children: PropTypes.any,
+}
