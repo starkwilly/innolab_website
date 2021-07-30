@@ -22,10 +22,11 @@ RenderMarkdown.propTypes = {
 
 export default RenderMarkdown;
 
-const RouterLink = (props) => {
+export const RouterLink = (props) => {
+    const dl = RegExp(/^(\/download)+/i).test(props.href); // testing if href is /download
     return (
-        RegExp(/^\/+[^download]/i).test(props.href) // test for any relative links starting with / and not /download
-        ? <Link to={props.href}>{props.children}</Link>
+        RegExp(/^\/+(download)?/i).test(props.href) // test for any relative links starting with / or /download
+        ? <Link to={props.href} target={dl ? "blank" : null}>{props.children}</Link>
         : <a href={props.href} target="blank">{props.children}</a>
     );
 }
