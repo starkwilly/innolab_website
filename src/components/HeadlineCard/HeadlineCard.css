@@ -1,0 +1,44 @@
+
+
+.cardHeadlineBase {
+    margin-bottom: 4rem;
+     padding: 2%;
+    min-height: 30rem;
+    box-shadow: 0 1rem 3rem rgb(0 0 0 / 50%);
+}
+.cardHeadlineBg {
+    border-width: 2px;
+    border-color: white;
+    background-color: rgba(0, 0, 0, 0);
+    background-position: center;
+    background-position-x: 30%;
+    background-repeat: no-repeat;
+    padding: 2%;
+    max-width: 91%;
+    margin: 0 auto;
+    margin-bottom: 10em;
+    
+}
+.cardHeadlineHeader h1:nth-child(odd) {
+    color: white;
+    text-shadow: -1px 1px 0 white,
+				  1px 1px 0 white,
+				 1px -1px 0 white,
+				-1px -1px 0 white;
+}
+.cardHeadlineHeader h1:nth-child(even) {
+    color: rgba(0, 0, 0, 1);
+    text-shadow: -1px 1px 0 white,
+				  1px 1px 0 white,
+				 1px -1px 0 white,
+				-1px -1px 0 white;
+}
+.card-body q.cardHeadlineQuote {
+    font-size: 1.3rem;
+}
+.card-body span.cardHeadlineSource {
+    font-size: 1.3rem;
+    margin-top: 32px;
+    margin-bottom: 96px;
+}
+

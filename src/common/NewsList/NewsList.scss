@@ -1,0 +1,20 @@
+@import "../../_theme/variables.scss";
+
+.newsContainer {
+    .dropdown-toggle::after {
+        display: none;
+    }
+    .dropdown-toggle::before {
+        content: "• ";
+    }
+    &.active .dropdown-toggle {
+        color: #F700FF;
+    }
+    .dropdown-menu {
+        background-color: $dark;
+        color: $gray-300;
+    }
+    .dropdown-item {
+        color: unset;
+    }
+}

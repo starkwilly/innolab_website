@@ -5,7 +5,7 @@ import { faSurprise } from "@fortawesome/free-solid-svg-icons";
 const NotFound = () => {
     useEffect(() => {
         localStorage.removeItem(process.env.REACT_APP_LAST_URL);
-        console.log("NF-->mount it!");
+        window.log("NF-->mount it!");
     }, []);
 
     return (

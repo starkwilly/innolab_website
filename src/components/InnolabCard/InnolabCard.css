@@ -1,7 +1,10 @@
 .cardBase {
-    margin-bottom: 6rem;
-    height: 30rem;
+    min-height: 30rem;
     box-shadow: 0 1rem 3rem rgb(0 0 0 / 50%);
+    max-width: 87%;
+    margin: 0 auto; 
+    margin-bottom: 3rem;
+  
 }
 .cardBg {
     border-width: 2px;
