@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './CardMediaContainer.css';
+import { RouterLink } from '../../common/RenderMarkdown'
 
 const CardMediaContainer = (props) => {
     const {mediaInfo} = props;
@@ -44,7 +45,7 @@ const RenderMediaTag = (props) => {
         mediaProps = {...mediaProps, href:mediaItm.caption, target:"_blank"}
     }
 
-    return (mediaProps.href !== undefined) ? <a {...mediaProps}>{mediaBase}</a> : <>{mediaBase}</>
+    return (mediaProps.href !== undefined) ? <RouterLink {...mediaProps}>{mediaBase}</RouterLink> : <>{mediaBase}</>
 }
 RenderMediaTag.propTypes = {
     mediaItm: PropTypes.any.isRequired,
