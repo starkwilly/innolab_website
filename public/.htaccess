@@ -1,5 +1,9 @@
 RewriteEngine on
 
+# take care of extra slashes(anywhere) in URL
+RewriteCond %{THE_REQUEST} //
+RewriteRule ^.*$ $0 [R=302,L,NE]
+
 # If an existing asset or directory is requested go to it as it is
 RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -f [OR]
 RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -d
