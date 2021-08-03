@@ -53,6 +53,9 @@ class addIdeaForm extends Component {
             const retId = Number.parseFloat(ret.data.value.id);
             const msgTmp = (Number.isInteger(retId)) ? "Your idea has been submitted" : "There's was a server error, please try again.";
             this.setState({msg: msgTmp, msgVariant:Number.isInteger(retId)?"success":"danger"});
+            if (Number.isInteger(retId)) {
+                this.setState({dataObj:{...this.state.dataObj, title:"", email:"", description:""}});
+            }
         }
     };
 
