@@ -40,7 +40,7 @@ const Main = ({ children }) => {
             <>                 
                 <Header/>
                 <Container
-                    className="mainContainer  p-0"
+                    className="mainContainer p-0"
                     style={
                         globalData.ImageBg
                             ? {
