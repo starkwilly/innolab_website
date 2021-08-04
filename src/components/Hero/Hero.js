@@ -4,6 +4,8 @@ import {React ,useState } from 'react'
 import {Jumbotron , Modal ,Button , Form } from 'react-bootstrap'
 import "./Hero.css"
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLightbulb } from "@fortawesome/free-solid-svg-icons";
 
            
 
@@ -17,7 +19,9 @@ function IdeasCTA() {
       <>
        
           <Link to="/add-idea"   >
+          
           <Button variant="primary" >
+          <FontAwesomeIcon icon={faLightbulb} size="md" />
           idea  
           </Button>                 
           </Link>
