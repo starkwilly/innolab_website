@@ -6,7 +6,7 @@ export function getGlobals() {
 }
 
 export function getSectionSingle(id) {
-    return (process.env.REACT_APP_API_ENABLED !== 'FALSE') ? baseApi.get('/innolab-section-singles/'+id) : baseApi.get(process.env.PUBLIC_URL+'/static/strapiResponses/innolab-section-singles.json');
+    return (process.env.REACT_APP_API_ENABLED !== 'FALSE') ? baseApi.get('/innolab-section-singles/'+id) : baseApi.get(process.env.PUBLIC_URL+'/static/strapiResponses/innolab-section-singles_2.json');
 }
 
 export function getSectionParents() {
