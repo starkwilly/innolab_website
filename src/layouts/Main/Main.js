@@ -1,11 +1,12 @@
 import React from "react";
 import PropTypes from "prop-types";
+import Container from "react-bootstrap/Container";
+import { getGlobals } from "../../_services/strapiService";
+import { parseImgSrc } from '../../common/RenderMarkdown';
 // import { useSelector } from 'react-redux';
 import Header from "../../common/Header/Header";
 import Footer from "../../common/Footer/Footer";
 
-import { getGlobals } from "../../_services/strapiService";
-import Container from "react-bootstrap/Container";
 import { useMsal } from "@azure/msal-react";
 import { history } from "_helpers/history";
 
@@ -44,7 +45,7 @@ const Main = ({ children }) => {
                     style={
                         globalData.ImageBg
                             ? {
-                                backgroundImage: `url(${process.env.REACT_APP_API}${globalData.ImageBg.url}`,
+                                backgroundImage: `url(${parseImgSrc(globalData.ImageBg.url)}`,
                             }
                             : {}
                     }
