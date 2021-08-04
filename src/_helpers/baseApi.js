@@ -4,7 +4,7 @@ import { msalInstance } from "../index";
 import { loginRequest } from "./authConfig";
 
 const baseApi = axios.create({
-    baseURL: (process.env.REACT_APP_API_ENABLED.toUpperCase() !== 'FALSE') ? process.env.REACT_APP_API : '/'
+    baseURL: (process.env.REACT_APP_API_ENABLED !== 'FALSE') ? process.env.REACT_APP_API : '/'
 });
 
 // Intercept request to get the current token if exist
@@ -29,7 +29,7 @@ async function setHeadersFn(config) {
             return null;
         });
 
-    if (resToken && process.env.REACT_APP_API_USE_TOKEN.toUpperCase() !== 'FALSE') {
+    if (resToken) {
         config.headers.Authorization = `Bearer ${resToken}`;
     }
     return config;
