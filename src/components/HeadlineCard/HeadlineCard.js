@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import RenderMarkdown from '../../common/RenderMarkdown';
+import RenderMarkdown, { parseImgSrc } from '../../common/RenderMarkdown';
 import './HeadlineCard.css';
 import ScrollAnimation from 'react-animate-on-scroll';
 
@@ -10,7 +10,7 @@ const HeadlineCard = (props) => {
 
     return (
         <ScrollAnimation animateIn="zoomIn" animateOut="zoomOut">
-            <div id={cardId} className="cardHeadlineBase cardHeadlineBg card " style={(cardInfo.Image) ? {backgroundImage:`url(${process.env.REACT_APP_API}${cardInfo.Image.url}`} : {}}>
+            <div id={cardId} className="cardHeadlineBase cardHeadlineBg card " style={(cardInfo.Image) ? {backgroundImage:`url(${parseImgSrc(cardInfo.Image.url)}`} : {}}>
                 <div className="row no-gutters h-100">
                     <div className="col-6 h-100 card-body text-left cardHeadlineHeader">
                         {cardInfo.Title.match(/\b(\w+)(\W*)\b/g).map((headerLine, hidx) => (

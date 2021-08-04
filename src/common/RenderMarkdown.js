@@ -10,7 +10,7 @@ const RenderMarkdown = (props) => {
     return (
         <ReactMarkdown
             {...props}
-            // transformImageUri={src => process.env.REACT_APP_API+src}
+            transformImageUri={parseImgSrc}
             components={{a: RouterLink}}
         >{children}</ReactMarkdown>
     )
@@ -33,4 +33,14 @@ export const RouterLink = (props) => {
 RouterLink.propTypes = {
     href: PropTypes.string,
     children: PropTypes.any,
+}
+
+export const parseImgSrc = (src) => {
+    window.log('RenderMardown > parseImgSrc > ', src)
+    if (process.env.REACT_APP_API_ENABLED.toLowerCase() !== "false" && src.indexOf("/") === 0) {
+        src = `${process.env.REACT_APP_API}${src}`;
+    }else if (src.indexOf(process.env.REACT_APP_API) === 0 ) {
+        src = src.substr(process.env.REACT_APP_API.length);
+    }
+    return `${src}`;
 }
