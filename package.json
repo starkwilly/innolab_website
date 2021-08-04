@@ -55,6 +55,7 @@
     "build:dev": "env-cmd -f .env.dev npm run build",
     "build:qa": "env-cmd -f .env.qa npm run build",
     "build:stage": "env-cmd -f .env.stage npm run build",
+    "build:stage-root": "env-cmd -f .env.stage-root npm run build",
     "build:prod": "env-cmd -f .env.prod npm run build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
