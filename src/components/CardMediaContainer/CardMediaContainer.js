@@ -42,7 +42,7 @@ const RenderMediaTag = (props) => {
     const mediaBase = <img src={parseImgSrc(mediaItm.url)} alt={mediaItm.alternativeText} width="256px" height="144px"/>
     let mediaProps = {};
     if (RegExp(/^(https?:\/\/|\/)[^\s$]+/i).test(mediaItm.caption)) { // test for any links starting with / or http:// or https://
-        mediaProps = {...mediaProps, href:mediaItm.caption, target:"_blank"}
+        mediaProps = {...mediaProps, href:mediaItm.caption, target:"_blank", rel:"noopener noreferrer"}
     }
 
     return (mediaProps.href !== undefined) ? <RouterLink {...mediaProps}>{mediaBase}</RouterLink> : <>{mediaBase}</>
