@@ -5,10 +5,10 @@
         "key": "human-machine",
         "QuoteText": "Humans and machines aren’t adversaries, fighting for each other’s jobs. Instead, they are symbiotic partners, each pushing the other to higher levels of performance.\n",
         "QuoteSource": "Paul R. Daugherty ¨Human + Machine¨",
-        "CommentsContent": "This vision is at the core of all of our developments. We conceive our products as the cocoon that helps our organization evolve to the next level.",
+        "CommentsContent": "#### This vision is at the core of all of our developments. We conceive our products as the cocoon that helps our organization evolve to the next level.",
         "published_at": "2021-05-24T19:50:50.074Z",
         "created_at": "2021-05-24T19:25:32.346Z",
-        "updated_at": "2021-06-25T16:08:26.406Z",
+        "updated_at": "2021-07-12T15:40:22.413Z",
         "Image": {
             "id": 50,
             "name": "hplusm_illu.png",
@@ -44,17 +44,17 @@
             {
                 "id": 1,
                 "Title": "Synops",
-                "BodyContent": "Imagine a place that allows users to do the best they can with what they know, powered with the best tools, and without painful or complicated learning curves. Synops is the blend between the best of human talent and machine effectiveness to empower our marketing operations. We are proudly part of the team that is developing [Synops for Marketing.](https://in.accenture.com/technologyforoperations/?p=25983)\n\n\n### The Delivery Toolkit\nAre you aware of your own power tools? We have conceived a set of automated tools that can help you do things faster, with improved accuracy, extend human abilities and also fueled by edgy technology.  ",
+                "BodyContent": "Imagine a place that allows users to do the best they can with what they know, powered with the best tools, and without painful or complicated learning curves. Synops is the blend between the best of human talent and machine effectiveness to empower our marketing operations. We are proudly part of the team that is developing [Synops for Marketing.](https://in.accenture.com/technologyforoperations/?p=25983)\n\n\n### DXL: The Delivery Toolkit​\nAre you aware of your own power tools? We have conceived a set of automated tools that can help you do things faster, with improved accuracy, extend human abilities and also fueled by edgy technology.  ",
                 "innolab_section_parent": 1,
                 "key": "synops",
                 "published_at": "2021-05-24T19:44:39.215Z",
                 "created_at": "2021-05-24T19:30:28.000Z",
-                "updated_at": "2021-07-05T16:28:03.528Z",
+                "updated_at": "2021-08-04T21:25:28.861Z",
                 "AccordionItems": [
                     {
                         "id": 1,
-                        "Title": "Test and validate",
-                        "BodyContent": "**Daikiri** is our Swiss Army knife used by many in several countries, that merges testing tools in an unique way, obtaining a very affordable solution that allows you, among other things:\n\n- Audit and ensure contents quality with pixel perfect accuracy.\n\n- Provide an automated task creator that simplifies the debugging process.\n\n- It is affordable. Provides a centralized platform and lowers the cost of expensive licenses. \n\nCheck the next video lecture where we explain in full detail the features we have that make you unleash the testing experience, and also check out the Daikirí docs to know more about the platform.\n\n\n[![Group 339.png](/uploads/Group_339_955c8b0d43.png)](https://mediaexchange.accenture.com/media/t/0_z33ltn57)\n[![Group 338.png](/uploads/Group_338_af3f229dd0.png)](https://collections.accenture.com/FileViewer.aspx?f=05eef573-78c2-42a5-a321-e41bc82998e4&pId=7f56f911-2ed9-eb11-b12b-0a0b3d281f9d&vw=thumbnail)\n\nWould you like to try Daikiri? Click here to download it.\n",
+                        "Title": "QA Automation(Daikiri) [DOWNLOAD HERE]",
+                        "BodyContent": "Formerly known as Daikiri, **SYNOPS DXL – QA Automation** is our special weapon used by many in several countries. It merges testing tools in an unique way, obtaining a very affordable solution that allows you, among other things:​\n\n- Audit and ensure the quality of the contents, with pixel perfect accuracy ​\n\n- Provide an automated task creator that simplifies the debugging process​\n\n- It is affordable. Provides a centralized platform and lowers the cost of expensive licenses. ​\n\n\nCheck the next video lecture where we explain in full detail the features available to unleash the testing experience, and also check out the documents to learn more about the platform. ​\n\n\n[![Group 339.png](https://innolab-stage.accenture.com/innolab-dev-api/uploads/Group_339_955c8b0d43.png)](https://mediaexchange.accenture.com/media/t/0_z33ltn57)\n[![Group 338.png](https://innolab-stage.accenture.com/innolab-dev-api/uploads/Group_338_af3f229dd0.png)](https://collections.accenture.com/api/Collection/DownloadFile/5185f165-4b70-486b-ae71-489e2a5c936d)\n\nWould you like to try QA Automation(Daikiri)? Click here to download it.​\n",
                         "Image": {
                             "id": 41,
                             "name": "daik_illu.png",
@@ -104,7 +104,7 @@
                                 "provider": "local",
                                 "provider_metadata": null,
                                 "created_at": "2021-07-01T22:23:48.169Z",
-                                "updated_at": "2021-07-05T15:05:59.542Z"
+                                "updated_at": "2021-08-04T20:43:33.901Z"
                             },
                             {
                                 "id": 92,
@@ -123,7 +123,7 @@
                                 "provider": "local",
                                 "provider_metadata": null,
                                 "created_at": "2021-07-01T22:24:09.614Z",
-                                "updated_at": "2021-07-01T22:24:09.620Z"
+                                "updated_at": "2021-08-04T20:43:58.127Z"
                             }
                         ]
                     }
@@ -152,12 +152,12 @@
             {
                 "id": 2,
                 "Title": "One App Project",
-                "BodyContent": "Through the years, we have focused on creating information and software technologies that go beyond just being a solution. We have created digital platforms that can be used in several ways to ease up and ensure you get a great user experience. That is how we ended up joining our tools, and we are growing a collaborative environment that provides even more value to your job. \n\nCheck out the next videos to see how integrating our tools helps our delivery center to have data driven insights and discover in this featurette, the vision that triggered the One app project, and how FORM did guide us in the journey. ",
+                "BodyContent": "Through the years, we have focused on creating information and software technologies that go beyond just being a solution. We have created digital platforms that can be used in several ways to ease up and ensure you get a great user experience. That is how we ended up joining our tools, and we are growing a collaborative environment that provides even more value to your job. \n\nCheck out these videos to see how integrating our tools helps our delivery center to have data driven insights. Discover the vision that triggered the One app project, and how FORM guided us.​",
                 "innolab_section_parent": 1,
                 "key": "one-app",
                 "published_at": "2021-06-24T15:57:47.797Z",
                 "created_at": "2021-05-25T20:11:12.318Z",
-                "updated_at": "2021-06-25T22:35:26.999Z",
+                "updated_at": "2021-08-04T20:22:34.130Z",
                 "AccordionItems": [
                     {
                         "id": 2,
@@ -661,10 +661,10 @@
         "key": "solutions",
         "QuoteText": "The secret of success is to do the common things uncommonly well",
         "QuoteSource": "John D. Rockefeller",
-        "CommentsContent": "We are obsessed about improving processes and visibility inside our operation. Take a look at the solution implementations we offer, and the add-ons we can create to take your work to the next level. ",
+        "CommentsContent": "#### We are obsessed about improving processes and visibility inside our operation. Take a look at the solution implementations we offer, and the add-ons we can create to take your work to the next level. ",
         "published_at": "2021-05-25T20:23:35.138Z",
         "created_at": "2021-05-25T20:23:33.393Z",
-        "updated_at": "2021-06-25T21:41:42.394Z",
+        "updated_at": "2021-07-12T15:57:36.286Z",
         "Image": {
             "id": 55,
             "name": "solution_illu.png",
@@ -705,7 +705,7 @@
                 "key": "jira",
                 "published_at": "2021-05-25T20:26:10.363Z",
                 "created_at": "2021-05-25T20:26:04.672Z",
-                "updated_at": "2021-06-25T22:42:11.777Z",
+                "updated_at": "2021-07-12T15:57:36.256Z",
                 "AccordionItems": [],
                 "Image": {
                     "id": 67,
@@ -759,7 +759,7 @@
                 "key": "workfront",
                 "published_at": "2021-05-25T20:55:13.999Z",
                 "created_at": "2021-05-25T20:54:49.554Z",
-                "updated_at": "2021-06-25T21:41:42.388Z",
+                "updated_at": "2021-07-12T15:57:36.256Z",
                 "AccordionItems": [],
                 "Image": {
                     "id": 45,
@@ -802,7 +802,7 @@
                 "key": "techmasters",
                 "published_at": "2021-05-25T21:00:33.948Z",
                 "created_at": "2021-05-25T21:00:32.342Z",
-                "updated_at": "2021-06-25T21:41:42.388Z",
+                "updated_at": "2021-08-04T20:47:12.143Z",
                 "AccordionItems": [],
                 "Image": {
                     "id": 51,
@@ -845,7 +845,7 @@
                 "key": "tempo",
                 "published_at": "2021-06-25T17:28:01.290Z",
                 "created_at": "2021-06-25T17:27:55.882Z",
-                "updated_at": "2021-06-25T22:38:52.817Z",
+                "updated_at": "2021-07-12T15:57:36.256Z",
                 "AccordionItems": [],
                 "Image": {
                     "id": 38,
@@ -953,10 +953,10 @@
         "key": "innovation",
         "QuoteText": "We believe our perspective, grounded in people and machines working together, requires a new approach and calls for the reimagination of businesses and our business processes.",
         "QuoteSource": "Paul R. Daugherty & H. James Wilson",
-        "CommentsContent": "To us, innovation is an open-source mission: and our job is not to own it, but to channel it. Since our very inception, we aim to be the circulatory system that makes ideas move and transform in our operations.",
+        "CommentsContent": "#### To us, innovation is an open-source mission: and our job is not to own it, but to channel it. Since our very inception, we aim to be the circulatory system that makes ideas move and transform in our operations.",
         "published_at": "2021-05-25T21:03:18.910Z",
         "created_at": "2021-05-25T21:03:17.608Z",
-        "updated_at": "2021-06-30T15:08:11.806Z",
+        "updated_at": "2021-07-12T16:14:07.467Z",
         "Image": {
             "id": 48,
             "name": "innovation_illu.png",
@@ -997,7 +997,7 @@
                 "key": "ideas",
                 "published_at": "2021-05-25T21:06:22.188Z",
                 "created_at": "2021-05-25T21:06:19.741Z",
-                "updated_at": "2021-06-30T15:08:11.797Z",
+                "updated_at": "2021-08-04T20:50:47.102Z",
                 "AccordionItems": [],
                 "Image": {
                     "id": 66,
@@ -1046,12 +1046,12 @@
             {
                 "id": 8,
                 "Title": "Synergy",
-                "BodyContent": "An old proverb says: “if you wanna go far, go together”. Great ideas move you out of the box. But what makes you go even beyond? Joining forces together. Synergy is one of our most ambitious projects. We focus on the development of your idea, and we also provide you with new tools, so that your actions can transcend. The empowerment created by this guidance enhances your confidence to become a corporate ambassador with an entrepreneurial drive.\n\nWe have a 360 approach. We hold workshops with you or your team, provide the necessary coaching, guide you with the documentation structure, and any other arrangement that leads to the success of your presentation. These events provide you with the exposure and complicity that your project needs to grow. And the best part is that it improves the experience of the performance achievement program. \n\nTake a look at these videos to see how the program works in a deeper level and our 2020’s Ignition Event, and see how the participants present their great idea to get supporters to develop it.",
+                "BodyContent": "An old proverb says: “if you wanna go far, go together”. Great ideas move you out of the box. But what makes you go even beyond? Joining forces together. Synergy is one of our most ambitious projects. We focus on the development of your idea, and we also provide you with new tools, so that your actions can transcend. The empowerment created by this guidance enhances your confidence to become a corporate ambassador with an entrepreneurial drive.\n\nWe have a 360 approach. We hold workshops with you or your team, provide the necessary coaching, guide you with the documentation structure, and any other arrangement that leads to the success of your presentation. These events provide you with the exposure and complicity that your project needs to grow. And the best part is that it improves the experience of the performance achievement program. \n\nTake a look at these videos to see how the program works in a deeper level. Our 2020’s Ignition Event shows you how the attendants present their ideas and grow supporters to start the development.​",
                 "innolab_section_parent": 3,
                 "key": "synergy",
                 "published_at": "2021-05-25T21:07:37.506Z",
                 "created_at": "2021-05-25T21:07:35.825Z",
-                "updated_at": "2021-06-30T15:08:11.797Z",
+                "updated_at": "2021-08-04T20:20:52.477Z",
                 "AccordionItems": [],
                 "Image": {
                     "id": 53,
@@ -1234,7 +1234,7 @@
                 "key": "learning",
                 "published_at": "2021-05-25T21:11:38.654Z",
                 "created_at": "2021-05-25T21:11:36.589Z",
-                "updated_at": "2021-06-30T15:08:11.797Z",
+                "updated_at": "2021-07-12T16:14:07.460Z",
                 "AccordionItems": [],
                 "Image": {
                     "id": 65,
@@ -1277,7 +1277,7 @@
                 "key": "storytelling",
                 "published_at": "2021-05-25T21:12:26.220Z",
                 "created_at": "2021-05-25T21:12:24.743Z",
-                "updated_at": "2021-06-30T15:08:11.797Z",
+                "updated_at": "2021-07-12T16:14:07.460Z",
                 "AccordionItems": [],
                 "Image": {
                     "id": 30,

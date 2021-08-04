@@ -44,6 +44,7 @@
     "xlsx": "^0.16.9"
   },
   "scripts": {
+    "savedata:dev": "env-cmd -f .env.dev node _server/get-strapi-data.js",
     "start": "node config && react-scripts start",
     "start:legacy": "node config --presets && react-scripts start",
     "prestart:dev": "npm install",
