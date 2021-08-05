@@ -6,7 +6,11 @@ const useApi = (process.env.REACT_APP_API_ENABLED !== 'FALSE' && process.env.REA
                 : baseApi;
 
 export function getGlobals() {
-    return (process.env.REACT_APP_API_ENABLED !== 'FALSE') ? useApi.get('/innolab-globals') : useApi.get(process.env.PUBLIC_URL+'/static/strapiResponses/globals.json');
+    return (process.env.REACT_APP_API_ENABLED !== 'FALSE') ? useApi.get('/innolab-globals') : useApi.get(process.env.PUBLIC_URL+'/static/strapiResponses/innolab-globals.json');
+}
+
+export function getHero() {
+    return (process.env.REACT_APP_API_ENABLED !== 'FALSE') ? useApi.get('/innolab-hero') : useApi.get(process.env.PUBLIC_URL+'/static/strapiResponses/innolab-hero.json');
 }
 
 export function getSectionSingle(id) {

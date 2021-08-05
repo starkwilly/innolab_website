@@ -1,0 +1,50 @@
+{
+    "id": 1,
+    "Headline": "DEV NOTE: PENDING IMPLEMENT THIS SECTION COPY RENDER\n\nUNLEASH\nYOUR BEST\nTHROUGH\n~~INNOVATION.~~",
+    "CommentsContent": "## We don't see innovation as our end, but the means.",
+    "published_at": "2021-06-24T22:16:54.233Z",
+    "created_at": "2021-05-24T19:11:13.436Z",
+    "updated_at": "2021-08-05T03:24:41.602Z",
+    "ImageBg": {
+        "id": 100,
+        "name": "unleash_bg_small.png",
+        "alternativeText": "",
+        "caption": "",
+        "width": 700,
+        "height": 408,
+        "formats": {
+            "thumbnail": {
+                "name": "thumbnail_unleash_bg_small.png",
+                "hash": "thumbnail_unleash_bg_small_45c8941bac",
+                "ext": ".png",
+                "mime": "image/png",
+                "width": 245,
+                "height": 143,
+                "size": 112.68,
+                "path": null,
+                "url": "/uploads/thumbnail_unleash_bg_small_45c8941bac.png"
+            },
+            "small": {
+                "name": "small_unleash_bg_small.png",
+                "hash": "small_unleash_bg_small_45c8941bac",
+                "ext": ".png",
+                "mime": "image/png",
+                "width": 500,
+                "height": 291,
+                "size": 439.54,
+                "path": null,
+                "url": "/uploads/small_unleash_bg_small_45c8941bac.png"
+            }
+        },
+        "hash": "unleash_bg_small_45c8941bac",
+        "ext": ".png",
+        "mime": "image/png",
+        "size": 490.15,
+        "url": "/uploads/unleash_bg_small_45c8941bac.png",
+        "previewUrl": null,
+        "provider": "local",
+        "provider_metadata": null,
+        "created_at": "2021-08-05T03:21:52.581Z",
+        "updated_at": "2021-08-05T03:21:52.592Z"
+    }
+}
