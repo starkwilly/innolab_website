@@ -38,9 +38,12 @@ RouterLink.propTypes = {
 export const parseImgSrc = (src) => {
     window.log('RenderMardown > parseImgSrc > ', src, (process.env.REACT_APP_API_ENABLED !== "FALSE"), (src.indexOf("/") === 0), (src.indexOf(process.env.REACT_APP_API) === 0 ))
     if (process.env.REACT_APP_API_ENABLED !== "FALSE" && src.indexOf("/") === 0) {
+        window.log('RenderMardown > parseImgSrc > CASE A')
         src = `${process.env.REACT_APP_API}${src}`;
     }else if (src.indexOf(process.env.REACT_APP_API) === 0 ) {
+        window.log('RenderMardown > parseImgSrc > CASE B')
         src = src.substr(process.env.REACT_APP_API.length);
     }
+    window.log('RenderMardown > parseImgSrc > OUTPUT ', src)
     return `${src}`;
 }
