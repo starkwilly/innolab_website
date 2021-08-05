@@ -4,47 +4,69 @@
     "CommentsContent": "## We don't see innovation as our end, but the means.",
     "published_at": "2021-06-24T22:16:54.233Z",
     "created_at": "2021-05-24T19:11:13.436Z",
-    "updated_at": "2021-08-05T03:24:41.602Z",
+    "updated_at": "2021-08-05T16:34:11.787Z",
     "ImageBg": {
-        "id": 100,
-        "name": "unleash_bg_small.png",
+        "id": 132,
+        "name": "unleash_background_fade-optim1.png",
         "alternativeText": "",
         "caption": "",
-        "width": 700,
-        "height": 408,
+        "width": 1200,
+        "height": 699,
         "formats": {
             "thumbnail": {
-                "name": "thumbnail_unleash_bg_small.png",
-                "hash": "thumbnail_unleash_bg_small_45c8941bac",
+                "name": "thumbnail_unleash_background_fade-optim1.png",
+                "hash": "thumbnail_unleash_background_fade_optim1_2e5eb3fdf8",
                 "ext": ".png",
                 "mime": "image/png",
                 "width": 245,
                 "height": 143,
-                "size": 112.68,
+                "size": 97.06,
                 "path": null,
-                "url": "/uploads/thumbnail_unleash_bg_small_45c8941bac.png"
+                "url": "/uploads/thumbnail_unleash_background_fade_optim1_2e5eb3fdf8.png"
+            },
+            "large": {
+                "name": "large_unleash_background_fade-optim1.png",
+                "hash": "large_unleash_background_fade_optim1_2e5eb3fdf8",
+                "ext": ".png",
+                "mime": "image/png",
+                "width": 1000,
+                "height": 583,
+                "size": 1337.92,
+                "path": null,
+                "url": "/uploads/large_unleash_background_fade_optim1_2e5eb3fdf8.png"
+            },
+            "medium": {
+                "name": "medium_unleash_background_fade-optim1.png",
+                "hash": "medium_unleash_background_fade_optim1_2e5eb3fdf8",
+                "ext": ".png",
+                "mime": "image/png",
+                "width": 750,
+                "height": 437,
+                "size": 773.17,
+                "path": null,
+                "url": "/uploads/medium_unleash_background_fade_optim1_2e5eb3fdf8.png"
             },
             "small": {
-                "name": "small_unleash_bg_small.png",
-                "hash": "small_unleash_bg_small_45c8941bac",
+                "name": "small_unleash_background_fade-optim1.png",
+                "hash": "small_unleash_background_fade_optim1_2e5eb3fdf8",
                 "ext": ".png",
                 "mime": "image/png",
                 "width": 500,
                 "height": 291,
-                "size": 439.54,
+                "size": 360.85,
                 "path": null,
-                "url": "/uploads/small_unleash_bg_small_45c8941bac.png"
+                "url": "/uploads/small_unleash_background_fade_optim1_2e5eb3fdf8.png"
             }
         },
-        "hash": "unleash_bg_small_45c8941bac",
+        "hash": "unleash_background_fade_optim1_2e5eb3fdf8",
         "ext": ".png",
         "mime": "image/png",
-        "size": 490.15,
-        "url": "/uploads/unleash_bg_small_45c8941bac.png",
+        "size": 232.71,
+        "url": "/uploads/unleash_background_fade_optim1_2e5eb3fdf8.png",
         "previewUrl": null,
         "provider": "local",
         "provider_metadata": null,
-        "created_at": "2021-08-05T03:21:52.581Z",
-        "updated_at": "2021-08-05T03:21:52.592Z"
+        "created_at": "2021-08-05T16:33:36.897Z",
+        "updated_at": "2021-08-05T16:33:36.920Z"
     }
 }
