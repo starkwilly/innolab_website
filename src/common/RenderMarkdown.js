@@ -40,7 +40,7 @@ export const parseImgSrc = (src) => {
     if (src.indexOf(process.env.REACT_APP_API) === 0 ) {
         src = src.substr(process.env.REACT_APP_API.length);
     }
-    if (RegExp(/^\/+/i).test(src) === 0) {
+    if (RegExp(/^\/+/i).test(src)) {
         const hostStr = (process.env.REACT_APP_API_ENABLED !== "FALSE") ? process.env.REACT_APP_API : process.env.PUBLIC_URL;
         src = `${hostStr}${src}`;
     }
