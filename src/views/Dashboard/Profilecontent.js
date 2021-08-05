@@ -37,7 +37,7 @@ window.debug = process.env.REACT_APP_DEBUG_MODE === 'true' ? true : false;
   
        console.log( "logeando token antes del fecht" + response.accessToken);
                          
-        fetch('https://stagingacc03-test.accenture.com/servicebus-dev/api/v1/file/108', {
+        fetch('https://innolab-stage.accenture.com/servicebus-dev/api/v1/file/108', {
             method: 'GET',
             headers: { "Content-Type": "application/json",'Authorization': 'Bearer ' + JSON.parse(SBtoken)},
           })
