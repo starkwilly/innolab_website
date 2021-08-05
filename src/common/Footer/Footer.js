@@ -31,25 +31,25 @@ const Footer = () => {
                 <Container>
                 <Row>  
                     <Col>
-                        <Row><a className="footerLink" href="mailto:jose.p.jimenez@accenture.com">General Information</a> </Row>  
-                        <Row><a  className="footerLink" href="mailto:jorge.clare@accenture.com">Projects</a> </Row>
-                        <Row><a className="footerLink" href="mailto:esteban.sancho@accenture.com">Automation</a> </Row>
+                        <Row><a className="footerLink" href="mailto:jose.p.jimenez@accenture.com" target="_blank" rel="noopener noreferrer">General Information</a> </Row>  
+                        <Row><a  className="footerLink" href="mailto:jorge.clare@accenture.com" target="_blank" rel="noopener noreferrer">Projects</a> </Row>
+                        <Row><a className="footerLink" href="mailto:esteban.sancho@accenture.com" target="_blank" rel="noopener noreferrer">Automation</a> </Row>
                         <Row><a className="footerLink" href="https://go.accenture.com/innolabsupport" target="_blank" rel="noopener noreferrer">Services</a> </Row>
-                        <Row><a className="footerLink" href="mailto:jose.p.jimenez@accenture.com">Synops</a> </Row>
+                        <Row><a className="footerLink" href="mailto:jose.p.jimenez@accenture.com" target="_blank" rel="noopener noreferrer">Synops</a> </Row>
                     </Col>
                     <Col>
-                        <Row><a className="footerLink" href="mailto:rodolfo.soto@accenture.com">One App Experience</a> </Row>
-                        <Row><a className="footerLink" href="mailto:g.velez.sanchez@accenture.com">DevOps</a> </Row>
-                        <Row><a className="footerLink" href="mailto:esteban.sancho@accenture.com">Synergy Program</a> </Row>
-                        <Row><a className="footerLink" href="mailto:david.zuniga@accenture.com">L3AD</a> </Row>
-                        <Row><a className="footerLink" href="mailto:david.zuniga@accenture.com">Training / Storytelling</a> </Row>
+                        <Row><a className="footerLink" href="mailto:rodolfo.soto@accenture.com" target="_blank" rel="noopener noreferrer">One App Experience</a> </Row>
+                        <Row><a className="footerLink" href="mailto:g.velez.sanchez@accenture.com" target="_blank" rel="noopener noreferrer">DevOps</a> </Row>
+                        <Row><a className="footerLink" href="mailto:esteban.sancho@accenture.com" target="_blank" rel="noopener noreferrer">Synergy Program</a> </Row>
+                        <Row><a className="footerLink" href="mailto:david.zuniga@accenture.com" target="_blank" rel="noopener noreferrer">L3AD</a> </Row>
+                        <Row><a className="footerLink" href="mailto:david.zuniga@accenture.com" target="_blank" rel="noopener noreferrer">Training / Storytelling</a> </Row>
                     </Col>    
                     <Col>
                         <Row>
                             <Link to="#" className="footerLink" onClick={()=>{setGdprOpen(true)}}>Terms of Use</Link>
                         </Row>         
                         <Row>
-                            <a className="footerLink" href="https://web.yammer.com/main/groups/eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiI5NzM5NTgxIn0/all" rel="noopener noreferrer">
+                            <a className="footerLink" href="https://web.yammer.com/main/groups/eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiI5NzM5NTgxIn0/all" target="_blank" rel="noopener noreferrer">
                                 Follow us: <FontAwesomeIcon icon={faYammer} size="lg" />
                             </a>
                         </Row>

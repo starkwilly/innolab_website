@@ -44,17 +44,17 @@
             {
                 "id": 1,
                 "Title": "Synops",
-                "BodyContent": "Imagine a place that allows users to do the best they can with what they know, powered with the best tools, and without painful or complicated learning curves. Synops is the blend between the best of human talent and machine effectiveness to empower our marketing operations. We are proudly part of the team that is developing [Synops for Marketing.](https://in.accenture.com/technologyforoperations/?p=25983)\n\n\n### DXL: The Delivery Toolkit​\nAre you aware of your own power tools? We have conceived a set of automated tools that can help you do things faster, with improved accuracy, extend human abilities and also fueled by edgy technology.  ",
+                "BodyContent": "Imagine a place that allows users to do the best they can with what they know, powered with the best tools, and without painful or complicated learning curves. Synops is the blend between the best of human talent and machine effectiveness to empower our marketing operations. We are proudly part of the team that is developing [Synops for Marketing.](https://in.accenture.com/technologyforoperations/?p=25983)\n\n\n### DXL: The Delivery Toolkit​\nWe have conceived a set of automated tools that can help you do things faster, with improved accuracy, extend human abilities and also fueled by edgy technology.\n",
                 "innolab_section_parent": 1,
                 "key": "synops",
                 "published_at": "2021-05-24T19:44:39.215Z",
                 "created_at": "2021-05-24T19:30:28.000Z",
-                "updated_at": "2021-08-05T03:55:58.839Z",
+                "updated_at": "2021-08-05T16:52:55.563Z",
                 "AccordionItems": [
                     {
                         "id": 1,
-                        "Title": "QA Automation(Daikiri) [DOWNLOAD HERE]",
-                        "BodyContent": "Formerly known as Daikiri, **SYNOPS DXL – QA Automation** is our special weapon used by many in several countries. It merges testing tools in an unique way, obtaining a very affordable solution that allows you, among other things:​\n\n- Audit and ensure the quality of the contents, with pixel perfect accuracy ​\n\n- Provide an automated task creator that simplifies the debugging process​\n\n- It is affordable. Provides a centralized platform and lowers the cost of expensive licenses. ​\n\n\nCheck the next video lecture where we explain in full detail the features available to unleash the testing experience, and also check out the documents to learn more about the platform. ​\n\n\n[![daikiri1.png](https://innolab-stage.accenture.com/innolab-dev-api/uploads/daikiri1_359408a458.png)](https://mediaexchange.accenture.com/media/t/0_z33ltn57)\n[![daik_docs.png](https://innolab-stage.accenture.com/innolab-dev-api/uploads/daik_docs_441b8296a8.png)](https://collections.accenture.com/api/Collection/DownloadFile/5185f165-4b70-486b-ae71-489e2a5c936d)\n\nWould you like to try QA Automation(Daikiri)? Click here to download it.​\n\n\n[![daik_1.png](https://innolab-stage.accenture.com/innolab-dev-api/uploads/daik_1_d21d41b731.png)](/download/daikiri.zip)\n[![daik_2.png](https://innolab-stage.accenture.com/innolab-dev-api/uploads/daik_2_d4e057f534.png)](/download/daikiri.msi)\n\n\n",
+                        "Title": "QA Automation (Daikiri) [DOWNLOAD HERE]",
+                        "BodyContent": "Formerly known as Daikiri, **SYNOPS DXL – QA Automation**  is our special testing tool used by many in several countries. It merges multiple options in a unique app and brings a very affordable solution that allows you to:​\n\n- Audit and ensure the quality of the contents, with pixel perfect accuracy ​\n\n- Provide an automated task creator that simplifies the debugging process​\n\n- It is affordable. Provides a centralized platform and lowers the cost of expensive licenses. ​\n\n\nCheck the next video lecture where we explain in full detail the features available to unleash the testing experience, and also check out the documents to learn more about the platform. ​\n\n\n[![daikiri1.png](/uploads/daikiri1_359408a458.png)](https://mediaexchange.accenture.com/media/t/0_z33ltn57)\n[![daik_docs.png](/uploads/daik_docs_441b8296a8.png)](https://collections.accenture.com/api/Collection/DownloadFile/5185f165-4b70-486b-ae71-489e2a5c936d)\n\nWould you like to try QA Automation (Daikiri)? Click below to download it.\n\n\n[![daik_1.png](/uploads/daik_1_d21d41b731.png)](/download/daikiri.zip)\n[![daik_2.png](/uploads/daik_2_d4e057f534.png)](/download/daikiri.msi)\n\n\n",
                         "Image": {
                             "id": 117,
                             "name": "daik_illu.png",
@@ -130,7 +130,7 @@
                 "key": "one-app",
                 "published_at": "2021-06-24T15:57:47.797Z",
                 "created_at": "2021-05-25T20:11:12.318Z",
-                "updated_at": "2021-08-05T04:14:58.028Z",
+                "updated_at": "2021-08-05T16:28:18.742Z",
                 "AccordionItems": [
                     {
                         "id": 2,
@@ -408,7 +408,70 @@
                     "created_at": "2021-08-05T03:34:05.225Z",
                     "updated_at": "2021-08-05T03:34:05.241Z"
                 },
-                "Media": []
+                "Media": [
+                    {
+                        "id": 130,
+                        "name": "onemedia1.png",
+                        "alternativeText": "",
+                        "caption": "https://mediaexchange.accenture.com/media/t/1_vfrh042l",
+                        "width": 300,
+                        "height": 168,
+                        "formats": {
+                            "thumbnail": {
+                                "name": "thumbnail_onemedia1.png",
+                                "hash": "thumbnail_onemedia1_ecdd7eec37",
+                                "ext": ".png",
+                                "mime": "image/png",
+                                "width": 245,
+                                "height": 137,
+                                "size": 15.95,
+                                "path": null,
+                                "url": "/uploads/thumbnail_onemedia1_ecdd7eec37.png"
+                            }
+                        },
+                        "hash": "onemedia1_ecdd7eec37",
+                        "ext": ".png",
+                        "mime": "image/png",
+                        "size": 17.93,
+                        "url": "/uploads/onemedia1_ecdd7eec37.png",
+                        "previewUrl": null,
+                        "provider": "local",
+                        "provider_metadata": null,
+                        "created_at": "2021-08-05T16:27:28.105Z",
+                        "updated_at": "2021-08-05T16:27:37.107Z"
+                    },
+                    {
+                        "id": 131,
+                        "name": "onemedia2.png",
+                        "alternativeText": "",
+                        "caption": "https://mediaexchange.accenture.com/media/t/1_33uiljdy",
+                        "width": 300,
+                        "height": 168,
+                        "formats": {
+                            "thumbnail": {
+                                "name": "thumbnail_onemedia2.png",
+                                "hash": "thumbnail_onemedia2_513ac6cee1",
+                                "ext": ".png",
+                                "mime": "image/png",
+                                "width": 245,
+                                "height": 137,
+                                "size": 42.38,
+                                "path": null,
+                                "url": "/uploads/thumbnail_onemedia2_513ac6cee1.png"
+                            }
+                        },
+                        "hash": "onemedia2_513ac6cee1",
+                        "ext": ".png",
+                        "mime": "image/png",
+                        "size": 32.67,
+                        "url": "/uploads/onemedia2_513ac6cee1.png",
+                        "previewUrl": null,
+                        "provider": "local",
+                        "provider_metadata": null,
+                        "created_at": "2021-08-05T16:28:03.418Z",
+                        "updated_at": "2021-08-05T16:28:12.789Z"
+                    }
+                ]
             }
         ]
     },

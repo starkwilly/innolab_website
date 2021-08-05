@@ -13,9 +13,9 @@ function IdeasCTA() {
       <>
           <Link to="/add-idea"   >
           
-          <Button variant="primary" >
+          <Button>
           <FontAwesomeIcon icon={faLightbulb} size="1x" />
-          idea  
+          Idea  
           </Button>                 
           </Link>
       </>
@@ -27,7 +27,7 @@ const Hero = (props) => {
     
     return (
         <>
-        <Jumbotron className="jumbotron text-white p-4" fluid
+        <Jumbotron className="container jumbotron text-white p-4" fluid
             style={
                 data.ImageBg
                     ? {
