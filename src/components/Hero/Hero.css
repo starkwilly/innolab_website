@@ -1,7 +1,7 @@
 .jumbotron{
   background-size: cover;
   min-height: 64em;
-  background-image: url("../../_assets/media/images/unleash_bg2.png");
+  /* background-image: url("../../_assets/media/images/unleash_bg2.png"); */
   background-position: top center;
   background-repeat: no-repeat;
   background-color: unset;
@@ -22,7 +22,7 @@
 
 .ideasCta button{
   margin: 2em 2em 2em 2em;
-  padding: 1em 1em 1em 1em;
+  padding: 4px 9px 3px 9px;
   text-shadow: #676767 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px;
   background-color: #F700FF;
 
@@ -34,4 +34,6 @@
 
 
 }
+
+
 

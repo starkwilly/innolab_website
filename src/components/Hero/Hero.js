@@ -1,35 +1,41 @@
-/* eslint-disable no-unused-vars */
-
-import {React ,useState } from 'react'
-import {Jumbotron , Modal ,Button , Form } from 'react-bootstrap'
-import "./Hero.css"
+import React from 'react';
+import PropTypes from 'prop-types';
+import {Jumbotron, Button } from 'react-bootstrap';
+import { parseImgSrc } from '../../common/RenderMarkdown';
+import "./Hero.css";
 import { Link } from 'react-router-dom';
-
-           
-
-//import JsFileDownloader from 'js-file-downloader';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLightbulb } from "@fortawesome/free-solid-svg-icons";
 
 
 function IdeasCTA() {
-
-  
     return (
       <>
-       
           <Link to="/add-idea"   >
+          
           <Button variant="primary" >
+          <FontAwesomeIcon icon={faLightbulb} size="1x" />
           idea  
           </Button>                 
           </Link>
-       
       </>
     );
   }
 
-const Hero = () => { 
+const Hero = (props) => {
+    const {data} = props;
+    
     return (
         <>
-        <Jumbotron className="jumbotron text-white p-4" fluid>
+        <Jumbotron className="jumbotron text-white p-4" fluid
+            style={
+                data.ImageBg
+                    ? {
+                        backgroundImage: `url(${parseImgSrc(data.ImageBg.url)}`
+                    }
+                    : {}
+            }
+        >
             <div className="pt-5">
                 <h1 className="display-4 text-uppercase font-weight-bolder">
                     <p>
@@ -52,7 +58,11 @@ const Hero = () => {
         </div>
         </>
     );
-  }  
+  } 
+
+Hero.propTypes = {
+    data: PropTypes.any,
+};
 
 
 export default Hero;

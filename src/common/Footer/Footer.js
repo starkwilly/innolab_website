@@ -34,7 +34,7 @@ const Footer = () => {
                         <Row><a className="footerLink" href="mailto:jose.p.jimenez@accenture.com">General Information</a> </Row>  
                         <Row><a  className="footerLink" href="mailto:jorge.clare@accenture.com">Projects</a> </Row>
                         <Row><a className="footerLink" href="mailto:esteban.sancho@accenture.com">Automation</a> </Row>
-                        <Row><a className="footerLink" href="https://go.accenture.com/innolabsupport" target="_blank" rel="noreferrer">Services</a> </Row>
+                        <Row><a className="footerLink" href="https://go.accenture.com/innolabsupport" target="_blank" rel="noopener noreferrer">Services</a> </Row>
                         <Row><a className="footerLink" href="mailto:jose.p.jimenez@accenture.com">Synops</a> </Row>
                     </Col>
                     <Col>
@@ -49,7 +49,7 @@ const Footer = () => {
                             <Link to="#" className="footerLink" onClick={()=>{setGdprOpen(true)}}>Terms of Use</Link>
                         </Row>         
                         <Row>
-                            <a className="footerLink" href="https://web.yammer.com/main/groups/eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiI5NzM5NTgxIn0/all" target="_blank" rel="noreferrer">
+                            <a className="footerLink" href="https://web.yammer.com/main/groups/eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiI5NzM5NTgxIn0/all" rel="noopener noreferrer">
                                 Follow us: <FontAwesomeIcon icon={faYammer} size="lg" />
                             </a>
                         </Row>

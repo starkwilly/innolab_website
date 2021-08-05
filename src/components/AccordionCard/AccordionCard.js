@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
-import RenderMarkdown from '../../common/RenderMarkdown';
+import RenderMarkdown, { parseImgSrc } from '../../common/RenderMarkdown';
 import './AccordionCard.css';
 import Accordion from 'react-bootstrap/Accordion';
 import Card from 'react-bootstrap/Card';
@@ -31,7 +31,7 @@ const AccordionCard = (props) => {
                             <div className="row no-gutters">
                                 <div className="col-6">
                                 {accordionItm.Image && (
-                                    <img src={`${process.env.REACT_APP_API}${accordionItm.Image.url}`} className="img-fluid  mx-auto d-block"/>
+                                    <img src={parseImgSrc(accordionItm.Image.url)} className="img-fluid  mx-auto d-block"/>
                                 )}
                                 </div>
                                 <div className="col-6 card-text">

@@ -1,4 +1,4 @@
-import axios from 'axios';
+/* import axios from 'axios';
 import baseApi from '../_helpers/baseApi';
 
 const environment = process.env.REACT_APP_ENV;
@@ -21,4 +21,4 @@ export function getToken() {
 
 export function authenticate() {
     return baseApi.post('/api/authenticate', {});
-}
+} */
