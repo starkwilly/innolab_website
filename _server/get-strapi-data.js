@@ -30,5 +30,6 @@ reqArr.forEach(val => {
     });
 });
 console.log('Saving JSON data COMPLETE on ', savePath);
-console.log('** PLEASE MANUALLY REMOVE ANY ABSOLUTE IMAGE PATH ON THOSE JSON FILES **', savePath);
+console.log('** PLEASE MANUALLY REMOVE ANY ABSOLUTE IMAGE PATH ON THOSE JSON FILES **');
+
 

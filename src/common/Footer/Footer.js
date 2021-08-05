@@ -31,18 +31,18 @@ const Footer = () => {
                 <Container>
                 <Row>  
                     <Col>
-                        <Row><a className="footerLink" href="mailto:jose.p.jimenez@accenture.com" target="_blank">General Information</a> </Row>  
-                        <Row><a  className="footerLink" href="mailto:jorge.clare@accenture.com" target="_blank">Projects</a> </Row>
-                        <Row><a className="footerLink" href="mailto:esteban.sancho@accenture.com" target="_blank">Automation</a> </Row>
+                        <Row><a className="footerLink" href="mailto:jose.p.jimenez@accenture.com" target="_blank" rel="noopener noreferrer">General Information</a> </Row>  
+                        <Row><a  className="footerLink" href="mailto:jorge.clare@accenture.com" target="_blank" rel="noopener noreferrer">Projects</a> </Row>
+                        <Row><a className="footerLink" href="mailto:esteban.sancho@accenture.com" target="_blank" rel="noopener noreferrer">Automation</a> </Row>
                         <Row><a className="footerLink" href="https://go.accenture.com/innolabsupport" target="_blank" rel="noopener noreferrer">Services</a> </Row>
-                        <Row><a className="footerLink" href="mailto:jose.p.jimenez@accenture.com" target="_blank">Synops</a> </Row>
+                        <Row><a className="footerLink" href="mailto:jose.p.jimenez@accenture.com" target="_blank" rel="noopener noreferrer">Synops</a> </Row>
                     </Col>
                     <Col>
-                        <Row><a className="footerLink" href="mailto:rodolfo.soto@accenture.com" target="_blank">One App Experience</a> </Row>
-                        <Row><a className="footerLink" href="mailto:g.velez.sanchez@accenture.com" target="_blank">DevOps</a> </Row>
-                        <Row><a className="footerLink" href="mailto:esteban.sancho@accenture.com" target="_blank">Synergy Program</a> </Row>
-                        <Row><a className="footerLink" href="mailto:david.zuniga@accenture.com" target="_blank">L3AD</a> </Row>
-                        <Row><a className="footerLink" href="mailto:david.zuniga@accenture.com" target="_blank">Training / Storytelling</a> </Row>
+                        <Row><a className="footerLink" href="mailto:rodolfo.soto@accenture.com" target="_blank" rel="noopener noreferrer">One App Experience</a> </Row>
+                        <Row><a className="footerLink" href="mailto:g.velez.sanchez@accenture.com" target="_blank" rel="noopener noreferrer">DevOps</a> </Row>
+                        <Row><a className="footerLink" href="mailto:esteban.sancho@accenture.com" target="_blank" rel="noopener noreferrer">Synergy Program</a> </Row>
+                        <Row><a className="footerLink" href="mailto:david.zuniga@accenture.com" target="_blank" rel="noopener noreferrer">L3AD</a> </Row>
+                        <Row><a className="footerLink" href="mailto:david.zuniga@accenture.com" target="_blank" rel="noopener noreferrer">Training / Storytelling</a> </Row>
                     </Col>    
                     <Col>
                         <Row>
