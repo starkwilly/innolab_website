@@ -49,12 +49,12 @@
                 "key": "synops",
                 "published_at": "2021-05-24T19:44:39.215Z",
                 "created_at": "2021-05-24T19:30:28.000Z",
-                "updated_at": "2021-08-04T21:25:28.861Z",
+                "updated_at": "2021-08-05T00:16:44.707Z",
                 "AccordionItems": [
                     {
                         "id": 1,
                         "Title": "QA Automation(Daikiri) [DOWNLOAD HERE]",
-                        "BodyContent": "Formerly known as Daikiri, **SYNOPS DXL – QA Automation** is our special weapon used by many in several countries. It merges testing tools in an unique way, obtaining a very affordable solution that allows you, among other things:​\n\n- Audit and ensure the quality of the contents, with pixel perfect accuracy ​\n\n- Provide an automated task creator that simplifies the debugging process​\n\n- It is affordable. Provides a centralized platform and lowers the cost of expensive licenses. ​\n\n\nCheck the next video lecture where we explain in full detail the features available to unleash the testing experience, and also check out the documents to learn more about the platform. ​\n\n\n[![Group 339.png](https://innolab-stage.accenture.com/innolab-dev-api/uploads/Group_339_955c8b0d43.png)](https://mediaexchange.accenture.com/media/t/0_z33ltn57)\n[![Group 338.png](https://innolab-stage.accenture.com/innolab-dev-api/uploads/Group_338_af3f229dd0.png)](https://collections.accenture.com/api/Collection/DownloadFile/5185f165-4b70-486b-ae71-489e2a5c936d)\n\nWould you like to try QA Automation(Daikiri)? Click here to download it.​\n",
+                        "BodyContent": "Formerly known as Daikiri, **SYNOPS DXL – QA Automation** is our special weapon used by many in several countries. It merges testing tools in an unique way, obtaining a very affordable solution that allows you, among other things:​\n\n- Audit and ensure the quality of the contents, with pixel perfect accuracy ​\n\n- Provide an automated task creator that simplifies the debugging process​\n\n- It is affordable. Provides a centralized platform and lowers the cost of expensive licenses. ​\n\n\nCheck the next video lecture where we explain in full detail the features available to unleash the testing experience, and also check out the documents to learn more about the platform. ​\n\n\n[![Group 339.png](https://innolab-stage.accenture.com/innolab-dev-api/uploads/Group_339_955c8b0d43.png)](https://mediaexchange.accenture.com/media/t/0_z33ltn57)\n[![Group 338.png](https://innolab-stage.accenture.com/innolab-dev-api/uploads/Group_338_af3f229dd0.png)](https://collections.accenture.com/api/Collection/DownloadFile/5185f165-4b70-486b-ae71-489e2a5c936d)\n\nWould you like to try QA Automation(Daikiri)? Click here to download it.​\n\n\n[![Group 343.png](https://innolab-stage.accenture.com/innolab-dev-api/uploads/Group_343_4d23510f49.png)](/download/daikiri.zip)\n[![Group 342.png](https://innolab-stage.accenture.com/innolab-dev-api/uploads/Group_342_a910587d43.png)](/download/daikiri.msi)\n",
                         "Image": {
                             "id": 41,
                             "name": "daik_illu.png",
@@ -92,38 +92,38 @@
                                 "name": "Group 343.png",
                                 "alternativeText": "",
                                 "caption": "/download/daikiri.zip",
-                                "width": 243,
-                                "height": 124,
-                                "formats": null,
+                                "width": 120,
+                                "height": 145,
+                                "formats": {},
                                 "hash": "Group_343_4d23510f49",
                                 "ext": ".png",
                                 "mime": "image/png",
-                                "size": 1.91,
+                                "size": 1.88,
                                 "url": "/uploads/Group_343_4d23510f49.png",
                                 "previewUrl": null,
                                 "provider": "local",
                                 "provider_metadata": null,
                                 "created_at": "2021-07-01T22:23:48.169Z",
-                                "updated_at": "2021-08-04T20:43:33.901Z"
+                                "updated_at": "2021-08-05T00:12:19.461Z"
                             },
                             {
                                 "id": 92,
                                 "name": "Group 342.png",
                                 "alternativeText": "",
                                 "caption": "/download/daikiri.msi",
-                                "width": 243,
-                                "height": 124,
-                                "formats": null,
+                                "width": 120,
+                                "height": 145,
+                                "formats": {},
                                 "hash": "Group_342_a910587d43",
                                 "ext": ".png",
                                 "mime": "image/png",
-                                "size": 1.91,
+                                "size": 1.92,
                                 "url": "/uploads/Group_342_a910587d43.png",
                                 "previewUrl": null,
                                 "provider": "local",
                                 "provider_metadata": null,
                                 "created_at": "2021-07-01T22:24:09.614Z",
-                                "updated_at": "2021-08-04T20:43:58.127Z"
+                                "updated_at": "2021-08-05T00:10:09.213Z"
                             }
                         ]
                     }

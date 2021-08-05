@@ -1,31 +1,21 @@
-/* eslint-disable no-unused-vars */
-
-import {React ,useState } from 'react'
-import {Jumbotron , Modal ,Button , Form } from 'react-bootstrap'
+import React from 'react'
+import {Jumbotron, Button } from 'react-bootstrap'
 import "./Hero.css"
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLightbulb } from "@fortawesome/free-solid-svg-icons";
 
-           
-
-//import JsFileDownloader from 'js-file-downloader';
-
 
 function IdeasCTA() {
-
-  
     return (
       <>
-       
           <Link to="/add-idea"   >
           
           <Button variant="primary" >
-          <FontAwesomeIcon icon={faLightbulb} size="md" />
+          <FontAwesomeIcon icon={faLightbulb} size="1x" />
           idea  
           </Button>                 
           </Link>
-       
       </>
     );
   }
