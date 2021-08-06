@@ -4,69 +4,69 @@
     "CommentsContent": "## We don't see innovation as our end, but the means.",
     "published_at": "2021-06-24T22:16:54.233Z",
     "created_at": "2021-05-24T19:11:13.436Z",
-    "updated_at": "2021-08-05T16:34:11.787Z",
+    "updated_at": "2021-08-06T17:21:58.144Z",
     "ImageBg": {
-        "id": 132,
-        "name": "unleash_background_fade-optim1.png",
+        "id": 134,
+        "name": "unleash_background_fade2-optim1.png",
         "alternativeText": "",
         "caption": "",
         "width": 1200,
         "height": 699,
         "formats": {
             "thumbnail": {
-                "name": "thumbnail_unleash_background_fade-optim1.png",
-                "hash": "thumbnail_unleash_background_fade_optim1_2e5eb3fdf8",
+                "name": "thumbnail_unleash_background_fade2-optim1.png",
+                "hash": "thumbnail_unleash_background_fade2_optim1_bb15e4fbe2",
                 "ext": ".png",
                 "mime": "image/png",
                 "width": 245,
                 "height": 143,
-                "size": 97.06,
+                "size": 103.18,
                 "path": null,
-                "url": "/uploads/thumbnail_unleash_background_fade_optim1_2e5eb3fdf8.png"
+                "url": "/uploads/thumbnail_unleash_background_fade2_optim1_bb15e4fbe2.png"
             },
             "large": {
-                "name": "large_unleash_background_fade-optim1.png",
-                "hash": "large_unleash_background_fade_optim1_2e5eb3fdf8",
+                "name": "large_unleash_background_fade2-optim1.png",
+                "hash": "large_unleash_background_fade2_optim1_bb15e4fbe2",
                 "ext": ".png",
                 "mime": "image/png",
                 "width": 1000,
                 "height": 583,
-                "size": 1337.92,
+                "size": 1459.37,
                 "path": null,
-                "url": "/uploads/large_unleash_background_fade_optim1_2e5eb3fdf8.png"
+                "url": "/uploads/large_unleash_background_fade2_optim1_bb15e4fbe2.png"
             },
             "medium": {
-                "name": "medium_unleash_background_fade-optim1.png",
-                "hash": "medium_unleash_background_fade_optim1_2e5eb3fdf8",
+                "name": "medium_unleash_background_fade2-optim1.png",
+                "hash": "medium_unleash_background_fade2_optim1_bb15e4fbe2",
                 "ext": ".png",
                 "mime": "image/png",
                 "width": 750,
                 "height": 437,
-                "size": 773.17,
+                "size": 841.32,
                 "path": null,
-                "url": "/uploads/medium_unleash_background_fade_optim1_2e5eb3fdf8.png"
+                "url": "/uploads/medium_unleash_background_fade2_optim1_bb15e4fbe2.png"
             },
             "small": {
-                "name": "small_unleash_background_fade-optim1.png",
-                "hash": "small_unleash_background_fade_optim1_2e5eb3fdf8",
+                "name": "small_unleash_background_fade2-optim1.png",
+                "hash": "small_unleash_background_fade2_optim1_bb15e4fbe2",
                 "ext": ".png",
                 "mime": "image/png",
                 "width": 500,
                 "height": 291,
-                "size": 360.85,
+                "size": 388.91,
                 "path": null,
-                "url": "/uploads/small_unleash_background_fade_optim1_2e5eb3fdf8.png"
+                "url": "/uploads/small_unleash_background_fade2_optim1_bb15e4fbe2.png"
             }
         },
-        "hash": "unleash_background_fade_optim1_2e5eb3fdf8",
+        "hash": "unleash_background_fade2_optim1_bb15e4fbe2",
         "ext": ".png",
         "mime": "image/png",
-        "size": 232.71,
-        "url": "/uploads/unleash_background_fade_optim1_2e5eb3fdf8.png",
+        "size": 238.26,
+        "url": "/uploads/unleash_background_fade2_optim1_bb15e4fbe2.png",
         "previewUrl": null,
         "provider": "local",
         "provider_metadata": null,
-        "created_at": "2021-08-05T16:33:36.897Z",
-        "updated_at": "2021-08-05T16:33:36.920Z"
+        "created_at": "2021-08-06T17:21:27.428Z",
+        "updated_at": "2021-08-06T17:21:27.440Z"
     }
 }
