@@ -47,6 +47,7 @@ const Header = () => {
     return (
         (globalData && sectionsData) &&
         <Navbar className="navbarTop navbar fixed-top" variant="dark">
+            <div className="container">
             <Navbar.Brand><Scrollchor to="#" className="nav-link text-reset"><h2 className="font-weight-bolder pt-2">{globalData.NavbarTitle}</h2></Scrollchor></Navbar.Brand>
             
             <NavItem className="ml-auto"></NavItem>
@@ -56,6 +57,7 @@ const Header = () => {
             ))}
             <NavItem><Scrollchor to="#contact-us" className="nav-link">Contact us</Scrollchor></NavItem>
             <NavItem className="nav-link" style={{textDecoration:"underline"}} as="a" onClick={doMsalLogout} href="#">Logout</NavItem>
+            </div>
         </Navbar>
     )
 };

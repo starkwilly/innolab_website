@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import RenderMarkdown from '../../common/RenderMarkdown';
+import RenderMarkdown, { parseImgSrc } from '../../common/RenderMarkdown';
 import './InnolabCard.css';
 import ScrollAnimation from 'react-animate-on-scroll';
 import AccordionCard from '../AccordionCard/AccordionCard';
@@ -16,7 +16,7 @@ const InnolabCard = (props) => {
                 <div className="row no-gutters h-100">
                     <ScrollAnimation className="col-6 h-100 text-center" animateIn='pulse' delay={500} initiallyVisible={true}>
                         {cardInfo.Image && (
-                            <img src={`${process.env.REACT_APP_API}${cardInfo.Image.url}`} className=" img-fluid"/>
+                            <img src={parseImgSrc(cardInfo.Image.url)} className=" img-fluid"/>
                         )}
                     </ScrollAnimation>
                     <ScrollAnimation className="col-6" animateIn='fadeIn' delay={800}>

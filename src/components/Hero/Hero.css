@@ -1,7 +1,7 @@
 .jumbotron{
   background-size: cover;
   min-height: 64em;
-  background-image: url("../../_assets/media/images/unleash_bg2.png");
+  /* background-image: url("../../_assets/media/images/unleash_bg2.png"); */
   background-position: top center;
   background-repeat: no-repeat;
   background-color: unset;
@@ -22,16 +22,17 @@
 
 .ideasCta button{
   margin: 2em 2em 2em 2em;
-  padding: 1em 1em 1em 1em;
-  text-shadow: #676767 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px;
-  background-color: #F700FF;
-
+  padding: 4px 9px 3px 9px;
+border: none;
+background-color: #b455aa;
 }
 
 .ideasCta button:hover{
-  text-shadow: #676767 0px 0px 5px, #FFF 0px 0px 10px, #FFF 0px 0px 15px, #FF2D95 0px 0px 20px, #FF2D95 0px 0px 30px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px;
-  background-color: #F700FF;
-
+  color: #fff;
+  background-color: #b455aa;
+box-shadow: #676767 0 0 5px,#f700ff 0 0 10px,#f700ff 0 0 20px,#f700ff 0 0 30px;;
 
 }
+
+
 
