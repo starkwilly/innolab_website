@@ -4,7 +4,7 @@ import { msalInstance } from "../index";
 import { loginRequest } from "./authConfig";
 
 const baseApi = axios.create({
-    baseURL: (process.env.REACT_APP_API_ENABLED !== 'FALSE') ? process.env.REACT_APP_API : process.env.PUBLIC_URL
+    baseURL: (process.env.REACT_APP_API_ENABLED !== 'FALSE') ? process.env.REACT_APP_API : '/'
 });
 
 // Intercept request to get the current token if exist
