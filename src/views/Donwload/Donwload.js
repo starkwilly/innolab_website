@@ -8,6 +8,7 @@ const Downloads = props => {
     const locParams = ((props || {}).match || {}).params;
     const [downloadProgress, setDownloadProgress] = useState(null);
     const [downloadSize, setDownloadSize] = useState(null);
+    const [msgBody, setMsgBody] = useState();
 
     useEffect(() => {
         // window.log("Downloads View", locParams);
@@ -19,6 +20,7 @@ const Downloads = props => {
     }, []);
 
     const switchDownloadable = async key => {
+        setMsgBody("Downloading");
         setDownloadSize(0);
         setDownloadProgress(0);
 
@@ -42,6 +44,7 @@ const Downloads = props => {
             window.log("switchDownloadable "+key, resp);
 
             if (resp.data) {
+                setMsgBody("Completed");
                 setDownloadSize((resp.data.size/1000000).toFixed(2));
                 setDownloadProgress(100);
                 const blobObj = new Blob([resp.data], {type: resp.headers["content-type"]});
@@ -78,7 +81,7 @@ const Downloads = props => {
         <>
         <div className="container text-white w-50 h-100 pt-5">
             <div className="row">
-                <div className="mx-auto h4">Downloading &quot;{locParams.id}&quot;</div>
+                <div className="mx-auto h4">{msgBody} &quot;{locParams.id}&quot;</div>
             </div>
             <div className="row progress w-100">
                 <div className="progress-bar progress-bar-striped bg-info" role="progressbar" style={{width: `${downloadProgress}%`}} aria-valuenow={downloadProgress} aria-valuemin="0" aria-valuemax="100">{`${downloadProgress}%`}</div>

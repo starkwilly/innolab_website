@@ -1,4 +1,10 @@
-import * as authService from "../../_services/authService";
+import { AUTHENTICATE_SUCCESS } from './actionTypes';
+
+export const setUserInfo = info => dispatch => {
+    dispatch({ type: AUTHENTICATE_SUCCESS, info: info, isFetchingAuth: false });
+};
+
+/* import * as authService from "../../_services/authService";
 import {
     AUTH_FLOW_REQUEST,
     AUTH_FLOW_SUCCESS,
@@ -72,8 +78,4 @@ export function tryAuthenticate() {
             }
         )
     }
-}
-
-export const setUserInfo = info => dispatch => {
-    dispatch({ type: AUTHENTICATE_SUCCESS, info: info, isFetchingAuth: false });
-};
+} */
