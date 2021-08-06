@@ -4,7 +4,7 @@ import { msalInstance } from "../index";
 import { loginRequest } from "./authConfig";
 
 const baseApi = axios.create({
-    baseURL: (process.env.REACT_APP_API_ENABLED !== 'FALSE') ? process.env.REACT_APP_API : '/'
+    baseURL: (process.env.REACT_APP_API_ENABLED !== 'FALSE') ? process.env.REACT_APP_API : process.env.PUBLIC_URL
 });
 
 // Intercept request to get the current token if exist
@@ -40,7 +40,7 @@ baseApi.interceptors.response.use((response) => {
     // act on any 2xx status code
     // window.log("baseApi RESPONSE Any 2xx status:", response);
     // second compare argument is for downloads
-    if (response.data.statusCode === 200 || response.data.type === 'application/zip' || response.data.type === 'application/msi' || process.env.REACT_APP_API_ENABLED === 'FALSE' && response.status === 200) {
+    if (response.data.statusCode === 200 || response.data.type === 'application/zip' || response.data.type === 'application/msi' || process.env.REACT_APP_API_ENABLED !== 'FALSE' && response.status === 200) {
         //window.log("baseApi SUCCEED statusCode 200:");
         return response;
     } else {
