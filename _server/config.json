@@ -1,6 +1,0 @@
-{
-    "applicationId" : 7,
-    "clientID" : "synops",
-    "client_secret" : "VbCrGJKSC78TR81apI6bcpOwYi1HpQO3vuhXhkCFeLc=",
-    "idtyTokenPath" : "https://innolab-stage.accenture.com/dcmo-dev/api/token"
-}

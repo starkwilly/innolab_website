@@ -1,17 +1,16 @@
-/* eslint-disable no-unused-vars */
 import React, { useEffect, useState } from "react";
 import { Route } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import { useMsal, useIsAuthenticated, useMsalAuthentication, AuthenticatedTemplate, UnauthenticatedTemplate } from "@azure/msal-react";
-import { EventType, InteractionType, InteractionStatus } from "@azure/msal-browser";
+import { useMsal, useIsAuthenticated, useMsalAuthentication, AuthenticatedTemplate, /* UnauthenticatedTemplate */ } from "@azure/msal-react";
+import { /* EventType, */ InteractionType, /* InteractionStatus */ } from "@azure/msal-browser";
 import { loginRequest } from "../../_helpers/authConfig";
 import { useSelector , useDispatch } from 'react-redux';
-import{ setUserInfo } from "_store/actions/authenticateActions"
+import { setUserInfo } from "_store/actions/authenticateActions";
 
 const RouteWithLayout = props => {
   const { layout: Layout, component: Component, ...rest } = props;
 
-  const { login, result, error } = useMsalAuthentication(InteractionType.Redirect, loginRequest);
+  const { login, /* result, */ error } = useMsalAuthentication(InteractionType.Redirect, loginRequest);
   const { instance, accounts } = useMsal();
   const { info } = useSelector(state => ({ info: state.auth.info }));
  
