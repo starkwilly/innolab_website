@@ -7,12 +7,16 @@ import NavItem from "react-bootstrap/NavItem";
 import "./Header.scss";
 import { useMsal } from "@azure/msal-react";
 
+// icons
+import LogoutIcon from './../../components/LogoutIcon';
+
 import { getSectionParents , getGlobals } from "../../_services/strapiService";
 
 const Header = () => {
     const { instance } = useMsal();
     const [globalData, setGlobalData] = React.useState(null);
     const [sectionsData, setSectionsData] = React.useState(null);
+    const [expanded, setExpanded] = React.useState(false);
     // PENDING USE STORE
     // const isDataLoading = useSelector((state) => state);
 
@@ -34,6 +38,10 @@ const Header = () => {
         getInitialData();
     }, []);
 
+    const toggleMenu = () => {
+        setExpanded(prev => !prev);
+    }
+
     function doMsalLogout(e) {
         e.preventDefault();
         const currentAccount = instance.getActiveAccount();
@@ -46,17 +54,29 @@ const Header = () => {
 
     return (
         (globalData && sectionsData) &&
-        <Navbar className="navbarTop navbar fixed-top" variant="dark">
+        <Navbar className="navbarTop navbar fixed-top" variant="dark" expand="md" expanded={expanded}>
             <div className="container">
-            <Navbar.Brand><Scrollchor to="#" className="nav-link text-reset"><h2 className="font-weight-bolder pt-2">{globalData.NavbarTitle}</h2></Scrollchor></Navbar.Brand>
-            
-            <NavItem className="ml-auto"></NavItem>
-            <NavItem><Scrollchor to="#what-we-do" className="nav-link">What we do</Scrollchor></NavItem>
-            { sectionsData.map(item => (
-                <NavItem key={`${item.key}`}><Scrollchor to={`#${item.key}`} className="nav-link">{item.Title}</Scrollchor></NavItem>
-            ))}
-            <NavItem><Scrollchor to="#contact-us" className="nav-link">Contact us</Scrollchor></NavItem>
-            <NavItem className="nav-link" style={{textDecoration:"underline"}} as="a" onClick={doMsalLogout} href="#">Logout</NavItem>
+            <Navbar.Brand><Scrollchor to="#" className="nav-link text-reset text-center">
+                <h2 className="font-weight-bolder pt-2">{globalData.NavbarTitle}</h2>
+            </Scrollchor></Navbar.Brand>
+            <span className="top-toggle d-md-none text-white d-flex flex-column align-items-center" onClick={toggleMenu}>
+                <Navbar.Toggle aria-controls="top-collapse" />
+                <p className="m-0">Menu</p>
+            </span>
+            <Navbar.Collapse id="top-collapse">
+                <div>
+                    <NavItem className="ml-auto"></NavItem>
+                    <NavItem><Scrollchor to="#what-we-do" className="nav-link">What we do</Scrollchor></NavItem>
+                    { sectionsData.map(item => (
+                        <NavItem key={`${item.key}`}><Scrollchor to={`#${item.key}`} className="nav-link">{item.Title}</Scrollchor></NavItem>
+                    ))}
+                    <NavItem><Scrollchor to="#contact-us" className="nav-link">Contact us</Scrollchor></NavItem>
+                    <NavItem className="d-md-none nav-link" onClick={toggleMenu}>CloseMenu</NavItem>
+                </div>
+                <div>
+                    <NavItem className="nav-link" style={{textDecoration:"underline"}} as="a" onClick={doMsalLogout} href="#">Logout <LogoutIcon className={'d-md-none'} /></NavItem>
+                </div>
+            </Navbar.Collapse>
             </div>
         </Navbar>
     )
