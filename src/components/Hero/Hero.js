@@ -4,8 +4,9 @@ import {Jumbotron, Button } from 'react-bootstrap';
 import { parseImgSrc } from '../../common/RenderMarkdown';
 import "./Hero.css";
 import { Link } from 'react-router-dom';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLightbulb } from "@fortawesome/free-solid-svg-icons";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import { faLightbulb } from "@fortawesome/free-solid-svg-icons";
+import LightbulbIcon from 'components/LightbulbIcon';
 
 
 function IdeasCTA() {
@@ -14,7 +15,7 @@ function IdeasCTA() {
           <Link to="/add-idea"   >
           
           <Button>
-          <FontAwesomeIcon icon={faLightbulb} size="1x" />
+          <LightbulbIcon width={20} height={20} />
           Idea  
           </Button>                 
           </Link>
@@ -47,7 +48,7 @@ const Hero = (props) => {
                             <svg className="blur-font" width="100%" xmlns="http://www.w3.org/2000/svg">
                                 <defs>
                                     <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%" gradientTransform="rotate(97)">
-                                    <stop stopColor="#df78ff" offset="10%" stopOpacity="1"/>
+                                    <stop stopColor="#a442ff" offset="10%" stopOpacity="1"/>
                                     <stop stopColor="#000" offset="35%" stopOpacity="0"/>
                                     <stop stopColor="#00e1ff" offset="50%" stopOpacity="1"/>
                                     <stop stopColor="#ff0000" offset="80%" stopOpacity=".7"/>
