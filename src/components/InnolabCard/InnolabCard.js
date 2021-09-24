@@ -7,12 +7,12 @@ import AccordionCard from '../AccordionCard/AccordionCard';
 import CardMediaContainer from '../CardMediaContainer/CardMediaContainer';
 
 const InnolabCard = (props) => {
-    const {cardInfo, cardId} = props;
+    const {cardInfo, cardId, bgImage} = props;
     // window.log("InnolabCard", cardInfo, cardId);
 
     return (
-        <ScrollAnimation animateIn="zoomIn" animateOut="zoomOut" className="ml-3 mr-3">
-            <div id={cardId} className="cardBase cardBg card">
+        <ScrollAnimation animateIn="zoomIn" animateOut="zoomOut" className="bg-blur ml-3 mr-3">
+            <div id={cardId} className="cardBase cardBg card" style={{backgroundImage: `url(${parseImgSrc(bgImage)})`}} >
                 <div className="row no-gutters h-100">
                     <ScrollAnimation className="col-6 h-100 text-center" animateIn='pulse' delay={500} initiallyVisible={true}>
                         {cardInfo.Image && (
@@ -40,6 +40,7 @@ const InnolabCard = (props) => {
 InnolabCard.propTypes = {
     cardInfo: PropTypes.any.isRequired,
     cardId: PropTypes.string,
+    bgImage: PropTypes.url,
 }
 
 export default InnolabCard;

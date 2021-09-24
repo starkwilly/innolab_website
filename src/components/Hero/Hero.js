@@ -42,7 +42,23 @@ const Hero = (props) => {
                         Unleash
                         <br/>your best
                         <br/>through
-                        <br/><span className="outstandingFont">innovation.</span>
+                        <br/>
+                        <span className="outstanding-title position-relative">
+                            <svg className="blur-font" width="100%" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%" gradientTransform="rotate(97)">
+                                    <stop stopColor="#df78ff" offset="10%" stopOpacity="1"/>
+                                    <stop stopColor="#000" offset="35%" stopOpacity="0"/>
+                                    <stop stopColor="#00e1ff" offset="50%" stopOpacity="1"/>
+                                    <stop stopColor="#ff0000" offset="80%" stopOpacity=".7"/>
+                                    </linearGradient>
+                                </defs>
+                                <g>
+                                    <text id="text" y="50" fontFamily="Graphik Web" fontSize="3.5rem" fontWeight="900" strokeWidth="5" stroke="url(#gradient)" fill="none">innovation.</text>
+                                </g>
+                            </svg>
+                            <span className="outstandingFont">innovation.</span>
+                        </span>
                     </p>
                 </h1>
                 {/* <div>
