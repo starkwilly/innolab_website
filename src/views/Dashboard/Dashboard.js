@@ -6,11 +6,13 @@ import AboutUs from '../../components/AboutUs/AboutUs';
 import HeadlineCard from '../../components/HeadlineCard/HeadlineCard';
 import InnolabCard from '../../components/InnolabCard/InnolabCard';
 
-import { getHero, getSectionSingle, getSectionParents  } from "../../_services/strapiService";
+import { getGlobals, getHero, getSectionSingle, getSectionParents  } from "../../_services/strapiService";
 
 const Dashboard = () => {
 
     const [dataObj, setDataObj] = React.useState(null);
+
+    const [globalData, setGlobalData] = React.useState(null);
 
     React.useEffect(() => {
         // window.log("Dashboard props", props);
@@ -34,6 +36,14 @@ const Dashboard = () => {
             }else{
                 // window.log("load data FAILED");
             }
+
+            const ret = await getGlobals();
+            if (ret.data) {
+                setGlobalData(ret.data);
+            } else {
+                // window.log("load data FAILED");
+            }
+
             setDataObj(dataTmp);
             // window.log("Dashboard DATA:", dataTmp);
         }
@@ -51,12 +61,12 @@ const Dashboard = () => {
                 (section.innolab_section_children && section.innolab_section_children.length > 0)
                 ? (
                 <Container id={`${section.key}`} key={`${section.key}`} className="section" fluid>
-                    <HeadlineCard cardInfo={section} cardId={`${sectionId}`}/>
-                    {section.innolab_section_children.map((itm, cardIdx) => <InnolabCard cardInfo={itm}  cardId={`${sectionId}-${cardIdx}`} key={cardIdx}/>)}
+                    <HeadlineCard cardInfo={section} cardId={`${sectionId}`} />
+                    {section.innolab_section_children.map((itm, cardIdx) => <InnolabCard cardInfo={itm}  cardId={`${sectionId}-${cardIdx}`} key={cardIdx} bgImage={globalData.ImageBg.url}/>)}
                 </Container>
                 )
                 : (
-                <AboutUs cardInfo={section} cardId={`${section.key}`} key={`${section.id}`}/>
+                <AboutUs cardInfo={section} cardId={`${section.key}`} key={`${section.id}`} bgImage={globalData.ImageBg.url} />
                 )
             ))}
         </Container>

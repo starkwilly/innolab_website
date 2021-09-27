@@ -34,6 +34,7 @@ const Minimal = props => {
                             }
                             : {}
                     }
+                    data-content={parseImgSrc(globalData.ImageBg.url)}
                 >
                     {children}
                 </Container>

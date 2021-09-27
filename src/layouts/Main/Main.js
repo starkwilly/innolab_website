@@ -38,7 +38,7 @@ const Main = ({ children }) => {
 
     return (
         globalData && (
-            <>                 
+            <> 
                 <Header/>
                 <Container
                     className="mainContainer p-0"

@@ -3,15 +3,16 @@ import PropTypes from 'prop-types';
 import RenderMarkdown from '../../common/RenderMarkdown';
 import './AboutUs.css';
 import ScrollAnimation from 'react-animate-on-scroll';
+import { parseImgSrc } from '../../common/RenderMarkdown';
 
 const AboutUs = (props) => {
-    const {cardInfo, cardId} = props;
+    const {cardInfo, cardId, bgImage} = props;
     // window.log("AboutUs", cardInfo, cardId);
 
     return (
         <ScrollAnimation animateIn="fadeIn" className="container cardAboutContainer">
             <div id={cardId} className="cardAboutSpacer">
-                <div className="cardAboutBase cardAboutBg card text-white mx-auto ">
+                <div className="cardAboutBase cardAboutBg card text-white mx-auto " style={{backgroundImage: `url(${parseImgSrc(bgImage)})`}}>
                     <div className="row no-gutters">
                         <div className="col card-body text-left">
                             <h2 className="card-title text-white text-uppercase font-weight-bolder" >{cardInfo.Title}</h2> 
@@ -38,6 +39,7 @@ const AboutUs = (props) => {
 AboutUs.propTypes = {
     cardInfo: PropTypes.any.isRequired,
     cardId: PropTypes.string,
+    bgImage: PropTypes.url
 }
 
 export default AboutUs;

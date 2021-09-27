@@ -17,4 +17,46 @@
     background-repeat: no-repeat;
     width: 78%;
     padding: 32px !important;
+    background: inherit;
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+}
+.cardAboutBg::before {
+    content: '';
+    background: inherit; 
+    position: absolute;
+    width: calc( 100% + 50px );
+    height: calc( 100% + 50px );
+    left: -25px;
+    right: 0;
+    top: -25px; 
+    bottom: 0;
+    box-shadow: inset 0 0 0 3000px rgba(255, 255, 255, 0.1);
+    filter: blur(10px);
+}
+
+@supports(-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+    .cardAboutContainer.animated {
+        -webkit-backdrop-filter: blur(10px);
+        backdrop-filter: blur(10px);
+        max-width: 76%;
+        margin-top: -140px;
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 15px;
+        padding: 0;
+    }
+
+    .cardAboutSpacer {
+        padding-top: 0;
+    }
+    
+    .cardAboutBg {
+        width: 100%;
+        background-image: unset !important;
+    }
+
+    .cardAboutBg::before {
+        display: none;
+    }
 }
