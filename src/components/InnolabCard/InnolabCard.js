@@ -17,7 +17,7 @@ const InnolabCard = (props) => {
         <Container fluid="xs">
             <Row className="mb-5">
              
-                <ScrollAnimation animateIn="zoomIn" animateOut="zoomOut" className="bg-blur ml-3 mr-3">
+                <ScrollAnimation animateIn="zoomIn" animateOut="zoomOut" className="bg-blur ml-lg-3 mr-lg-3">
                     <div id={cardId} className="cardBase cardBg card" style={{backgroundImage: `url(${parseImgSrc(bgImage)})`}} >
                         <div className="row no-gutters h-100">
                             <Col xs={12} md={4}>

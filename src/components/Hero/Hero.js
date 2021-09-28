@@ -73,10 +73,10 @@ const Hero = (props) => {
                                     </linearGradient>
                                 </defs>
                                 <g>
-                                    <text id="text" y="50" fontFamily="Graphik Web" fontSize="3.5rem" fontWeight="900" strokeWidth="5" stroke="url(#gradient)" fill="none">innovation.</text>
+                                    <text id="text" y="50" fontFamily="Graphik Web" fontSize="3.5rem" fontWeight="900" strokeWidth="5" stroke="url(#gradient)" fill="none">innovation</text>
                                 </g>
                             </svg>
-                            <span className="outstandingFont">innovation.</span>
+                            <span className="outstandingFont">innovation</span>
                         </span>
                     </p>
                 </h1>

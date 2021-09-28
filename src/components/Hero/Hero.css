@@ -8,6 +8,10 @@
   text-shadow: -1px -1px 1px rgba(255,255,255,.1), 1px 1px 1px rgba(0,0,0,.5);
 }
 
+.jumbotron p, .jumbotron text {
+  transition: .5s;
+}
+
 .blur-font {
   height: 3.5rem;
   filter: blur(3px);
@@ -61,5 +65,32 @@ box-shadow: #676767 0 0 5px,#f700ff 0 0 10px,#f700ff 0 0 20px,#f700ff 0 0 30px;;
     margin-right: 0;
     background-image: none !important;
     min-height: unset;
+  }
+  .blur-font {
+    filter: blur(7.5px);
+  }
+}
+
+@media screen and (max-width: 556px) {
+  .jumbotron svg {
+    transform: translateY(-10px);
+  }
+  .jumbotron p, .jumbotron text{
+    font-size: 2.3rem;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .jumbotron p, .jumbotron text{
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 250px) {
+  .jumbotron svg {
+    transform: translateY(-15px);
+  }
+  .jumbotron p, .jumbotron text{
+    font-size: 20px;
   }
 }

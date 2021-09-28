@@ -17,7 +17,7 @@
     background-color: rgba(160, 160, 160, 0.4);
     background-position: center;
     background-repeat: no-repeat;
-    width: 78%;
+    width: 100%;
     padding: 32px !important;
     background: inherit;
     overflow: hidden;
@@ -54,7 +54,6 @@
     }
     
     .cardAboutBg {
-        width: 100%;
         background-image: unset !important;
     }
 
@@ -67,5 +66,7 @@
     .container.cardAboutContainer {
       max-width: 100%;
       margin-top: 0;
+      padding-left: 0;
+      padding-right: 0;
     }
 }

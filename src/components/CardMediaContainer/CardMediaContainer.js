@@ -20,7 +20,7 @@ const CardMediaContainer = (props) => {
                 
                     <Row className="list-group-item media rounded bg-dark m-1 p-0 overflow-hidden" key={idx}>
                     
-                            <Col  xs={12} md={4} >
+                            <Col  xs={12} md={4} className="media-col" >
                                 <RenderMediaTag mediaItm={mediaItm}/>
                             </Col>
                         

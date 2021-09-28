@@ -11,7 +11,7 @@
     background: rgb(2,0,36);
     background: transparent linear-gradient(161deg,#E2E2E214 0%,#A0A0A040 50%, #00000046 100%) 0% 0%;
     overflow: hidden;
-    background-position: center calc(-100000%);
+    background-position: center calc(-500%);
     background-size: cover;
 }
 .cardBg::before {
@@ -43,5 +43,14 @@
     }
     .cardBg::before {
         display: none;
+    }
+}
+
+@media screen and (max-width: 799px) {
+    .bg-blur {
+        width: 100%;
+    }
+    .cardBase {
+      min-width: 100%;
     }
 }
