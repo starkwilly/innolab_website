@@ -39,7 +39,7 @@
   }
 
   @media screen and (max-width: 799px) {
-    .container.dashboard, .section.container-fluid {
+    .container.dashboard{
       padding-left: 0;
       padding-right: 0;
     }

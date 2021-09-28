@@ -25,7 +25,7 @@ const Minimal = props => {
         globalData && (
             <>
                 <Container
-                    className="mainContainer p-0"
+                    className="mainContainer"
                     style={
                         globalData.ImageBg
                             ? {

@@ -30,12 +30,20 @@
   }
 }
 
+.ideasCta {
+  display: grid;
+  grid-template-columns: auto 96px;
+}
 
-
+.ideasCta > a {
+  grid-column: 2/3;
+  align-self: center;
+  justify-self: center;
+}
 
 .ideasCta button{
-  margin: 2em 2em 2em 4em;
-  padding: 5px 11px 5px 11px;
+  margin: 2em;
+  /* padding: 5px 11px 5px 11px; */
   border: none;
   background-color: #b455aa;
 }

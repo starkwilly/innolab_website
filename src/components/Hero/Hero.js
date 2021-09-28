@@ -11,36 +11,49 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 
-/**
- * @returns JSX render button
- */
-function IdeasCTA() {
-    return (
-      <>
-          <Link to="/add-idea"   >
-          
-          <Button>
-          <LightbulbIcon width={20} height={20} />
-          Idea  
-          </Button>                 
-          </Link>
-      </>
-    );
-}
-
 const Hero = (props) => {
     const {data} = props;
+
+    /**
+     * @returns JSX render button
+     */
+    const IdeasCTA = () => {
+        return (
+        <>
+            <Link to="/add-idea"   >
+            
+            <Button>
+            <LightbulbIcon width={20} height={20} />
+            Idea  
+            </Button>                 
+            </Link>
+        </>
+        );
+    }
+
+    const css = `@media (max-width: 799px) {
+        .backimage {
+            background-image: none;
+        }
+    }
+    @media (min-width: 799px) {
+        .backimage {
+            background-image: url(${parseImgSrc(data.ImageBg.url)});
+        }
+    }`;
     
     return (
+        <>
+        <style scoped>{css}</style>
         <Container className="px-0">
-        <Row  className="jumbotron text-white p-4 container-fluid mx-0"
-            style={
+        <Row  className="jumbotron text-white p-4 container-fluid mx-0 backimage"
+            /* style={
                 data.ImageBg
                     ? {
                         backgroundImage: `url(${parseImgSrc(data.ImageBg.url)}`
                     }
                     : {}
-            }
+            } */
         >
             <div className="w-100 pt-5">
                 <h1 className="display-4 text-uppercase font-weight-bolder">
@@ -78,13 +91,14 @@ const Hero = (props) => {
 
         
             <Row>
-                <Col className="fixed-bottom ideasCta" lg={{ span: 1, offset: 11 }} xl={{ span: 1, offset: 11 }} xxl={{ span: 1, offset: 11 }}  xs={{ span: 4, offset: 8 }}>  
-           <IdeasCTA/>
-            </Col>
+                <Col className="fixed-bottom ideasCta">  
+                    <IdeasCTA/>
+                </Col>
             </Row>
         
     
         </Container>
+        </>
     );
   } 
 
