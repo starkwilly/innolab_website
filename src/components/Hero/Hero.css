@@ -47,5 +47,11 @@ box-shadow: #676767 0 0 5px,#f700ff 0 0 10px,#f700ff 0 0 20px,#f700ff 0 0 30px;;
 
 }
 
-
-
+@media screen and (max-width: 799px) {
+  .jumbotron {
+    margin-left: 0;
+    margin-right: 0;
+    background-image: none !important;
+    min-height: unset;
+  }
+}

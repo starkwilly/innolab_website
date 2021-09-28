@@ -1,5 +1,7 @@
 .cardAboutContainer {
     margin-top: -14rem;
+    /* min-width: unset; */
+    transition: max-width .5s, margin .1s;
 }
 .cardAboutSpacer {
     padding-top: 5rem;
@@ -58,5 +60,12 @@
 
     .cardAboutBg::before {
         display: none;
+    }
+}
+
+@media screen and (max-width: 799px) {
+    .container.cardAboutContainer {
+      max-width: 100%;
+      margin-top: 0;
     }
 }

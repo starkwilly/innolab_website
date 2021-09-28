@@ -11,6 +11,9 @@ import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 
+/**
+ * @returns JSX render button
+ */
 function IdeasCTA() {
     return (
       <>
@@ -23,14 +26,14 @@ function IdeasCTA() {
           </Link>
       </>
     );
-  }
+}
 
 const Hero = (props) => {
     const {data} = props;
     
     return (
-        <Container fluid="xs">
-        <Row  className="container jumbotron text-white p-4 " fluid
+        <Container className="px-0">
+        <Row  className="jumbotron text-white p-4 container-fluid mx-0"
             style={
                 data.ImageBg
                     ? {
@@ -39,7 +42,7 @@ const Hero = (props) => {
                     : {}
             }
         >
-            <div className="pt-5">
+            <div className="w-100 pt-5">
                 <h1 className="display-4 text-uppercase font-weight-bolder">
                     <p>
                         Unleash

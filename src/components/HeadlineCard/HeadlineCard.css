@@ -42,3 +42,8 @@
     margin-bottom: 96px;
 }
 
+@media screen and (max-width: 799px) {
+    .card.cardHeadlineBase {
+      min-width: 100%;
+    }
+}
