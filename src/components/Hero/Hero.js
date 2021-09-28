@@ -1,13 +1,15 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import {Jumbotron, Button } from 'react-bootstrap';
+import { Button } from 'react-bootstrap';
 import { parseImgSrc } from '../../common/RenderMarkdown';
 import "./Hero.css";
 import { Link } from 'react-router-dom';
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { faLightbulb } from "@fortawesome/free-solid-svg-icons";
 import LightbulbIcon from 'components/LightbulbIcon';
-
+import Container from 'react-bootstrap/Container'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
 
 function IdeasCTA() {
     return (
@@ -27,8 +29,8 @@ const Hero = (props) => {
     const {data} = props;
     
     return (
-        <>
-        <Jumbotron className="container jumbotron text-white p-4" fluid
+        <Container fluid="xs">
+        <Row  className="container jumbotron text-white p-4 " fluid
             style={
                 data.ImageBg
                     ? {
@@ -69,17 +71,22 @@ const Hero = (props) => {
                     </p>
                 </div> */}
             </div>
-        </Jumbotron>
-        <div className="fixed-bottom ideasCta">  
+        </Row>
+
+        
+            <Row>
+                <Col className="fixed-bottom ideasCta" lg={{ span: 1, offset: 11 }} xl={{ span: 1, offset: 11 }} xxl={{ span: 1, offset: 11 }}  xs={{ span: 4, offset: 8 }}>  
            <IdeasCTA/>
-        </div>
-        </>
+            </Col>
+            </Row>
+        
+    
+        </Container>
     );
   } 
 
 Hero.propTypes = {
     data: PropTypes.any,
 };
-
 
 export default Hero;

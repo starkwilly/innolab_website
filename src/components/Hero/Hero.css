@@ -31,18 +31,13 @@
 }
 
 
-.ideasCta{
-  margin: 2% 2% 0% 91%;
-  padding:2em 2em 2em 2em;
-  
-  
-}
+
 
 .ideasCta button{
-  margin: 2em 2em 2em 2em;
-  padding: 5px 12px 5px 12px;
-border: none;
-background-color: #b455aa;
+  margin: 2em 2em 2em 4em;
+  padding: 5px 11px 5px 11px;
+  border: none;
+  background-color: #b455aa;
 }
 
 .ideasCta button:hover{
