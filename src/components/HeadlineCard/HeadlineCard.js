@@ -10,32 +10,25 @@ import Col from 'react-bootstrap/Col';
 const HeadlineCard = (props) => {
     const {cardInfo, cardId} = props;
     // window.log("HeadlineCard", cardInfo, cardId);
-
     return (
         <Container fluid="xs">
             <Row>
                 <ScrollAnimation animateIn="zoomIn" animateOut="zoomOut">
                    <div id={cardId} className="cardHeadlineBase cardHeadlineBg card " >
                         <div className="row no-gutters h-100">
-                            <Col xs={12} md={4} lg={4}  className=" h-100 card-body text-left cardHeadlineHeader">
+                            <Col xs={12} md={6} lg={4}  className=" h-100 card-body text-left cardHeadlineHeader">
                                 {cardInfo.Title.match(/\b(\w+)(\W*)\b/g).map((headerLine, hidx) => (
                                 <h1 className="display-4 text-uppercase font-weight-bolder" key={hidx}>{headerLine}</h1> 
                                 ))}
                             </Col>
-                
-
-                            <Col xs={12} md={3}  lg={3}>
+                            <Col xs={12} md={6}  lg={3}>
                                 <ScrollAnimation className=" h-100 text-center" animateIn='pulse' delay={500} initiallyVisible={true}>
                                     {cardInfo.Image && (
                                         <img src={parseImgSrc(cardInfo.Image.url)} className=" img-fluid"/>
                                     )}
                                 </ScrollAnimation>
-                            </Col>
-
-
-
-                            
-                            <Col xs={12} md={5}  lg={5}>
+                            </Col>                            
+                            <Col xs={12} md={12}  lg={5}>
                                 <div className="card-body ">
                                     <div className="">
                                         <q className=" font-italic font-weight-lighter text-left cardHeadlineQuote">{cardInfo.QuoteText}</q>
