@@ -19,8 +19,8 @@ const Toggler = ({eventKey}) => {
     return (
         <div className="AccordionTggler col-2 text-right">
             {isCurrentEventKey ? 
-                <FontAwesomeIcon icon={faAngleDown} size="lg" /> : 
-                <FontAwesomeIcon icon={faAngleUp} size="lg" />
+                <FontAwesomeIcon icon={faAngleUp} size="lg" /> : 
+                <FontAwesomeIcon icon={faAngleDown} size="lg" />
             }
         </div>
     )
