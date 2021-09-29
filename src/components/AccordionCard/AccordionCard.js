@@ -9,15 +9,23 @@ import CardMediaContainer from '../CardMediaContainer/CardMediaContainer';
 import Container from '../../../node_modules/react-bootstrap/esm/Container';
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
-//import Row from 'react-bootstrap/Row'
-//import Col from 'react-bootstrap/Col'
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
+import { faAngleUp } from "@fortawesome/free-solid-svg-icons";
 
 const Toggler = ({eventKey}) => {
     const isCurrentEventKey = useContext(AccordionContext) === eventKey;
     return (
-        <div className="AccordionTggler col-2 text-right">{isCurrentEventKey ? "∧" : "∨"}</div>
+        <div className="AccordionTggler col-2 text-right">
+            {isCurrentEventKey ? 
+                <FontAwesomeIcon icon={faAngleDown} size="lg" /> : 
+                <FontAwesomeIcon icon={faAngleUp} size="lg" />
+            }
+        </div>
     )
 }
+
 Toggler.propTypes = {
     eventKey: PropTypes.string,
 }
