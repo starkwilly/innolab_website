@@ -8,6 +8,7 @@ import InnolabCard from '../../components/InnolabCard/InnolabCard';
 
 import { getGlobals, getHero, getSectionSingle, getSectionParents  } from "../../_services/strapiService";
 
+import ReactGA from 'react-ga';
 
 import { ApplicationInsights } from '@microsoft/applicationinsights-web';
 import { ReactPlugin } from '@microsoft/applicationinsights-react-js';
@@ -25,6 +26,10 @@ const Dashboard = () => {
          ///// Google analytics
 
 
+         
+        ReactGA.initialize('277828575');
+
+        ReactGA.pageview(window.location.pathname + window.location.search);
         
         ///ApplicationInsights
         const browserHistory = createBrowserHistory({ basename: '' });
