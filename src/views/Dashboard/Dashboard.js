@@ -8,6 +8,14 @@ import InnolabCard from '../../components/InnolabCard/InnolabCard';
 
 import { getGlobals, getHero, getSectionSingle, getSectionParents  } from "../../_services/strapiService";
 
+import ReactGA from 'react-ga';
+
+import { ApplicationInsights } from '@microsoft/applicationinsights-web';
+import { ReactPlugin } from '@microsoft/applicationinsights-react-js';
+import { createBrowserHistory } from "history";
+
+
+
 const Dashboard = () => {
 
     const [dataObj, setDataObj] = React.useState(null);
@@ -15,6 +23,26 @@ const Dashboard = () => {
     const [globalData, setGlobalData] = React.useState(null);
 
     React.useEffect(() => {
+         ///// Google analytics
+        ReactGA.initialize('277828575');
+
+        ReactGA.pageview(window.location.pathname + window.location.search);
+        ///ApplicationInsights
+        const browserHistory = createBrowserHistory({ basename: '' });
+        var reactPlugin = new ReactPlugin();
+        var appInsights = new ApplicationInsights({
+            config: {
+                instrumentationKey: '0254530d-94c8-40d9-840e-30caecae0ddd',
+                extensions: [reactPlugin],
+                extensionConfig: {
+                [reactPlugin.identifier]: { history: browserHistory }
+                }
+            }
+        });
+        appInsights.loadAppInsights();
+
+
+
         // window.log("Dashboard props", props);
         const getInitialData = async () => {
             let dataTmp = {sections:[]};
