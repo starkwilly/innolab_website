@@ -571,5 +571,15 @@ tr:hover {
     text-shadow: #676767 0px 0px 5px, #F700FF 0px 0px 10px, #F700FF 0px 0px 20px, #F700FF 0px 0px 30px;
     text-decoration: none;
   }
-  
 
+/* Accessibility */
+.readerOnly {
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+}

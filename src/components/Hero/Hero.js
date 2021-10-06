@@ -19,25 +19,22 @@ const Hero = (props) => {
      */
     const IdeasCTA = () => {
         return (
-        <>
-            <Link to="/add-idea"   >
-            
-            <Button>
-            <LightbulbIcon width={20} height={20} />
-            Idea  
-            </Button>                 
+            <Link to="/add-idea">
+                <Button tabIndex={-1}>
+                    <LightbulbIcon width={20} height={20} />
+                    Idea
+                </Button>
             </Link>
-        </>
         );
     }
 
     const css = `@media (max-width: 799px) {
-        .backimage {
+        .bg-image {
             background-image: none;
         }
     }
     @media (min-width: 799px) {
-        .backimage {
+        .bg-image {
             background-image: url(${parseImgSrc(data.ImageBg.url)});
         }
     }`;
@@ -46,15 +43,7 @@ const Hero = (props) => {
         <>
         <style scoped>{css}</style>
         <Container className="px-0">
-        <Row  className="jumbotron text-white p-4 container-fluid mx-0 backimage"
-            /* style={
-                data.ImageBg
-                    ? {
-                        backgroundImage: `url(${parseImgSrc(data.ImageBg.url)}`
-                    }
-                    : {}
-            } */
-        >
+        <Row  className="jumbotron text-white p-4 container-fluid mx-0 bg-image">
             <div className="w-100 pt-5">
                 <h1 className="display-4 text-uppercase font-weight-bolder">
                     <p>
@@ -63,7 +52,7 @@ const Hero = (props) => {
                         <br/>through
                         <br/>
                         <span className="outstanding-title position-relative">
-                            <svg className="blur-font" width="100%" xmlns="http://www.w3.org/2000/svg">
+                            <svg className="blur-font" width="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                                 <defs>
                                     <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%" gradientTransform="rotate(97)">
                                     <stop stopColor="#a442ff" offset="10%" stopOpacity="1"/>
