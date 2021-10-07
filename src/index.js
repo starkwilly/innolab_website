@@ -13,11 +13,33 @@ import { msalConfig } from "./_helpers/authConfig";
 
 export const msalInstance = new PublicClientApplication(msalConfig);
 
+const injectGA = () => {
+  if (typeof window == 'undefined') {
+    return;
+  }
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    window.dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+
+  gtag('config', 'G-9KD05RV68C');
+};
+
 ReactDOM.render(
+
+  
   <MsalProvider instance={msalInstance}>
+     <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-9KD05RV68C"
+    />
+    <script>{injectGA()}</script>
     <Provider store={store} >
       <App />
     </Provider>
   </MsalProvider>,
-  document.getElementById('root')
+  document.getElementById('root'),
+  
+  
 );

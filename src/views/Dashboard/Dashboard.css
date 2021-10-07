@@ -33,3 +33,14 @@
     background-color: ivory;
   }
   
+
+  .dashboard{
+    margin: 0 auto;
+  }
+
+  @media screen and (max-width: 799px) {
+    .container.dashboard{
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }

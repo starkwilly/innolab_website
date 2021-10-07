@@ -25,7 +25,7 @@ const Minimal = props => {
         globalData && (
             <>
                 <Container
-                    className="mainContainer p-0"
+                    className="mainContainer"
                     style={
                         globalData.ImageBg
                             ? {
@@ -34,6 +34,7 @@ const Minimal = props => {
                             }
                             : {}
                     }
+                    data-content={parseImgSrc(globalData.ImageBg.url)}
                 >
                     {children}
                 </Container>

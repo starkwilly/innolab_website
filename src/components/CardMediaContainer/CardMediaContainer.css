@@ -1,0 +1,13 @@
+@media screen and (max-width: 799px) {
+  .list-group.list-group-horizontal {
+    flex-direction: column;
+  }
+  .media-col {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.linkImage{
+  margin: 1;
+}

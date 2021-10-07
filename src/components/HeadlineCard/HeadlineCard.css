@@ -3,7 +3,7 @@
 .cardHeadlineBase {
     margin-bottom: 4rem;
      padding: 2%;
-    min-height: 30rem;
+    min-height: 22rem;
     box-shadow: 0 1rem 3rem rgb(0 0 0 / 50%);
 }
 .cardHeadlineBg {
@@ -25,6 +25,7 @@
 				  1px 1px 0 white,
 				 1px -1px 0 white,
 				-1px -1px 0 white;
+    transition: .5s;
 }
 .cardHeadlineHeader h1:nth-child(even) {
     color: rgba(0, 0, 0, 1);
@@ -32,6 +33,7 @@
 				  1px 1px 0 white,
 				 1px -1px 0 white,
 				-1px -1px 0 white;
+    transition: .5s;
 }
 .card-body q.cardHeadlineQuote {
     font-size: 1.3rem;
@@ -42,3 +44,40 @@
     margin-bottom: 96px;
 }
 
+@media screen and (max-width: 799px) {
+    .card.cardHeadlineBase {
+      min-width: 100%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .cardHeadlineHeader h1{
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .cardHeadlineHeader h1{
+        font-size: 2rem;
+    }
+}
+
+.cardHeadlineBase:focus-visible {
+    outline: 1px solid #fa67ff;
+    /* filter: drop-shadow(0 0 3px #da23ff);
+    box-shadow: 0 0 10px #e251ff; */
+    animation: glow 2s infinite;
+    transition: .5s;
+  }
+  
+  @keyframes glow{
+    0%{
+      box-shadow: 0 0 10px #e251ff;
+    }
+    50%{
+      box-shadow: 0 0 12px #51ceff;
+    }
+    100%{
+      box-shadow: 0 0 10px #e251ff;
+    }
+  }
