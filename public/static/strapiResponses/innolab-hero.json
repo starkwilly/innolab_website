@@ -1,72 +1,72 @@
 {
     "id": 1,
-    "Headline": "DEV NOTE: PENDING IMPLEMENT THIS SECTION COPY RENDER\n\nUNLEASH\nYOUR BEST\nTHROUGH\n~~INNOVATION.~~",
+    "Headline": "DEV NOTE: PENDING IMPLEMENT THIS SECTION COPY RENDER\n\nUNLEASH\nYOUR BEST\nTHROUGH\n~~INNOVATION~~",
     "CommentsContent": "## We don't see innovation as our end, but the means.",
     "published_at": "2021-06-24T22:16:54.233Z",
     "created_at": "2021-05-24T19:11:13.436Z",
-    "updated_at": "2021-08-06T17:21:58.144Z",
+    "updated_at": "2021-09-28T21:08:31.960Z",
     "ImageBg": {
-        "id": 134,
-        "name": "unleash_background_fade2-optim1.png",
+        "id": 135,
+        "name": "unleash_background_girl_1.png",
         "alternativeText": "",
         "caption": "",
         "width": 1200,
         "height": 699,
         "formats": {
             "thumbnail": {
-                "name": "thumbnail_unleash_background_fade2-optim1.png",
-                "hash": "thumbnail_unleash_background_fade2_optim1_bb15e4fbe2",
+                "name": "thumbnail_unleash_background_girl_1.png",
+                "hash": "thumbnail_unleash_background_girl_1_faa6604a6e",
                 "ext": ".png",
                 "mime": "image/png",
                 "width": 245,
                 "height": 143,
-                "size": 103.18,
+                "size": 38.49,
                 "path": null,
-                "url": "/uploads/thumbnail_unleash_background_fade2_optim1_bb15e4fbe2.png"
+                "url": "/uploads/thumbnail_unleash_background_girl_1_faa6604a6e.png"
             },
             "large": {
-                "name": "large_unleash_background_fade2-optim1.png",
-                "hash": "large_unleash_background_fade2_optim1_bb15e4fbe2",
+                "name": "large_unleash_background_girl_1.png",
+                "hash": "large_unleash_background_girl_1_faa6604a6e",
                 "ext": ".png",
                 "mime": "image/png",
                 "width": 1000,
                 "height": 583,
-                "size": 1459.37,
+                "size": 460.12,
                 "path": null,
-                "url": "/uploads/large_unleash_background_fade2_optim1_bb15e4fbe2.png"
+                "url": "/uploads/large_unleash_background_girl_1_faa6604a6e.png"
             },
             "medium": {
-                "name": "medium_unleash_background_fade2-optim1.png",
-                "hash": "medium_unleash_background_fade2_optim1_bb15e4fbe2",
+                "name": "medium_unleash_background_girl_1.png",
+                "hash": "medium_unleash_background_girl_1_faa6604a6e",
                 "ext": ".png",
                 "mime": "image/png",
                 "width": 750,
                 "height": 437,
-                "size": 841.32,
+                "size": 268.85,
                 "path": null,
-                "url": "/uploads/medium_unleash_background_fade2_optim1_bb15e4fbe2.png"
+                "url": "/uploads/medium_unleash_background_girl_1_faa6604a6e.png"
             },
             "small": {
-                "name": "small_unleash_background_fade2-optim1.png",
-                "hash": "small_unleash_background_fade2_optim1_bb15e4fbe2",
+                "name": "small_unleash_background_girl_1.png",
+                "hash": "small_unleash_background_girl_1_faa6604a6e",
                 "ext": ".png",
                 "mime": "image/png",
                 "width": 500,
                 "height": 291,
-                "size": 388.91,
+                "size": 128.36,
                 "path": null,
-                "url": "/uploads/small_unleash_background_fade2_optim1_bb15e4fbe2.png"
+                "url": "/uploads/small_unleash_background_girl_1_faa6604a6e.png"
             }
         },
-        "hash": "unleash_background_fade2_optim1_bb15e4fbe2",
+        "hash": "unleash_background_girl_1_faa6604a6e",
         "ext": ".png",
         "mime": "image/png",
-        "size": 238.26,
-        "url": "/uploads/unleash_background_fade2_optim1_bb15e4fbe2.png",
+        "size": 492.63,
+        "url": "/uploads/unleash_background_girl_1_faa6604a6e.png",
         "previewUrl": null,
         "provider": "local",
         "provider_metadata": null,
-        "created_at": "2021-08-06T17:21:27.428Z",
-        "updated_at": "2021-08-06T17:21:27.440Z"
+        "created_at": "2021-09-28T20:38:18.074Z",
+        "updated_at": "2021-09-28T20:38:18.084Z"
     }
 }

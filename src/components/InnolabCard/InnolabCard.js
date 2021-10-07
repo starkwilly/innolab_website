@@ -12,11 +12,10 @@ import Col from 'react-bootstrap/Col'
 const InnolabCard = (props) => {
     const {cardInfo, cardId, bgImage} = props;
     // window.log("InnolabCard", cardInfo, cardId);
-
     return (
         <Container fluid="xs" >
             <Row className="mb-5">
-             
+    
                 <ScrollAnimation animateIn="zoomIn" animateOut="zoomOut" className="bg-blur ml-lg-3 mr-lg-3">
                     <div id={cardId} className="cardBase cardBg card" style={{backgroundImage: `url(${parseImgSrc(bgImage)})`}} tabIndex={0}>
                         <div className="row no-gutters h-100">
@@ -34,7 +33,6 @@ const InnolabCard = (props) => {
                                         <RenderMarkdown className="card-text">{cardInfo.BodyContent}</RenderMarkdown>
                                     </div>
                                     {(cardInfo.Media.length > 0) && (
-                                        
 
                                             <CardMediaContainer mediaInfo={cardInfo.Media}/>
                                         
