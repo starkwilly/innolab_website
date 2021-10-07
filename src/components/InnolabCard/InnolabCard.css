@@ -3,11 +3,74 @@
     box-shadow: 0 1rem 3rem rgb(0 0 0 / 50%);
     max-width: 87%;
     margin: 0 auto; 
-    margin-bottom: 3rem;
-  
+    margin-bottom: 0;
+    padding-bottom: 3rem;
 }
 .cardBg {
     border-width: 2px;
     background: rgb(2,0,36);
-    background: transparent linear-gradient(161deg,#E2E2E214 0%,#A0A0A040 50%, #00000046 100%) 0% 0%
+    background: transparent linear-gradient(161deg,#E2E2E214 0%,#A0A0A040 50%, #00000046 100%) 0% 0%;
+    overflow: hidden;
+    background-position: center calc(-500%);
+    background-size: cover;
+}
+.cardBg::before {
+    content: '';
+    background: inherit; 
+    position: absolute;
+    width: calc( 100% + 50px );
+    height: calc( 100% + 50px );
+    left: -25px;
+    right: 0;
+    top: -25px; 
+    bottom: 0;
+    box-shadow: inset 0 0 0 3000px rgba(255, 255, 255, 0.1);
+    filter: blur(10px);
+}
+
+@supports(-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+    .bg-blur.animated {
+        -webkit-backdrop-filter: blur(10px);
+        margin: 0px auto !important;
+        max-width: 100%;
+        backdrop-filter: blur(10px);
+        background-color: rgba(255, 255, 255, 0.1);
+        border-radius: 15px;
+    }
+    .cardBg {
+        max-width: 100%;
+        background-image: unset !important;
+    }
+    .cardBg::before {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 799px) {
+    .bg-blur {
+        width: 100%;
+    }
+    .cardBase {
+      min-width: 100%;
+    }
+}
+
+.cardBase :focus-visible:not(a) {
+    outline: 1px solid #fa67ff;
+    /* filter: drop-shadow(0 0 3px #da23ff);
+    box-shadow: 0 0 10px #e251ff; */
+    animation: glow 2s infinite;
+    transition: .5s;
+}
+  
+@keyframes glow{
+0%{
+    box-shadow: 0 0 10px #e251ff;
+}
+50%{
+    box-shadow: 0 0 12px #51ceff;
+}
+100%{
+    box-shadow: 0 0 10px #e251ff;
+}
 }

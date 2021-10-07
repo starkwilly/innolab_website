@@ -26,8 +26,8 @@ export const RouterLink = (props) => {
     const dl = RegExp(/^(\/download)+/i).test(props.href); // testing if href is /download
     return (
         RegExp(/^\/+(download)?/i).test(props.href) // test for any relative links starting with / or /download
-        ? <Link to={props.href} target={dl ? "blank" : null} rel="noopener noreferrer">{props.children}</Link>
-        : <a href={props.href} target="blank" rel="noopener noreferrer">{props.children}</a>
+        ? <Link to={props.href} target={dl ? "_blank" : null} rel="noopener noreferrer">{props.children}</Link>
+        : <a href={props.href} target="_blank" rel="noopener noreferrer">{props.children}</a>
     );
 }
 RouterLink.propTypes = {
@@ -36,7 +36,7 @@ RouterLink.propTypes = {
 }
 
 export const parseImgSrc = (src) => {
-    window.log('RenderMardown > parseImgSrc > ', src)
+    // window.log('RenderMardown > parseImgSrc > ', src)
     if (src.indexOf(process.env.REACT_APP_API) === 0 ) {
         src = src.substr(process.env.REACT_APP_API.length);
     }
@@ -44,7 +44,7 @@ export const parseImgSrc = (src) => {
         const hostStr = (process.env.REACT_APP_API_ENABLED !== "FALSE") ? process.env.REACT_APP_API : process.env.PUBLIC_URL;
         src = `${hostStr}${src}`;
     }
-    window.log('RenderMardown > parseImgSrc > OUTPUT ', src);
+    // window.log('RenderMardown > parseImgSrc > OUTPUT ', src);
 
     return `${src}`;
 }

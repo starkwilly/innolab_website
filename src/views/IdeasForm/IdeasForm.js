@@ -5,6 +5,9 @@ import { postIdea } from '../../_services/commonService';
 import { Button, Form, Alert } from "react-bootstrap";
 import "./IdeasForm.scss";
 import { Link } from 'react-router-dom';
+import Container from '../../../node_modules/react-bootstrap/esm/Container';
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
 
 class addIdeaForm extends Component {
     state = {
@@ -18,11 +21,7 @@ class addIdeaForm extends Component {
         }
     };
 
-    /* addEmail = () => {
-        window.log(emails);
-        emails.push(this.state.email);
-        window.log(emails);
-    }; */
+
 
     onSubmit = async () => {
         this.setState({msg:"", msgVariant:""});
@@ -62,7 +61,9 @@ class addIdeaForm extends Component {
     render() {
 
         return (
-            <>
+            <Container fluid="xs" >
+                <Row justify-content-md-center>
+                    <Col xs={12} md={{ span: 6, offset: 3 }}  lg={{ span: 6, offset: 3 }}>
             <Form className="ideasForm">
                 <h3>back to <Link to="/" className="">Innolab</Link></h3>
                 <br/>
@@ -96,43 +97,12 @@ class addIdeaForm extends Component {
                         type="email"
                         placeholder="Enter email"
                     />
-                    {/* <Button onClick={this.addEmail}>add</Button>
-                    <Form.Text className="text-muted">
-                        {emails.map((item) => (
-                            <>
-                                <Alert key={item} variant="secondary">
-                                    {item}
-                                </Alert>
-
-                                <br></br>
-                            </>
-                        ))}
-                    </Form.Text> */}
+               
                     <Form.Group></Form.Group>
                    
                 </Form.Group>
 
-                {/* <Form.Group controlId="formCountry">
-                    <Form.Label>
-                        <h3>Country/Territory</h3>
-                    </Form.Label>
-                    <Form.Control
-                        rows="3"
-                        placeholder="country"
-                        value={this.state.country}
-                        onChange={(e) =>
-                            this.setState({ country: e.target.value })
-                        }
-                        type="select"
-                        as="select"
-                    >
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
-                    </Form.Control>
-                </Form.Group> */}
+           
                 <Form.Group controlId="formDescription">
                     <Form.Label>
                         <h3>Idea description</h3>
@@ -149,26 +119,7 @@ class addIdeaForm extends Component {
                         type="textarea"
                     />
                 </Form.Group>
-                {/* <Form.Group controlId="formFile">
-                    <Form.Label>
-                        <h3>Attachment</h3>
-                    </Form.Label>
-                    <Form.File
-                        id="file"
-                        rows={3}
-                        placeholder="File"
-                        onChange={(e) =>
-                            this.setState({ file: e.target.files[0] }) // *** THIS SHOULD VALIDATE SELECTED FILE FORMAT, SIZE AND OTHERS IF APPLY ***
-                        }
-                        accept=".txt, .pdf, .zip, rar, pptx, .ppt, .xlsx, .xls, .docx, .doc, .png, .jpg, .jpeg"
-                    />
-                    <Form.Label>
-                        One file only<br></br>
-                        5 MB limit.<br></br>
-                        Allowed types: .txt, .pdf, .zip, rar, pptx, .ppt, .xlsx, .xls, .docx, .doc, .png, .jpg, .jpeg
-                        rar
-                    </Form.Label>
-                </Form.Group> */}
+         
                 <Button
                     className="btnFormSend"
                     variant="light"
@@ -183,7 +134,9 @@ class addIdeaForm extends Component {
                 </div>
             }
             </Form>
-            </>
+            </Col>
+            </Row>
+            </Container>
         );
     }
 }
