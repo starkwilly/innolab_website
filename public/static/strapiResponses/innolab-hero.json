@@ -1,72 +1,72 @@
 {
     "id": 1,
-    "Headline": "DEV NOTE: PENDING IMPLEMENT THIS SECTION COPY RENDER\n\nUNLEASH\nYOUR BEST\nTHROUGH\n~~INNOVATION.~~",
+    "Headline": "DEV NOTE: PENDING IMPLEMENT THIS SECTION COPY RENDER\n\nUNLEASH\nYOUR BEST\nTHROUGH\n~~INNOVATION~~",
     "CommentsContent": "## We don't see innovation as our end, but the means.",
     "published_at": "2021-06-24T22:16:54.233Z",
     "created_at": "2021-05-24T19:11:13.436Z",
-    "updated_at": "2021-08-06T17:21:58.144Z",
+    "updated_at": "2021-10-07T18:05:13.881Z",
     "ImageBg": {
-        "id": 134,
-        "name": "unleash_background_fade2-optim1.png",
+        "id": 136,
+        "name": "bg-faded.png",
         "alternativeText": "",
         "caption": "",
         "width": 1200,
         "height": 699,
         "formats": {
             "thumbnail": {
-                "name": "thumbnail_unleash_background_fade2-optim1.png",
-                "hash": "thumbnail_unleash_background_fade2_optim1_bb15e4fbe2",
+                "name": "thumbnail_bg-faded.png",
+                "hash": "thumbnail_bg_faded_c6bb28b2ac",
                 "ext": ".png",
                 "mime": "image/png",
                 "width": 245,
                 "height": 143,
-                "size": 103.18,
+                "size": 134.53,
                 "path": null,
-                "url": "/uploads/thumbnail_unleash_background_fade2_optim1_bb15e4fbe2.png"
+                "url": "/uploads/thumbnail_bg_faded_c6bb28b2ac.png"
             },
             "large": {
-                "name": "large_unleash_background_fade2-optim1.png",
-                "hash": "large_unleash_background_fade2_optim1_bb15e4fbe2",
+                "name": "large_bg-faded.png",
+                "hash": "large_bg_faded_c6bb28b2ac",
                 "ext": ".png",
                 "mime": "image/png",
                 "width": 1000,
                 "height": 583,
-                "size": 1459.37,
+                "size": 2025.95,
                 "path": null,
-                "url": "/uploads/large_unleash_background_fade2_optim1_bb15e4fbe2.png"
+                "url": "/uploads/large_bg_faded_c6bb28b2ac.png"
             },
             "medium": {
-                "name": "medium_unleash_background_fade2-optim1.png",
-                "hash": "medium_unleash_background_fade2_optim1_bb15e4fbe2",
+                "name": "medium_bg-faded.png",
+                "hash": "medium_bg_faded_c6bb28b2ac",
                 "ext": ".png",
                 "mime": "image/png",
                 "width": 750,
                 "height": 437,
-                "size": 841.32,
+                "size": 1158.63,
                 "path": null,
-                "url": "/uploads/medium_unleash_background_fade2_optim1_bb15e4fbe2.png"
+                "url": "/uploads/medium_bg_faded_c6bb28b2ac.png"
             },
             "small": {
-                "name": "small_unleash_background_fade2-optim1.png",
-                "hash": "small_unleash_background_fade2_optim1_bb15e4fbe2",
+                "name": "small_bg-faded.png",
+                "hash": "small_bg_faded_c6bb28b2ac",
                 "ext": ".png",
                 "mime": "image/png",
                 "width": 500,
                 "height": 291,
-                "size": 388.91,
+                "size": 527.86,
                 "path": null,
-                "url": "/uploads/small_unleash_background_fade2_optim1_bb15e4fbe2.png"
+                "url": "/uploads/small_bg_faded_c6bb28b2ac.png"
             }
         },
-        "hash": "unleash_background_fade2_optim1_bb15e4fbe2",
+        "hash": "bg_faded_c6bb28b2ac",
         "ext": ".png",
         "mime": "image/png",
-        "size": 238.26,
-        "url": "/uploads/unleash_background_fade2_optim1_bb15e4fbe2.png",
+        "size": 1605.95,
+        "url": "/uploads/bg_faded_c6bb28b2ac.png",
         "previewUrl": null,
         "provider": "local",
         "provider_metadata": null,
-        "created_at": "2021-08-06T17:21:27.428Z",
-        "updated_at": "2021-08-06T17:21:27.440Z"
+        "created_at": "2021-10-07T18:05:09.907Z",
+        "updated_at": "2021-10-07T18:05:09.914Z"
     }
 }

@@ -25,7 +25,7 @@ const GdprDialog = (props) => {
                     The protection of your personal data is very important to Accenture.
                     Accenture is committed to keeping your personal data secure, and
                     processing it in accordance with, applicable data protection laws and our
-                    internal policies, including <a href="https://policies.accenture.com/policy/0090" target="blank" rel="noopener noreferrer" className="policy">Accenture&apos;s Global Data Privacy Policy 0090.</a>
+                    internal policies, including <a href="https://policies.accenture.com/policy/0090" target="_blank" rel="noopener noreferrer" className="policy">Accenture&apos;s Global Data Privacy Policy 0090.</a>
                 </p>
                 <p>
                     Your decision to provide your personal data to Accenture is voluntary.
