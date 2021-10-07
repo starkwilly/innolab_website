@@ -26,8 +26,8 @@ export const RouterLink = (props) => {
     const dl = RegExp(/^(\/download)+/i).test(props.href); // testing if href is /download
     return (
         RegExp(/^\/+(download)?/i).test(props.href) // test for any relative links starting with / or /download
-        ? <Link to={props.href} target={dl ? "blank" : null} rel="noopener noreferrer">{props.children}</Link>
-        : <a href={props.href} target="blank" rel="noopener noreferrer">{props.children}</a>
+        ? <Link to={props.href} target={dl ? "_blank" : null} rel="noopener noreferrer">{props.children}</Link>
+        : <a href={props.href} target="_blank" rel="noopener noreferrer">{props.children}</a>
     );
 }
 RouterLink.propTypes = {

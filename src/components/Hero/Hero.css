@@ -1,7 +1,6 @@
 .jumbotron{
   background-size: cover;
   min-height: 64em;
-  /* background-image: url("../../_assets/media/images/unleash_bg2.png"); */
   background-position: top center;
   background-repeat: no-repeat;
   background-color: unset;
@@ -37,6 +36,8 @@
 .ideasCta {
   display: grid;
   grid-template-columns: auto 96px;
+  margin-bottom: 2rem;
+  transition: .5s;
 }
 
 .ideasCta > a {
@@ -46,9 +47,13 @@
 }
 
 .ideasCta button{
-  margin: 2em;
-  /* padding: 5px 11px 5px 11px; */
+  width: 100%;
+  max-width: 55px;
+  aspect-ratio: 1/1;
   border: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: #b455aa;
 }
 
@@ -68,6 +73,10 @@ box-shadow: #676767 0 0 5px,#f700ff 0 0 10px,#f700ff 0 0 20px,#f700ff 0 0 30px;;
   }
   .blur-font {
     filter: blur(7.5px);
+  }
+
+  .ideasCta {
+    grid-template-columns: auto 40px;
   }
 }
 

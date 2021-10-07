@@ -38,10 +38,6 @@ const Header = () => {
         getInitialData();
     }, []);
 
-    const toggleMenu = () => {
-        setExpanded(prev => !prev);
-    }
-
     function doMsalLogout(e) {
         e.preventDefault();
         const currentAccount = instance.getActiveAccount();
@@ -50,6 +46,17 @@ const Header = () => {
             account: currentAccount,
             postLogoutRedirectUri: null,
         });
+    }
+
+    const toggleMenu = () => {
+        setExpanded(prev => !prev);
+    }
+
+    const accessibleCloseMenu = (e) => {
+        if (e.key === ' ' || e.key === 'Enter' ) {
+            e.preventDefault();
+            setExpanded(false);
+        }
     }
 
     return (
@@ -63,19 +70,29 @@ const Header = () => {
                 <Navbar.Toggle aria-controls="top-collapse" />
                 <p className="m-0">Menu</p>
             </span>
-            <Navbar.Collapse id="top-collapse">
+            { expanded && <div className="backdrop" onClick={toggleMenu}></div>  }
+            <Navbar.Collapse id="top-collapse" {... ( expanded && { role: "dialog" } ) } {...( expanded && {tabIndex: -1}) }>
                 <div>
-                    <NavItem className="ml-auto"></NavItem>
+                    {/* <NavItem className="ml-auto"></NavItem> */}
                     <NavItem><Scrollchor to="#what-we-do" className="nav-link">What we do</Scrollchor></NavItem>
                     { sectionsData.map(item => (
                         <NavItem key={`${item.key}`}><Scrollchor to={`#${item.key}`} className="nav-link">{item.Title}</Scrollchor></NavItem>
-                    ))}
+                        ))}
                     <NavItem><Scrollchor to="#contact-us" className="nav-link">Contact us</Scrollchor></NavItem>
                     <NavItem className="d-md-none nav-link" onClick={toggleMenu}>CloseMenu</NavItem>
                 </div>
                 <div>
                     <NavItem className="nav-link" style={{textDecoration:"underline"}} as="a" onClick={doMsalLogout} href="#">Logout <LogoutIcon className={'d-md-none'} /></NavItem>
                 </div>
+                <NavItem 
+                    className="close-menu d-md-none nav-link" 
+                    onClick={toggleMenu}
+                    onKeyDown={accessibleCloseMenu}
+                    tabIndex={0}
+                    as="a"
+                    >
+                        &times;
+                </NavItem>
             </Navbar.Collapse>
             </div>
         </Navbar>

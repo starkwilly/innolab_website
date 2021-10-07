@@ -18,6 +18,17 @@ import { createBrowserHistory } from "history";
 
 const Dashboard = () => {
 
+    // Tells screen readers the link opens in new tab
+    const blankAnchors = document.querySelectorAll('[target="_blank"]');
+    if (blankAnchors) {
+        blankAnchors.forEach(anchor => {
+            const text = anchor.textContent;
+            if (text !== "") {
+                anchor.setAttribute('aria-label', `${text.replace('.', '')} opens in new tab`);
+            }
+        });
+    }
+
     const [dataObj, setDataObj] = React.useState(null);
 
     const [globalData, setGlobalData] = React.useState(null);

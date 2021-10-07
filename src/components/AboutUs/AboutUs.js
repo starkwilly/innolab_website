@@ -13,7 +13,7 @@ const AboutUs = (props) => {
         <Container fluid="xs">
             <ScrollAnimation animateIn="fadeIn" className="container cardAboutContainer">
                 <div id={cardId} className="cardAboutSpacer">
-                    <div className="cardAboutBase cardAboutBg card text-white " style={{backgroundImage: `url(${parseImgSrc(bgImage)})`}}>
+                    <div className="cardAboutBase cardAboutBg card text-white " style={{backgroundImage: `url(${parseImgSrc(bgImage)})`}} tabIndex={0}>
                         <div className="row no-gutters">
                             <div className="col card-body text-left">
                                 <h2 className="card-title text-white text-uppercase font-weight-bolder" >{cardInfo.Title}</h2> 
@@ -41,7 +41,7 @@ const AboutUs = (props) => {
 AboutUs.propTypes = {
     cardInfo: PropTypes.any.isRequired,
     cardId: PropTypes.string,
-    bgImage: PropTypes.url
+    bgImage: PropTypes.string
 }
 
 export default AboutUs;

@@ -54,3 +54,23 @@
       min-width: 100%;
     }
 }
+
+.cardBase :focus-visible:not(a) {
+    outline: 1px solid #fa67ff;
+    /* filter: drop-shadow(0 0 3px #da23ff);
+    box-shadow: 0 0 10px #e251ff; */
+    animation: glow 2s infinite;
+    transition: .5s;
+}
+  
+@keyframes glow{
+0%{
+    box-shadow: 0 0 10px #e251ff;
+}
+50%{
+    box-shadow: 0 0 12px #51ceff;
+}
+100%{
+    box-shadow: 0 0 10px #e251ff;
+}
+}
