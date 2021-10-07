@@ -2,9 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import './CardMediaContainer.css';
 import { RouterLink, parseImgSrc } from '../../common/RenderMarkdown';
-import Container from 'react-bootstrap/Container'
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
 
 const CardMediaContainer = (props) => {
     const {mediaInfo} = props;
@@ -12,43 +9,24 @@ const CardMediaContainer = (props) => {
 
     // window.log("cardMediaContainer", mediaInfo);
 
-    const RenderMediaTag = (props) => {
-        const {mediaItm} = props;
-        const mediaBase = <img src={parseImgSrc(mediaItm.url)} alt={mediaItm.alternativeText} width="256px" height="144px"/>
-        let mediaProps = {};
-        if (RegExp(/^(https?:\/\/|\/)[^\s$]+/i).test(mediaItm.caption)) { // test for any links starting with / or http:// or https://
-            mediaProps = {...mediaProps, href:mediaItm.caption, target:"_blank", rel:"noopener noreferrer" }
-        }
-
-        return (mediaProps.href !== undefined) ? <RouterLink {...mediaProps}>{mediaBase}</RouterLink> : <>{mediaBase}</>
-    }
-    RenderMediaTag.propTypes = {
-        mediaItm: PropTypes.any.isRequired,
-    }
-
     return (
         (mediaInfo && mediaInfo.length > 0) && 
-
-            <Container fluid="xs" className="list-group list-group-horizontal">
-                {mediaInfo.slice(0,2).map((mediaItm, idx) => (
-                
-                    <Row className="list-group-item media rounded bg-dark m-1 p-0 overflow-hidden" key={idx}>
-                    
-                            <Col  xs={12} md={4} className="media-col" >
-                                <RenderMediaTag mediaItm={mediaItm}/>
-                            </Col>
-                        
-                        {/* <div className="row">
-                            <div className="col text-right">
-                            <   span className="badge badge-secondary">ENG</span>
-                            </div>
-                        </div> */}
-                    </Row>
-                
-                ))}
-            </Container>
-      
-
+        <ul className="list-group list-group-horizontal">
+            {mediaInfo.slice(0,2).map((mediaItm, idx) => (
+                <li className="list-group-item media rounded bg-dark m-1 p-0 overflow-hidden" key={idx}>
+                    <div className="row">
+                        <div className="col">
+                            <RenderMediaTag mediaItm={mediaItm}/>
+                        </div>
+                    </div>
+                    {/* <div className="row">
+                        <div className="col text-right">
+                        <   span className="badge badge-secondary">ENG</span>
+                        </div>
+                    </div> */}
+                </li>
+            ))}
+        </ul>
     )
 }
 
@@ -57,3 +35,18 @@ CardMediaContainer.propTypes = {
 }
 
 export default CardMediaContainer;
+
+
+const RenderMediaTag = (props) => {
+    const {mediaItm} = props;
+    const mediaBase = <img src={parseImgSrc(mediaItm.url)} alt={mediaItm.alternativeText} width="256px" height="144px"/>
+    let mediaProps = {};
+    if (RegExp(/^(https?:\/\/|\/)[^\s$]+/i).test(mediaItm.caption)) { // test for any links starting with / or http:// or https://
+        mediaProps = {...mediaProps, href:mediaItm.caption, target:"_blank", rel:"noopener noreferrer"}
+    }
+
+    return (mediaProps.href !== undefined) ? <RouterLink {...mediaProps}>{mediaBase}</RouterLink> : <>{mediaBase}</>
+}
+RenderMediaTag.propTypes = {
+    mediaItm: PropTypes.any.isRequired,
+}

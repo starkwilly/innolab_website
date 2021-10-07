@@ -29,7 +29,7 @@ const AccordionCard = (props) => {
         const isCurrentEventKey = useContext(AccordionContext) === eventKey;
         return (
             <div className="AccordionTggler col-2 text-right" >
-                {isCurrentEventKey ? 
+                {!isCurrentEventKey ? 
                     <FontAwesomeIcon icon={faAngleDown} size="lg" /> : 
                     <FontAwesomeIcon icon={faAngleUp} size="lg" />
                 }
