@@ -1,4 +1,6 @@
-import {React, useState} from 'react';
+/* eslint-disable no-unused-vars */
+/* eslint-disable react/no-danger-with-children */
+import {React, useState, useEffect} from 'react';
 import PropTypes from 'prop-types';
 import RenderMarkdown, { parseImgSrc } from '../../common/RenderMarkdown';
 import './InnolabCard.css';
@@ -16,6 +18,46 @@ const InnolabCard = (props) => {
 
     const handleClose = () => setShow(false);
     const handleShow = () => setShow(true);
+
+    var iframe_desktop = '<iframe id="kmsembed-1_m0g4bvy3" width="608" height="456" src="https://mediaexchange.accenture.com/embed/secure/iframe/entryId/1_m0g4bvy3/uiConfId/27188232" class="kmsembed" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" referrerPolicy="no-referrer-when-downgrade"  frameborder="0" title="Kaltura Player"></iframe>'
+    var iframe_mobile = '<iframe id="kmsembed-1_m0g4bvy3" width="304" height="228" src="https://mediaexchange.accenture.com/embed/secure/iframe/entryId/1_m0g4bvy3/uiConfId/27188232" class="kmsembed" allowfullscreen webkitallowfullscreen mozAllowFullScreen allow="autoplay *; fullscreen *; encrypted-media *" referrerPolicy="no-referrer-when-downgrade"  frameborder="0" title="Kaltura Player"></iframe>'
+
+    // Hook
+    function useWindowSize() {
+        // Initialize state with undefined width/height so server and client renders match
+        // Learn more here: https://joshwcomeau.com/react/the-perils-of-rehydration/
+        const [windowSize, setWindowSize] = useState({
+            width: undefined,
+            height: undefined,
+        });
+        useEffect(() => {
+            // Handler to call on window resize
+            function handleResize() {
+                // Set window width/height to state
+                setWindowSize({
+                    width: window.innerWidth,
+                    height: window.innerHeight,
+                });
+            }
+             // Add event listener
+            window.addEventListener("resize", handleResize);
+            // Call handler right away so state gets updated with initial window size
+            handleResize();
+            // Remove event listener on cleanup
+            return () => window.removeEventListener("resize", handleResize);
+        }, []); // Empty array ensures that effect is only run on mount
+        return windowSize;
+    }
+
+    const size = useWindowSize();
+    var iframe = iframe_desktop;
+    if (size.width < 400) {
+        iframe = iframe_mobile;
+    }
+    
+    iframe.replace("class=","className=");
+    iframe.replace("allowfullscreen","allowFullScreen")
+    iframe.replace("frameborder","frameBorder");
     
     return (
         <Container fluid="xs" >
@@ -36,10 +78,12 @@ const InnolabCard = (props) => {
                                     <div className="card-body">
                                         <h5 className="card-title text-white text-uppercase">{cardInfo.Title}</h5>
                                         <RenderMarkdown className="card-text">{cardInfo.BodyContent}</RenderMarkdown>
-                                    </div>
-                                    <Button variant="primary" onClick={handleShow}>
-                                        Launch demo modal
-                                    </Button>                                                                                                                                                
+                                    </div>                                    
+                                    {(cardInfo.Media.length > 0) && (
+                                        <Button variant="primary" onClick={handleShow}>
+                                            Launch demo modal
+                                        </Button>                                                                                                                                                
+                                    )}                                    
                                 </ScrollAnimation>
                             </Col>
                         </div>
@@ -53,7 +97,7 @@ const InnolabCard = (props) => {
 
             <Modal show={show} onHide={handleClose} centered size="lg" dialogClassName="modalWidth">                
                 <Modal.Body>
-                <iframe id="kmsembed-1_kzqrixnc" width="608" height="456" src="https://mediaexchange.accenture.com/embed/secure/iframe/entryId/1_kzqrixnc/uiConfId/27188232" className="kmsembed" allow="autoplay *; fullscreen *; encrypted-media *" referrerPolicy="no-referrer-when-downgrade"  frameBorder="0" title="Kaltura Player"></iframe>
+                    <div dangerouslySetInnerHTML={{__html:iframe}}></div>                                         
                 </Modal.Body>
                 <Modal.Footer>
                     <Button variant="secondary" onClick={handleClose}>
