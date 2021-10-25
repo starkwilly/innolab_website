@@ -60,11 +60,20 @@ const InnolabCard = (props) => {
     iframe.replace("frameborder","frameBorder");
 
     function showModal() {
-        var aux = window.open("https://mediaexchange.accenture.com/");        
-        if(aux.document.readyState === 'complete') {            
+        if (!sessionStorage.openedMedia) {
+            var aux = window.open("https://mediaexchange.accenture.com/");        
+            var interval = setInterval(function() {
+                if(document.readyState === 'complete') {
+                    clearInterval(interval);
+                    
+                    aux.close();   
+                    sessionStorage.openedMedia = true;
+                }    
+            }, 100);                      
+        }
+        else {
             handleShow();
-            aux.close();            
-        }        
+        }
         
     }
     
