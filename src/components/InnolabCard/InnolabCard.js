@@ -58,6 +58,15 @@ const InnolabCard = (props) => {
     iframe.replace("class=","className=");
     iframe.replace("allowfullscreen","allowFullScreen")
     iframe.replace("frameborder","frameBorder");
+
+    function showModal() {
+        var aux = window.open("https://mediaexchange.accenture.com/");        
+        if(aux.document.readyState === 'complete') {            
+            handleShow();
+            aux.close();            
+        }        
+        
+    }
     
     return (
         <Container fluid="xs" >
@@ -80,7 +89,7 @@ const InnolabCard = (props) => {
                                         <RenderMarkdown className="card-text">{cardInfo.BodyContent}</RenderMarkdown>
                                     </div>                                    
                                     {(cardInfo.Media.length > 0) && (
-                                        <Button variant="primary" onClick={handleShow}>
+                                        <Button variant="primary" onClick={showModal}>
                                             Launch demo modal
                                         </Button>                                                                                                                                                
                                     )}                                    
