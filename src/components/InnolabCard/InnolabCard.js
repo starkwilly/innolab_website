@@ -64,9 +64,9 @@ const InnolabCard = (props) => {
             var aux = window.open("https://mediaexchange.accenture.com/");        
             var interval = setInterval(function() {
                 if(document.readyState === 'complete') {
-                    clearInterval(interval);
-                    
+                    clearInterval(interval);                    
                     aux.close();   
+                    handleShow();
                     sessionStorage.openedMedia = true;
                 }    
             }, 100);                      
