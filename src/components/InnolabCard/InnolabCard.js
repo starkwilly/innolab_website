@@ -62,14 +62,8 @@ const InnolabCard = (props) => {
     function showModal() {
         if (!openedMedia) {
             var aux = window.open("https://mediaexchange.accenture.com/");        
-            var interval = setInterval(function() {
-                if(document.readyState === 'complete') {
-                    clearInterval(interval);                    
-                    aux.close();   
-                    handleShow();
-                    openMedia();
-                }    
-            }, 100);                      
+            openMedia();
+            aux.focus();            
         }
         else {
             handleShow();
