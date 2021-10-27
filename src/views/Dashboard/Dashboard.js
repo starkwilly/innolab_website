@@ -33,6 +33,12 @@ const Dashboard = () => {
 
     const [globalData, setGlobalData] = React.useState(null);
 
+    const [openedMedia, setOpenedMedia] = React.useState(false);
+
+    function openMedia()  {
+        setOpenedMedia(true)
+    }
+
     React.useEffect(() => {
          ///// Google analytics
 
@@ -105,7 +111,7 @@ const Dashboard = () => {
                 ? (
                 <Container id={`${section.key}`} key={`${section.key}`} className="section" fluid>
                     <HeadlineCard cardInfo={section} cardId={`${sectionId}`} />
-                    {section.innolab_section_children.map((itm, cardIdx) => <InnolabCard cardInfo={itm}  cardId={`${sectionId}-${cardIdx}`} key={cardIdx} bgImage={globalData.ImageBg.url}/>)}
+                    {section.innolab_section_children.map((itm, cardIdx) => <InnolabCard cardInfo={itm}  cardId={`${sectionId}-${cardIdx}`} key={cardIdx} bgImage={globalData.ImageBg.url} openedMedia={openedMedia} openMedia={openMedia}/>)}
                 </Container>
                 )
                 : (

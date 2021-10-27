@@ -12,7 +12,7 @@ import Col from 'react-bootstrap/Col'
 import { Modal, Button } from 'react-bootstrap';
 
 const InnolabCard = (props) => {
-    const {cardInfo, cardId, bgImage} = props;
+    const {cardInfo, cardId, bgImage, openedMedia, openMedia} = props;
     // window.log("InnolabCard", cardInfo, cardId);
     const [show, setShow] = useState(false);
 
@@ -60,14 +60,14 @@ const InnolabCard = (props) => {
     iframe.replace("frameborder","frameBorder");
 
     function showModal() {
-        if (!sessionStorage.openedMedia) {
+        if (!openedMedia) {
             var aux = window.open("https://mediaexchange.accenture.com/");        
             var interval = setInterval(function() {
                 if(document.readyState === 'complete') {
                     clearInterval(interval);                    
                     aux.close();   
                     handleShow();
-                    sessionStorage.openedMedia = true;
+                    openMedia();
                 }    
             }, 100);                      
         }
@@ -131,6 +131,8 @@ InnolabCard.propTypes = {
     cardInfo: PropTypes.any.isRequired,
     cardId: PropTypes.string,
     bgImage: PropTypes.string,
+    openedMedia: PropTypes.bool,
+    openMedia: PropTypes.any
 }
 
 export default InnolabCard;
