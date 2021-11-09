@@ -22,7 +22,7 @@ const InnolabCard = (props) => {
                             <Col xs={12} md={4}>
                                 <ScrollAnimation className=" h-100 text-center" animateIn='pulse' delay={500} initiallyVisible={true}>
                                     {cardInfo.Image && (
-                                        <img src={parseImgSrc(cardInfo.Image.url)} className=" img-fluid"/>
+                                        <img src={parseImgSrc(cardInfo.Image.url)} alt= {cardInfo.Image.alternativeText} className=" img-fluid"/>
                                     )}
                                 </ScrollAnimation>
                             </Col>

@@ -8,11 +8,11 @@
         "CommentsContent": "#### This vision is at the core of all of our developments. We conceive our products as the cocoon that helps our organization evolve to the next level.",
         "published_at": "2021-05-24T19:50:50.074Z",
         "created_at": "2021-05-24T19:25:32.346Z",
-        "updated_at": "2021-08-05T03:31:23.643Z",
+        "updated_at": "2021-11-09T16:40:46.487Z",
         "Image": {
             "id": 102,
             "name": "hplusm_illu.png",
-            "alternativeText": "",
+            "alternativeText": "Human+Machine neon icon",
             "caption": "",
             "width": 400,
             "height": 452,
@@ -38,7 +38,7 @@
             "provider": "local",
             "provider_metadata": null,
             "created_at": "2021-08-05T03:31:18.434Z",
-            "updated_at": "2021-08-05T03:31:18.441Z"
+            "updated_at": "2021-11-09T16:40:43.226Z"
         },
         "innolab_section_children": [
             {
@@ -49,7 +49,7 @@
                 "key": "synops",
                 "published_at": "2021-05-24T19:44:39.215Z",
                 "created_at": "2021-05-24T19:30:28.000Z",
-                "updated_at": "2021-08-05T16:52:55.563Z",
+                "updated_at": "2021-11-09T16:40:46.479Z",
                 "AccordionItems": [
                     {
                         "id": 1,
@@ -92,7 +92,7 @@
                 "Image": {
                     "id": 116,
                     "name": "synops_illu.png",
-                    "alternativeText": "",
+                    "alternativeText": "Synops Logo: Purple neon circles with two hands. One hand is a robot, the other is human, fingertips almost touching ",
                     "caption": "",
                     "width": 500,
                     "height": 355,
@@ -118,7 +118,7 @@
                     "provider": "local",
                     "provider_metadata": null,
                     "created_at": "2021-08-05T03:48:42.681Z",
-                    "updated_at": "2021-08-05T03:48:42.713Z"
+                    "updated_at": "2021-11-09T16:17:41.866Z"
                 },
                 "Media": []
             },
@@ -130,7 +130,7 @@
                 "key": "one-app",
                 "published_at": "2021-06-24T15:57:47.797Z",
                 "created_at": "2021-05-25T20:11:12.318Z",
-                "updated_at": "2021-10-07T17:05:02.484Z",
+                "updated_at": "2021-11-09T16:40:46.479Z",
                 "AccordionItems": [
                     {
                         "id": 2,
@@ -139,7 +139,7 @@
                         "Image": {
                             "id": 125,
                             "name": "toms_illu.png",
-                            "alternativeText": "",
+                            "alternativeText": "Time off Management neon icon",
                             "caption": "",
                             "width": 400,
                             "height": 335,
@@ -165,7 +165,7 @@
                             "provider": "local",
                             "provider_metadata": null,
                             "created_at": "2021-08-05T04:01:09.470Z",
-                            "updated_at": "2021-08-05T04:01:09.475Z"
+                            "updated_at": "2021-11-09T16:37:47.983Z"
                         },
                         "Media": [
                             {
@@ -208,7 +208,7 @@
                         "Image": {
                             "id": 107,
                             "name": "ems_illu.png",
-                            "alternativeText": "",
+                            "alternativeText": "Employe Management System logo: four neon squares inside  a bigger square",
                             "caption": "",
                             "width": 360,
                             "height": 357,
@@ -234,7 +234,7 @@
                             "provider": "local",
                             "provider_metadata": null,
                             "created_at": "2021-08-05T03:38:14.547Z",
-                            "updated_at": "2021-08-05T03:38:14.554Z"
+                            "updated_at": "2021-11-09T16:04:27.598Z"
                         },
                         "Media": [
                             {
@@ -277,7 +277,7 @@
                         "Image": {
                             "id": 111,
                             "name": "park_illu.png",
-                            "alternativeText": "",
+                            "alternativeText": "My Parking logo: neon car ",
                             "caption": "",
                             "width": 400,
                             "height": 261,
@@ -303,7 +303,7 @@
                             "provider": "local",
                             "provider_metadata": null,
                             "created_at": "2021-08-05T03:43:36.622Z",
-                            "updated_at": "2021-08-05T03:43:36.628Z"
+                            "updated_at": "2021-11-09T16:08:57.183Z"
                         },
                         "Media": [
                             {
@@ -346,7 +346,7 @@
                         "Image": {
                             "id": 106,
                             "name": "aim_illu.png",
-                            "alternativeText": "",
+                            "alternativeText": "Automated Indicator Manager Logo: Neon circle with bars ",
                             "caption": "",
                             "width": 385,
                             "height": 385,
@@ -372,7 +372,7 @@
                             "provider": "local",
                             "provider_metadata": null,
                             "created_at": "2021-08-05T03:37:23.543Z",
-                            "updated_at": "2021-08-05T03:37:23.579Z"
+                            "updated_at": "2021-11-09T16:03:01.161Z"
                         },
                         "Media": []
                     }
@@ -380,7 +380,7 @@
                 "Image": {
                     "id": 104,
                     "name": "one_illu.png",
-                    "alternativeText": "",
+                    "alternativeText": "One App Logo: several neon circles around smaller circles",
                     "caption": "",
                     "width": 442,
                     "height": 437,
@@ -406,7 +406,7 @@
                     "provider": "local",
                     "provider_metadata": null,
                     "created_at": "2021-08-05T03:34:05.225Z",
-                    "updated_at": "2021-08-05T03:34:05.241Z"
+                    "updated_at": "2021-11-09T16:41:24.944Z"
                 },
                 "Media": [
                     {
@@ -484,11 +484,11 @@
         "CommentsContent": "#### We are obsessed about improving processes and visibility inside our operation. Take a look at the solution implementations we offer, and the add-ons we can create to take your work to the next level. ",
         "published_at": "2021-05-25T20:23:35.138Z",
         "created_at": "2021-05-25T20:23:33.393Z",
-        "updated_at": "2021-08-05T03:34:49.396Z",
+        "updated_at": "2021-11-09T16:42:26.498Z",
         "Image": {
             "id": 105,
             "name": "solution_illu.png",
-            "alternativeText": "",
+            "alternativeText": "neon rubik cube",
             "caption": "",
             "width": 400,
             "height": 290,
@@ -514,7 +514,7 @@
             "provider": "local",
             "provider_metadata": null,
             "created_at": "2021-08-05T03:34:43.942Z",
-            "updated_at": "2021-08-05T03:34:43.969Z"
+            "updated_at": "2021-11-09T16:42:23.583Z"
         },
         "innolab_section_children": [
             {
@@ -525,12 +525,12 @@
                 "key": "jira",
                 "published_at": "2021-05-25T20:26:10.363Z",
                 "created_at": "2021-05-25T20:26:04.672Z",
-                "updated_at": "2021-09-28T17:58:35.248Z",
+                "updated_at": "2021-11-09T16:42:26.492Z",
                 "AccordionItems": [],
                 "Image": {
                     "id": 109,
                     "name": "jira_illu.png",
-                    "alternativeText": "",
+                    "alternativeText": "Jira logo: neon location icon with a check mark",
                     "caption": "",
                     "width": 400,
                     "height": 540,
@@ -567,7 +567,7 @@
                     "provider": "local",
                     "provider_metadata": null,
                     "created_at": "2021-08-05T03:40:36.485Z",
-                    "updated_at": "2021-08-05T03:40:36.505Z"
+                    "updated_at": "2021-11-09T16:06:12.834Z"
                 },
                 "Media": []
             },
@@ -579,12 +579,12 @@
                 "key": "workfront",
                 "published_at": "2021-05-25T20:55:13.999Z",
                 "created_at": "2021-05-25T20:54:49.554Z",
-                "updated_at": "2021-09-24T19:59:06.678Z",
+                "updated_at": "2021-11-09T16:42:26.492Z",
                 "AccordionItems": [],
                 "Image": {
                     "id": 129,
                     "name": "workfront_2.png",
-                    "alternativeText": "",
+                    "alternativeText": "Workfront neon icon",
                     "caption": "",
                     "width": 400,
                     "height": 471,
@@ -610,7 +610,7 @@
                     "provider": "local",
                     "provider_metadata": null,
                     "created_at": "2021-08-05T04:18:11.139Z",
-                    "updated_at": "2021-08-05T04:18:11.154Z"
+                    "updated_at": "2021-11-09T16:39:21.710Z"
                 },
                 "Media": []
             },
@@ -622,12 +622,12 @@
                 "key": "techmasters",
                 "published_at": "2021-05-25T21:00:33.948Z",
                 "created_at": "2021-05-25T21:00:32.342Z",
-                "updated_at": "2021-08-05T03:57:42.146Z",
+                "updated_at": "2021-11-09T16:42:26.492Z",
                 "AccordionItems": [],
                 "Image": {
                     "id": 122,
                     "name": "techm_illu.png",
-                    "alternativeText": "",
+                    "alternativeText": "Neon Techmasters chip icon",
                     "caption": "",
                     "width": 400,
                     "height": 400,
@@ -653,7 +653,7 @@
                     "provider": "local",
                     "provider_metadata": null,
                     "created_at": "2021-08-05T03:57:29.044Z",
-                    "updated_at": "2021-08-05T03:57:29.078Z"
+                    "updated_at": "2021-11-09T16:27:22.694Z"
                 },
                 "Media": []
             },
@@ -665,12 +665,12 @@
                 "key": "tempo",
                 "published_at": "2021-06-25T17:28:01.290Z",
                 "created_at": "2021-06-25T17:27:55.882Z",
-                "updated_at": "2021-10-07T17:12:11.049Z",
+                "updated_at": "2021-11-09T16:42:26.492Z",
                 "AccordionItems": [],
                 "Image": {
                     "id": 123,
                     "name": "tempo_illu.png",
-                    "alternativeText": "",
+                    "alternativeText": "Tempo neon icon ",
                     "caption": "",
                     "width": 400,
                     "height": 464,
@@ -696,7 +696,7 @@
                     "provider": "local",
                     "provider_metadata": null,
                     "created_at": "2021-08-05T03:58:25.051Z",
-                    "updated_at": "2021-08-05T03:58:25.072Z"
+                    "updated_at": "2021-11-09T16:37:04.033Z"
                 },
                 "Media": [
                     {
@@ -743,11 +743,11 @@
         "CommentsContent": "#### To us, innovation is an open-source mission: and our job is not to own it, but to channel it. Since our very inception, we aim to be the circulatory system that makes ideas move and transform in our operations.",
         "published_at": "2021-05-25T21:03:18.910Z",
         "created_at": "2021-05-25T21:03:17.608Z",
-        "updated_at": "2021-08-05T03:33:04.586Z",
+        "updated_at": "2021-11-09T16:41:09.490Z",
         "Image": {
             "id": 103,
             "name": "innovation_illu.png",
-            "alternativeText": "",
+            "alternativeText": "Innovation neon icon",
             "caption": "",
             "width": 400,
             "height": 372,
@@ -773,7 +773,7 @@
             "provider": "local",
             "provider_metadata": null,
             "created_at": "2021-08-05T03:32:59.865Z",
-            "updated_at": "2021-08-05T03:32:59.893Z"
+            "updated_at": "2021-11-09T16:41:06.280Z"
         },
         "innolab_section_children": [
             {
@@ -784,12 +784,12 @@
                 "key": "ideas",
                 "published_at": "2021-05-25T21:06:22.188Z",
                 "created_at": "2021-05-25T21:06:19.741Z",
-                "updated_at": "2021-09-24T20:07:33.223Z",
+                "updated_at": "2021-11-09T16:41:09.485Z",
                 "AccordionItems": [],
                 "Image": {
                     "id": 108,
                     "name": "ideas_illuAsset 7.png",
-                    "alternativeText": "",
+                    "alternativeText": "Ideas logo: neon electric bulb",
                     "caption": "",
                     "width": 400,
                     "height": 636,
@@ -826,7 +826,7 @@
                     "provider": "local",
                     "provider_metadata": null,
                     "created_at": "2021-08-05T03:39:24.261Z",
-                    "updated_at": "2021-08-05T03:39:24.280Z"
+                    "updated_at": "2021-11-09T16:05:28.089Z"
                 },
                 "Media": []
             },
@@ -838,12 +838,12 @@
                 "key": "synergy",
                 "published_at": "2021-05-25T21:07:37.506Z",
                 "created_at": "2021-05-25T21:07:35.825Z",
-                "updated_at": "2021-10-07T17:13:17.774Z",
+                "updated_at": "2021-11-09T16:41:09.485Z",
                 "AccordionItems": [],
                 "Image": {
                     "id": 113,
                     "name": "synergy_illu.png",
-                    "alternativeText": "",
+                    "alternativeText": "Synergy logo: neon double S",
                     "caption": "",
                     "width": 400,
                     "height": 563,
@@ -880,7 +880,7 @@
                     "provider": "local",
                     "provider_metadata": null,
                     "created_at": "2021-08-05T03:45:08.991Z",
-                    "updated_at": "2021-08-05T03:45:08.996Z"
+                    "updated_at": "2021-11-09T16:13:23.565Z"
                 },
                 "Media": [
                     {
@@ -943,7 +943,7 @@
                         "provider": "local",
                         "provider_metadata": null,
                         "created_at": "2021-08-05T03:47:22.039Z",
-                        "updated_at": "2021-10-07T17:13:15.003Z"
+                        "updated_at": "2021-10-08T14:53:20.218Z"
                     }
                 ]
             },
@@ -955,12 +955,12 @@
                 "key": "learning",
                 "published_at": "2021-05-25T21:11:38.654Z",
                 "created_at": "2021-05-25T21:11:36.589Z",
-                "updated_at": "2021-09-28T19:42:55.300Z",
+                "updated_at": "2021-11-09T16:41:09.485Z",
                 "AccordionItems": [],
                 "Image": {
                     "id": 110,
                     "name": "learn_illu.png",
-                    "alternativeText": "",
+                    "alternativeText": "Learning logo: neon old key",
                     "caption": "",
                     "width": 400,
                     "height": 500,
@@ -986,7 +986,7 @@
                     "provider": "local",
                     "provider_metadata": null,
                     "created_at": "2021-08-05T03:41:57.066Z",
-                    "updated_at": "2021-08-05T03:41:57.080Z"
+                    "updated_at": "2021-11-09T16:07:04.214Z"
                 },
                 "Media": []
             },
@@ -998,12 +998,12 @@
                 "key": "storytelling",
                 "published_at": "2021-05-25T21:12:26.220Z",
                 "created_at": "2021-05-25T21:12:24.743Z",
-                "updated_at": "2021-09-24T20:17:27.918Z",
+                "updated_at": "2021-11-09T16:41:09.485Z",
                 "AccordionItems": [],
                 "Image": {
                     "id": 112,
                     "name": "story_illu.png",
-                    "alternativeText": "",
+                    "alternativeText": "Storytelling logo: Neon talk conversation bubbles ",
                     "caption": "",
                     "width": 400,
                     "height": 415,
@@ -1029,7 +1029,7 @@
                     "provider": "local",
                     "provider_metadata": null,
                     "created_at": "2021-08-05T03:44:18.849Z",
-                    "updated_at": "2021-08-05T03:44:18.855Z"
+                    "updated_at": "2021-11-09T16:10:16.203Z"
                 },
                 "Media": []
             }
