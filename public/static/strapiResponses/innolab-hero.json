@@ -4,11 +4,11 @@
     "CommentsContent": "## We don't see innovation as our end, but the means.",
     "published_at": "2021-06-24T22:16:54.233Z",
     "created_at": "2021-05-24T19:11:13.436Z",
-    "updated_at": "2021-10-07T18:05:13.881Z",
+    "updated_at": "2021-11-09T16:51:58.102Z",
     "ImageBg": {
         "id": 136,
         "name": "bg-faded.png",
-        "alternativeText": "",
+        "alternativeText": "Innovation superhero",
         "caption": "",
         "width": 1200,
         "height": 699,
@@ -67,6 +67,6 @@
         "provider": "local",
         "provider_metadata": null,
         "created_at": "2021-10-07T18:05:09.907Z",
-        "updated_at": "2021-10-07T18:05:09.914Z"
+        "updated_at": "2021-11-09T16:51:53.794Z"
     }
 }
