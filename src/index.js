@@ -10,6 +10,9 @@ import { PublicClientApplication } from "@azure/msal-browser";
 import { MsalProvider } from "@azure/msal-react";
 import { msalConfig } from "./_helpers/authConfig";
 
+import { AppInsightsContext } from "@microsoft/applicationinsights-react-js";
+import { reactPlugin } from "./_helpers/AppInsights";
+
 
 export const msalInstance = new PublicClientApplication(msalConfig);
 
@@ -30,11 +33,13 @@ ReactDOM.render(
 
   
   <MsalProvider instance={msalInstance}>
-     <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=G-9KD05RV68C"
-    />
-    <script>{injectGA()}</script>
+     <AppInsightsContext.Provider value={reactPlugin}>
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-9KD05RV68C"
+        />
+        <script>{injectGA()}</script>
+      </AppInsightsContext.Provider>
     <Provider store={store} >
       <App />
     </Provider>
