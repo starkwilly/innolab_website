@@ -1,6 +1,11 @@
 pool:
   vmImage: ubuntu-latest
 steps:
+  - task: NodeTool@0
+    displayName: 'Use Node 14.x'
+    inputs:
+      versionSpec: 14.x
+
   - bash: |
       npm install
       npm run build:prod
