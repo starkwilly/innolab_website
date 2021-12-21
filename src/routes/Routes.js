@@ -10,6 +10,7 @@ import Startup from "../views/Startup/Startup";
 import Donwload from '../views/Donwload/Donwload';
 import Spinner from "react-bootstrap/Spinner";
 import IdeasForm from "../views/IdeasForm/IdeasForm"
+import SynopsFaq from "../views/SynopsFaq/SynopsFaq"
 
 const Routes = () => {
     return (
@@ -64,6 +65,13 @@ const Routes = () => {
                         exact
                         layout={MinimalLayout}
                         path="/add-idea"
+                    />
+
+                    <RouteWithLayout
+                        component={SynopsFaq}
+                        exact
+                        layout={MainLayout}
+                        path="/SynopsFaq"
                     />
 
                     <Redirect to="/not-found" />

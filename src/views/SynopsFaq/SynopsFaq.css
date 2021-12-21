@@ -1,0 +1,57 @@
+
+
+#SynopsVideo {
+    
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+
+  .SynopsSection{
+
+    margin-top:34% ;
+  }
+
+  .Cards{
+    margin-top: 6%;
+  }
+
+  .SynopsCard{
+    margin-top: 10%;
+  }
+
+  .cardBg {
+    background-image: unset !important;
+    border-width: 2px;
+    background: rgb(2,0,36);
+    background: transparent linear-gradient(161deg,#E2E2E214 0%,#A0A0A040 50%, #00000046 100%) 0% 0%;
+    overflow: hidden;
+    background-position: center calc(-500%);
+    background-size: cover;
+}
+.cardBg::before {
+    content: '';
+    background: inherit; 
+    position: absolute;
+    width: calc( 100% + 50px );
+    height: calc( 100% + 50px );
+    left: -25px;
+    right: 0;
+    top: -25px; 
+    bottom: 0;
+    box-shadow: inset 0 0 0 3000px rgba(255, 255, 255, 0.1);
+    filter: blur(10px);
+}
+
+.SectionLink{
+  margin:34% 0% 0% 0% ;
+ 
+}
+
+.SectionLinks{
+  margin: 3% 0% 0% 8%;
+}
+.SectionSynopsFaqForm{
+  margin: 6% 0% 6% 0%;
+}

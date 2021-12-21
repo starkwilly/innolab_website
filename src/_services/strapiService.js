@@ -21,3 +21,7 @@ export function getSectionParents() {
     return (process.env.REACT_APP_API_ENABLED !== 'FALSE') ? useApi.get('/innolab-section-parents') : useApi.get(process.env.PUBLIC_URL+'/static/strapiResponses/innolab-section-parents.json');
 }
 
+
+export function getSynopsSectionParent() {
+    return (process.env.REACT_APP_API_ENABLED !== 'FALSE') ? useApi.get('/synops-section-parents') : useApi.get(process.env.PUBLIC_URL+'/static/strapiResponses/synops-section-parents.json');
+}

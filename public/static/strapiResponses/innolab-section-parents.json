@@ -8,11 +8,11 @@
         "CommentsContent": "#### This vision is at the core of all of our developments. We conceive our products as the cocoon that helps our organization evolve to the next level.",
         "published_at": "2021-05-24T19:50:50.074Z",
         "created_at": "2021-05-24T19:25:32.346Z",
-        "updated_at": "2021-11-09T16:40:46.487Z",
+        "updated_at": "2021-08-05T03:31:23.643Z",
         "Image": {
             "id": 102,
             "name": "hplusm_illu.png",
-            "alternativeText": "Human+Machine neon icon",
+            "alternativeText": "",
             "caption": "",
             "width": 400,
             "height": 452,
@@ -38,7 +38,7 @@
             "provider": "local",
             "provider_metadata": null,
             "created_at": "2021-08-05T03:31:18.434Z",
-            "updated_at": "2021-11-09T16:40:43.226Z"
+            "updated_at": "2021-08-05T03:31:18.441Z"
         },
         "innolab_section_children": [
             {
@@ -49,7 +49,7 @@
                 "key": "synops",
                 "published_at": "2021-05-24T19:44:39.215Z",
                 "created_at": "2021-05-24T19:30:28.000Z",
-                "updated_at": "2021-11-09T16:40:46.479Z",
+                "updated_at": "2021-08-05T16:52:55.563Z",
                 "AccordionItems": [
                     {
                         "id": 1,
@@ -92,7 +92,7 @@
                 "Image": {
                     "id": 116,
                     "name": "synops_illu.png",
-                    "alternativeText": "Synops Logo: Purple neon circles with two hands. One hand is a robot, the other is human, fingertips almost touching ",
+                    "alternativeText": "",
                     "caption": "",
                     "width": 500,
                     "height": 355,
@@ -118,28 +118,28 @@
                     "provider": "local",
                     "provider_metadata": null,
                     "created_at": "2021-08-05T03:48:42.681Z",
-                    "updated_at": "2021-11-09T16:17:41.866Z"
+                    "updated_at": "2021-08-05T03:48:42.713Z"
                 },
                 "Media": []
             },
             {
                 "id": 2,
                 "Title": "One App Project",
-                "BodyContent": "Over the years, we have focused on creating information and software technologies that go beyond just being a solution. That is how we ended up joining our tools, and we are growing a collaborative environment that provides even more value to your job.  \n\nCheck out these videos to see how integrating our tools improves the experience of our data driven insights. Discover the vision that triggered the One app project, and how FORM guided us. ",
+                "BodyContent": "Through the years, we have focused on creating information and software technologies that go beyond just being a solution. We have created digital platforms that can be used in several ways to ease up and ensure you get a great user experience. That is how we ended up joining our tools, and we are growing a collaborative environment that provides even more value to your job. \n\nCheck out these videos to see how integrating our tools helps our delivery center to have data driven insights. Discover the vision that triggered the One app project, and how FORM guided us.​",
                 "innolab_section_parent": 1,
                 "key": "one-app",
                 "published_at": "2021-06-24T15:57:47.797Z",
                 "created_at": "2021-05-25T20:11:12.318Z",
-                "updated_at": "2021-11-09T16:40:46.479Z",
+                "updated_at": "2021-08-05T16:28:18.742Z",
                 "AccordionItems": [
                     {
                         "id": 2,
                         "Title": "Time Off Management",
-                        "BodyContent": "Time is key for your projects and your life decisions. TOMS is the app responsible for processing your vacations in a quick and painless way. We created its technology with a practical approach that would allow you to request, approve, plan, and manage all your time off requests in a truly human way. And the coolest part is that it seamlessly intertwines with MyTe to update your vacation balance after your request is approved.  \n\nSee how easy requesting a vacation is under the experience in our app. ",
+                        "BodyContent": "Time is key for your projects and your life decisions. When you request time off you want to have it handled as soon as possible. TOMS is the app responsible for processing your vacations in a quick and painless way. We created its technology with a practical approach that would allow you to request, approve, plan, and manage all your time off requests in a truly human way. And the coolest part is that it seamlessly intertwines with MyTe to update your vacation balance. Now you can focus on planning your vacations while the app handles the approvals. \n\nSee how easy requesting a vacation is under the experience in our app. ",
                         "Image": {
                             "id": 125,
                             "name": "toms_illu.png",
-                            "alternativeText": "Time off Management neon icon",
+                            "alternativeText": "",
                             "caption": "",
                             "width": 400,
                             "height": 335,
@@ -165,7 +165,7 @@
                             "provider": "local",
                             "provider_metadata": null,
                             "created_at": "2021-08-05T04:01:09.470Z",
-                            "updated_at": "2021-11-09T16:37:47.983Z"
+                            "updated_at": "2021-08-05T04:01:09.475Z"
                         },
                         "Media": [
                             {
@@ -197,18 +197,18 @@
                                 "provider": "local",
                                 "provider_metadata": null,
                                 "created_at": "2021-08-05T04:03:22.889Z",
-                                "updated_at": "2021-10-07T17:10:25.241Z"
+                                "updated_at": "2021-08-05T04:03:30.690Z"
                             }
                         ]
                     },
                     {
                         "id": 3,
                         "Title": "Employee Management",
-                        "BodyContent": "People’s allocation might get challenging. Who can staff? How can we access the roster of our teams? Can we delegate time-off approvals, create job-aid arrangements, and other requests? Our Employee Management System cracks it and makes it look easy to define roles inside our organization. And the best is that we are compliant with Accenture's security policies.  \n\nCheck how teams are created and edited easily. ",
+                        "BodyContent": "People’s allocation might get challenging. It may go beyond what is implied on a contract or even the organizational unit. Who can staff? How can we access the roster of our teams? Can we delegate time-off approval, telework arrangements, and other requests? With a simple and intuitive interface, our Employee Management System cracks it and makes it look easy to define roles inside our organization. And the best is that we are following Accenture's security policies. \n\nCheck how teams are created and edited with Agility.",
                         "Image": {
                             "id": 107,
                             "name": "ems_illu.png",
-                            "alternativeText": "Employe Management System logo: four neon squares inside  a bigger square",
+                            "alternativeText": "",
                             "caption": "",
                             "width": 360,
                             "height": 357,
@@ -234,7 +234,7 @@
                             "provider": "local",
                             "provider_metadata": null,
                             "created_at": "2021-08-05T03:38:14.547Z",
-                            "updated_at": "2021-11-09T16:04:27.598Z"
+                            "updated_at": "2021-08-05T03:38:14.554Z"
                         },
                         "Media": [
                             {
@@ -266,18 +266,18 @@
                                 "provider": "local",
                                 "provider_metadata": null,
                                 "created_at": "2021-08-05T04:12:59.999Z",
-                                "updated_at": "2021-10-07T17:11:10.818Z"
+                                "updated_at": "2021-08-05T04:13:12.928Z"
                             }
                         ]
                     },
                     {
                         "id": 4,
                         "Title": "Parking",
-                        "BodyContent": "Did you know that you can request a parking spot before you reach the office? \n\nWith telework variables, sick leaves, our growing delivery centers and the unexpected release of parking lots we had to improve the parking experience for our employees. It took us several years of research to build up a solution. Let us show you how it works. \n\nSee how easy you can request a parking reservation with our tool.",
+                        "BodyContent": "Did you know that you can request a parking spot before you reach the office? \n\nWith telework variables, sick leaves, our growing delivery centers and the unexpected release of parking lots we had to improve the parking experience for our employees. It took us several years of research and coordination with the workplace to build up a solution. Let us show you how it works.\n\nSee how easy you can request a parking reservation with our tool.",
                         "Image": {
                             "id": 111,
                             "name": "park_illu.png",
-                            "alternativeText": "My Parking logo: neon car ",
+                            "alternativeText": "",
                             "caption": "",
                             "width": 400,
                             "height": 261,
@@ -303,7 +303,7 @@
                             "provider": "local",
                             "provider_metadata": null,
                             "created_at": "2021-08-05T03:43:36.622Z",
-                            "updated_at": "2021-11-09T16:08:57.183Z"
+                            "updated_at": "2021-08-05T03:43:36.628Z"
                         },
                         "Media": [
                             {
@@ -335,18 +335,18 @@
                                 "provider": "local",
                                 "provider_metadata": null,
                                 "created_at": "2021-08-05T04:14:02.701Z",
-                                "updated_at": "2021-10-07T17:11:44.270Z"
+                                "updated_at": "2021-08-05T04:14:16.128Z"
                             }
                         ]
                     },
                     {
                         "id": 5,
                         "Title": "Automated Indicator Manager",
-                        "BodyContent": "C-Suite roles need real time information in order to make data driven decisions. AIM helps us to assess and oversee the status of our operation, and display the results in ways that allow us to oversee, track, and ultimately decide based on the information provided by surveys. Reports and analytics look fresh and ready to support the decisions we make every day.   ",
+                        "BodyContent": "C-Suite roles need real time information in order to make data driven decisions. It is a challenge to keep the fingers in the pulse of all things implied on financial, value creation, operational status and other areas involved in the daily business. AIM allows us to have surveys created to assess and oversee the status of all different areas of our operation, and display them in ways that allow us to oversee, track, and ultimately decide based on the gathered information. Reports and analytics look fresh and ready to support the decisions we make everyday. ",
                         "Image": {
                             "id": 106,
                             "name": "aim_illu.png",
-                            "alternativeText": "Automated Indicator Manager Logo: Neon circle with bars ",
+                            "alternativeText": "",
                             "caption": "",
                             "width": 385,
                             "height": 385,
@@ -372,7 +372,7 @@
                             "provider": "local",
                             "provider_metadata": null,
                             "created_at": "2021-08-05T03:37:23.543Z",
-                            "updated_at": "2021-11-09T16:03:01.161Z"
+                            "updated_at": "2021-08-05T03:37:23.579Z"
                         },
                         "Media": []
                     }
@@ -380,7 +380,7 @@
                 "Image": {
                     "id": 104,
                     "name": "one_illu.png",
-                    "alternativeText": "One App Logo: several neon circles around smaller circles",
+                    "alternativeText": "",
                     "caption": "",
                     "width": 442,
                     "height": 437,
@@ -406,7 +406,7 @@
                     "provider": "local",
                     "provider_metadata": null,
                     "created_at": "2021-08-05T03:34:05.225Z",
-                    "updated_at": "2021-11-09T16:41:24.944Z"
+                    "updated_at": "2021-08-05T03:34:05.241Z"
                 },
                 "Media": [
                     {
@@ -438,7 +438,7 @@
                         "provider": "local",
                         "provider_metadata": null,
                         "created_at": "2021-08-05T16:27:28.105Z",
-                        "updated_at": "2021-10-07T17:02:00.352Z"
+                        "updated_at": "2021-08-05T16:27:37.107Z"
                     },
                     {
                         "id": 131,
@@ -469,7 +469,7 @@
                         "provider": "local",
                         "provider_metadata": null,
                         "created_at": "2021-08-05T16:28:03.418Z",
-                        "updated_at": "2021-10-07T17:02:54.839Z"
+                        "updated_at": "2021-08-05T16:28:12.789Z"
                     }
                 ]
             }
@@ -484,11 +484,11 @@
         "CommentsContent": "#### We are obsessed about improving processes and visibility inside our operation. Take a look at the solution implementations we offer, and the add-ons we can create to take your work to the next level. ",
         "published_at": "2021-05-25T20:23:35.138Z",
         "created_at": "2021-05-25T20:23:33.393Z",
-        "updated_at": "2021-11-09T16:42:26.498Z",
+        "updated_at": "2021-08-05T03:34:49.396Z",
         "Image": {
             "id": 105,
             "name": "solution_illu.png",
-            "alternativeText": "neon rubik cube",
+            "alternativeText": "",
             "caption": "",
             "width": 400,
             "height": 290,
@@ -514,23 +514,23 @@
             "provider": "local",
             "provider_metadata": null,
             "created_at": "2021-08-05T03:34:43.942Z",
-            "updated_at": "2021-11-09T16:42:23.583Z"
+            "updated_at": "2021-08-05T03:34:43.969Z"
         },
         "innolab_section_children": [
             {
                 "id": 3,
                 "Title": "Jira",
-                "BodyContent": "Have you tried [Jira](https://youtu.be/9mrumjGKwyw)? This software has proven to be an effective tool for project management. You can [reach out](https://go.accenture.com/innolabsupport) to us to help you implement the tool in your own processes. We can customize it for your specific needs. \n\nIt is very easy. You can track the status of different projects in the system´s dashboard and also set different issue types to redirect your request to the correct team. Please set the priority for your issue and add the different users involved.  \n\n",
+                "BodyContent": "Have you tried Jira? This software has proven to be an effective tool for project management. You can [reach out](https://go.accenture.com/innolabsupport) to us to help you implement the tool in your own processes. We can customize it for your specific needs. \n\n\n\n",
                 "innolab_section_parent": 2,
                 "key": "jira",
                 "published_at": "2021-05-25T20:26:10.363Z",
                 "created_at": "2021-05-25T20:26:04.672Z",
-                "updated_at": "2021-11-09T16:42:26.492Z",
+                "updated_at": "2021-08-05T03:40:50.417Z",
                 "AccordionItems": [],
                 "Image": {
                     "id": 109,
                     "name": "jira_illu.png",
-                    "alternativeText": "Jira logo: neon location icon with a check mark",
+                    "alternativeText": "",
                     "caption": "",
                     "width": 400,
                     "height": 540,
@@ -567,24 +567,24 @@
                     "provider": "local",
                     "provider_metadata": null,
                     "created_at": "2021-08-05T03:40:36.485Z",
-                    "updated_at": "2021-11-09T16:06:12.834Z"
+                    "updated_at": "2021-08-05T03:40:36.505Z"
                 },
                 "Media": []
             },
             {
                 "id": 5,
                 "Title": "Workfront",
-                "BodyContent": "[Workfront](https://www.youtube.com/watch?v=tUBmgCky6aE) has proven to be a very effective tool for the challenges of modern and global work demands. But we need to place accurate end-to-end requirements, process intake, and documentation for it to flow as easily as we want to. Our team of experts is going beyond implementing a process or operation. We are here to improve your experience and integrate it with tools and platforms you currently own! Request your implementation of Workfront [here.](mailto:gerald.waddington@accenture.com) ",
+                "BodyContent": "[Workfront](https://www.youtube.com/watch?v=tUBmgCky6aE) has proven to be a very effective tool for the challenges of modern and global work demands. But for it to flow as easily as we want, accurate end-to-end requirements, process intake, and documentation need to be in place. Our team of experts is going beyond implementing a process or operation. We are here to improve your experience and integrate it with the already existing tools and platforms you currently own! Request your implementation of Workfront [here.](mailto:gerald.waddington@accenture.com) ",
                 "innolab_section_parent": 2,
                 "key": "workfront",
                 "published_at": "2021-05-25T20:55:13.999Z",
                 "created_at": "2021-05-25T20:54:49.554Z",
-                "updated_at": "2021-11-09T16:42:26.492Z",
+                "updated_at": "2021-08-05T04:18:27.365Z",
                 "AccordionItems": [],
                 "Image": {
                     "id": 129,
                     "name": "workfront_2.png",
-                    "alternativeText": "Workfront neon icon",
+                    "alternativeText": "",
                     "caption": "",
                     "width": 400,
                     "height": 471,
@@ -610,7 +610,7 @@
                     "provider": "local",
                     "provider_metadata": null,
                     "created_at": "2021-08-05T04:18:11.139Z",
-                    "updated_at": "2021-11-09T16:39:21.710Z"
+                    "updated_at": "2021-08-05T04:18:11.154Z"
                 },
                 "Media": []
             },
@@ -622,12 +622,12 @@
                 "key": "techmasters",
                 "published_at": "2021-05-25T21:00:33.948Z",
                 "created_at": "2021-05-25T21:00:32.342Z",
-                "updated_at": "2021-11-09T16:42:26.492Z",
+                "updated_at": "2021-08-05T03:57:42.146Z",
                 "AccordionItems": [],
                 "Image": {
                     "id": 122,
                     "name": "techm_illu.png",
-                    "alternativeText": "Neon Techmasters chip icon",
+                    "alternativeText": "",
                     "caption": "",
                     "width": 400,
                     "height": 400,
@@ -653,24 +653,24 @@
                     "provider": "local",
                     "provider_metadata": null,
                     "created_at": "2021-08-05T03:57:29.044Z",
-                    "updated_at": "2021-11-09T16:27:22.694Z"
+                    "updated_at": "2021-08-05T03:57:29.078Z"
                 },
                 "Media": []
             },
             {
                 "id": 17,
                 "Title": "Tempo",
-                "BodyContent": "Analytics and reporting can be a complex process to overview. We understand the importance of having accurate, real-time, and easy-to-understand data for business decision making and improvements. That is why we offer customized dashboards and reporting services for your projects in Jira. With the experience of serving many clients over the years, Tempo’s visual aids helped us to innovate processes beyond our wildest dreams. Do you have more questions about how to implement Tempo for your projects? [We can help.](https://jira.accenture.com/secure/WelcomeToJIRA.jspa)\n\nHere you can watch the teaser video.",
+                "BodyContent": "Analytics and reporting can be a complex process to overview. We understand the importance of having accurate, real-time, and easy-to-understand data in business decision making and improvement. That is why we offer customized dashboards and reporting services for your projects in Jira. With the experience of serving many clients over the years, Tempo’s visual aids helped us to innovate processes beyond our wildest dreams. Do you have more questions about how to implement Tempo for your projects? [We can help.](https://jira.accenture.com/secure/WelcomeToJIRA.jspa)\n\nHere you can watch the teaser video.",
                 "innolab_section_parent": 2,
                 "key": "tempo",
                 "published_at": "2021-06-25T17:28:01.290Z",
                 "created_at": "2021-06-25T17:27:55.882Z",
-                "updated_at": "2021-11-09T16:42:26.492Z",
+                "updated_at": "2021-08-05T03:59:22.047Z",
                 "AccordionItems": [],
                 "Image": {
                     "id": 123,
                     "name": "tempo_illu.png",
-                    "alternativeText": "Tempo neon icon ",
+                    "alternativeText": "",
                     "caption": "",
                     "width": 400,
                     "height": 464,
@@ -696,7 +696,7 @@
                     "provider": "local",
                     "provider_metadata": null,
                     "created_at": "2021-08-05T03:58:25.051Z",
-                    "updated_at": "2021-11-09T16:37:04.033Z"
+                    "updated_at": "2021-08-05T03:58:25.072Z"
                 },
                 "Media": [
                     {
@@ -728,7 +728,7 @@
                         "provider": "local",
                         "provider_metadata": null,
                         "created_at": "2021-08-05T03:59:08.699Z",
-                        "updated_at": "2021-10-07T17:12:07.943Z"
+                        "updated_at": "2021-08-05T03:59:16.345Z"
                     }
                 ]
             }
@@ -743,11 +743,11 @@
         "CommentsContent": "#### To us, innovation is an open-source mission: and our job is not to own it, but to channel it. Since our very inception, we aim to be the circulatory system that makes ideas move and transform in our operations.",
         "published_at": "2021-05-25T21:03:18.910Z",
         "created_at": "2021-05-25T21:03:17.608Z",
-        "updated_at": "2021-11-09T16:41:09.490Z",
+        "updated_at": "2021-08-05T03:33:04.586Z",
         "Image": {
             "id": 103,
             "name": "innovation_illu.png",
-            "alternativeText": "Innovation neon icon",
+            "alternativeText": "",
             "caption": "",
             "width": 400,
             "height": 372,
@@ -773,23 +773,23 @@
             "provider": "local",
             "provider_metadata": null,
             "created_at": "2021-08-05T03:32:59.865Z",
-            "updated_at": "2021-11-09T16:41:06.280Z"
+            "updated_at": "2021-08-05T03:32:59.893Z"
         },
         "innolab_section_children": [
             {
                 "id": 7,
                 "Title": "Ideas",
-                "BodyContent": "Innolab’s [idea repository](/add-idea) is our open inbox to receive ideas globally. We consider them all! With a simple form, you’ll be able to submit any idea and put it on the map. Afterwards, our research team will get in touch with you to understand your vision, and together we will develop a roadmap to make it happen. It's so simple! Together we create impact that shape our future.  Whether it is a Robotic Process Automation or an idea for a new process it has the potential for Synergy. Let us help you with your idea, we want [to hear it!](/add-idea)",
+                "BodyContent": "Innolab’s [idea repository](/add-idea) is our open inbox to receive ideas globally. We consider all of them! With a simple form, you’ll be able to submit any idea and put it on the map. Once your idea is submitted, we got your back: our research team will get in touch with you to understand your vision and together we develop a roadmap to make it happen. It's so simple! Your ideas are the seeds that nurture the innovation technology Accenture strives. Together we create impact that shape our future.  Whether it is a Robotic Process Automation or an idea for a new process it has potential for Synergy. Let us help you with your idea, we want [to hear it!](/add-idea)",
                 "innolab_section_parent": 3,
                 "key": "ideas",
                 "published_at": "2021-05-25T21:06:22.188Z",
                 "created_at": "2021-05-25T21:06:19.741Z",
-                "updated_at": "2021-11-09T16:41:09.485Z",
+                "updated_at": "2021-08-05T03:39:28.871Z",
                 "AccordionItems": [],
                 "Image": {
                     "id": 108,
                     "name": "ideas_illuAsset 7.png",
-                    "alternativeText": "Ideas logo: neon electric bulb",
+                    "alternativeText": "",
                     "caption": "",
                     "width": 400,
                     "height": 636,
@@ -826,24 +826,24 @@
                     "provider": "local",
                     "provider_metadata": null,
                     "created_at": "2021-08-05T03:39:24.261Z",
-                    "updated_at": "2021-11-09T16:05:28.089Z"
+                    "updated_at": "2021-08-05T03:39:24.280Z"
                 },
                 "Media": []
             },
             {
                 "id": 8,
                 "Title": "Synergy",
-                "BodyContent": "An old proverb says: “if you wanna go far, go together”. Synergy is one of our most ambitious projects. We focus on the development of your idea, and we also provide you with new tools, so that your actions can transcend. The empowerment created by this guidance enhances your confidence to become a corporate ambassador with an entrepreneurial drive. \n\nWe have a 360 approach. We hold workshops with you or your team, provide the necessary coaching, guide you with the documentation structure, and any other arrangements that lead to the success of your presentation. These events provide you with the exposure and complicity that your project needs to grow. And the best part is that it improves the experience of the performance achievement program.  \n\nTake a look at these videos to see how the program works in a deeper level. Our 2020’s Ignition Event shows you how the attendants present their ideas and grow supporters to start the development. ",
+                "BodyContent": "An old proverb says: “if you wanna go far, go together”. Great ideas move you out of the box. But what makes you go even beyond? Joining forces together. Synergy is one of our most ambitious projects. We focus on the development of your idea, and we also provide you with new tools, so that your actions can transcend. The empowerment created by this guidance enhances your confidence to become a corporate ambassador with an entrepreneurial drive.\n\nWe have a 360 approach. We hold workshops with you or your team, provide the necessary coaching, guide you with the documentation structure, and any other arrangement that leads to the success of your presentation. These events provide you with the exposure and complicity that your project needs to grow. And the best part is that it improves the experience of the performance achievement program. \n\nTake a look at these videos to see how the program works in a deeper level. Our 2020’s Ignition Event shows you how the attendants present their ideas and grow supporters to start the development.​",
                 "innolab_section_parent": 3,
                 "key": "synergy",
                 "published_at": "2021-05-25T21:07:37.506Z",
                 "created_at": "2021-05-25T21:07:35.825Z",
-                "updated_at": "2021-11-09T16:41:09.485Z",
+                "updated_at": "2021-08-05T03:47:40.246Z",
                 "AccordionItems": [],
                 "Image": {
                     "id": 113,
                     "name": "synergy_illu.png",
-                    "alternativeText": "Synergy logo: neon double S",
+                    "alternativeText": "",
                     "caption": "",
                     "width": 400,
                     "height": 563,
@@ -880,7 +880,7 @@
                     "provider": "local",
                     "provider_metadata": null,
                     "created_at": "2021-08-05T03:45:08.991Z",
-                    "updated_at": "2021-11-09T16:13:23.565Z"
+                    "updated_at": "2021-08-05T03:45:08.996Z"
                 },
                 "Media": [
                     {
@@ -912,13 +912,13 @@
                         "provider": "local",
                         "provider_metadata": null,
                         "created_at": "2021-08-05T03:46:13.053Z",
-                        "updated_at": "2021-10-07T17:13:07.447Z"
+                        "updated_at": "2021-08-05T03:46:25.703Z"
                     },
                     {
                         "id": 115,
                         "name": "synergy2.png",
                         "alternativeText": "",
-                        "caption": "https://mediaexchange.accenture.com/media/t/1_i9vc2qof",
+                        "caption": "https://mediaexchange.accenture.com/playlist/dedicated/1_t35hf19b/1_i9vc2qof",
                         "width": 300,
                         "height": 179,
                         "formats": {
@@ -943,24 +943,24 @@
                         "provider": "local",
                         "provider_metadata": null,
                         "created_at": "2021-08-05T03:47:22.039Z",
-                        "updated_at": "2021-10-08T14:53:20.218Z"
+                        "updated_at": "2021-08-05T03:47:35.736Z"
                     }
                 ]
             },
             {
                 "id": 9,
                 "Title": "Learning",
-                "BodyContent": "To make the Human+Machine vision happen, we need to upskill and reskill. That is why we engage and create awareness of the new information inside Accenture. This is key for our workforce to stay up to date with the new topics happening in the company.  \n\nWe offer insights on:\n\n- [Employee experience](https://connectedlearning.accenture.com/learningboard/910373-one-crdc-herramientas-de-experiencia-de-empleado)\n\n- [Self development](https://connectedlearning.accenture.com/learningboard/916163-l3ad-los-bloques-culturales-de-newhabits)\n\n- [Corporate culture](https://connectedlearning.accenture.com/learningboard/916163-l3ad-los-bloques-culturales-de-newhabits)\n\n- [Innovation agenda](https://mediaexchange.accenture.com/playlist/dedicated/1_cpwtr5w4/1_q0ttn61h)\n\n- [Technological vision](https://mediaexchange.accenture.com/playlist/dedicated/1_pvv8vjrq/1_v145ydjk)",
+                "BodyContent": "To make the Human+Machine vision happen, we need to upskill and reskill. That is why we engage and create awareness of the new information inside Accenture. This is key for our workforce to be updated with the new topics happening in the company. \n\nWe offer insights on:\n\n- [Employee experience](https://connectedlearning.accenture.com/learningboard/910373-one-crdc-herramientas-de-experiencia-de-empleado)\n- [Self development](https://connectedlearning.accenture.com/learningboard/916163-l3ad-los-bloques-culturales-de-newhabits)\n- [Corporate culture](https://connectedlearning.accenture.com/learningboard/916163-l3ad-los-bloques-culturales-de-newhabits)\n- [Innovation agenda](https://mediaexchange.accenture.com/playlist/dedicated/1_cpwtr5w4/1_q0ttn61h)\n- [Technological vision](https://mediaexchange.accenture.com/playlist/dedicated/1_pvv8vjrq/1_v145ydjk)",
                 "innolab_section_parent": 3,
                 "key": "learning",
                 "published_at": "2021-05-25T21:11:38.654Z",
                 "created_at": "2021-05-25T21:11:36.589Z",
-                "updated_at": "2021-11-09T16:41:09.485Z",
+                "updated_at": "2021-08-05T03:42:02.199Z",
                 "AccordionItems": [],
                 "Image": {
                     "id": 110,
                     "name": "learn_illu.png",
-                    "alternativeText": "Learning logo: neon old key",
+                    "alternativeText": "",
                     "caption": "",
                     "width": 400,
                     "height": 500,
@@ -986,24 +986,24 @@
                     "provider": "local",
                     "provider_metadata": null,
                     "created_at": "2021-08-05T03:41:57.066Z",
-                    "updated_at": "2021-11-09T16:07:04.214Z"
+                    "updated_at": "2021-08-05T03:41:57.080Z"
                 },
                 "Media": []
             },
             {
                 "id": 10,
                 "Title": "Storytelling",
-                "BodyContent": "History and science prove it in many ways: Humanity is wired up to learn and connect through stories. Storytelling celebrates our diversity in the Human+Machine vision. Let us help you with the challenge of mastering this ability that can improve your sales pitches and training.  ",
+                "BodyContent": "History and science prove in many ways: Humanity is wired up to learn and connect through stories. Storytelling celebrates our diversity in the Human+Machine vision. Let us help you with the challenge of mastering this ability that can improve your sales pitches and training.",
                 "innolab_section_parent": 3,
                 "key": "storytelling",
                 "published_at": "2021-05-25T21:12:26.220Z",
                 "created_at": "2021-05-25T21:12:24.743Z",
-                "updated_at": "2021-11-09T16:41:09.485Z",
+                "updated_at": "2021-08-05T03:44:23.257Z",
                 "AccordionItems": [],
                 "Image": {
                     "id": 112,
                     "name": "story_illu.png",
-                    "alternativeText": "Storytelling logo: Neon talk conversation bubbles ",
+                    "alternativeText": "",
                     "caption": "",
                     "width": 400,
                     "height": 415,
@@ -1029,7 +1029,7 @@
                     "provider": "local",
                     "provider_metadata": null,
                     "created_at": "2021-08-05T03:44:18.849Z",
-                    "updated_at": "2021-11-09T16:10:16.203Z"
+                    "updated_at": "2021-08-05T03:44:18.855Z"
                 },
                 "Media": []
             }

@@ -15,6 +15,7 @@ import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
 import { faAngleUp } from "@fortawesome/free-solid-svg-icons";
 
 const AccordionCard = (props) => {
+    console.log(props)
     const {cardInfo} = props;
     // window.log("AccordionCard", cardInfo, cardId);
 

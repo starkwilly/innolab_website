@@ -9,7 +9,6 @@ import { useMsal } from "@azure/msal-react";
 
 // icons
 import LogoutIcon from './../../components/LogoutIcon';
-
 import { getSectionParents , getGlobals } from "../../_services/strapiService";
 
 const Header = () => {

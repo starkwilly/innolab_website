@@ -8,6 +8,7 @@ const reqArr = [
     {req: '/innolab-hero', file: '/innolab-hero.json'},
     {req: '/innolab-section-singles/2', file: '/innolab-section-singles_2.json'},
     {req: '/innolab-section-parents', file: '/innolab-section-parents.json'},
+    {req: '/synops-section-parents', file: '/synops-section-parents.json'},
 ]
 
 
