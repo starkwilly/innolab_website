@@ -66,6 +66,7 @@
     "build:stage-root": "env-cmd -f .env.stage-root npm run build",
     "build:prod": "env-cmd -f .env.prod npm run build",
     "build:prod-lab": "env-cmd -f .env.prod-lab npm run build",
+    "build:local-docker": "env-cmd -f .env.docker-local npm run build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "eslint src/**/*.js"
